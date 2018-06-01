@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         bt_iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getBaseContext(),"Click en iniciar",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),"Click en iniciar sesión",Toast.LENGTH_SHORT).show();
             }
         });
 
