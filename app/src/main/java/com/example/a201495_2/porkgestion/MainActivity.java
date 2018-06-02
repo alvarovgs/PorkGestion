@@ -12,7 +12,7 @@ import android.content.ContentValues;
 
 public class MainActivity extends AppCompatActivity {
     private View parent_view;
-    private Utils clsUtil = new Utils();
+    private Utilidades clsUtil = new Utilidades();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
