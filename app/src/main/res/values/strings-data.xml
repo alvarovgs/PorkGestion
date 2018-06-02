@@ -3,8 +3,8 @@
 
 
     <string name="str_desc_animales">
-        Esta opción le permite consultar y actualizar el registro de los animales de la finca.
-        \n\nLleve un regisro detallado de cada animal.
+        Esta opción le permite consultar y actualizar el registro de los cerdos de la finca.
+        \n\nLleve un regisro detallado de cada cerdo.
     </string>
     <string name="str_desc_sanidad">
         A través de esta opción lleve control de los medicamentos administrados a sus animales.
