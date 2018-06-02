@@ -31,6 +31,7 @@ public class Utils {
             return false;
         }
     }
+    //funcion para validar la fecha
     private static boolean validarFecha(String strString) {
         SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
         try {
@@ -41,5 +42,4 @@ public class Utils {
         }
         return true;
     }
-
 }
