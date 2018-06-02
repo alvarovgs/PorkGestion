@@ -11,7 +11,7 @@ public class Utilidades {
 
     public  boolean bValidaString(String strString, int iTipo){
         switch (iTipo){
-            case 1://cadena vacía
+            case 1://cadena vacía vacia
                 return !strString.trim().equals("");
             case 2: //cadena numerica
                 return validarNumerico(strString);
