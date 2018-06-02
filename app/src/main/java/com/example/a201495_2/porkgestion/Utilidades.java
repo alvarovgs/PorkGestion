@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.regex.Pattern;
 
-public class Utils {
+public class Utilidades {
 
     public  boolean bValidaString(String strString, int iTipo){
         switch (iTipo){
