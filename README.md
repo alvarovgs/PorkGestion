@@ -1,2 +1,2 @@
 # PorkGestion
-Aplicación Móvil para gestión de producción de una granja porcicola
+Aplicación Móvil para gestión de producción de una granja agricola
