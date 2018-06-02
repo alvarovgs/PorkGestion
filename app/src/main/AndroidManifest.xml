@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="MenuDrawerSimpleLight"
+            android:name=".MenuLateral"
             android:screenOrientation="portrait" />
     </application>
 

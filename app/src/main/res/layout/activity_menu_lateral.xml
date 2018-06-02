@@ -31,7 +31,7 @@
             android:layout_height="match_parent">
 
             <!-- dummy content list of new -->
-            <include layout="@layout/include_drawer_content" />
+            <include layout="@layout/contenido_inicio" />
 
         </android.support.design.widget.CoordinatorLayout>
 
