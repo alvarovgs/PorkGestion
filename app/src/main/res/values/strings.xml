@@ -6,12 +6,13 @@
     <string name="Animales">Animales</string>
     <string name="Reproduccion">Reproducción</string>
     <string name="Lactancia">Lactancia</string>
-    <string name="Sanidad">Sanidad</string>
+    <string name="Sanidad">Registro Medico</string>
     <string name="Ventas">Ventas</string>
     <string name="Reportes">Reportes</string>
     <string name="Usuario">Edit. Usuario</string>
     <string name="Ayuda">Ayuda</string>
     <string name="Cerrar">Cerrar</string>
+    <string name="Abrir Reporte">Reporte</string>
     <string name="Inicio">Inicio</string>
 
 
