@@ -6,6 +6,10 @@
         Esta opción le permite consultar y actualizar el registro de los animales de la finca.
         \n\nLleve un regisro detallado de cada animal.
     </string>
+    <string name="str_desc_cerdo">
+        Creación de un registro para un nuevo animal.
+        \nNombre, fecha de nacimiento, peso al nacer, sexo, raza y nombre de los padres.
+    </string>
     <string name="str_desc_sanidad">
         A través de esta opción lleve control de los medicamentos administrados a sus animales.
         \n\nVacunas, desparasitación, minerales, etc..
@@ -17,6 +21,10 @@
     <string name="str_desc_lactancia">
         La primera etapa de vida de sus lechones es fundamental. Registre su evolución en esta opción.
         \n\nPeso al nacer, fecha de destete, etc.
+    </string>
+    <string name="str_desc_ventas">
+        La venta del animal, es la razón de la explotación pecuaria.
+        \nEncontrara datos como la fecha de venta, el peso vivo y el precio de venta.
     </string>
     <string name="str_desc_reportes">
         El mayor valor de del trabajo realizado es poder conocer los resultados y hacer seguimeinto oportuno.
