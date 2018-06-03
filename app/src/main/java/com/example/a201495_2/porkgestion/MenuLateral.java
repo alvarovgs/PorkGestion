@@ -57,9 +57,18 @@ public class MenuLateral extends AppCompatActivity {
                 drawer.closeDrawers();
                 return true;
             }
+            public void onClick(View view){
+                Intent miIntent=new Intent(MenuLateral.this,cerdo.class);
+                startActivity(miIntent);
+            }
+
         });
 
         // open drawer at start
         drawer.openDrawer(GravityCompat.START);
     }
+
+
+
+
 }
