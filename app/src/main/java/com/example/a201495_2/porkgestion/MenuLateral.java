@@ -49,17 +49,42 @@ public class MenuLateral extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
                 Toast.makeText(getApplicationContext(),  " Seleccionado: " + item.getTitle() , Toast.LENGTH_SHORT).show();
-                if(item.getTitle().toString().equals("Cerrar")) {
-                    System.exit(0);
+
+                if(item.getTitle().toString().equals("Cerdo")) {
+                    Intent miIntent=new Intent(MenuLateral.this,cerdo.class);
+                    startActivity(miIntent);
                     return false;
+                }
+
+                if(item.getTitle().toString().equals("Ventas")) {
+                    Intent miIntent=new Intent(MenuLateral.this,ventas.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                if(item.getTitle().toString().equals("Cerrar")) {
+                    Intent miIntent = new Intent(MenuLateral.this,MainActivity.class);
+                    startActivity(miIntent);
+                    System.exit(0);
                 }
                 actionBar.setTitle(item.getTitle());
                 drawer.closeDrawers();
                 return true;
             }
+
+//            metodo para pasea a otra activity con un boton
+//            public void onClick(View view){
+//                Intent miIntent=new Intent(MenuLateral.this,cerdo.class);
+//                startActivity(miIntent);
+//            }
+
         });
 
         // open drawer at start
         drawer.openDrawer(GravityCompat.START);
     }
+
+
+
+
 }
