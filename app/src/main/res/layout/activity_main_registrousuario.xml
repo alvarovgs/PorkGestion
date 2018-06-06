@@ -35,4 +35,4 @@
         android:layout_gravity="center"
         android:text="Registrar" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
