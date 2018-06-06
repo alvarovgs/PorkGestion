@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Directory '...\app\src\main\java\com\example\a201495_2\porkgestion [app]'" />
-    <option name="defaultScopeName" value="Directory '...\app\src\main\java\com\example\a201495_2\porkgestion [app]'" />
-    <option name="SEARCH_SCOPE" value="Directory '...\app\src\main\java\com\example\a201495_2\porkgestion [app]'" />
+    <option name="customScope" value="Project 'PorkGestion'" />
+    <option name="defaultScopeName" value="Project 'PorkGestion'" />
+    <option name="SEARCH_SCOPE" value="Project 'PorkGestion'" />
   </component>
 </application>
