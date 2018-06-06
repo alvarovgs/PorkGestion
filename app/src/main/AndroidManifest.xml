@@ -23,6 +23,8 @@
             android:name=".MenuLateral"
             android:screenOrientation="portrait" />
         <activity android:name=".MainRegistrousuario"></activity>
+        <activity android:name=".cerdo" />
+        <activity android:name=".ventas"></activity>
     </application>
 
 </manifest>

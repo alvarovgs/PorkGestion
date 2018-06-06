@@ -63,8 +63,9 @@ public class MenuLateral extends AppCompatActivity {
                 }
 
                 if(item.getTitle().toString().equals("Cerrar")) {
+                    Intent miIntent = new Intent(MenuLateral.this,MainActivity.class);
+                    startActivity(miIntent);
                     System.exit(0);
-                    return false;
                 }
                 actionBar.setTitle(item.getTitle());
                 drawer.closeDrawers();
