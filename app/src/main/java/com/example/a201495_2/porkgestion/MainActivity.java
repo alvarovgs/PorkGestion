@@ -1,32 +1,49 @@
 package com.example.a201495_2.porkgestion;
 
 import android.os.Bundle;
+import android.content.ContentValues;
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.TextView;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import static com.example.a201495_2.porkgestion.R.id.tv_registrar;
 
 public class MainActivity extends AppCompatActivity {
-    private View parent_view;
+    TextView tv_registrar;
+    TextView tv_ingresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        startActivity(new Intent(this, MenuDrawerSimpleLight.class));
 
-        Button bt_iniciar =(Button) findViewById(R.id.bt_iniciar);
-        bt_iniciar.setOnClickListener(new View.OnClickListener() {
+        tv_registrar=findViewById(R.id.tv_registrar);
+        tv_ingresar=findViewById(R.id.tv_ingresar);
+
+
+        tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getBaseContext(),"Click en iniciar",Toast.LENGTH_SHORT).show();
+                Intent IntentReg= new Intent (MainActivity.this, MainRegistrousuario.class);
+                MainActivity.this.startActivity(IntentReg);
             }
         });
 
+        tv_ingresar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainActivity.this, MainContenido.class);
+                MainActivity.this.startActivity(IntentReg);
+            }
+        });
     }
 }

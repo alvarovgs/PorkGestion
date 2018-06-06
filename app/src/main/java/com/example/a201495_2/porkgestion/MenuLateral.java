@@ -1,5 +1,6 @@
 package com.example.a201495_2.porkgestion;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MenuDrawerSimpleLight extends AppCompatActivity {
+public class MenuLateral extends AppCompatActivity {
 
     private ActionBar actionBar;
     private Toolbar toolbar;
@@ -20,13 +21,13 @@ public class MenuDrawerSimpleLight extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_drawer_simple_light);
+        setContentView(R.layout.activity_menu_lateral);
         initToolbar();
         initNavigationMenu();
     }
 
     private void initToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -35,8 +36,8 @@ public class MenuDrawerSimpleLight extends AppCompatActivity {
     }
 
     private void initNavigationMenu() {
-        NavigationView nav_view = (NavigationView) findViewById(R.id.nav_view);
-        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        NavigationView nav_view = findViewById(R.id.nav_view);
+        final DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
@@ -48,6 +49,10 @@ public class MenuDrawerSimpleLight extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
                 Toast.makeText(getApplicationContext(),  " Seleccionado: " + item.getTitle() , Toast.LENGTH_SHORT).show();
+                if(item.getTitle().toString().equals("Cerrar")) {
+                    System.exit(0);
+                    return false;
+                }
                 actionBar.setTitle(item.getTitle());
                 drawer.closeDrawers();
                 return true;
