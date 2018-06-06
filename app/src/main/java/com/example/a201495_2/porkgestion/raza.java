@@ -7,27 +7,26 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ventas extends AppCompatActivity {
-
+public class raza extends AppCompatActivity {
     private Utilidades clsUtil = new Utilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ventas);
+        setContentView(R.layout.activity_raza);
     }
 
     public void onClick(View view){
-        Intent miIntent=new Intent(ventas.this,MenuLateral.class);
+        Intent miIntent=new Intent(raza.this,MenuLateral.class);
         startActivity(miIntent);
     }
 
     //codigo para que no cierre la app por no ingresar datos y presionar el boton consulta
     public void consulta(View v) {
-        EditText et1 = (EditText)findViewById(R.id.et_numa);
-        String numcerdo = et1.getText().toString();
-        if (!clsUtil.bValidaString(numcerdo,1)){
-            Toast.makeText(this, "Digite el número del cerdo",Toast.LENGTH_SHORT).show();
+        EditText et1 = (EditText)findViewById(R.id.et_nomraza);
+        String razacerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(razacerdo,1)){
+            Toast.makeText(this, "Ingrese la raza",Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -7,8 +7,12 @@
         \n\nLleve un regisro detallado de cada animal.
     </string>
     <string name="str_desc_cerdo">
-        Creación de un registro para un nuevo animal.
+        Generar el registro para un nuevo animal.
         \nNombre, fecha de nacimiento, peso al nacer, sexo, raza y nombre de los padres.
+    </string>
+    <string name="str_desc_raza">
+        Crear una raza para los animal.
+        \n\nNombre de la raza del cerdo.
     </string>
     <string name="str_desc_sanidad">
         A través de esta opción lleve control de los medicamentos administrados a sus animales.

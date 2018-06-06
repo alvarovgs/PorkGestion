@@ -22,9 +22,10 @@
         <activity
             android:name=".MenuLateral"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainRegistrousuario"></activity>
+        <activity android:name=".MainRegistrousuario" />
         <activity android:name=".cerdo" />
-        <activity android:name=".ventas"></activity>
+        <activity android:name=".ventas" />
+        <activity android:name=".raza"></activity>
     </application>
 
 </manifest>

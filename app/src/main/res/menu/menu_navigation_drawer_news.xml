@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_cerdo"
             android:title="@string/Cerdo" />
         <item
+            android:id="@+id/nav_cerdo"
+            android:icon="@drawable/ic_cerdo"
+            android:title="@string/Raza" />
+        <item
             android:id="@+id/nav_sanidad"
             android:icon="@drawable/ic_sanidad"
             android:title="@string/Sanidad" />
