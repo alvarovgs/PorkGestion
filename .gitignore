@@ -8,3 +8,6 @@
 /build
 /captures
 .externalNativeBuild
+app/src/main/res/values/strings.xml
+app/src/main/AndroidManifest.xml
+.idea/caches/build_file_checksums.ser

@@ -13,17 +13,21 @@
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
         <item
-            android:id="@+id/nav_reprduccion"
+            android:id="@+id/nav_cerdo"
+            android:icon="@drawable/ic_cerdo"
+            android:title="@string/Cerdo" />
+        <item
+            android:id="@+id/nav_sanidad"
+            android:icon="@drawable/ic_sanidad"
+            android:title="@string/Sanidad" />
+        <item
+            android:id="@+id/nav_reproduccion"
             android:icon="@drawable/ic_reproduccion"
             android:title="@string/Reproduccion" />
         <item
             android:id="@+id/nav_lactancia"
             android:icon="@drawable/ic_lactancia"
             android:title="@string/Lactancia" />
-        <item
-            android:id="@+id/nav_sanidad"
-            android:icon="@drawable/ic_sanidad"
-            android:title="@string/Sanidad" />
         <item
             android:id="@+id/nav_ventas"
             android:icon="@drawable/ic_ventas"
