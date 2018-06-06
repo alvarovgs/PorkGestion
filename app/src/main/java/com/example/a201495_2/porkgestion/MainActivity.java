@@ -8,18 +8,35 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.content.ContentValues;
+import android.widget.TextView;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import static com.example.a201495_2.porkgestion.R.id.tv_registrar;
 
 public class MainActivity extends AppCompatActivity {
-    private View parent_view;
+    TextView tv_registrar;
+    TextView tv_ingresar;
     private Utilidades clsUtil = new Utilidades();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button bt_iniciar = findViewById(R.id.bt_iniciar);
-        bt_iniciar.setOnClickListener(new View.OnClickListener() {
-           @Override
+        tv_registrar=findViewById(R.id.tv_registrar);
+        tv_ingresar=findViewById(R.id.tv_ingresar);
+        tv_registrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainActivity.this, MainRegistrousuario.class);
+                MainActivity.this.startActivity(IntentReg);
+            }
+        });
+
+        tv_ingresar.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
                 String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
@@ -30,10 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 else if(!clsUtil.bValidaString(strPassword,1))
                     Toast.makeText(getBaseContext(),"Debe digitar el password",Toast.LENGTH_SHORT).show();
                 else if (strUsuario.equals("admin@gmail.com")){
-                    startActivity(new Intent(MainActivity.this, MenuLateral.class));
+                    //Todo  Validar aceso a BD
+                    Intent IntentReg= new Intent (MainActivity.this, MenuLateral.class);
+                    MainActivity.this.startActivity(IntentReg);
                 }
             }
         });
     }
-
 }
