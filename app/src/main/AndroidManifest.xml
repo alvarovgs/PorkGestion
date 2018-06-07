@@ -25,7 +25,7 @@
         <activity android:name=".MainRegistrousuario" />
         <activity android:name=".cerdo" />
         <activity android:name=".ventas" />
-        <activity android:name=".activity_reproduccion"></activity>
+        <activity android:name=".reproduccion"></activity>
     </application>
 
 </manifest>
