@@ -14,6 +14,7 @@
     <string name="Ayuda">Ayuda</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Inicio">Inicio</string>
+<<<<<<< Updated upstream
 
     <string-array name="sexo">
         <item>seleccione el sexo</item>
@@ -30,4 +31,18 @@
         <item>ZUNGO</item>
     </string-array>
 
+=======
+    <string name="nombre_cerda_string">Nombre de la Cerda</string>
+    <string name="numero_cerda_string">Número de la Cerda</string>
+    <string name="fecha_parto_string">Fecha Parto</string>
+    <string name="total_navivos_string">Lechones X Parto</string>
+    <string name="embrasvivas_string">Embras Nacidas vivas</string>
+    <string name="machos_vivos_string">Machos Nacidos Vivos</string>
+    <string name="embras_muertas_string">Embras Muertas</string>
+    <string name="machos_muertos_string">Machos Muertos</string>
+    <string name="total_namuertos_string">T. Nacidos Muertos</string>
+    <string name="Nombre_verraco_string">Nombre del Verraco</string>
+    <string name="numero_verraco_string">Número del Verraco</string>
+    <string name="numero_pajilla_string">Número de la Pajilla</string>
+>>>>>>> Stashed changes
 </resources>
