@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".reportes">
 
     <LinearLayout
@@ -15,19 +15,19 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="3dp"
             android:background="@color/grey_10" />
 
         <LinearLayout
             android:id="@+id/btn_rhv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/hvcerdo" />
 
@@ -63,16 +63,22 @@
 
         </LinearLayout>
 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
+
         <LinearLayout
             android:id="@+id/btn_rfinca"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/granja" />
 
@@ -102,20 +108,19 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="3dp"
             android:background="@color/grey_10" />
-
 
         <LinearLayout
             android:id="@+id/btn_rreproduccion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rreproduccion" />
 
@@ -145,29 +150,19 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="3dp"
             android:background="@color/grey_10" />
 
         <LinearLayout
             android:id="@+id/btn_rlactancia"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rlactancia" />
 
@@ -197,16 +192,21 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
+
         <LinearLayout
             android:id="@+id/btn_rverracos"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rverraco" />
 
@@ -236,16 +236,21 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
+
         <LinearLayout
             android:id="@+id/btn_rcelo"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rcelo" />
 
@@ -255,14 +260,14 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:text="CELO Y APAREAMIENTO"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
@@ -275,16 +280,21 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/btn_rcelo"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:id="@+id/btn_rventas"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rventas" />
 
@@ -301,7 +311,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="56dp"
                     android:maxLines="2"
                     android:text="VENTAS"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
@@ -313,6 +323,11 @@
 
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
 
     </LinearLayout>
 
