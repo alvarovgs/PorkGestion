@@ -14,8 +14,6 @@
     <string name="Ayuda">Ayuda</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Inicio">Inicio</string>
-// Updated upstream
-
     <string-array name="sexo">
         <item>seleccione el sexo</item>
         <item>HEMBRA</item>
@@ -30,8 +28,6 @@
         <item>YORKSHIRE</item>
         <item>ZUNGO</item>
     </string-array>
-
-=======
     <string name="nombre_cerda_string">Nombre de la Cerda</string>
     <string name="numero_cerda_string">Número de la Cerda</string>
     <string name="fecha_parto_string">Fecha Parto</string>
@@ -44,5 +40,17 @@
     <string name="Nombre_verraco_string">Nombre del Verraco</string>
     <string name="numero_verraco_string">Número del Verraco</string>
     <string name="numero_pajilla_string">Número de la Pajilla</string>
->>>>>>> Stashed changes
+    <string name= "btingresar">INGRESAR</string>
+    <string name ="btguardar">GUARDAR</string>
+    <string name="btconsultar">CONSULTAR</string>
+    <string name="btmodificar">MODIFICAR</string>
+    <string name="bteliminar">ELIMINAR</string>
+       <string-array name ="tipo_monta">
+        <item>Seleccione el tipo de monta</item>
+        <item>Directa</item>
+        <item>Artificial</item>
+    </string-array>
+
+
+
 </resources>
