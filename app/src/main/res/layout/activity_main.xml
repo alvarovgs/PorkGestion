@@ -75,11 +75,12 @@
         android:text="Registrate Aqui" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="243dp"
-        android:layout_height="253dp"
-        android:layout_alignBottom="@+id/txt_usuario"
+        android:id="@+id/imageView5"
+        android:layout_width="335dp"
+        android:layout_height="169dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
         app:srcCompat="@drawable/logotipo" />
 
 </RelativeLayout>

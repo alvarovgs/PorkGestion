@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".reproduccion">
+    tools:context=".reportes">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,26 +13,31 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
         <LinearLayout
-            android:id="@+id/btn_rmonta"
+            android:id="@+id/btn_rhv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/piggy" />
+                android:src="@drawable/hvcerdo" />
 
             <View
                 android:layout_width="16dp"
-                android:layout_height="100dp" />
+                android:layout_height="50dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="102dp"
+                android:layout_height="51dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -41,16 +46,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:text="Registro de Monta"
+                    android:text="HOJA DE VIDA DE CERDO"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="232dp"
-                    android:layout_height="wrap_content"
-                    android:text="Registro de datos de la monta: Edad, peso, fechas de celo, código de verraco o pajilla, fecha de preñez." />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -64,31 +63,26 @@
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
         <LinearLayout
-            android:id="@+id/btn_rpajilla"
+            android:id="@+id/btn_rfinca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/seleccion_semen" />
+                android:src="@drawable/granja" />
 
             <View
-                android:layout_width="16dp"
-                android:layout_height="102dp" />
+                android:layout_width="15dp"
+                android:layout_height="50dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="99dp"
+                android:layout_height="50dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -96,20 +90,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="Registro de Pajillas"
+                    android:maxLines="5"
+                    android:text="PRODUCCION DE LA FINCA"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:maxLines="5"
-                    android:text="Administre y registre las pajillas usadas, existencias y sus caracteristicas."
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/grey_80" />
 
             </LinearLayout>
 
@@ -122,25 +107,25 @@
 
 
         <LinearLayout
-            android:id="@+id/btn_amonta"
+            android:id="@+id/btn_rreproduccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/pigger" />
+                android:src="@drawable/rreproduccion" />
 
             <View
-                android:layout_width="17dp"
-                android:layout_height="101dp" />
+                android:layout_width="15dp"
+                android:layout_height="51dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="99dp"
+                android:layout_height="52dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -149,20 +134,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:text="Actualizar Datos de Monta"
+                    android:text="REPRODUCCION GENERAL"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:maxLines="5"
-                    android:text="Actualizar información de monta, fechas, datos, verraco o pajilla."
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/grey_80" />
 
             </LinearLayout>
         </LinearLayout>
@@ -183,21 +159,21 @@
             android:background="@color/grey_10" />
 
         <LinearLayout
-            android:id="@+id/btn_apajilla"
+            android:id="@+id/btn_rlactancia"
             android:layout_width="match_parent"
-            android:layout_height="122dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="102dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/verraco" />
+                android:src="@drawable/rlactancia" />
 
             <View
-                android:layout_width="@dimen/spacing_large"
-                android:layout_height="wrap_content" />
+                android:layout_width="19dp"
+                android:layout_height="51dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -208,22 +184,130 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:maxLines="2"
-                    android:text="Actualizar datos de Verraco/Pajilla"
+                    android:text="LACTANCIA Y DESTETE"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
 
 
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_rverracos"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rverraco" />
+
+            <View
+                android:layout_width="19dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:maxLines="5"
-                    android:text="Actualizar información sobre verraco o pajilla usado para monta o inseminación y sus caracteristicas"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/grey_80" />
+                    android:layout_height="50dp"
+                    android:maxLines="2"
+                    android:text="VERRACOS"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_rcelo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rcelo" />
+
+            <View
+                android:layout_width="19dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:maxLines="2"
+                    android:text="CELO Y APAREAMIENTO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_rcelo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rventas" />
+
+            <View
+                android:layout_width="19dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:maxLines="2"
+                    android:text="VENTAS"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
 
             </LinearLayout>
 
@@ -239,7 +323,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="13dp"
         android:onClick="onClick"
         android:text="REGRESAR" />
 

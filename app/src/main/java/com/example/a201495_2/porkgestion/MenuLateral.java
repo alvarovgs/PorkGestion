@@ -56,23 +56,29 @@ public class MenuLateral extends AppCompatActivity {
                     return false;
                 }
 
-                if (item.getTitle().toString().equals("Reproduccion")) {
+                else if (item.getTitle().toString().equals("Reproducción")) {
                     Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
                     startActivity(miIntent);
                     return false;
                 }
 
-                if (item.getTitle().toString().equals("Ventas")) {
+                else if (item.getTitle().toString().equals("Ventas")) {
                     Intent miIntent = new Intent(MenuLateral.this, ventas.class);
                     startActivity(miIntent);
                     return false;
                 }
+                else if (item.getTitle().toString().equals("Reportes")) {
+                    Intent miIntent = new Intent(MenuLateral.this, reportes.class);
+                    startActivity(miIntent);
+                    return false;
+                }
 
-                if (item.getTitle().toString().equals("Cerrar")) {
+                else if (item.getTitle().toString().equals("Cerrar")) {
                     Intent miIntent = new Intent(MenuLateral.this, MainActivity.class);
                     startActivity(miIntent);
                     System.exit(0);
                 }
+
                 actionBar.setTitle(item.getTitle());
                 drawer.closeDrawers();
                 return true;
