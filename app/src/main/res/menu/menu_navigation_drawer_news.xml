@@ -18,7 +18,6 @@
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
         <item
-<<<<<<< Updated upstream
             android:id="@+id/nav_cerdo"
             android:icon="@drawable/ic_cerdo"
             android:title="@string/Cerdo" />
@@ -31,8 +30,7 @@
             android:icon="@drawable/ic_reproduccion"
             android:title="@string/Reproduccion" />
         <item
-=======
->>>>>>> Stashed changes
+
             android:id="@+id/nav_lactancia"
             android:icon="@drawable/ic_lactancia"
             android:title="@string/Lactancia" />

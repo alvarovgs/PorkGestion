@@ -14,7 +14,7 @@
     <string name="Ayuda">Ayuda</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Inicio">Inicio</string>
-<<<<<<< Updated upstream
+// Updated upstream
 
     <string-array name="sexo">
         <item>seleccione el sexo</item>
