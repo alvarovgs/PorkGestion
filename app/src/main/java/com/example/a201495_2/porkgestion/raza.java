@@ -30,4 +30,30 @@ public class raza extends AppCompatActivity {
         }
     }
 
+    public void ingresar (View v) {
+        EditText et1 = (EditText)findViewById(R.id.et_nomraza);
+        String razacerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(razacerdo,1)){
+            Toast.makeText(this, "Ingrese la raza",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void actualizar (View v) {
+        EditText et1 = (EditText)findViewById(R.id.et_nomraza);
+        String razacerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(razacerdo,1)){
+            Toast.makeText(this, "Ingrese la raza",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void eliminar (View v) {
+        EditText et1 = (EditText)findViewById(R.id.et_nomraza);
+        String razacerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(razacerdo,1)){
+            Toast.makeText(this, "Ingrese la raza",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
 }

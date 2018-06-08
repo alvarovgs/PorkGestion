@@ -30,4 +30,28 @@ public class  cerdo extends AppCompatActivity {
         }
     }
 
+    public void eliminar (View v) {
+        EditText et1 = (EditText)findViewById(R.id.et_numa);
+        String numcerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(numcerdo,1)){
+            Toast.makeText(this, "Digite el número del cerdo",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void ingresar (View v) {
+        EditText et1 = (EditText)findViewById(R.id.et_numa);
+        String numcerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(numcerdo,1)){
+            Toast.makeText(this, "Digite el número del cerdo",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void actualizar (View v) {
+        EditText et1 = (EditText)findViewById(R.id.et_numa);
+        String numcerdo = et1.getText().toString();
+        if (!clsUtil.bValidaString(numcerdo,1)){
+            Toast.makeText(this, "Digite el número del cerdo",Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }
