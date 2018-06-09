@@ -51,6 +51,9 @@
     <string name="fechaecografia">Fecha Ecografía</string>
     <string name="edadmonta">Edad de monta en meses</string>
     <string name="pesomonta">Peso a la Monta</string>
+    <string name="fechallenado">Fecha de LLenado</string>
+    <string name="descricion">Descripción de la Pajilla </string>
+    <string name="observaciones">Observaciones</string>
 
 
 

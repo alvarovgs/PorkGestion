@@ -11,7 +11,6 @@ public class monta_Activity extends AppCompatActivity {
 
     private Spinner sptipomonta1;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +22,12 @@ public class monta_Activity extends AppCompatActivity {
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcmonta);
         sptipomonta1.setAdapter(adapter1);
     }
-        //public void selecionmonta=(View view){
-            //sptipomonta1.getSelectedItem().toString();
-            }
+    // Creacción de método
+    public void selecionmonta(View view){
+            sptipomonta1.getSelectedItem().toString();
 
 
+    }
 
 
+}
