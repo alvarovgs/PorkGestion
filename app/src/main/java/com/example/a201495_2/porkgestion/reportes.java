@@ -14,7 +14,21 @@ public class reportes extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        Intent miIntent=new Intent(reportes.this,MenuLateral.class);
+        Intent miIntent=null;
+
+        switch (view.getId()) {
+            case R.id.btn_regresar:
+                miIntent = new Intent(reportes.this, MenuLateral.class);
+                break;
+
+            case R.id.btn_parto:
+                miIntent = new Intent(reportes.this, reporteparto.class);
+                break;
+
+            case R.id.btn_verracos:
+                miIntent = new Intent(reportes.this, reporteverracos.class);
+                break;
+        }
         startActivity(miIntent);
     }
 }

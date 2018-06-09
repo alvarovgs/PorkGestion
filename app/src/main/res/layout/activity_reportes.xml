@@ -18,6 +18,12 @@
             android:layout_height="3dp"
             android:background="@color/grey_10" />
 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
+
         <LinearLayout
             android:id="@+id/btn_rhv"
             android:layout_width="match_parent"
@@ -32,8 +38,17 @@
                 android:src="@drawable/hvcerdo" />
 
             <View
-                android:layout_width="16dp"
+                android:layout_width="15dp"
                 android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_hv"
+                style="@style/Button.Accent"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="HOJA DE VIDA DE CERDO" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -41,15 +56,6 @@
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="HOJA DE VIDA DE CERDO"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,12 +68,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey_10" />
 
         <LinearLayout
             android:id="@+id/btn_rfinca"
@@ -93,15 +93,12 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="5"
-                    android:text="PRODUCCION DE LA FINCA"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
-
+                <Button
+                    android:id="@+id/btn_produccion"
+                    style="@style/Button.Accent"
+                    android:layout_width="290dp"
+                    android:layout_height="match_parent"
+                    android:text="PRODUCCION DE LA FINCA" />
             </LinearLayout>
 
         </LinearLayout>
@@ -135,16 +132,13 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+
+                <Button
+                    android:id="@+id/btn_reproduccion"
+                    style="@style/Button.Accent"
+                    android:layout_width="290dp"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="REPRODUCCION GENERAL"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
-
-
+                    android:text="REPRODUCCION GENERAL" />
             </LinearLayout>
         </LinearLayout>
 
@@ -156,7 +150,7 @@
         <LinearLayout
             android:id="@+id/btn_rlactancia"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -167,8 +161,17 @@
                 android:src="@drawable/rlactancia" />
 
             <View
-                android:layout_width="19dp"
+                android:layout_width="15dp"
                 android:layout_height="51dp" />
+
+            <Button
+                android:id="@+id/btn_parto"
+                style="@style/Button.Accent"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="PARTO, LACTANCIA Y DESTETE" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -176,15 +179,6 @@
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:maxLines="2"
-                    android:text="LACTANCIA Y DESTETE"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -200,7 +194,7 @@
         <LinearLayout
             android:id="@+id/btn_rverracos"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="69dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -211,8 +205,17 @@
                 android:src="@drawable/rverraco" />
 
             <View
-                android:layout_width="19dp"
+                android:layout_width="15dp"
                 android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_verracos"
+                style="@style/Button.Accent"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="VERRACOS" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -220,15 +223,6 @@
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:maxLines="2"
-                    android:text="VERRACOS"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -244,7 +238,7 @@
         <LinearLayout
             android:id="@+id/btn_rcelo"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="67dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -255,7 +249,7 @@
                 android:src="@drawable/rcelo" />
 
             <View
-                android:layout_width="19dp"
+                android:layout_width="15dp"
                 android:layout_height="50dp" />
 
             <LinearLayout
@@ -265,16 +259,13 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+
+                <Button
+                    android:id="@+id/btn_celo"
+                    style="@style/Button.Accent"
+                    android:layout_width="290dp"
                     android:layout_height="match_parent"
-                    android:maxLines="2"
-                    android:text="CELO Y APAREAMIENTO"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
-
-
+                    android:text="CELO Y APAREAMIENTO" />
             </LinearLayout>
 
 
@@ -288,7 +279,7 @@
         <LinearLayout
             android:id="@+id/btn_rventas"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="71dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -299,8 +290,16 @@
                 android:src="@drawable/rventas" />
 
             <View
-                android:layout_width="19dp"
+                android:layout_width="15dp"
                 android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_ventas"
+                style="@style/Button.Accent"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="VENTAS" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -308,15 +307,6 @@
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:maxLines="2"
-                    android:text="VENTAS"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -333,7 +323,7 @@
 
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_regresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

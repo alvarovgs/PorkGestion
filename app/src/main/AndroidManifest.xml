@@ -27,7 +27,10 @@
         <activity android:name=".ventas" />
         <activity android:name=".reproduccion" />
         <activity android:name=".reportes" />
-        <activity android:name=".monta"></activity>
+        <activity android:name=".monta" />
+        <activity android:name=".fpp" />
+        <activity android:name=".reporteparto" />
+        <activity android:name=".reporteverracos"></activity>
     </application>
 
 </manifest>
