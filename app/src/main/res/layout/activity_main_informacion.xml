@@ -12,6 +12,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +27,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/animales" />
+                android:src="@drawable/ciclo" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -39,7 +44,59 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:text="Registro de animales"
+                    android:text="Ciclo Productivo Porcino"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Módulo de explicación de las diferentes fases del ciclo productivo porcino."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Conceptosclave" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Conceptos y Terminología"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
@@ -49,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
-                    android:text="@string/str_desc_animales"
+                    android:text="Este módulo le permite consultar los principales conceptos ó términos básicos referentes a la Porcicultura."
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_80" />
 
@@ -72,57 +129,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/reproduccion" />
-
-            <View
-                android:layout_width="@dimen/spacing_large"
-                android:layout_height="wrap_content" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="Gestión de reproducción"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:maxLines="5"
-                    android:text="@string/str_desc_reproduccion"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/grey_80" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="@dimen/spacing_middle">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/lactancia" />
+                android:src="@drawable/organizaciones" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -140,7 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:text="Gestión de lactancia"
+                    android:text="Datos Organizaciones Agrícolas"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
@@ -150,7 +157,52 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
-                    android:text="@string/str_desc_lactancia"
+                    android:text="Aquí podrá consultar información general de las principales Organizaciones productivas agrícolas referentes a la porcicultura."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/links" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Vínculos a Sitios de Interés"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Esta opción le permite consultar sitios de interés, asegurese de contar con conexión a Internet para su correcta visualización."
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_80" />
 
@@ -173,7 +225,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/sanidad" />
+                android:src="@drawable/recomendaciones" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -190,7 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:text="Gestión de sanidad"
+                    android:text="Uso de la Aplicación"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
@@ -201,114 +253,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
-                    android:text="@string/str_desc_sanidad"
+                    android:text="Recomendaciones Generales sobre el uso de la aplicación PorkGestion."
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_80" />
 
             </LinearLayout>
         </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey_10" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/spacing_middle">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/reportes" />
-
-                <View
-                    android:layout_width="@dimen/spacing_large"
-                    android:layout_height="wrap_content" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="top"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:maxLines="2"
-                        android:text="Gestión de reportes"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:textColor="@color/grey_80"
-                        android:textStyle="bold" />
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:maxLines="5"
-                        android:text="@string/str_desc_reportes"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                        android:textColor="@color/grey_80" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="@dimen/spacing_middle">
-
-            <ImageView
-                android:id="@+id/informacion"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/informacion" />
-
-            <View
-                android:layout_width="@dimen/spacing_large"
-                android:layout_height="wrap_content" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_info"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="Segmento Informativo"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/grey_80"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:maxLines="5"
-                    android:text="Información General de Interés."
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/grey_80" />
-
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 
 
