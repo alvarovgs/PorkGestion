@@ -15,6 +15,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -24,7 +25,8 @@
         <activity android:name=".MainRegistrousuario" />
         <activity android:name=".cerdo" />
         <activity android:name=".ventas" />
-        <activity android:name=".raza"></activity>
+        <activity android:name=".raza" />
+        <activity android:name=".reporteventa"></activity>
     </application>
 
 </manifest>
