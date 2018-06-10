@@ -14,11 +14,11 @@
             android:title="@string/Animales" />
         <item
             android:id="@+id/nav_cerdo"
-            android:icon="@drawable/ic_cerdo"
+            android:icon="@drawable/ic_creocerdo"
             android:title="@string/Cerdo" />
         <item
             android:id="@+id/nav_cerdo"
-            android:icon="@drawable/ic_cerdo"
+            android:icon="@drawable/ic_razacerdo"
             android:title="@string/Raza" />
         <item
             android:id="@+id/nav_sanidad"
@@ -34,7 +34,7 @@
             android:title="@string/Lactancia" />
         <item
             android:id="@+id/nav_ventas"
-            android:icon="@drawable/ic_ventas"
+            android:icon="@drawable/ic_dolar"
             android:title="@string/Ventas" />
         <item
             android:id="@+id/nav_reportes"
