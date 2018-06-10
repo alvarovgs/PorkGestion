@@ -55,10 +55,7 @@
     <string name="descricion">Descripción de la Pajilla </string>
     <string name="observaciones">Observaciones</string>
 
-
-
-
-       <string-array name ="tipo_monta">
+      <string-array name ="tipo_monta">
         <item>Seleccione el tipo de monta</item>
         <item>Directa</item>
         <item>Artificial</item>

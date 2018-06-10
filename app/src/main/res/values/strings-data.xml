@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <string name="str_desc_animales">
         Esta opción le permite consultar y actualizar el registro de los animales de la finca.
         \n\nLleve un regisro detallado de cada animal.
