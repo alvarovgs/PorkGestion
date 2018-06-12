@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +25,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
         android:text="Numero del animal"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -36,7 +37,8 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_marginTop="100dp"
         android:text="Nombre del animal"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView12"
@@ -46,7 +48,8 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_marginTop="150dp"
         android:text="Fecha de venta"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView13"
@@ -56,7 +59,8 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_marginTop="200dp"
         android:text="Peso vivo en Kg"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView14"
@@ -66,7 +70,8 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_marginTop="250dp"
         android:text="Precio total en pesos"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/textView10" />
 
     <EditText
         android:id="@+id/editText5"
@@ -76,7 +81,8 @@
         android:layout_alignTop="@+id/textView10"
         android:ems="10"
         android:hint="ingrese el numero"
-        android:inputType="number" />
+        android:inputType="number"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/editText6"
@@ -86,7 +92,8 @@
         android:layout_alignTop="@+id/textView11"
         android:ems="10"
         android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/editText7"
@@ -96,7 +103,8 @@
         android:layout_alignTop="@+id/textView12"
         android:ems="10"
         android:hint="ingrese la fecha"
-        android:inputType="date" />
+        android:inputType="date"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/editText8"
@@ -106,7 +114,8 @@
         android:layout_alignTop="@+id/textView13"
         android:ems="10"
         android:hint="ingrese el peso en Kg"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/editText9"
@@ -116,7 +125,8 @@
         android:layout_alignParentEnd="true"
         android:ems="10"
         android:hint="ingrese el precio"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
 
     <Button
         android:id="@+id/btnRegresar"
@@ -127,7 +137,9 @@
         android:layout_marginBottom="15dp"
         android:layout_marginStart="15dp"
         android:onClick="onClick"
-        android:text="REGRESAR" />
+        android:text="REGRESAR"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
 
 
 </RelativeLayout>

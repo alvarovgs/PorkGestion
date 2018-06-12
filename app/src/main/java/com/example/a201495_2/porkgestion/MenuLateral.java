@@ -11,8 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
+@SuppressWarnings("deprecation")
 public class MenuLateral extends AppCompatActivity {
 
     private ActionBar actionBar;
@@ -48,8 +48,7 @@ public class MenuLateral extends AppCompatActivity {
         nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
-                Toast.makeText(getApplicationContext(),  " Seleccionado: " + item.getTitle() , Toast.LENGTH_SHORT).show();
-
+                //Toast.makeText(getApplicationContext(),  " Seleccionado: " + item.getTitle() , Toast.LENGTH_SHORT).show();
                 if(item.getTitle().toString().equals("Cerdo")) {
                     Intent miIntent=new Intent(MenuLateral.this,cerdo.class);
                     startActivity(miIntent);
