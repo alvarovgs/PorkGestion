@@ -5,17 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class cerdo extends AppCompatActivity {
+public class monta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cerdo);
+        setContentView(R.layout.activity_monta);
     }
 
     public void onClick(View view){
-        Intent miIntent=new Intent(cerdo.this,MenuLateral.class);
+        Intent miIntent=new Intent(monta.this,reproduccion.class);
         startActivity(miIntent);
     }
 }
-

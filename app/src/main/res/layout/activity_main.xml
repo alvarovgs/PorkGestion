@@ -8,26 +8,6 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="147dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
-        app:srcCompat="@drawable/logo" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="153dp"
-        android:text="PorkGestión"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:visibility="visible" />
-
     <EditText
         android:id="@+id/txt_usuario"
         android:layout_width="250sp"
@@ -93,5 +73,14 @@
         android:layout_marginBottom="57dp"
         android:layout_marginEnd="130dp"
         android:text="Registrate Aqui" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="335dp"
+        android:layout_height="169dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        app:srcCompat="@drawable/logotipo" />
 
 </RelativeLayout>
