@@ -59,6 +59,11 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
+                if(item.getTitle().toString().equals("Reproducción")) {
+                    Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
+                    startActivity(miIntent);
+                    return false;
+                }
 
                 if(item.getTitle().toString().equals("Cerrar")) {
                     Intent miIntent = new Intent(MenuLateral.this,MainActivity.class);

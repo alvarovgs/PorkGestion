@@ -3,6 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/nav_cerdo"
+        android:icon="@drawable/ic_cerdo"
+        android:title="@string/Cerdo" />
+    <item
         android:id="@+id/nav_reprduccion"
         android:icon="@drawable/ic_reproduccion"
         android:title="@string/Reproduccion" />
@@ -11,16 +15,11 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_home"
             android:title="@string/Inicio" />
         <item
             android:id="@+id/nav_animal"
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
-        <item
-            android:id="@+id/nav_cerdo"
-            android:icon="@drawable/ic_cerdo"
-            android:title="@string/Cerdo" />
         <item
             android:id="@+id/nav_sanidad"
             android:icon="@drawable/ic_sanidad"

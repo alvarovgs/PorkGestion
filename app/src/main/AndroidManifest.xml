@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a201495_2.porkgestion">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,16 +15,20 @@
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MenuLateral"
-            android:screenOrientation="portrait" />Updated upstream
-        <activity android:name=".MainRegistrousuario"></activity>
+            android:screenOrientation="portrait" />
+        Updated upstream
+        <activity android:name=".MainRegistrousuario" />
         <activity android:name=".cerdo" />
-        <activity android:name=".ventas"></activity>
-
-        <activity android:name=".Parto_Activity"></activity>
+        <activity android:name=".ventas" />
+        <activity android:name=".Parto_Activity" />
+        <activity android:name=".DashReproductivo"></activity>
+        <activity android:name=".MainContenido" />
     </application>
+
 </manifest>
