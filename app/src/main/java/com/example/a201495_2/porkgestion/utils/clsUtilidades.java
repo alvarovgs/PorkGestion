@@ -1,4 +1,4 @@
-package com.example.a201495_2.porkgestion;
+package com.example.a201495_2.porkgestion.utils;
 
 import android.util.Patterns;
 
