@@ -14,7 +14,7 @@ public class MainRegistrousuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_registrousuario);
 
-        Inicio = (Button) findViewById(R.id.btn_reg);
+        Inicio = findViewById(R.id.btn_reg);
         Inicio.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {

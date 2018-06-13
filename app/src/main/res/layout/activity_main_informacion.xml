@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -27,6 +26,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
+                android:contentDescription="Ciclo"
                 android:src="@drawable/ciclo" />
 
             <View
@@ -79,7 +79,8 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/Conceptosclave" />
+                android:contentDescription="Conceptos"
+                android:src="@drawable/conceptosclave" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -129,6 +130,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
+                android:contentDescription="Organizaciòn"
                 android:src="@drawable/organizaciones" />
 
             <View
@@ -175,6 +177,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
+                android:contentDescription="Links"
                 android:src="@drawable/links" />
 
             <View
@@ -225,6 +228,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
+                android:contentDescription="Recomendaciones"
                 android:src="@drawable/recomendaciones" />
 
             <View
