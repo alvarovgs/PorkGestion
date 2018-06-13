@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".monta">
+
+    <TextView
+        android:id="@+id/idcerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="195dp"
+        android:layout_toStartOf="@+id/editText3"
+        android:text="ID de Cerda:" />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idcerda"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="211dp"
+        android:layout_marginRight="211dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/idcerda"
+        android:layout_marginTop="246dp"
+        android:text="Tipo de Inseminación:" />
+
+    <Spinner
+        android:id="@+id/tipoinseminacion"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_marginStart="175dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="175dp" />
+
+    <TextView
+        android:id="@+id/idverraco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idcerda"
+        android:layout_marginBottom="249dp"
+        android:text="ID de Verraco:" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idverraco"
+        android:layout_toEndOf="@+id/idverraco"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idcerda"
+        android:layout_marginBottom="200dp"
+        android:text="ID de Pajilla:" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignStart="@+id/editText"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idcerda"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="-167dp"
+        android:text="Fecha de la Monta:" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idcerda"
+        android:layout_marginBottom="36dp"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_guardar"
+        android:layout_centerHorizontal="true"
+        android:text="Borrar" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_guardar"
+        android:layout_marginEnd="28dp"
+        android:onClick="onClick"
+        android:text="Regresar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:text="REGISTRO DE MONTA"
+        android:textColor="#3b3b3b"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button8"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="93dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/see" />
+</RelativeLayout>
