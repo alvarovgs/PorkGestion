@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MenuLateral extends AppCompatActivity {
-
     private ActionBar actionBar;
     private Toolbar toolbar;
 

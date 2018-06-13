@@ -1,26 +1,17 @@
 package com.example.a201495_2.porkgestion;
 
 import android.os.Bundle;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.TextView;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-
-import static com.example.a201495_2.porkgestion.R.id.tv_registrar;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv_registrar;
     TextView tv_ingresar;
-    private Utilidades clsUtil = new Utilidades();
+    private clsUtilidades clsUtil = new clsUtilidades();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
