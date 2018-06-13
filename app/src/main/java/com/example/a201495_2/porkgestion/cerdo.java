@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.Toast;
 import android.widget.EditText;
 
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+
 public class  cerdo extends AppCompatActivity {
-    private Utilidades clsUtil = new Utilidades();
+    private clsUtilidades clsUtil = new clsUtilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
