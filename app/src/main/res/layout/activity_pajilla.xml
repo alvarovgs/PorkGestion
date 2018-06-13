@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pajilla_Activity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/edtxt_numeropajilla"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/numero_pajilla_string"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T" />
+
+    <TextView
+        android:id="@+id/edtxt_descripajilla"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/descricion"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
+
+    <EditText
+        android:id="@+id/ed_numero_verraco"
+        android:layout_width="146dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/numero_verraco_string"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_numeropajilla" />
+
+    <Button
+        android:id="@+id/bt_nuevo"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/btingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T" />
+
+    <Button
+        android:id="@+id/bt_guardar"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="152dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btguardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_nuevo" />
+
+    <Button
+        android:id="@+id/bt_consultar"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="152dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btconsultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_guardar" />
+
+    <Button
+        android:id="@+id/bt_editar"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="153dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btmodificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_consultar" />
+
+    <Button
+        android:id="@+id/bt_eliminar"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="154dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bteliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_editar" />
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="207dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:text="REGISTRO DE PAJILLAS"
+        android:textColorLink="@color/blue_600"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="89dp" />
+
+    <EditText
+        android:id="@+id/edtxt_fechallenado"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/fechallenado"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_descripajilla" />
+
+    <TextView
+        android:id="@+id/tv_observaciones"
+        android:layout_width="282dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/observaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechallenado" />
+
+</android.support.constraint.ConstraintLayout>
