@@ -31,6 +31,8 @@
         <activity android:name=".fpp" />
         <activity android:name=".reporteparto" />
         <activity android:name=".reporteverracos"></activity>
+        <activity android:name=".MainInformacion"></activity>
+<activity android:name=".MainContenido" />
     </application>
 
 </manifest>
