@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_reprduccion"
+        android:icon="@drawable/ic_reproduccion"
+        android:title="@string/Reproduccion" />
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/Inicio" />
+        <item
+            android:id="@+id/nav_animal"
+            android:icon="@drawable/ic_animales"
+            android:title="@string/Animales" />
+        <item
+            android:id="@+id/nav_cerdo"
+            android:icon="@drawable/ic_creocerdo"
+            android:title="@string/Cerdo" />
+        <item
+            android:id="@+id/nav_cerdo"
+            android:icon="@drawable/ic_razacerdo"
+            android:title="@string/Raza" />
+        <item
+            android:id="@+id/nav_sanidad"
+            android:icon="@drawable/ic_sanidad"
+            android:title="@string/Sanidad" />
+        <item
+            android:id="@+id/nav_reproduccion"
+            android:icon="@drawable/ic_reproduccion"
+            android:title="@string/Reproduccion" />
+        <item
+
+            android:id="@+id/nav_lactancia"
+            android:icon="@drawable/ic_lactancia"
+            android:title="@string/Lactancia" />
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/ic_dolar"
+            android:title="@string/Ventas" />
+        <item
+            android:id="@+id/nav_reportes"
+            android:icon="@drawable/ic_reportes"
+            android:title="@string/Reportes" />
+
+    </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_usuario"
+            android:title="@string/Usuario" />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_help"
+            android:title="@string/Ayuda" />
+        <item
+            android:id="@+id/nav_cerrar"
+            android:icon="@drawable/ic_cerrar"
+            android:title="@string/Cerrar" />
+
+    </group>
+
+</menu>

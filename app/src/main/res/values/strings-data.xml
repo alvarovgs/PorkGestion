@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_desc_animales">
+        Esta opción le permite consultar y actualizar el registro de los animales de la finca.
+        \n\nLleve un regisro detallado de cada animal.
+    </string>
+    <string name="str_desc_cerdo">
+        Generar el registro para un nuevo animal.
+        \nNombre, fecha de nacimiento, peso al nacer, sexo, raza y nombre de los padres.
+    </string>
+    <string name="str_desc_raza">
+        Crear una raza para los animal.
+        \n\nNombre de la raza del cerdo.
+    </string>
+    <string name="str_desc_sanidad">
+        A través de esta opción lleve control de los medicamentos administrados a sus animales.
+        \n\nVacunas, desparasitación, minerales, etc..
+    </string>
+    <string name="str_desc_reproduccion">
+        En este módulo registre toda la información relacionada con el ciclo reproductivo de sus cerdas.
+        \n\nCantidad de lechones, peso al nacer, fecha de parto, entre otros
+    </string>
+    <string name="str_desc_lactancia">
+        La primera etapa de vida de sus lechones es fundamental. Registre su evolución en esta opción.
+        \n\nPeso al nacer, fecha de destete, etc.
+    </string>
+    <string name="str_desc_ventas">
+        La venta del animal, es la razón de la explotación pecuaria.
+        \nEncontrara datos como la fecha de venta, el peso vivo y el precio de venta.
+    </string>
+    <string name="str_desc_reportes">
+        El mayor valor de del trabajo realizado es poder conocer los resultados y hacer seguimeinto oportuno.
+        \n\nEsta opción le ofrece un conjunto de reportes para una gestión efectiva.
+    </string>
+
+
+</resources>

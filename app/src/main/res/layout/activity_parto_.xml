@@ -7,48 +7,6 @@
     tools:context=".Parto_Activity">
 
     <EditText
-        android:id="@+id/edtxt_fechaecografia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/fechaecografia"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechatercelo" />
-
-    <EditText
-        android:id="@+id/edtxt_fechatercelo"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/fechatercercelo"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechasegundocelo" />
-
-    <EditText
-        android:id="@+id/edtxt_fechasegundocelo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/fechasegunocelo"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechaprimercelo" />
-
-    <EditText
         android:id="@+id/edtxt_numeropajilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,11 +14,25 @@
         android:layout_marginRight="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/numero_pajilla_string"
         android:inputType="number"
+        android:text="@string/numero_pajilla_string"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
+
+    <EditText
+        android:id="@+id/txt_tlec_muertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/total_namuertos_string"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_pesomonta" />
 
     <EditText
         android:id="@+id/edtxt_pesomonta"
@@ -70,11 +42,25 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/pesomonta"
         android:inputType="number"
+        android:text="@string/machos_muertos_string"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxt_edadmonta" />
+
+    <EditText
+        android:id="@+id/txt_mac_vivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/embras_muertas_string"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_emb_vivas" />
 
     <EditText
         android:id="@+id/edtxt_edadmonta"
@@ -84,11 +70,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/edadmonta"
         android:inputType="number"
+        android:text="@string/machos_vivos_string"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechaecografia" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_mac_vivos" />
 
     <TextView
         android:id="@+id/edtxt_descripajilla"
@@ -110,25 +96,80 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="76dp"
         android:ems="10"
-        android:hint="@string/numero_cerda_string"
         android:inputType="number"
+        android:text="@string/numero_cerda_string"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtxt_fechaprimercelo"
+        android:id="@+id/edtxt_fechallenado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/fechaprimercelo"
         android:inputType="date"
+        android:text="@string/fecha_parto_string"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxt_descripajilla" />
+
+    <EditText
+        android:id="@+id/txt_tlechones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/total_navivos_string"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechallenado" />
+
+    <EditText
+        android:id="@+id/txt_emb_vivas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/embrasvivas_string"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tlechones" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toEndOf="@+id/edtxt_numeropajilla"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rd_mondir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Monta Directa"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_insartif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Insiminación Artificial"
+            android:textSize="12sp" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/ed_numero_verraco"
@@ -136,23 +177,23 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/numero_verraco_string"
         android:inputType="number"
+        android:text="@string/numero_verraco_string"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_tipomonta" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
         android:id="@+id/bt_nuevo"
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="150dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/btingresar"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="32dp"
+        android:text="NUEVO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxt_numeropajilla" />
 
@@ -161,10 +202,10 @@
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="152dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/btguardar"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="16dp"
+        android:text="GUARDAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_nuevo" />
 
@@ -173,10 +214,10 @@
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="152dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/btconsultar"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="16dp"
+        android:text="CONSULTAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_guardar" />
 
@@ -185,10 +226,10 @@
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="153dp"
         android:layout_height="42dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/btmodificar"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:text="EDITAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_consultar" />
 
@@ -197,19 +238,11 @@
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="154dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:layout_marginTop="16dp"
-        android:text="@string/bteliminar"
+        android:text="ELIMINAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_editar" />
-
-    <Spinner
-        android:id="@+id/sp_tipomonta"
-        android:layout_width="201dp"
-        android:layout_height="27dp"
-        android:entries="@array/tipo_monta"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="76dp" />
 
 </android.support.constraint.ConstraintLayout>
