@@ -29,9 +29,10 @@
         <activity android:name=".reportes" />
         <activity android:name=".monta" />
         <activity android:name=".fpp" />
+		<activity android:name=".Parto_Activity" />
         <activity android:name=".reporteparto" />
-        <activity android:name=".reporteverracos"></activity>
-        <activity android:name=".MainInformacion"></activity>
+        <activity android:name=".reporteverracos" />
+        <activity android:name=".MainInformacion" />
 <activity android:name=".MainContenido" />
     </application>
 
