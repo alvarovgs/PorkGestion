@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a201495_2.porkgestion">
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MenuLateral"
-            android:screenOrientation="portrait" />Updated upstream
-        <activity android:name=".MainRegistrousuario"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainRegistrousuario" />
         <activity android:name=".cerdo" />
-        <activity android:name=".ventas"></activity>
-
-        <activity android:name=".Parto_Activity"></activity>
+        <activity android:name=".ventas" />
+        <activity android:name=".reproduccion" />
+        <activity android:name=".reportes" />
+        <activity android:name=".monta" />
+        <activity android:name=".fpp" />
+		<activity android:name=".Parto_Activity" />
+        <activity android:name=".reporteparto" />
+        <activity android:name=".reporteverracos" />
+        <activity android:name=".MainInformacion" />
+<activity android:name=".MainContenido" />
     </application>
+
 </manifest>
