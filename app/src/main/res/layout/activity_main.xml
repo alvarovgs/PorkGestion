@@ -30,11 +30,11 @@
         android:layout_marginEnd="54dp"
         android:layout_marginRight="54dp"
         android:background="#11000000"
-        android:drawableLeft="@drawable/ic_action_pass"
+        android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Username"
-        android:textColorHint="@color/amber_50"
+        android:hint="E-mail del Usuario"
         android:inputType="textEmailAddress|textPersonName"
+        android:textColorHint="@color/amber_50"
         android:textSize="16dp" />
 
     <EditText
@@ -52,8 +52,9 @@
         android:textColorHint="@color/amber_50"
         android:inputType="textPassword" />
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView"
+    <Button
+        android:id="@+id/btn_ingresar"
+        style="@style/Button.Accent"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -62,36 +63,26 @@
         android:layout_marginBottom="87dp"
         android:layout_marginEnd="29dp"
         android:layout_marginRight="29dp"
-        app:cardBackgroundColor="@color/colorAccent"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="10dp">
+        android:layout_gravity="center"
+        android:text="LOGIN"
+        tools:ignore="MissingPrefix" />
 
-        <RelativeLayout
-            android:id="@+id/bt_iniciar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/btn_iniciar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-            <TextView
-                android:id="@+id/tv_ingresar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Login"
-                android:textColor="#fff"
-                android:textSize="18sp" />
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/tv_registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="57dp"
-        android:layout_marginEnd="130dp"
-        android:layout_marginRight="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
         android:text="Registrate Aqui" />
 
 </RelativeLayout>

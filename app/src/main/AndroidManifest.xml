@@ -29,11 +29,12 @@
         <activity android:name=".reportes" />
         <activity android:name=".monta" />
         <activity android:name=".fpp" />
-		<activity android:name=".Parto_Activity" />
+        <activity android:name=".Parto_Activity" />
         <activity android:name=".reporteparto" />
         <activity android:name=".reporteverracos" />
         <activity android:name=".MainInformacion" />
-<activity android:name=".MainContenido" />
+        <activity android:name=".MainContenido" />
+        <activity android:name=".MainEditusuario"></activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.TextView;
@@ -13,15 +14,16 @@ import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv_registrar;
-    TextView tv_ingresar;
-    TextView tv_info;
+    Button btn_ingresar;
+
     private clsUtilidades clsUtil = new clsUtilidades();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv_registrar=findViewById(R.id.tv_registrar);
-        tv_ingresar=findViewById(R.id.tv_ingresar);
+        btn_ingresar=findViewById(R.id.btn_ingresar);
 
 
         tv_registrar.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        tv_ingresar.setOnClickListener(new View.OnClickListener() {
+        btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,11 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +23,8 @@
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
                 android:contentDescription="Ciclo"
-                android:src="@drawable/ciclo" />
+                android:src="@drawable/ciclo"
+                tools:ignore="HardcodedText" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -49,7 +46,6 @@
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -61,8 +57,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-
 
         <View
             android:layout_width="match_parent"
@@ -78,9 +72,9 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Conceptos"
-                android:src="@drawable/conceptosclave" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/concepto" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -106,13 +100,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
+                    android:contentDescription="@string/conceptos"
                     android:maxLines="5"
                     android:text="Este módulo le permite consultar los principales conceptos ó términos básicos referentes a la Porcicultura."
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_80" />
 
             </LinearLayout>
-
         </LinearLayout>
 
         <View
@@ -134,7 +128,7 @@
                 android:src="@drawable/organizaciones" />
 
             <View
-                android:layout_width="@dimen/spacing_large"
+                android:layout_width="15dp"
                 android:layout_height="wrap_content" />
 
             <LinearLayout
@@ -145,7 +139,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -164,8 +157,17 @@
                     android:textColor="@color/grey_80" />
 
             </LinearLayout>
-
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -263,9 +265,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 

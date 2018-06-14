@@ -42,12 +42,12 @@
     <string name="Nombre_verraco_string">Nombre del Verraco</string>
     <string name="numero_verraco_string">Número del Verraco</string>
     <string name="numero_pajilla_string">Número de la Pajilla</string>
-    <string name= "btingresar">INGRESAR</string>
-    <string name ="btguardar">GUARDAR</string>
+    <string name="btingresar">INGRESAR</string>
+    <string name="btguardar">GUARDAR</string>
     <string name="btconsultar">CONSULTAR</string>
     <string name="btmodificar">MODIFICAR</string>
     <string name="bteliminar">ELIMINAR</string>
-    <string name= "fechaprimercelo"> Fecha primer Celo</string>
+    <string name="fechaprimercelo"> Fecha primer Celo</string>
     <string name="fechasegunocelo">Fecha segundo Celo</string>
     <string name="fechatercercelo">Fecha Tercer Celo</string>
     <string name="fechaecografia">Fecha Ecografía</string>
@@ -56,13 +56,14 @@
     <string name="fechallenado">Fecha de LLenado</string>
     <string name="descricion">Descripción de la Pajilla </string>
     <string name="observaciones">Observaciones</string>
+    <string name="segmento_informativo">Segmento Informativo</string>
+    <string name="conceptos">Conceptos</string>
 
-      <string-array name ="tipo_monta">
+    <string-array name="tipo_monta">
         <item>Seleccione el tipo de monta</item>
         <item>Directa</item>
         <item>Artificial</item>
     </string-array>
-
 
 
 </resources>
