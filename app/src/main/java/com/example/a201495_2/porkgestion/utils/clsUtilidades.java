@@ -1,17 +1,16 @@
-package com.example.a201495_2.porkgestion;
+package com.example.a201495_2.porkgestion.utils;
 
 import android.util.Patterns;
-import android.widget.Switch;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.regex.Pattern;
 
-public class Utilidades {
+public class clsUtilidades {
 
     public  boolean bValidaString(String strString, int iTipo){
         switch (iTipo){
-            case 1://cadena vacía vacia
+            case 1://cadena vacía
                 return !strString.trim().equals("");
             case 2: //cadena numerica
                 return validarNumerico(strString);
