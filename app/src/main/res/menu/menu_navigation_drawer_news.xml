@@ -22,7 +22,7 @@
             android:icon="@drawable/ic_creocerdo"
             android:title="@string/Cerdo" />
         <item
-            android:id="@+id/nav_cerdo"
+            android:id="@+id/nav_raza"
             android:icon="@drawable/ic_razacerdo"
             android:title="@string/Raza" />
         <item
@@ -34,7 +34,6 @@
             android:icon="@drawable/ic_reproduccion"
             android:title="@string/Reproduccion" />
         <item
-
             android:id="@+id/nav_lactancia"
             android:icon="@drawable/ic_lactancia"
             android:title="@string/Lactancia" />
