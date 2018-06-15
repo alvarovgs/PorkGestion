@@ -34,7 +34,21 @@
         <activity android:name=".reporteverracos" />
         <activity android:name=".MainInformacion" />
         <activity android:name=".MainContenido" />
-        <activity android:name=".MainEditusuario"></activity>
+        <activity android:name=".MainEditusuario" />
+        <activity android:name=".MainCiclo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainGlosario">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
