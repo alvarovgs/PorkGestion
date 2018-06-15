@@ -20,14 +20,10 @@
         android:id="@+id/textView10"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_above="@+id/et_nomba"
+        android:layout_alignStart="@+id/btnRegresar"
         android:text="Numero del animal"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="8dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView11"
