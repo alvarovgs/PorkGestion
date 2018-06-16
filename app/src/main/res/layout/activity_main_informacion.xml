@@ -125,10 +125,11 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_datos"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Organizaciòn"
+                android:scaleType="centerCrop"
                 android:src="@drawable/organizaciones" />
 
             <View
@@ -143,6 +144,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_datos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -180,10 +182,11 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_links"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Links"
+                android:scaleType="centerCrop"
                 android:src="@drawable/links" />
 
             <View
@@ -198,6 +201,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_links"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -231,10 +235,11 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_uso"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Recomendaciones"
+                android:scaleType="centerCrop"
                 android:src="@drawable/recomendaciones" />
 
             <View
@@ -249,6 +254,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_uso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"

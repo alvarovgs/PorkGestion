@@ -12,6 +12,12 @@ public class MainInformacion extends AppCompatActivity {
     ImageView im_ciclo;
     TextView tv_conceptos;
     ImageView im_conceptos;
+    TextView tv_datos;
+    ImageView im_datos;
+    TextView tv_links;
+    ImageView im_links;
+    TextView tv_uso;
+    ImageView im_uso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +27,12 @@ public class MainInformacion extends AppCompatActivity {
         im_ciclo=findViewById(R.id.im_ciclo);
         tv_conceptos=findViewById(R.id.tv_conceptos);
         im_conceptos=findViewById(R.id.im_conceptos);
+        tv_datos=findViewById(R.id.tv_datos);
+        im_datos=findViewById(R.id.im_datos);
+        tv_links=findViewById(R.id.tv_links);
+        im_links=findViewById(R.id.im_links);
+        tv_uso=findViewById(R.id.tv_uso);
+        im_uso=findViewById(R.id.im_uso);
 
         tv_ciclo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +66,56 @@ public class MainInformacion extends AppCompatActivity {
                 MainInformacion.this.startActivity(IntentReg);
             }
         });
+
+
+        tv_datos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainInformacion.this, MainDatosOrg.class);
+                MainInformacion.this.startActivity(IntentReg);
+            }
+        });
+
+        im_datos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainInformacion.this, MainDatosOrg.class);
+                MainInformacion.this.startActivity(IntentReg);
+            }
+        });
+
+        tv_links.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainInformacion.this, MainLinks.class);
+                MainInformacion.this.startActivity(IntentReg);
+            }
+        });
+
+        im_links.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainInformacion.this, MainLinks.class);
+                MainInformacion.this.startActivity(IntentReg);
+            }
+        });
+
+        tv_uso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainInformacion.this, MainRecomendaciones.class);
+                MainInformacion.this.startActivity(IntentReg);
+            }
+        });
+
+        im_uso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentReg= new Intent (MainInformacion.this, MainRecomendaciones.class);
+                MainInformacion.this.startActivity(IntentReg);
+            }
+        });
+
     }
 
     //codigo para pasar de activity con boton

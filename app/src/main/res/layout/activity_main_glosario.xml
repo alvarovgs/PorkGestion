@@ -47,8 +47,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
@@ -66,8 +66,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="61dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Alimentación que se da al ganado, en especial al destinado al consumo humano, para que engorde."
@@ -83,8 +83,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Mamífero paquidermo de cuerpo pesado y rechoncho, piel generalmente rosada o parda con fuertes cerdas, cabeza grande, hocico chato y casi cilíndrico, grandes orejas caídas, patas cortas, y cola pequeña y delgada; es doméstico y se cría en granjas. "
@@ -100,8 +100,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="82dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Serie de fases o estados por las que pasa un acontecimiento o fenómeno y que se suceden en el mismo orden hasta llegar a un estado final. "
@@ -117,8 +117,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Lugar destinado a la cría de animales"
@@ -134,8 +134,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Conjunto de individuos (persona, animal) que descienden o provienen de otro. "
@@ -151,8 +151,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Período en que la madre alterna la lactancia con otro tipo de alimentación, para destetar al niño o a la cría."
@@ -168,8 +168,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Eliminación de los parásitos de un organismo. "
@@ -185,8 +185,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="La explotación animal es el uso que el ser humano hace de los animales en su propio beneficio, el mayor valor a considerar es el beneficio económico que se consigue. Los animales pasan a ser meros recursos de la industria que los explota. "
@@ -202,8 +202,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Propiedad de lo que es funcional o útil. "
@@ -219,8 +219,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Estado de la mujer o de la hembra de mamífero que lleva en el útero un embrión o un feto producto de la fecundación del óvulo por el espermatozoide. "
@@ -236,8 +236,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Asociación profesional formada por personas que tienen el mismo oficio. "
@@ -253,8 +253,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Nombre que se usa para designar al cerdo que tiene una edad comprendida entre el destete y el principio de la ceba. "
@@ -270,8 +270,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Cerdo (mamífero), sinónimos:	cochino, gorrino, puerco. "
@@ -287,8 +287,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Unión sexual de un animal macho con la hembra, especialmente cuadrúpedos. "
@@ -304,8 +304,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Cantidad de animales que mueren en un lugar y en un período de tiempo determinados en relación con el total de la población. "
@@ -321,8 +321,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Hecho de salir una persona o un animal vivíparo del vientre de la madre, un animal ovíparo del huevo o una planta de la semilla. "
@@ -338,8 +338,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Elemento ó insumo ideal para el manejo reproductivo óptimo en las porcícolas, utilizado en la fase de inseminación artíficial. "
@@ -355,8 +355,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Del ganado o de la ganadería, o relacionado con ellos. "
@@ -372,8 +372,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="En latín “por cabeza” es un término que básicamente significa el promedio por persona. "
@@ -389,8 +389,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Manada de cerdos o jabalíes. "
@@ -406,8 +406,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Del cerdo o relacionado con este mamífero. "
@@ -423,8 +423,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Cría de ganado porcino. "
@@ -440,8 +440,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Establo para criar cerdos. "
@@ -457,8 +457,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Capacidad de la naturaleza o la industria para producir. "
@@ -474,8 +474,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Proceso por el que un ser vivo genera otro ser vivo de su misma especie. "
@@ -491,8 +491,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Dotación de recursos técnicos a una actividad determinada para mejorarla o modernizarla. "
@@ -508,8 +508,8 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Cerdo macho que se utiliza como semental. "

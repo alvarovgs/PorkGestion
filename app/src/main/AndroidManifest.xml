@@ -35,20 +35,12 @@
         <activity android:name=".MainInformacion" />
         <activity android:name=".MainContenido" />
         <activity android:name=".MainEditusuario" />
-        <activity android:name=".MainCiclo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MainGlosario">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainCiclo" />
+        <activity android:name=".MainGlosario" />
+        <activity android:name=".MainDatosOrg" />
+        <activity android:name=".MainLinks" />
+        <activity android:name=".MainRecomendaciones" />
+        <activity android:name=".MainReporteHV"></activity>
     </application>
 
 </manifest>
