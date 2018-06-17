@@ -1,95 +1,95 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c829f76d593b7a5a837f8ddd9912d3f5\AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\ed43f0967fde38f7dd07a9f20f8f9414\AndroidManifest.xml:2:1-17:12
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:17:1-30:12
-MERGED from [com.android.support:design:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\1d3f5aad237fca6c5488d914df739814\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\6f2dcc32cdc90bd4c63504c883ecebce\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\94761c0c2df2948ab29914819e6cc8bd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\9519c7cc037001b1aed1a3129d5d75d7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\c21136a9217811121c3a077c202dda1a\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\07e34648796d1dcb6025a85db41255bb\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\fb52c44414f29f4117162a2be1667ea6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\57083b84bee327f5697e19a389099fd3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\98dbabfa6403c4ab2424bb9a3a78264c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\4a515b7a762338395cb2c96c016822cb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0eb4e8562c86d326829b83a88835e782\AndroidManifest.xml:2:1-14:12
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\4a5ef703d3d93b651a17d872768a71c1\AndroidManifest.xml:2:1-15:12
-MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\1e6d611c14a0b08c2b3bba91d2dabcdd\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\b25a9171ea4d2ad45b050b77f63089b8\AndroidManifest.xml:17:1-27:12
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\bd369f3cd7eec2cfad0c2d832a888fc2\AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\e45a4618a6a4b77b62df8bf24ad2f50a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\7baff59309ae3ed246f55b234565a668\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\f04157b8895f5215f673379b185de4dc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\5cf070a74d9c80cc30c3744e1f86c556\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\c5ac4d3eeb2ddcb29f677d43c68b3ca6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\2b28e6e156e62943efa1561751c09e8a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\77ea4fae38f9688156cbec23907e1186\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\64054d8e0eba1cfa8f3069346d1eb324\AndroidManifest.xml:2:1-6:12
-MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\aa1f1f4deda3f58c21ffdd64645b3485\AndroidManifest.xml:2:1-12:12
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\2d260faa61fe0a0d515a1fdd6fcebb0a\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\239eace221e26ed8b56cb27b7912667f\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\be3ffff406bb450321ede7d387e754e1\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\508ad400700fd2dadcac30560b7c8b64\AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\a7a890bc9dd7e3a4d6b69bd959d7c125\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:2:1-17:12
+MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:design:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\c95b0a4f02e9d3d0ae64a028c2cc455a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\c2db87b979f2cab2aed8cc715fa76aed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\3615135887d2ffd5eccee606b4d9435f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\8561f04d6c1bf35fb9423a1e2702466d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\e02438a3911d047674c6b8b274340c41\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\fbd94f880541bfa3b9da7fd3d4a353ba\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\f1e2560e627fb8778d432f0cb210e088\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\197fc364e9c05f38ade4b6041a03aadf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\d077237c139ffb1b2ea273673a132404\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\a975f69b2fd44ee962d2ab0d807b9aa2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0e2df723d6214e738ab936f3cfec8c52\AndroidManifest.xml:2:1-14:12
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\370af1f895dde5f7ea770bd424123706\AndroidManifest.xml:2:1-15:12
+MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\9ce58fa8622891895b4c487a1dba6d95\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\622ba4119faf2cd3d050f7f1e5b08622\AndroidManifest.xml:17:1-27:12
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\ea0d6a81d6b21a12546a4ca5249c1c63\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\4b9924e85ef6867e634f38fcc3b41a98\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\10bbb58cae3ecfc21ab9bb12ecfb9ec3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\af26fc2704fe6bdf795e61b07d4f5fec\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\9ec64fcccd65df80c03cc92d1ad57b52\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\63859546f766fc14db7e02af4795a854\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\266fcbffa1d4c75a20827a5082b65517\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\6c39a401c4fe29cd22fbc6307b2592c1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\a9194f15b997ef7558788ccdeb4015a4\AndroidManifest.xml:2:1-6:12
+MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\5a98966b22d89a64e4738fcc97731892\AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\e34d0de8d690dcd14298258343bee9c8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\dfd8c9630accbbcf8846cbc83284c144\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\889002ac06501e070ddf8e4915d79640\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e09e33cb7d82aab059343e2df9abd866\AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9609e3538d486925d7ffcb28aa3a94cb\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-34:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c829f76d593b7a5a837f8ddd9912d3f5\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c829f76d593b7a5a837f8ddd9912d3f5\AndroidManifest.xml:9:5-20
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\ed43f0967fde38f7dd07a9f20f8f9414\AndroidManifest.xml:11:5-15:19
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\ed43f0967fde38f7dd07a9f20f8f9414\AndroidManifest.xml:11:5-15:19
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:28:5-20
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\c21136a9217811121c3a077c202dda1a\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\c21136a9217811121c3a077c202dda1a\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\07e34648796d1dcb6025a85db41255bb\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\07e34648796d1dcb6025a85db41255bb\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:22:5-26:19
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0eb4e8562c86d326829b83a88835e782\AndroidManifest.xml:12:5-20
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0eb4e8562c86d326829b83a88835e782\AndroidManifest.xml:12:5-20
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\4a5ef703d3d93b651a17d872768a71c1\AndroidManifest.xml:11:5-13:38
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\4a5ef703d3d93b651a17d872768a71c1\AndroidManifest.xml:11:5-13:38
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\77ea4fae38f9688156cbec23907e1186\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\77ea4fae38f9688156cbec23907e1186\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\64054d8e0eba1cfa8f3069346d1eb324\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\64054d8e0eba1cfa8f3069346d1eb324\AndroidManifest.xml:5:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\2d260faa61fe0a0d515a1fdd6fcebb0a\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\2d260faa61fe0a0d515a1fdd6fcebb0a\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\239eace221e26ed8b56cb27b7912667f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\239eace221e26ed8b56cb27b7912667f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\be3ffff406bb450321ede7d387e754e1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\be3ffff406bb450321ede7d387e754e1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\508ad400700fd2dadcac30560b7c8b64\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\508ad400700fd2dadcac30560b7c8b64\AndroidManifest.xml:5:5-20
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-38:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:9:5-20
+MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:11:5-15:19
+MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:28:5-20
+MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\e02438a3911d047674c6b8b274340c41\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\e02438a3911d047674c6b8b274340c41\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\fbd94f880541bfa3b9da7fd3d4a353ba\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\fbd94f880541bfa3b9da7fd3d4a353ba\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:22:5-26:19
+MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0e2df723d6214e738ab936f3cfec8c52\AndroidManifest.xml:12:5-20
+MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0e2df723d6214e738ab936f3cfec8c52\AndroidManifest.xml:12:5-20
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\370af1f895dde5f7ea770bd424123706\AndroidManifest.xml:11:5-13:38
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\370af1f895dde5f7ea770bd424123706\AndroidManifest.xml:11:5-13:38
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\6c39a401c4fe29cd22fbc6307b2592c1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\6c39a401c4fe29cd22fbc6307b2592c1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\a9194f15b997ef7558788ccdeb4015a4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\a9194f15b997ef7558788ccdeb4015a4\AndroidManifest.xml:5:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\e34d0de8d690dcd14298258343bee9c8\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\e34d0de8d690dcd14298258343bee9c8\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\dfd8c9630accbbcf8846cbc83284c144\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\dfd8c9630accbbcf8846cbc83284c144\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\889002ac06501e070ddf8e4915d79640\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\889002ac06501e070ddf8e4915d79640\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e09e33cb7d82aab059343e2df9abd866\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e09e33cb7d82aab059343e2df9abd866\AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
@@ -154,88 +154,104 @@ activity#com.example.a201495_2.porkgestion.fpp
 ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:9-41
 	android:name
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:19-38
+activity#com.example.a201495_2.porkgestion.Parto_Activity
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:9-52
+	android:name
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:19-49
 activity#com.example.a201495_2.porkgestion.reporteparto
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:9-50
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:9-50
 	android:name
-		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:19-47
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:19-47
 activity#com.example.a201495_2.porkgestion.reporteverracos
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:9-62
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:9-53
 	android:name
-		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:19-50
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:19-50
+activity#com.example.a201495_2.porkgestion.MainInformacion
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:9-53
+	android:name
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:19-50
+activity#com.example.a201495_2.porkgestion.MainContenido
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:9-51
+	android:name
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:19-48
+activity#com.example.a201495_2.porkgestion.Partolact
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:9-56
+	android:name
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:19-44
 uses-sdk
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c829f76d593b7a5a837f8ddd9912d3f5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c829f76d593b7a5a837f8ddd9912d3f5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\ed43f0967fde38f7dd07a9f20f8f9414\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\ed43f0967fde38f7dd07a9f20f8f9414\AndroidManifest.xml:7:5-9:41
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:22:5-24:41
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:design:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\1d3f5aad237fca6c5488d914df739814\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\1d3f5aad237fca6c5488d914df739814\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\6f2dcc32cdc90bd4c63504c883ecebce\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\6f2dcc32cdc90bd4c63504c883ecebce\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\94761c0c2df2948ab29914819e6cc8bd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\94761c0c2df2948ab29914819e6cc8bd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\9519c7cc037001b1aed1a3129d5d75d7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\9519c7cc037001b1aed1a3129d5d75d7\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\c21136a9217811121c3a077c202dda1a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\c21136a9217811121c3a077c202dda1a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\07e34648796d1dcb6025a85db41255bb\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\07e34648796d1dcb6025a85db41255bb\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\fb52c44414f29f4117162a2be1667ea6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\fb52c44414f29f4117162a2be1667ea6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\57083b84bee327f5697e19a389099fd3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\57083b84bee327f5697e19a389099fd3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\98dbabfa6403c4ab2424bb9a3a78264c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\98dbabfa6403c4ab2424bb9a3a78264c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\4a515b7a762338395cb2c96c016822cb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\4a515b7a762338395cb2c96c016822cb\AndroidManifest.xml:20:5-44
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0eb4e8562c86d326829b83a88835e782\AndroidManifest.xml:8:5-10:41
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0eb4e8562c86d326829b83a88835e782\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\4a5ef703d3d93b651a17d872768a71c1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\4a5ef703d3d93b651a17d872768a71c1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\1e6d611c14a0b08c2b3bba91d2dabcdd\AndroidManifest.xml:7:5-9:41
-MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\1e6d611c14a0b08c2b3bba91d2dabcdd\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\b25a9171ea4d2ad45b050b77f63089b8\AndroidManifest.xml:23:5-25:41
-MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\b25a9171ea4d2ad45b050b77f63089b8\AndroidManifest.xml:23:5-25:41
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\bd369f3cd7eec2cfad0c2d832a888fc2\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\bd369f3cd7eec2cfad0c2d832a888fc2\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\e45a4618a6a4b77b62df8bf24ad2f50a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\e45a4618a6a4b77b62df8bf24ad2f50a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\7baff59309ae3ed246f55b234565a668\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\7baff59309ae3ed246f55b234565a668\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\f04157b8895f5215f673379b185de4dc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\f04157b8895f5215f673379b185de4dc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\5cf070a74d9c80cc30c3744e1f86c556\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\5cf070a74d9c80cc30c3744e1f86c556\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\c5ac4d3eeb2ddcb29f677d43c68b3ca6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\c5ac4d3eeb2ddcb29f677d43c68b3ca6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\2b28e6e156e62943efa1561751c09e8a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\2b28e6e156e62943efa1561751c09e8a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\77ea4fae38f9688156cbec23907e1186\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\77ea4fae38f9688156cbec23907e1186\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\64054d8e0eba1cfa8f3069346d1eb324\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\64054d8e0eba1cfa8f3069346d1eb324\AndroidManifest.xml:4:5-43
-MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\aa1f1f4deda3f58c21ffdd64645b3485\AndroidManifest.xml:8:5-10:41
-MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\aa1f1f4deda3f58c21ffdd64645b3485\AndroidManifest.xml:8:5-10:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\2d260faa61fe0a0d515a1fdd6fcebb0a\AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\2d260faa61fe0a0d515a1fdd6fcebb0a\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\239eace221e26ed8b56cb27b7912667f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\239eace221e26ed8b56cb27b7912667f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\be3ffff406bb450321ede7d387e754e1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\be3ffff406bb450321ede7d387e754e1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\508ad400700fd2dadcac30560b7c8b64\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\508ad400700fd2dadcac30560b7c8b64\AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\a7a890bc9dd7e3a4d6b69bd959d7c125\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\a7a890bc9dd7e3a4d6b69bd959d7c125\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:7:5-9:41
+MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:22:5-24:41
+MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\c95b0a4f02e9d3d0ae64a028c2cc455a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\c95b0a4f02e9d3d0ae64a028c2cc455a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\c2db87b979f2cab2aed8cc715fa76aed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\c2db87b979f2cab2aed8cc715fa76aed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\3615135887d2ffd5eccee606b4d9435f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\3615135887d2ffd5eccee606b4d9435f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\8561f04d6c1bf35fb9423a1e2702466d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\8561f04d6c1bf35fb9423a1e2702466d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\e02438a3911d047674c6b8b274340c41\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\e02438a3911d047674c6b8b274340c41\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\fbd94f880541bfa3b9da7fd3d4a353ba\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\fbd94f880541bfa3b9da7fd3d4a353ba\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\f1e2560e627fb8778d432f0cb210e088\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\f1e2560e627fb8778d432f0cb210e088\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\197fc364e9c05f38ade4b6041a03aadf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\197fc364e9c05f38ade4b6041a03aadf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\d077237c139ffb1b2ea273673a132404\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\d077237c139ffb1b2ea273673a132404\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\a975f69b2fd44ee962d2ab0d807b9aa2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\a975f69b2fd44ee962d2ab0d807b9aa2\AndroidManifest.xml:20:5-44
+MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0e2df723d6214e738ab936f3cfec8c52\AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0e2df723d6214e738ab936f3cfec8c52\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\370af1f895dde5f7ea770bd424123706\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\370af1f895dde5f7ea770bd424123706\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\9ce58fa8622891895b4c487a1dba6d95\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\9ce58fa8622891895b4c487a1dba6d95\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\622ba4119faf2cd3d050f7f1e5b08622\AndroidManifest.xml:23:5-25:41
+MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\622ba4119faf2cd3d050f7f1e5b08622\AndroidManifest.xml:23:5-25:41
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\ea0d6a81d6b21a12546a4ca5249c1c63\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\ea0d6a81d6b21a12546a4ca5249c1c63\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\4b9924e85ef6867e634f38fcc3b41a98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\4b9924e85ef6867e634f38fcc3b41a98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\10bbb58cae3ecfc21ab9bb12ecfb9ec3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\10bbb58cae3ecfc21ab9bb12ecfb9ec3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\af26fc2704fe6bdf795e61b07d4f5fec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\af26fc2704fe6bdf795e61b07d4f5fec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\9ec64fcccd65df80c03cc92d1ad57b52\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\9ec64fcccd65df80c03cc92d1ad57b52\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\63859546f766fc14db7e02af4795a854\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\63859546f766fc14db7e02af4795a854\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\266fcbffa1d4c75a20827a5082b65517\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\266fcbffa1d4c75a20827a5082b65517\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\6c39a401c4fe29cd22fbc6307b2592c1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\6c39a401c4fe29cd22fbc6307b2592c1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\a9194f15b997ef7558788ccdeb4015a4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\a9194f15b997ef7558788ccdeb4015a4\AndroidManifest.xml:4:5-43
+MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\5a98966b22d89a64e4738fcc97731892\AndroidManifest.xml:8:5-10:41
+MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\5a98966b22d89a64e4738fcc97731892\AndroidManifest.xml:8:5-10:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\e34d0de8d690dcd14298258343bee9c8\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\e34d0de8d690dcd14298258343bee9c8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\dfd8c9630accbbcf8846cbc83284c144\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\dfd8c9630accbbcf8846cbc83284c144\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\889002ac06501e070ddf8e4915d79640\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\889002ac06501e070ddf8e4915d79640\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e09e33cb7d82aab059343e2df9abd866\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e09e33cb7d82aab059343e2df9abd866\AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9609e3538d486925d7ffcb28aa3a94cb\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9609e3538d486925d7ffcb28aa3a94cb\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -247,34 +263,34 @@ INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\Andro
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.VIBRATE
-ADDED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:26:5-66
+ADDED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:26:5-66
 	android:name
-		ADDED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\174c8d263ee1b5859a532321f07be2f8\AndroidManifest.xml:26:22-63
+		ADDED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:26:22-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:23:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:24:22-64
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:24:22-64
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\80e49ba7db211f85eb861047e6d17134\AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3cfedabb22f2d4e3453797f6076a3d7f\AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\c02a882209b36118bdec85cd339083aa\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\75524e7e232d5ae007c096b64b50dd76\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\51f70d7ae634f9b3e09dc09f28f8137d\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eafcd7552b86f56d8a9056b1eb539365\AndroidManifest.xml:24:13-58

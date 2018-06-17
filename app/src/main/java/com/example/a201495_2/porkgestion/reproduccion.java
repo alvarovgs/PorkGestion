@@ -29,10 +29,6 @@ public class reproduccion extends AppCompatActivity {
                 miIntent = new Intent(reproduccion.this, monta.class);
                 break;
 
-            case R.id.btn_fpp:
-                miIntent = new Intent(reproduccion.this, fpp.class);
-                break;
-
         }
         startActivity(miIntent);
     }
