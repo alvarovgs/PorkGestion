@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edtxt_numeropajilla"
+        android:id="@+id/edtxt_numpajilla"
         android:layout_width="146dp"
         android:layout_height="43dp"
         android:layout_marginLeft="24dp"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/T" />
 
     <TextView
-        android:id="@+id/edtxt_descripajilla"
+        android:id="@+id/txt_nomcerda"
         android:layout_width="145dp"
         android:layout_height="35dp"
         android:layout_marginLeft="24dp"
@@ -49,21 +49,19 @@
         android:text="@string/descricion"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechallenado" />
 
     <EditText
         android:id="@+id/ed_numero_verraco"
         android:layout_width="146dp"
         android:layout_height="39dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/numero_verraco_string"
         android:inputType="number"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_numeropajilla" />
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_numpajilla"
+        tools:layout_editor_absoluteX="24dp" />
 
     <Button
         android:id="@+id/bt_nuevo"
@@ -142,26 +140,20 @@
         android:layout_height="35dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/fechallenado"
         android:inputType="date"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_descripajilla" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
 
     <TextView
         android:id="@+id/tv_observaciones"
         android:layout_width="282dp"
         android:layout_height="86dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
         android:text="@string/observaciones"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechallenado" />
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="407dp" />
 
 </android.support.constraint.ConstraintLayout>

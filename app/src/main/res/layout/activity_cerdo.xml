@@ -36,7 +36,7 @@
         android:layout_marginLeft="8dp" />
 
     <TextView
-        android:id="@+id/edtxt_descripajilla"
+        android:id="@+id/txt_nomcerda"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/edtxt_descripajilla"
+        android:layout_alignTop="@+id/txt_nomcerda"
         android:ems="10"
         android:hint="ingrese el nombre"
         android:inputType="textPersonName"

@@ -220,6 +220,7 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/ibt_repro"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
@@ -246,6 +247,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/repro_string"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/spacing_medium"
