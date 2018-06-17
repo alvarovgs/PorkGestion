@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,11 +12,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,11 +19,13 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_ciclo"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Ciclo"
-                android:src="@drawable/ciclo" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/ciclo"
+                tools:ignore="HardcodedText" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -41,6 +39,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_ciclo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -48,7 +47,6 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     android:textStyle="bold" />
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,8 +60,6 @@
             </LinearLayout>
         </LinearLayout>
 
-
-
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -76,11 +72,12 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_conceptos"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Conceptos"
-                android:src="@drawable/conceptosclave" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/concepto" />
 
             <View
                 android:layout_width="@dimen/spacing_large"
@@ -94,6 +91,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_conceptos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -106,13 +104,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
+                    android:contentDescription="@string/conceptos"
                     android:maxLines="5"
                     android:text="Este módulo le permite consultar los principales conceptos ó términos básicos referentes a la Porcicultura."
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_80" />
 
             </LinearLayout>
-
         </LinearLayout>
 
         <View
@@ -127,14 +125,15 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_datos"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Organizaciòn"
+                android:scaleType="centerCrop"
                 android:src="@drawable/organizaciones" />
 
             <View
-                android:layout_width="@dimen/spacing_large"
+                android:layout_width="15dp"
                 android:layout_height="wrap_content" />
 
             <LinearLayout
@@ -145,7 +144,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/tv_datos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -164,8 +163,17 @@
                     android:textColor="@color/grey_80" />
 
             </LinearLayout>
-
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,10 +182,11 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_links"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Links"
+                android:scaleType="centerCrop"
                 android:src="@drawable/links" />
 
             <View
@@ -192,6 +201,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_links"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -225,10 +235,11 @@
             android:padding="@dimen/spacing_middle">
 
             <ImageView
+                android:id="@+id/im_uso"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:contentDescription="Recomendaciones"
+                android:scaleType="centerCrop"
                 android:src="@drawable/recomendaciones" />
 
             <View
@@ -243,6 +254,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_uso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
@@ -263,9 +275,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 

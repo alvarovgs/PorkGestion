@@ -56,6 +56,8 @@
     <string name="fechallenado">Fecha de LLenado</string>
     <string name="descricion">Descripción de la Pajilla </string>
     <string name="observaciones">Observaciones</string>
+    <string name="segmento_informativo">Segmento Informativo</string>
+    <string name="conceptos">Conceptos</string>
 
     <string-array name="tipo_monta">
         <item>Seleccione el tipo de monta</item>

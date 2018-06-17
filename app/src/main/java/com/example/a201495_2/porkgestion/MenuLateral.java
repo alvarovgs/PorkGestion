@@ -88,6 +88,18 @@ public class MenuLateral extends AppCompatActivity {
                     return false;
                 }
 
+                else if (item.getTitle().toString().equals("Informacion")) {
+                    Intent miIntent = new Intent(MenuLateral.this, MainInformacion.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Edit. Usuario")) {
+                    Intent miIntent = new Intent(MenuLateral.this, MainEditusuario.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
                 else if (item.getTitle().toString().equals("Cerrar")) {
                     Intent miIntent = new Intent(MenuLateral.this, MainActivity.class);
                     startActivity(miIntent);

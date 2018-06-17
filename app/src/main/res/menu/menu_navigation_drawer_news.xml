@@ -61,9 +61,9 @@
             android:icon="@drawable/ic_usuario"
             android:title="@string/Usuario" />
         <item
-            android:id="@+id/nav_ayuda"
+            android:id="@+id/nav_info"
             android:icon="@drawable/ic_help"
-            android:title="@string/Ayuda" />
+            android:title="Informacion" />
         <item
             android:id="@+id/nav_cerrar"
             android:icon="@drawable/ic_cerrar"

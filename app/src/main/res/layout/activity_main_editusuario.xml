@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainRegistrousuario">
+    tools:context=".MainEditusuario">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Registro de Usuario:"
+        android:text="Actualización Datos de Usuario:"
         android:textSize="25sp" />
 
 
@@ -20,14 +20,14 @@
         android:id="@+id/txt_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-mail del Usuario"
+        android:hint="Nuevo E-mail de Usuario"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/txt_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="Ingrese un Nuevo Password"
         android:inputType="textPassword" />
 
     <Button
@@ -35,6 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="REGISTRAR" />
+        android:text="FINALIZAR" />
 
 </LinearLayout>

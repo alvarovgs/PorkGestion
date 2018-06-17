@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="217dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/porkcolombia"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Porkcolombia - Asoporcicultores - Fondo Nacional de la Porcicultura:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Es el gremio que representa a los productores de carne de cerdo en Colombia, e impulsador y acompañante en el proceso de empresarización del sector. representan a los porcicultores y facilitan la interacción de la cadena porcícola, buscan el desarrollo y crecimiento del mercado para la carne de cerdo en Colombia, con el objetivo de nutrir al consumidor con una producción ejemplar."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Son responsables del pago de la Cuota de Fomento Porcícola, los productores porcinos, sean personas naturales, jurídicas o sociedades de hecho y los comercializadores. El manejo de los recursos del Fondo Nacional de la Porcicultura se ciñe a los lineamientos de la política sectorial del Ministerio de Agricultura y Desarrollo Rural para el sector porcícola."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="PBX: (57) (1) 2486777 / Celular: 3106801013/ Correo electrónico: kcastaneda@porkcolombia.co / Dirección: Calle 37 # 16-52 Teusaquillo Bogotá, Colombia."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fedegan"
+                    tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="Federación Colombiana de Ganaderos:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_80"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:maxLines="5"
+                        android:text="El Plan Estratégico de la Ganadería Colombiana 2019, recogió así la misión de FEDEGÁN en su condición de gremio nacional de los ganaderos colombianos: “Representar y defender los intereses colectivos de los ganaderos ante la institucionalidad pública y privada, y ante la sociedad en general, así como responder a las expectativas y necesidades de la actividad ganadera; y recaudar y administrar los recursos de la parafiscalidad”."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:maxLines="5"
+                        android:text="De acuerdo con la definición de misión y con los estatutos, las funciones de FEDEGÁN se pueden agrupar en: 1. De representación gremial 2. De análisis sectorial, información y política ganadera 3. De recaudo y administración de la parafiscalidad ganadera 4. De prestación de servicios al ganadero"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:maxLines="5"
+                        android:text="Calle 37 Nº 14-31, Tel. 57(1) 578 2020 Bogotá, Colombia, Horario de atención: Lunes a Viernes 8:30 am - 5:30 pm"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="205dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sac"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="Sociedad de Agricultores de Colombia:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_80"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:maxLines="5"
+                        android:text="Encargados de promover el desarrollo agropecuario nacional y el bienestar del campesino colombiano, Representar y defender los intereses de los productores agropecuarios rurales, Cooperar y concertar con el Gobierno en la formulación de una política agropecuaria moderna y de desarrollo rural sostenible, así como en la ejecución de los programas que se adelanten para desarrollarla."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:maxLines="5"
+                        android:text="Buscan aportar elementos para el establecimiento de una organización institucional que permita a Colombia alcanzar unos niveles adecuados de rentabilidad, competitividad, sostenibilidad y seguridad alimentaria, Participar con los demás gremios económicos en el análisis de temas de interés nacional y Establecer una permanente asesoría y cooperación con el Gobierno Nacional en busca del equilibrio en las negociaciones comerciales, multilaterales y en los procesos de integración económica y el comercio internacional."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:maxLines="5"
+                        android:text="Carrera 18 No. 86A-14 Oficina 411 y 412 Bogotá, Colombia | Teléfonos 638 63 69 Ext. 4083"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

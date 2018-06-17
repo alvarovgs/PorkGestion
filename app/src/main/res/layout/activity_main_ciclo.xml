@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ciclo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Ciclo Productivo Porcino"
+                    android:textColor="@color/grey_80"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/im_ciclo"
+                    android:layout_width="match_parent"
+                    android:layout_height="238dp"
+                    android:contentDescription="Ciclo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ciclo"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Se entiende por ciclo productivo porcino a todas y cada una de las fases que el cerdo como animal puede proveer de utilidad al hombre, ya sea con fines de reproducción o para su consumo o venta. "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Fases del Ciclo:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="El ciclo productivo del cerdo comienza desde el momento de su nacimiento y por ello es recomendable tener ciertos cuidados con el lechón recién nacido. Luego viene una etapa de lactancia que oscila generalmente desde 49 a 63 días dependiendo del manejo que se tenga en la porqueriza."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Continuamos en una fase de iniciación que va desde el destete hasta los 20 kg de peso, posteriormente entran en una fase de levante que va desde 20 a 45 kg, al rededor de 60 a 120 días hasta aquí, por último tenemos una etapa de engorde desde 45 hasta 110 kg, peso final para el mercado"
+                    android:textColor="@color/grey_80" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="El ciclo productivo de una cerda en tiempos inicia con la gestación que es de 115 días aprox, posterior al parto la lactancia es de 49 a 63 días, realizado el destete hay un periodo vació de 7 días, tiempo de recuperación para pasar a la etapa de monta, el calor se repite cada 21 días, tendremos que esperar 115 días de nuevo para repetir el proceso. "
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="5"
+                    android:text="Tendremos que esperar 115 días de nuevo para repetir el proceso. "
+                    android:textColor="@color/grey_80" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+ </android.support.v4.widget.NestedScrollView>
