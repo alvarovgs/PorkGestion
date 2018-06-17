@@ -51,4 +51,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void onClick(View view){
+        Intent miIntent=new Intent(MainActivity.this,MainRegistrousuario.class);
+        startActivity(miIntent);
+    }
+
 }
+

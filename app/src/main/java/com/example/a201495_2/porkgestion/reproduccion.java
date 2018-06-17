@@ -17,7 +17,7 @@ public class reproduccion extends AppCompatActivity {
         Intent miIntent=null;
 
         switch (view.getId()) {
-            case R.id.button6:
+            case R.id.btn_back:
                 miIntent = new Intent(reproduccion.this, MenuLateral.class);
                 break;
 
@@ -29,8 +29,12 @@ public class reproduccion extends AppCompatActivity {
                 miIntent = new Intent(reproduccion.this, monta.class);
                 break;
 
-            case R.id.btn_fpp:
-                miIntent = new Intent(reproduccion.this, fpp.class);
+            case R.id.btn_rpajilla:
+                miIntent = new Intent(reproduccion.this, monta.class);
+                break;
+
+            case R.id.btn_apajilla:
+                miIntent = new Intent(reproduccion.this, monta.class);
                 break;
 
         }

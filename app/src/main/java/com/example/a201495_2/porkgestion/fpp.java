@@ -14,7 +14,7 @@ public class fpp extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        Intent miIntent=new Intent(fpp.this,MenuLateral.class);
+        Intent miIntent=new Intent(fpp.this,Partolact.class);
         startActivity(miIntent);
     }
 }

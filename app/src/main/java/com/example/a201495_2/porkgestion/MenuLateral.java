@@ -65,6 +65,12 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
+                else if (item.getTitle().toString().equals("Parto y Lactancia")) {
+                    Intent miIntent = new Intent(MenuLateral.this, Partolact.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
                 else if (item.getTitle().toString().equals("Reportes")) {
                     Intent miIntent = new Intent(MenuLateral.this, reportes.class);
                     startActivity(miIntent);

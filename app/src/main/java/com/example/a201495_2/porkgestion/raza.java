@@ -18,11 +18,6 @@ public class raza extends AppCompatActivity {
         setContentView(R.layout.activity_raza);
     }
 
-    public void onClick(View view){
-        Intent miIntent=new Intent(raza.this,MenuLateral.class);
-        startActivity(miIntent);
-    }
-
     //codigo para que no cierre la app por no ingresar datos y presionar el boton consulta
     public void consulta(View v) {
         EditText et1 = (EditText)findViewById(R.id.et_nomraza);
@@ -56,6 +51,9 @@ public class raza extends AppCompatActivity {
         }
     }
 
-
+    public void onClick(View view){
+        Intent miIntent=new Intent(raza.this,MenuLateral.class);
+        startActivity(miIntent);
+    }
 
 }
