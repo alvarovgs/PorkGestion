@@ -34,7 +34,6 @@
             android:icon="@drawable/ic_reproduccion"
             android:title="@string/Reproduccion" />
         <item
-
             android:id="@+id/nav_lactancia"
             android:icon="@drawable/ic_lactancia"
             android:title="Parto y Lactancia" />

@@ -27,6 +27,8 @@
         <activity android:name=".ventas" />
         <activity android:name=".reproduccion" />
         <activity android:name=".reportes" />
+        <activity android:name=".reporteventa"/>
+        <activity android:name=".raza"/>
         <activity android:name=".monta" />
         <activity android:name=".fpp" />
         <activity android:name=".Parto_Activity" />

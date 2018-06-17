@@ -6,7 +6,7 @@
     <string name="Animales">Lista de Animales</string>
     <string name="Cerdo">Cerdo</string>
     <string name="Raza">Raza</string>
-    <string name="razas">Razas</string>
+    <string name="razas">Ingrese el nombre de una nueva raza si no se encuentra en el modulo de cerdo.</string>
     <string name="Reproduccion">Reproducción</string>
     <string name="Lactancia">Parto y Lactancia</string>
     <string name="Sanidad">Registro Medico</string>
