@@ -22,7 +22,7 @@
             android:icon="@drawable/ic_creocerdo"
             android:title="@string/Cerdo" />
         <item
-            android:id="@+id/nav_cerdo"
+            android:id="@+id/nav_raza"
             android:icon="@drawable/ic_razacerdo"
             android:title="@string/Raza" />
         <item

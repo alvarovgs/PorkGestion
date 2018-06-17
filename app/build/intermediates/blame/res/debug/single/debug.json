@@ -2240,6 +2240,10 @@
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lechon.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_lechon.xml"
+    },
+    {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_mdtp_done_button.xml.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\materialdatetimepicker-3.2.0.aar\\1a78c1494cd15dfcdfc471de9b0b598e\\res\\layout\\mdtp_done_button.xml"
     },

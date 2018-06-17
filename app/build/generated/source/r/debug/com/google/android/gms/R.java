@@ -100,39 +100,39 @@ public final class R {
         public static final int adjust_height = 0x7f09001f;
         public static final int adjust_width = 0x7f090020;
         public static final int auto = 0x7f090026;
-        public static final int center = 0x7f090055;
-        public static final int dark = 0x7f090068;
-        public static final int hybrid = 0x7f0900a1;
-        public static final int icon_only = 0x7f0900a4;
-        public static final int light = 0x7f0900b2;
-        public static final int none = 0x7f0900ec;
-        public static final int normal = 0x7f0900ed;
-        public static final int place_autocomplete_clear_button = 0x7f0900f9;
-        public static final int place_autocomplete_powered_by_google = 0x7f0900fa;
-        public static final int place_autocomplete_prediction_primary_text = 0x7f0900fb;
-        public static final int place_autocomplete_prediction_secondary_text = 0x7f0900fc;
-        public static final int place_autocomplete_progress = 0x7f0900fd;
-        public static final int place_autocomplete_search_button = 0x7f0900fe;
-        public static final int place_autocomplete_search_input = 0x7f0900ff;
-        public static final int place_autocomplete_separator = 0x7f090100;
-        public static final int radio = 0x7f090103;
-        public static final int satellite = 0x7f09010d;
-        public static final int standard = 0x7f090136;
-        public static final int terrain = 0x7f09013e;
-        public static final int text = 0x7f09013f;
-        public static final int text2 = 0x7f090140;
-        public static final int toolbar = 0x7f090169;
-        public static final int wide = 0x7f090181;
-        public static final int wrap_content = 0x7f090184;
+        public static final int center = 0x7f090057;
+        public static final int dark = 0x7f09006a;
+        public static final int hybrid = 0x7f0900a3;
+        public static final int icon_only = 0x7f0900a6;
+        public static final int light = 0x7f0900b5;
+        public static final int none = 0x7f0900f0;
+        public static final int normal = 0x7f0900f1;
+        public static final int place_autocomplete_clear_button = 0x7f0900fd;
+        public static final int place_autocomplete_powered_by_google = 0x7f0900fe;
+        public static final int place_autocomplete_prediction_primary_text = 0x7f0900ff;
+        public static final int place_autocomplete_prediction_secondary_text = 0x7f090100;
+        public static final int place_autocomplete_progress = 0x7f090101;
+        public static final int place_autocomplete_search_button = 0x7f090102;
+        public static final int place_autocomplete_search_input = 0x7f090103;
+        public static final int place_autocomplete_separator = 0x7f090104;
+        public static final int radio = 0x7f090107;
+        public static final int satellite = 0x7f090111;
+        public static final int standard = 0x7f09013a;
+        public static final int terrain = 0x7f090142;
+        public static final int text = 0x7f090143;
+        public static final int text2 = 0x7f090144;
+        public static final int toolbar = 0x7f09016d;
+        public static final int wide = 0x7f090185;
+        public static final int wrap_content = 0x7f090188;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f0a0007;
     }
     public static final class layout {
-        public static final int place_autocomplete_fragment = 0x7f0b005d;
-        public static final int place_autocomplete_item_powered_by_google = 0x7f0b005e;
-        public static final int place_autocomplete_item_prediction = 0x7f0b005f;
-        public static final int place_autocomplete_progress = 0x7f0b0060;
+        public static final int place_autocomplete_fragment = 0x7f0b005e;
+        public static final int place_autocomplete_item_powered_by_google = 0x7f0b005f;
+        public static final int place_autocomplete_item_prediction = 0x7f0b0060;
+        public static final int place_autocomplete_progress = 0x7f0b0061;
     }
     public static final class string {
         public static final int common_google_play_services_enable_button = 0x7f0e0035;

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:2:1-17:12
 MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\1a78c1494cd15dfcdfc471de9b0b598e\AndroidManifest.xml:17:1-30:12
@@ -39,25 +39,25 @@ MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\
 MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\889002ac06501e070ddf8e4915d79640\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\e09e33cb7d82aab059343e2df9abd866\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9609e3538d486925d7ffcb28aa3a94cb\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-38:19
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-39:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\a088c0b570842977977527462d5eb03f\AndroidManifest.xml:9:5-20
 MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Ozzy\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\241167b94658542802a908c149ddd111\AndroidManifest.xml:11:5-15:19
@@ -175,9 +175,13 @@ ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:19-48
 activity#com.example.a201495_2.porkgestion.Partolact
-ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:9-56
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:9-47
 	android:name
 		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:19-44
+activity#com.example.a201495_2.porkgestion.lechon
+ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:9-53
+	android:name
+		ADDED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:19-41
 uses-sdk
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Ozzy\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml

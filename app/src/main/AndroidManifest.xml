@@ -34,7 +34,8 @@
         <activity android:name=".reporteverracos" />
         <activity android:name=".MainInformacion" />
         <activity android:name=".MainContenido" />
-        <activity android:name=".Partolact"></activity>
+        <activity android:name=".Partolact" />
+        <activity android:name=".lechon"></activity>
     </application>
 
 </manifest>
