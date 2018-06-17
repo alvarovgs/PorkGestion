@@ -5,6 +5,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="Animales">Animales</string>
     <string name="Cerdo">Cerdo</string>
+    <string name="Raza">Raza</string>
+    <string name="razas">Razas</string>
     <string name="Reproduccion">Reproducción</string>
     <string name="Lactancia">Lactancia</string>
     <string name="Sanidad">Registro Medico</string>

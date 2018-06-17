@@ -212,4 +212,8 @@
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="76dp" />
 
+<<<<<<< HEAD
 </android.support.constraint.ConstraintLayout>
+=======
+</android.support.constraint.ConstraintLayout>
+>>>>>>> master
