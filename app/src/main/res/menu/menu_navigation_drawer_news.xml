@@ -21,6 +21,10 @@
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
         <item
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
             android:id="@+id/nav_cerdo"
             android:icon="@drawable/ic_creocerdo"
             android:title="@string/Cerdo" />
