@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+import com.example.a201495_2.porkgestion.bo_clases.Usuario;
 
     public class MainRegistrousuario extends AppCompatActivity {
      Button btn_reg;
@@ -24,18 +25,41 @@ import com.example.a201495_2.porkgestion.utils.clsUtilidades;
         btn_reg.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                        Usuario miUsuario = new Usuario(getApplicationContext());
+
                         String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
                         String strPassword = ((EditText) findViewById(R.id.txt_pass)).getText().toString();
+                        String strNombre = ((EditText) findViewById(R.id.txt_nombreusuario)).getText().toString();
+                        String strTelefono = ((EditText) findViewById(R.id.txt_telefono)).getText().toString();
+
+
                         if(!clsUtil.bValidaString(strUsuario,1))
                             Toast.makeText(getBaseContext(),"Debe digitar el usuario (email)",Toast.LENGTH_SHORT).show();
                         else if(!clsUtil.bValidaString(strUsuario,3))
                             Toast.makeText(getBaseContext(),"El usuario debe ser un email válido",Toast.LENGTH_SHORT).show();
                         else if(!clsUtil.bValidaString(strPassword,1))
                             Toast.makeText(getBaseContext(),"Debe digitar el password",Toast.LENGTH_SHORT).show();
-                        else if (strUsuario.equals("admin@gmail.com")){
-                            //Todo  Validar aceso a BD
-                            Intent IntentReg= new Intent (MainRegistrousuario.this, MainActivity.class);
-                            MainRegistrousuario.this.startActivity(IntentReg);
+                        else {
+                            miUsuario.setStrEmail(strUsuario);
+                            miUsuario.setStrPassword(strPassword);
+                            miUsuario.setStrNombre(strNombre);
+                            miUsuario.setStrTelefono(strTelefono);
+
+                            if(!miUsuario.existUsuario(strUsuario)){
+                                if(miUsuario.insertUsuario()) {
+                                    Toast.makeText(getApplicationContext(), "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
+                                    Intent IntentReg = new Intent(MainRegistrousuario.this, MainActivity.class);
+                                    MainRegistrousuario.this.startActivity(IntentReg);
+                                }
+                                else{
+                                    String error = miUsuario.getStrError();
+                                    Toast.makeText(getApplicationContext(), "Se presento un error" + error , Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                            else{
+                                Toast.makeText(getApplicationContext(), "ya existe un usuario con el email digitado", Toast.LENGTH_SHORT).show();
+                            }
                         }
 
             }
