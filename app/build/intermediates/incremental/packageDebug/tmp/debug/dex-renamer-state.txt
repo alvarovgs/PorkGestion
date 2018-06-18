@@ -1,13 +1,4 @@
-#Sat Jun 16 22:43:49 COT 2018
-path.3=classes.dex
-path.2=classes.dex
-path.1=classes.dex
+#Sun Jun 17 18:45:32 CDT 2018
+base.0=C\:\\Users\\Jenn\\StudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
 path.0=classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
-base.2=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\31
-base.1=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\29
-base.0=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\32
