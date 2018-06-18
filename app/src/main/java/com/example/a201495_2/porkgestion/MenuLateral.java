@@ -67,7 +67,6 @@ public class MenuLateral extends AppCompatActivity {
                 Intent menuIntent;
                 switch (strSelectedmenu){
                     case "Cerdo":
-                        showConfirmDialog();
                         menuIntent = new Intent(MenuLateral.this, cerdo.class);
                         startActivity(menuIntent);
                         return false;
@@ -91,6 +90,10 @@ public class MenuLateral extends AppCompatActivity {
                         menuIntent = new Intent(MenuLateral.this, MainActivity.class);
                         startActivity(menuIntent);
                         System.exit(0);
+                        return false;
+                    case "Raza":
+                        menuIntent = new Intent(MenuLateral.this, raza.class);
+                        startActivity(menuIntent);
                         return false;
                     default:
                         Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
