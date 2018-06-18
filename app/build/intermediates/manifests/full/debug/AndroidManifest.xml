@@ -59,6 +59,8 @@
         <activity android:name="com.example.a201495_2.porkgestion.lechon" />
         <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
         <activity android:name="com.example.a201495_2.porkgestion.raza" />
+        <activity android:name="com.example.a201495_2.porkgestion.DashReproductivo" />
+        <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
         <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

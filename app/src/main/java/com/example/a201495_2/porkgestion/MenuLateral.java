@@ -115,7 +115,6 @@ public class MenuLateral extends AppCompatActivity {
 
         drawer.openDrawer(GravityCompat.START);
 
-
     }
 
 }

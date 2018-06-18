@@ -44,6 +44,7 @@
         <activity android:name=".MainReporteHV" />
         <activity android:name=".raza" />
         <activity android:name=".DashReproductivo" />
+        <activity android:name=".reporteventa" />
         <activity android:name=".Partolact"></activity>
     </application>
 
