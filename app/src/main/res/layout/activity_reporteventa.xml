@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_vertical_margin"
     tools:context=".reporteventa">
 
     <TextView
@@ -17,8 +16,7 @@
         android:text="REPORTE DE VENTA POR ANIMAL"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_alignParentLeft="true" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView10"
@@ -28,8 +26,7 @@
         android:layout_alignStart="@+id/textView14"
         android:layout_marginTop="110dp"
         android:text="Numero del animal"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView14" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -39,8 +36,7 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_marginTop="172dp"
         android:text="Nombre del animal"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -50,8 +46,7 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_marginTop="243dp"
         android:text="Fecha de venta"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -140,6 +135,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="94dp"
+        android:onClick="consulta"
         android:text="CONSULTAR"
         android:textSize="10sp" />
 

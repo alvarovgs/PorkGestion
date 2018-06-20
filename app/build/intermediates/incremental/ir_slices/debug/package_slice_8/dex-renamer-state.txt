@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-#Sun Jun 17 18:29:57 COT 2018
-base.0=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\26
-=======
-#Sun Jun 17 18:41:36 CDT 2018
-base.0=C\:\\Users\\Jenn\\StudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
->>>>>>> master
-path.0=classes.dex
-renamed.0=classes.dex
