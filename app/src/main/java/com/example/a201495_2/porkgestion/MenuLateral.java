@@ -60,7 +60,8 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
-                if(item.getTitle().toString().equals("Reproducción")) {
+
+                else if(item.getTitle().toString().equals("Reproducción")) {
                     Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
                     startActivity(miIntent);
                     return false;
@@ -108,7 +109,6 @@ public class MenuLateral extends AppCompatActivity {
         });
 
         drawer.openDrawer(GravityCompat.START);
-
 
     }
 

@@ -10,17 +10,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 
 
     public class MainContenido extends AppCompatActivity {
     TextView tv_info;
         ImageView imgbutton;
         TextView strigbutton;
+=======
+public class MainContenido extends AppCompatActivity{
+    ImageView imgbutton;
+    TextView strigbutton;
+    TextView tv_info;
+>>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contenido_inicio);
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
         imgbutton=(ImageView) findViewById(R.id.ibt_repro);
         imgbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -41,7 +51,10 @@ import android.widget.TextView;
 
                 }
         });
+<<<<<<< HEAD
         
+=======
+>>>>>>> master
         tv_info=findViewById(R.id.tv_info);
 
         tv_info.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +64,9 @@ import android.widget.TextView;
             startActivity(IntentReg);
         }
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     }
 }

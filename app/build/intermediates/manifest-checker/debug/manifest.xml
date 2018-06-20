@@ -57,7 +57,10 @@
         <activity android:name="com.example.a201495_2.porkgestion.MainLinks" />
         <activity android:name="com.example.a201495_2.porkgestion.MainRecomendaciones" />
         <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
+<<<<<<< HEAD
         <activity android:name="com.example.a201495_2.porkgestion.main_links" />
+=======
+>>>>>>> master
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

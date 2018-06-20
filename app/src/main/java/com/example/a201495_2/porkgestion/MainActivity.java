@@ -1,16 +1,20 @@
 package com.example.a201495_2.porkgestion;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.TextView;
 
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
+import com.example.a201495_2.porkgestion.bo_clases.Usuario;
+import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv_registrar;
@@ -37,18 +41,25 @@ public class MainActivity extends AppCompatActivity {
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Usuario miusuario = new Usuario(getApplicationContext());
+
                 String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
                 String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
+
                 if(!clsUtil.bValidaString(strUsuario,1))
                     Toast.makeText(getBaseContext(),"Debe digitar el usuario (email)",Toast.LENGTH_SHORT).show();
                 else if(!clsUtil.bValidaString(strUsuario,3))
                     Toast.makeText(getBaseContext(),"El usuario debe ser un email válido",Toast.LENGTH_SHORT).show();
                 else if(!clsUtil.bValidaString(strPassword,1))
                     Toast.makeText(getBaseContext(),"Debe digitar el password",Toast.LENGTH_SHORT).show();
-                else if (strUsuario.equals("admin@gmail.com")){
-                    //Todo  Validar aceso a BD
-                    Intent IntentReg= new Intent (MainActivity.this, MenuLateral.class);
-                    MainActivity.this.startActivity(IntentReg);
+                else{
+                    if (miusuario.validateUsuario(strUsuario,strPassword)) {
+                        Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
+                        MainActivity.this.startActivity(IntentReg);
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(), "No existe usuario con los datos suministrados", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

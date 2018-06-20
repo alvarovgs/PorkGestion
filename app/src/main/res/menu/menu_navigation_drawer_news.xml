@@ -3,10 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_cerdo"
-        android:icon="@drawable/ic_cerdo"
-        android:title="@string/Cerdo" />
-    <item
         android:id="@+id/nav_reprduccion"
         android:icon="@drawable/ic_reproduccion"
         android:title="@string/Reproduccion" />
@@ -21,11 +17,21 @@
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
         <item
+<<<<<<< HEAD
+=======
+            android:id="@+id/nav_cerdo"
+            android:icon="@drawable/ic_creocerdo"
+            android:title="@string/Cerdo" />
+        <item
+>>>>>>> master
             android:id="@+id/nav_raza"
             android:icon="@drawable/ic_razacerdo"
             android:title="@string/Raza" />
         <item
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
             android:id="@+id/nav_sanidad"
             android:icon="@drawable/ic_sanidad"
             android:title="@string/Sanidad" />
@@ -62,6 +68,5 @@
             android:id="@+id/nav_cerrar"
             android:icon="@drawable/ic_cerrar"
             android:title="@string/Cerrar" />
-
     </group>
 </menu>
