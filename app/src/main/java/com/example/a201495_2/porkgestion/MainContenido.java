@@ -4,27 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-public class MainContenido extends AppCompatActivity{
-
-    ImageView imgbutton;
-    TextView strigbutton;
-=======
 import android.widget.TextView;
 
-public class MainContenido extends AppCompatActivity {
+
+
+    public class MainContenido extends AppCompatActivity {
     TextView tv_info;
->>>>>>> master
+        ImageView imgbutton;
+        TextView strigbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contenido_inicio);
-<<<<<<< HEAD
+
         imgbutton=(ImageView) findViewById(R.id.ibt_repro);
         imgbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -45,8 +41,7 @@ public class MainContenido extends AppCompatActivity {
 
                 }
         });
-
-=======
+        
         tv_info=findViewById(R.id.tv_info);
 
         tv_info.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +51,6 @@ public class MainContenido extends AppCompatActivity {
             startActivity(IntentReg);
         }
     });
->>>>>>> master
+
     }
 }

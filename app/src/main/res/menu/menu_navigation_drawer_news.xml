@@ -21,17 +21,11 @@
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
         <item
-<<<<<<< HEAD
-=======
-            android:id="@+id/nav_cerdo"
-            android:icon="@drawable/ic_creocerdo"
-            android:title="@string/Cerdo" />
-        <item
             android:id="@+id/nav_raza"
             android:icon="@drawable/ic_razacerdo"
             android:title="@string/Raza" />
         <item
->>>>>>> master
+
             android:id="@+id/nav_sanidad"
             android:icon="@drawable/ic_sanidad"
             android:title="@string/Sanidad" />
@@ -70,5 +64,4 @@
             android:title="@string/Cerrar" />
 
     </group>
-
 </menu>

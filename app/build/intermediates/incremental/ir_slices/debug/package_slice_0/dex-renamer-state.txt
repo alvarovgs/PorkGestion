@@ -1,4 +1,4 @@
-#Sat Jun 16 22:25:47 COT 2018
+#Sun Jun 17 18:29:56 COT 2018
 base.0=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
 path.0=classes.dex
 renamed.0=classes.dex

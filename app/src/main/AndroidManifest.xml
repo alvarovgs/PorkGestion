@@ -40,7 +40,8 @@
         <activity android:name=".MainDatosOrg" />
         <activity android:name=".MainLinks" />
         <activity android:name=".MainRecomendaciones" />
-        <activity android:name=".MainReporteHV"></activity>
+        <activity android:name=".MainReporteHV" />
+        <activity android:name=".main_links"></activity>
     </application>
 
 </manifest>

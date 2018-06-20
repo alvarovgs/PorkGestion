@@ -52,12 +52,7 @@ public class MenuLateral extends AppCompatActivity {
                     Intent miIntent = new Intent(MenuLateral.this, cerdo.class);
                     startActivity(miIntent);
                     return false;
-                }
 
-                else if (item.getTitle().toString().equals("Raza")) {
-                    Intent miIntent = new Intent(MenuLateral.this, raza.class);
-                    startActivity(miIntent);
-                    return false;
                 }
 
                 else if (item.getTitle().toString().equals("Reproducción")) {

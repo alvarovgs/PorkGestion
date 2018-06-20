@@ -50,8 +50,14 @@
         <activity android:name="com.example.a201495_2.porkgestion.reporteverracos" />
         <activity android:name="com.example.a201495_2.porkgestion.MainInformacion" />
         <activity android:name="com.example.a201495_2.porkgestion.MainContenido" />
-        <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
-        <activity android:name="com.example.a201495_2.porkgestion.lechon" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainEditusuario" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainCiclo" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainGlosario" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainDatosOrg" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainLinks" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainRecomendaciones" />
+        <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
+        <activity android:name="com.example.a201495_2.porkgestion.main_links" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

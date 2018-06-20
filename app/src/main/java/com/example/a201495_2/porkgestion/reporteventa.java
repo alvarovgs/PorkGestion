@@ -12,8 +12,20 @@ public class reporteventa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporteventa);
     }
+
     public void onClick(View view){
-        Intent miIntent=new Intent(reporteventa.this,reportes.class);
+        Intent miIntent=null;
+
+        switch (view.getId()) {
+            case R.id.btnRegresar:
+                miIntent = new Intent(reporteventa.this, MenuLateral.class);
+                break;
+
+            case R.id.bt_consultar:
+                miIntent = new Intent(reporteventa.this, fpp.class);
+                break;
+
+        }
         startActivity(miIntent);
     }
 }
