@@ -1,15 +1,12 @@
 package com.example.a201495_2.porkgestion;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -18,7 +15,7 @@ import android.widget.Toast;
 public class MenuLateral extends AppCompatActivity {
     private ActionBar actionBar;
     private Toolbar toolbar;
-    private View parent_view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,19 +32,6 @@ public class MenuLateral extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         actionBar.setTitle("Menú PorkGestion");
     }
-    private void showConfirmDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Realmente desa salir de la aplicación?");
-        builder.setMessage("cade de texto delmensaje");
-        builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Snackbar.make(parent_view, "Agree clicked", Snackbar.LENGTH_SHORT).show();
-            }
-        });
-        builder.setNegativeButton("Cancelar", null);
-        builder.show();
-    }
 
     private void initNavigationMenu() {
         NavigationView nav_view = findViewById(R.id.nav_view);
@@ -62,42 +46,67 @@ public class MenuLateral extends AppCompatActivity {
         nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
-                //Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
-                String strSelectedmenu = item.getTitle().toString();
-                Intent menuIntent;
-                switch (strSelectedmenu){
-                    case "Cerdo":
-                        menuIntent = new Intent(MenuLateral.this, cerdo.class);
-                        startActivity(menuIntent);
-                        return false;
-                    case "Reproducción":
-                        menuIntent = new Intent(MenuLateral.this, reproduccion.class);
-                        startActivity(menuIntent);
-                        return false;
-                    case "Ventas":
-                        menuIntent = new Intent(MenuLateral.this, ventas.class);
-                        startActivity(menuIntent);
-                        return false;
-                    case "Reportes":
-                        menuIntent = new Intent(MenuLateral.this, reportes.class);
-                        startActivity(menuIntent);
-                        return false;
-                    case "Info. General":
-                        menuIntent = new Intent(MenuLateral.this, MainInformacion.class);
-                        startActivity(menuIntent);
-                        return false;
-                    case "Cerrar":
-                        menuIntent = new Intent(MenuLateral.this, MainActivity.class);
-                        startActivity(menuIntent);
-                        System.exit(0);
-                        return false;
-                    case "Raza":
-                        menuIntent = new Intent(MenuLateral.this, raza.class);
-                        startActivity(menuIntent);
-                        return false;                        
-                    default:
-                        Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+
+                if (item.getTitle().toString().equals("Cerdo")) {
+                    Intent miIntent = new Intent(MenuLateral.this, cerdo.class);
+                    startActivity(miIntent);
+                    return false;
                 }
+
+                else if (item.getTitle().toString().equals("Raza")) {
+                    Intent miIntent = new Intent(MenuLateral.this, raza.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Reproducción")) {
+                    Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if(item.getTitle().toString().equals("Reproducción")) {
+                    Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Ventas")) {
+                    Intent miIntent = new Intent(MenuLateral.this, ventas.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+                else if (item.getTitle().toString().equals("Parto y Lactancia")) {
+                    Intent miIntent = new Intent(MenuLateral.this, Partolact.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Reportes")) {
+                    Intent miIntent = new Intent(MenuLateral.this, reportes.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Informacion")) {
+                    Intent miIntent = new Intent(MenuLateral.this, MainInformacion.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Edit. Usuario")) {
+                    Intent miIntent = new Intent(MenuLateral.this, MainEditusuario.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if (item.getTitle().toString().equals("Cerrar")) {
+                    Intent miIntent = new Intent(MenuLateral.this, MainActivity.class);
+                    startActivity(miIntent);
+                    System.exit(0);
+                }
+
                 actionBar.setTitle(item.getTitle());
                 drawer.closeDrawers();
                 return true;
@@ -105,5 +114,7 @@ public class MenuLateral extends AppCompatActivity {
         });
 
         drawer.openDrawer(GravityCompat.START);
+
     }
+
 }
