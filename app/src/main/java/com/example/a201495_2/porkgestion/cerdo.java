@@ -59,9 +59,6 @@ public class  cerdo extends AppCompatActivity {
         if (!clsUtil.bValidaString(numcerdo,1)){
             Toast.makeText(this, "Digite el número del cerdo",Toast.LENGTH_SHORT).show();
         }
-
-
-
     }
 
     public void actualizar (View v) {

@@ -67,7 +67,6 @@ public class MenuLateral extends AppCompatActivity {
                 Intent menuIntent;
                 switch (strSelectedmenu){
                     case "Cerdo":
-                        showConfirmDialog();
                         menuIntent = new Intent(MenuLateral.this, cerdo.class);
                         startActivity(menuIntent);
                         return false;
@@ -85,6 +84,10 @@ public class MenuLateral extends AppCompatActivity {
                         return false;
                     case "Info. General":
                         menuIntent = new Intent(MenuLateral.this, MainInformacion.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Raza":
+                        menuIntent = new Intent(MenuLateral.this, raza.class);
                         startActivity(menuIntent);
                         return false;
                     case "Cerrar":

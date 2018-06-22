@@ -11,19 +11,13 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
             android:title="@string/Inicio" />
         <item
             android:id="@+id/nav_animal"
             android:icon="@drawable/ic_animales"
             android:title="@string/Animales" />
         <item
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> master
-=======
->>>>>>> master
             android:id="@+id/nav_cerdo"
             android:icon="@drawable/ic_creocerdo"
             android:title="@string/Cerdo" />

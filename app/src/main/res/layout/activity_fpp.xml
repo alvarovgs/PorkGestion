@@ -67,15 +67,15 @@
         android:inputType="date" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView11"
-        android:layout_alignTop="@+id/button3"
+        android:layout_alignTop="@+id/btn_eliminar"
         android:text="CALCULAR" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_eliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/button3"
+        android:layout_alignTop="@+id/btn_eliminar"
         android:layout_marginEnd="31dp"
         android:onClick="onClick"
         android:text="REGRESAR" />

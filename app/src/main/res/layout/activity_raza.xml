@@ -60,8 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginBottom="42dp"
         android:onClick="onClick"
         android:text="REGRESAR" />
 
@@ -69,9 +68,9 @@
         android:id="@+id/button2"
         android:layout_width="90dp"
         android:layout_height="35dp"
-        android:layout_alignTop="@+id/button3"
-        android:layout_toStartOf="@+id/button3"
-        android:onClick="ingresar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button3"
+        android:onClick="onClick"
         android:text="INGRESAR"
         android:textSize="10sp" />
 
@@ -79,9 +78,8 @@
         android:id="@+id/button3"
         android:layout_width="90dp"
         android:layout_height="35dp"
-        android:layout_above="@+id/bt_consultar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="67dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
         android:onClick="eliminar"
         android:text="ELIMINAR"
         android:textSize="10sp" />
@@ -91,7 +89,7 @@
         android:layout_width="90dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button2"
+        android:layout_toStartOf="@+id/button3"
         android:onClick="consulta"
         android:text="CONSULTAR"
         android:textSize="10sp" />
@@ -101,9 +99,49 @@
         android:layout_width="90dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginStart="103dp"
         android:onClick="actualizar"
         android:text="ACTUALIZAR"
         android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="174dp"
+        android:text="Origen de la raza" />
+
+    <EditText
+        android:id="@+id/et_origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView21"
+        android:ems="10"
+        android:hint="origen de la @string/str_desc_raza"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="244dp"
+        android:text="Descripciones" />
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese el nombre" />
 
 </RelativeLayout>

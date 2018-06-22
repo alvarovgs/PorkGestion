@@ -1,10 +1,9 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\201573565186db6fa7721022ea09069d\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\503775168a9deddaa3776b3e9546faa9\AndroidManifest.xml:2:1-17:12
 MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\0a0b60d778ee89a79d46043122904109\AndroidManifest.xml:17:1-30:12
@@ -25,6 +24,7 @@ MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\FABIO\.gradle\caches\tra
 MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\c3867616c90781130598ed9848d7973d\AndroidManifest.xml:2:1-15:12
 MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\31404fb8fbf343b5f30603c3b6ab5e59\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android:flexbox:0.3.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\1272e2b28db625221821764c4e3a5229\AndroidManifest.xml:17:1-27:12
+MERGED from [com.facebook.stetho:stetho:1.4.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\stetho-1.4.2.aar\4060a59697965c247ad222803a47e85c\AndroidManifest.xml:2:1-13:12
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\50a00d3b466ddc1fda9befcdd17a68db\AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\383a1567794c84644039c6511bd11c5a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\d2d78dc5fe9c8d5a31190c846bd522d7\AndroidManifest.xml:17:1-22:12
@@ -40,25 +40,25 @@ MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\
 MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\1c06b11b5e36a9d882cdc37367478247\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\fe79938dacdc86ac9bfbfce9a7a8e3a5\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\dff5e78241c74e4762eb4d013d79dc5c\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-44:19
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-46:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\201573565186db6fa7721022ea09069d\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\201573565186db6fa7721022ea09069d\AndroidManifest.xml:9:5-20
 MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\503775168a9deddaa3776b3e9546faa9\AndroidManifest.xml:11:5-15:19
@@ -79,6 +79,8 @@ MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\FABIO\.gradle\caches\tra
 MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\61effac3b1608ed2c2b10ceeef468d68\AndroidManifest.xml:12:5-20
 MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\c3867616c90781130598ed9848d7973d\AndroidManifest.xml:11:5-13:38
 MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\c3867616c90781130598ed9848d7973d\AndroidManifest.xml:11:5-13:38
+MERGED from [com.facebook.stetho:stetho:1.4.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\stetho-1.4.2.aar\4060a59697965c247ad222803a47e85c\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.4.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\stetho-1.4.2.aar\4060a59697965c247ad222803a47e85c\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\1ef985c15b8ee05df3f7923a32ac8d37\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\1ef985c15b8ee05df3f7923a32ac8d37\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\7368c6e2fc00ba5b04ff8e12de5668e5\AndroidManifest.xml:5:5-20
@@ -151,58 +153,66 @@ activity#com.example.a201495_2.porkgestion.monta
 ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:30:9-43
 	android:name
 		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:30:19-40
+activity#com.example.a201495_2.porkgestion.raza
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:9-42
+	android:name
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:19-39
 activity#com.example.a201495_2.porkgestion.fpp
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:9-41
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:9-41
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:19-38
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:19-38
 activity#com.example.a201495_2.porkgestion.Parto_Activity
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:9-52
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:9-52
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:19-49
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:19-49
 activity#com.example.a201495_2.porkgestion.reporteparto
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:9-50
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:9-50
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:19-47
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:19-47
+activity#com.example.a201495_2.porkgestion.reporteventa
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:9-50
+	android:name
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:19-47
 activity#com.example.a201495_2.porkgestion.reporteverracos
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:9-53
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:9-53
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:19-50
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:19-50
 activity#com.example.a201495_2.porkgestion.MainInformacion
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:9-53
-	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:19-50
-activity#com.example.a201495_2.porkgestion.MainContenido
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:9-51
-	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:19-48
-activity#com.example.a201495_2.porkgestion.MainEditusuario
 ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:9-53
 	android:name
 		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:19-50
+activity#com.example.a201495_2.porkgestion.MainContenido
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:9-51
+	android:name
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:19-48
+activity#com.example.a201495_2.porkgestion.MainEditusuario
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:39:9-53
+	android:name
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:39:19-50
 activity#com.example.a201495_2.porkgestion.MainCiclo
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:9-47
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:40:9-47
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:19-44
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:40:19-44
 activity#com.example.a201495_2.porkgestion.MainGlosario
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:39:9-50
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:41:9-50
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:39:19-47
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:41:19-47
 activity#com.example.a201495_2.porkgestion.MainDatosOrg
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:40:9-50
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:42:9-50
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:40:19-47
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:42:19-47
 activity#com.example.a201495_2.porkgestion.MainLinks
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:41:9-47
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:43:9-47
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:41:19-44
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:43:19-44
 activity#com.example.a201495_2.porkgestion.MainRecomendaciones
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:42:9-57
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:44:9-57
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:42:19-54
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:44:19-54
 activity#com.example.a201495_2.porkgestion.MainReporteHV
-ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:43:9-60
+ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:45:9-60
 	android:name
-		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:43:19-48
+		ADDED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:45:19-48
 uses-sdk
 INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\FABIO\AndroidStudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
@@ -247,6 +257,8 @@ MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\FABIO\.gradle\caches\t
 MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\31404fb8fbf343b5f30603c3b6ab5e59\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android:flexbox:0.3.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\1272e2b28db625221821764c4e3a5229\AndroidManifest.xml:23:5-25:41
 MERGED from [com.google.android:flexbox:0.3.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\1272e2b28db625221821764c4e3a5229\AndroidManifest.xml:23:5-25:41
+MERGED from [com.facebook.stetho:stetho:1.4.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\stetho-1.4.2.aar\4060a59697965c247ad222803a47e85c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.4.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\stetho-1.4.2.aar\4060a59697965c247ad222803a47e85c\AndroidManifest.xml:7:5-9:41
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\50a00d3b466ddc1fda9befcdd17a68db\AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\50a00d3b466ddc1fda9befcdd17a68db\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\383a1567794c84644039c6511bd11c5a\AndroidManifest.xml:20:5-44
@@ -319,323 +331,3 @@ ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\FABIO
 		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eef3a465f3f04b275813250e438ea2f0\AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\FABIO\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\eef3a465f3f04b275813250e438ea2f0\AndroidManifest.xml:24:13-58
-=======
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\15edeb2774a69a7b0e50ba4dba5fd0da\AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\051989c73d46ca1b8e97f9902afe42d4\AndroidManifest.xml:2:1-17:12
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:17:1-30:12
-MERGED from [com.android.support:design:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\7914b6062093945041d69a7b6eefb13a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\bd54eb8d4bb188126f813238a3e47726\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\a6afa6729e211fd76ce0f925d15ccec2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\aa3d2596ec808b6df68a9df4574322d5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\d525af8df2ba2d88b013ee7e8c6b9505\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\0122aab720799cd17af658d1dd5b4085\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\3de1a651928291bb9cbffdb6b45bf6a2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\ba8416975e536262178ae3a81ced808d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\82f899c58b8ba2ac4f0469fb29c32051\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\a07b961f657f1af90e2eb41031ac069f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0636a6634de158b34899cd8d637c2204\AndroidManifest.xml:2:1-14:12
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\22c27c146d9824783b3aba6ef4d02d1b\AndroidManifest.xml:2:1-15:12
-MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\a406b4bbded6675982bf99bfcd0dba0f\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\cdf5cdc3c39b2b386d65ac7923175b2a\AndroidManifest.xml:17:1-27:12
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\1ac71d394db58134998313ff2f1f9a62\AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\0d99f4652b32d4382bb535378dc8a069\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\93f07a151fa04f30cffc7e1f9adfb754\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\dd2fd7740999974a9ef714a9d01b6f27\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\304156897724f05807eeb5054c6856af\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\77465806d25a39dde1ca428c6dbbc46b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\f445c6cb9dac088587bf5923f89148ef\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\92d5fbd780eff99f34350b1cd0940825\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\d0fba2acd0b62248774f9a7740e9280d\AndroidManifest.xml:2:1-6:12
-MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\09e6cf8bbc803e97e1d98589b9bb2e6d\AndroidManifest.xml:2:1-12:12
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\f61002b10f1f49bb8a3783e3c18546ad\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\3b2537c10073d85e686c4667c080b883\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\7d63d1c5bd2f9924b50e4907e64725a9\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\677041bb416fd1afe9e96af9881c41a3\AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\657b966136f07064adc734332e7bb842\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-	package
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:3:5-48
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-	android:versionCode
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:1-46:12
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:2:11-69
-application
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:5:5-44:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\15edeb2774a69a7b0e50ba4dba5fd0da\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\15edeb2774a69a7b0e50ba4dba5fd0da\AndroidManifest.xml:9:5-20
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\051989c73d46ca1b8e97f9902afe42d4\AndroidManifest.xml:11:5-15:19
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\051989c73d46ca1b8e97f9902afe42d4\AndroidManifest.xml:11:5-15:19
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:28:5-20
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\d525af8df2ba2d88b013ee7e8c6b9505\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\d525af8df2ba2d88b013ee7e8c6b9505\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\0122aab720799cd17af658d1dd5b4085\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\0122aab720799cd17af658d1dd5b4085\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:22:5-26:19
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0636a6634de158b34899cd8d637c2204\AndroidManifest.xml:12:5-20
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0636a6634de158b34899cd8d637c2204\AndroidManifest.xml:12:5-20
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\22c27c146d9824783b3aba6ef4d02d1b\AndroidManifest.xml:11:5-13:38
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\22c27c146d9824783b3aba6ef4d02d1b\AndroidManifest.xml:11:5-13:38
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\92d5fbd780eff99f34350b1cd0940825\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\92d5fbd780eff99f34350b1cd0940825\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\d0fba2acd0b62248774f9a7740e9280d\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\d0fba2acd0b62248774f9a7740e9280d\AndroidManifest.xml:5:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\f61002b10f1f49bb8a3783e3c18546ad\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\f61002b10f1f49bb8a3783e3c18546ad\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\3b2537c10073d85e686c4667c080b883\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\3b2537c10073d85e686c4667c080b883\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\7d63d1c5bd2f9924b50e4907e64725a9\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\7d63d1c5bd2f9924b50e4907e64725a9\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\677041bb416fd1afe9e96af9881c41a3\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\677041bb416fd1afe9e96af9881c41a3\AndroidManifest.xml:5:5-20
-	android:supportsRtl
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:10:9-35
-	android:label
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:8:9-41
-	android:roundIcon
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:9:9-41
-	android:icon
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:7:9-36
-	android:allowBackup
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:6:9-35
-	android:theme
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.a201495_2.porkgestion.MainActivity
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:12:9-21:20
-	android:label
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:14:13-45
-	android:theme
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:15:13-56
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:13:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:16:13-20:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:17:17-69
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:17:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:19:17-77
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.example.a201495_2.porkgestion.MenuLateral
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:22:9-24:52
-	android:screenOrientation
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:24:13-49
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:23:13-40
-activity#com.example.a201495_2.porkgestion.MainRegistrousuario
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:25:9-57
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:25:19-54
-activity#com.example.a201495_2.porkgestion.cerdo
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:26:9-43
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:26:19-40
-activity#com.example.a201495_2.porkgestion.ventas
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:27:9-44
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:27:19-41
-activity#com.example.a201495_2.porkgestion.reproduccion
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:28:9-50
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:28:19-47
-activity#com.example.a201495_2.porkgestion.reportes
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:29:9-46
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:29:19-43
-activity#com.example.a201495_2.porkgestion.monta
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:30:9-43
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:30:19-40
-activity#com.example.a201495_2.porkgestion.fpp
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:9-41
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:31:19-38
-activity#com.example.a201495_2.porkgestion.Parto_Activity
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:9-52
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:32:19-49
-activity#com.example.a201495_2.porkgestion.reporteparto
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:9-50
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:33:19-47
-activity#com.example.a201495_2.porkgestion.reporteverracos
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:9-53
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:34:19-50
-activity#com.example.a201495_2.porkgestion.MainInformacion
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:9-53
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:35:19-50
-activity#com.example.a201495_2.porkgestion.MainContenido
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:9-51
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:36:19-48
-activity#com.example.a201495_2.porkgestion.MainEditusuario
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:9-53
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:37:19-50
-activity#com.example.a201495_2.porkgestion.MainCiclo
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:9-47
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:38:19-44
-activity#com.example.a201495_2.porkgestion.MainGlosario
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:39:9-50
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:39:19-47
-activity#com.example.a201495_2.porkgestion.MainDatosOrg
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:40:9-50
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:40:19-47
-activity#com.example.a201495_2.porkgestion.MainLinks
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:41:9-47
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:41:19-44
-activity#com.example.a201495_2.porkgestion.MainRecomendaciones
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:42:9-57
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:42:19-54
-activity#com.example.a201495_2.porkgestion.MainReporteHV
-ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:43:9-60
-	android:name
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml:43:19-48
-uses-sdk
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\15edeb2774a69a7b0e50ba4dba5fd0da\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\15edeb2774a69a7b0e50ba4dba5fd0da\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\051989c73d46ca1b8e97f9902afe42d4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.pchmn:MaterialChipsInput:1.0.5] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\MaterialChipsInput-1.0.5.aar\051989c73d46ca1b8e97f9902afe42d4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:22:5-24:41
-MERGED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:design:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\7914b6062093945041d69a7b6eefb13a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\7914b6062093945041d69a7b6eefb13a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\bd54eb8d4bb188126f813238a3e47726\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\bd54eb8d4bb188126f813238a3e47726\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\a6afa6729e211fd76ce0f925d15ccec2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\a6afa6729e211fd76ce0f925d15ccec2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\aa3d2596ec808b6df68a9df4574322d5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\aa3d2596ec808b6df68a9df4574322d5\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\d525af8df2ba2d88b013ee7e8c6b9505\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\d525af8df2ba2d88b013ee7e8c6b9505\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\0122aab720799cd17af658d1dd5b4085\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\0122aab720799cd17af658d1dd5b4085\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\3de1a651928291bb9cbffdb6b45bf6a2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\3de1a651928291bb9cbffdb6b45bf6a2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\ba8416975e536262178ae3a81ced808d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\ba8416975e536262178ae3a81ced808d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\82f899c58b8ba2ac4f0469fb29c32051\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\82f899c58b8ba2ac4f0469fb29c32051\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\a07b961f657f1af90e2eb41031ac069f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\a07b961f657f1af90e2eb41031ac069f\AndroidManifest.xml:20:5-44
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0636a6634de158b34899cd8d637c2204\AndroidManifest.xml:8:5-10:41
-MERGED from [com.balysv:material-ripple:1.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\material-ripple-1.0.2.aar\0636a6634de158b34899cd8d637c2204\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\22c27c146d9824783b3aba6ef4d02d1b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circularimageview-3.0.2.aar\22c27c146d9824783b3aba6ef4d02d1b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\a406b4bbded6675982bf99bfcd0dba0f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.hootsuite.android:nachos:1.1.1] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\nachos-1.1.1.aar\a406b4bbded6675982bf99bfcd0dba0f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\cdf5cdc3c39b2b386d65ac7923175b2a\AndroidManifest.xml:23:5-25:41
-MERGED from [com.google.android:flexbox:0.3.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\flexbox-0.3.2.aar\cdf5cdc3c39b2b386d65ac7923175b2a\AndroidManifest.xml:23:5-25:41
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\1ac71d394db58134998313ff2f1f9a62\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\1ac71d394db58134998313ff2f1f9a62\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\0d99f4652b32d4382bb535378dc8a069\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\0d99f4652b32d4382bb535378dc8a069\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\93f07a151fa04f30cffc7e1f9adfb754\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\93f07a151fa04f30cffc7e1f9adfb754\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\dd2fd7740999974a9ef714a9d01b6f27\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\dd2fd7740999974a9ef714a9d01b6f27\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\304156897724f05807eeb5054c6856af\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\304156897724f05807eeb5054c6856af\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\77465806d25a39dde1ca428c6dbbc46b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\77465806d25a39dde1ca428c6dbbc46b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\f445c6cb9dac088587bf5923f89148ef\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\f445c6cb9dac088587bf5923f89148ef\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\92d5fbd780eff99f34350b1cd0940825\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\92d5fbd780eff99f34350b1cd0940825\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\d0fba2acd0b62248774f9a7740e9280d\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-places-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\d0fba2acd0b62248774f9a7740e9280d\AndroidManifest.xml:4:5-43
-MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\09e6cf8bbc803e97e1d98589b9bb2e6d\AndroidManifest.xml:8:5-10:41
-MERGED from [com.beloo.widget:ChipsLayoutManager:0.3.7] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\ChipsLayoutManager-0.3.7.aar\09e6cf8bbc803e97e1d98589b9bb2e6d\AndroidManifest.xml:8:5-10:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\f61002b10f1f49bb8a3783e3c18546ad\AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\f61002b10f1f49bb8a3783e3c18546ad\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\3b2537c10073d85e686c4667c080b883\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\3b2537c10073d85e686c4667c080b883\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\7d63d1c5bd2f9924b50e4907e64725a9\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\7d63d1c5bd2f9924b50e4907e64725a9\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\677041bb416fd1afe9e96af9881c41a3\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\677041bb416fd1afe9e96af9881c41a3\AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\657b966136f07064adc734332e7bb842\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\657b966136f07064adc734332e7bb842\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jenn\StudioProjects\PorkGestion\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.VIBRATE
-ADDED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:26:5-66
-	android:name
-		ADDED from [com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.2.0.aar\a24cc1b7a3a01cfba462e19a70eaac7e\AndroidManifest.xml:26:22-63
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:23:5-79
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:23:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:24:5-67
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:24:22-64
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:27:9-41
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\807e41375c2edc9c92fcaddceb119d40\AndroidManifest.xml:28:9-32
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:26:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\3c0c9da9de9b855ddb3f1916dffdae26\AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Jenn\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\c8c62d1a6ff5c145336071017b796168\AndroidManifest.xml:24:13-58
->>>>>>> master
