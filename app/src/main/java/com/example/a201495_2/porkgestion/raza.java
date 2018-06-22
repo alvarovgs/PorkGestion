@@ -39,41 +39,41 @@ public class raza extends AppCompatActivity {
         et3.setText(objraza.getStrDescripcion());
     }*/
 
-    public void onClick(View view) {
-        ingresar();
-    }
+//    public void onClick(View view) {
+//        ingresar();
+//    }
+//
+//
+//    public void ingresar () {
+////        EditText et1 = (EditText)findViewById(R.id.et_nomraza);
+////        EditText et2 = (EditText)findViewById(R.id.et_origen);
+////        EditText et3 = (EditText)findViewById(R.id.et_descripcion);
+//        objraza = new Raza(getApplicationContext());
+//        String razacerdo= ((EditText) findViewById(R.id.et_nomraza)).getText().toString();
+//        String origen= ((EditText) findViewById(R.id.et_origen)).getText().toString();
+//        String descripcion= ((EditText) findViewById(R.id.et_descripcion)).getText().toString();
+////        String razacerdo = et_nomraza.getText().toString();
+////        String origen = et_origen.getText().toString();
+////        String descripcion = et_descripcion.getText().toString();
+////        if (!clsUtil.bValidaString(razacerdo,1)){
+////            Toast.makeText(this, "Ingrese la raza",Toast.LENGTH_SHORT).show();
+////        }
+//
+//        objraza.setStrRaza(razacerdo);
+//        objraza.setStrOrigen(origen);
+//        objraza.setStrDescripcion(descripcion);
+//        objraza.insertRaza();
+////        resultadoisert=objraza.insertRaza();
+////        if (resultadoisert) {
+////        if (objraza.insertRaza()) {
+////            Toast.makeText(this, "Raza Creada correctametne", Toast.LENGTH_LONG).show();
+////        }
+////        else {
+////            Toast.makeText(this, "Error creando la Raza", Toast.LENGTH_LONG).show();
+////        }
+//    }
 
-
-    public void ingresar () {
-//        EditText et1 = (EditText)findViewById(R.id.et_nomraza);
-//        EditText et2 = (EditText)findViewById(R.id.et_origen);
-//        EditText et3 = (EditText)findViewById(R.id.et_descripcion);
-        objraza = new Raza(getApplicationContext());
-        String razacerdo= ((EditText) findViewById(R.id.et_nomraza)).getText().toString();
-        String origen= ((EditText) findViewById(R.id.et_origen)).getText().toString();
-        String descripcion= ((EditText) findViewById(R.id.et_descripcion)).getText().toString();
-//        String razacerdo = et_nomraza.getText().toString();
-//        String origen = et_origen.getText().toString();
-//        String descripcion = et_descripcion.getText().toString();
-//        if (!clsUtil.bValidaString(razacerdo,1)){
-//            Toast.makeText(this, "Ingrese la raza",Toast.LENGTH_SHORT).show();
-//        }
-
-        objraza.setStrRaza(razacerdo);
-        objraza.setStrOrigen(origen);
-        objraza.setStrDescripcion(descripcion);
-        objraza.insertRaza();
-//        resultadoisert=objraza.insertRaza();
-//        if (resultadoisert) {
-//        if (objraza.insertRaza()) {
-//            Toast.makeText(this, "Raza Creada correctametne", Toast.LENGTH_LONG).show();
-//        }
-//        else {
-//            Toast.makeText(this, "Error creando la Raza", Toast.LENGTH_LONG).show();
-//        }
-    }
-
-   /* public void actualizar (View v) {
+  /* public void actualizar (View v) {
         EditText et1 = (EditText)findViewById(R.id.et_nomraza);
         String razacerdo = et1.getText().toString();
         if (!clsUtil.bValidaString(razacerdo,1)){
