@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     if (miusuario.validateUsuario(strUsuario,strPassword)) {
                         Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
+                        Toast.makeText(getBaseContext(),"Bienvenido a PorkGestión",Toast.LENGTH_SHORT).show();
                         MainActivity.this.startActivity(IntentReg);
                     }
                     else{

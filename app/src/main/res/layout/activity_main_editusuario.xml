@@ -15,13 +15,19 @@
         android:text="Actualización Datos de Usuario:"
         android:textSize="25sp" />
 
-
     <EditText
         android:id="@+id/txt_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nuevo E-mail de Usuario"
+        android:hint="Ingrese el E-mail actual de el Usuario"
         android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txt_nombreusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo nombre de Usuario"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/txt_pass"
@@ -30,11 +36,38 @@
         android:hint="Ingrese un Nuevo Password"
         android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/btn_reg"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/txt_telefono"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="FINALIZAR" />
+        android:hint="Ingrese un número de Teléfono (Opcional)"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="ACTUALIZAR" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+
+            android:text="Eliminar" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
