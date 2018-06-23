@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteException;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 import com.example.a201495_2.porkgestion.bo_clases.LogError;
@@ -128,7 +127,7 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
         }
         closeDataBase();
     }
-    public Cursor qweryDatabase(String strTableName, String[] strColumns, String strValues,String[] strArgs, String strOrder){
+    public Cursor qweryDatabase(String strTableName, String[] strColumns, String strValues){
         Cursor crResult=null;
         try {
             crResult = dataBase.query(strTableName, strColumns, strValues, strArgs, null, null, strOrder);

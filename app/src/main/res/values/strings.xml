@@ -46,9 +46,9 @@
     <string name="btguardar">GUARDAR</string>
     <string name="btconsultar">CONSULTAR</string>
     <string name="btmodificar">MODIFICAR</string>
-    <string name="bteliminar">ELIMINAR</string>
-    <string name="fechaprimercelo"> Fecha primer Celo</string>
-    <string name="fechasegunocelo">Fecha segundo Celo</string>
+    <string name="bteliminar">BORRAR</string>
+    <string name="fechaprimercelo"> Fecha Celo</string>
+    <string name="fechamonta">Fecha de la Monta</string>
     <string name="fechatercercelo">Fecha Tercer Celo</string>
     <string name="fechaecografia">Fecha Ecografía</string>
     <string name="edadmonta">Edad de monta en meses</string>

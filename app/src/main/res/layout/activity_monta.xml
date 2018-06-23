@@ -7,54 +7,12 @@
     tools:context=".monta_Activity">
 
     <EditText
-        android:id="@+id/edtxt_fechaecografia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/fechaecografia"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechatercelo" />
-
-    <EditText
-        android:id="@+id/edtxt_fechatercelo"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/fechatercercelo"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechasegundocelo" />
-
-    <EditText
-        android:id="@+id/edtxt_fechasegundocelo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/fechasegunocelo"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechaprimercelo" />
-
-    <EditText
         android:id="@+id/edtxt_numeropajilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/numero_pajilla_string"
         android:inputType="number"
@@ -63,52 +21,12 @@
         app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
 
     <EditText
-        android:id="@+id/edtxt_pesomonta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/pesomonta"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_edadmonta" />
-
-    <EditText
-        android:id="@+id/edtxt_edadmonta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/edadmonta"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechaecografia" />
-
-    <TextView
-        android:id="@+id/edtxt_descripajilla"
-        android:layout_width="142dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/nombre_cerda_string"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_numeropajilla" />
-
-    <EditText
         android:id="@+id/edtxt_numeropajilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="@string/numero_cerda_string"
         android:inputType="number"
@@ -120,15 +38,27 @@
         android:id="@+id/edtxt_fechaprimercelo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/fechamonta"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <EditText
+        android:id="@+id/fechacelo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/fechaprimercelo"
         android:inputType="date"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_descripajilla" />
+        tools:layout_editor_absoluteY="91dp" />
 
     <EditText
         android:id="@+id/ed_numero_verraco"
@@ -136,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/numero_verraco_string"
         android:inputType="number"
@@ -145,72 +75,34 @@
         app:layout_constraintTop_toBottomOf="@+id/sp_tipomonta" />
 
     <Button
-        android:id="@+id/bt_nuevo"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="150dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/btingresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_numeropajilla" />
-
-    <Button
         android:id="@+id/bt_guardar"
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="152dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="@string/btguardar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_nuevo" />
-
-    <Button
-        android:id="@+id/bt_consultar"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="152dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/btconsultar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_guardar" />
-
-    <Button
-        android:id="@+id/bt_editar"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="153dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/btmodificar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_consultar" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="275dp" />
 
     <Button
         android:id="@+id/bt_eliminar"
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="154dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="@string/bteliminar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_editar" />
+        tools:layout_editor_absoluteY="275dp" />
 
     <Spinner
         android:id="@+id/sp_tipomonta"
         android:layout_width="201dp"
         android:layout_height="27dp"
         android:entries="@array/tipo_monta"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="76dp" />
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="36dp" />
 
     <Button
         android:id="@+id/btn_regresar"
@@ -218,12 +110,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginBottom="168dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
         android:onClick="onClick"
         android:text="REGRESAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="98dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/see"
+        tools:layout_editor_absoluteX="143dp" />
 
 </android.support.constraint.ConstraintLayout>
