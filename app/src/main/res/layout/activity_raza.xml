@@ -12,6 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignParentEnd="true"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/et_origen"
         android:ems="10"
         android:hint="ingrese el nombre"
         android:inputType="textPersonName" />
@@ -42,6 +46,11 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView21"
         android:layout_alignParentEnd="true"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="ingrese el nombre"
         android:inputType="textPersonName" />
@@ -72,22 +81,22 @@
 
     <EditText
         android:id="@+id/et_nomraza"
-        android:layout_width="wrap_content"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="96dp"
+        android:layout_alignStart="@+id/et_origen"
+        android:layout_marginTop="109dp"
         android:ems="10"
         android:hint="ingrese el nombre"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="227dp"
-        android:layout_height="57dp"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="179dp"
         android:background="#D8FFFF"
         android:text="@string/razas"
         android:textAlignment="center"
