@@ -138,6 +138,7 @@
                     style="@style/Button.Accent"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content"
+                    android:onClick="onClick"
                     android:text="GESTACION" />
             </LinearLayout>
         </LinearLayout>
@@ -265,6 +266,7 @@
                     style="@style/Button.Accent"
                     android:layout_width="290dp"
                     android:layout_height="match_parent"
+                    android:onClick="onClick"
                     android:text="PAJILLAS" />
             </LinearLayout>
 
