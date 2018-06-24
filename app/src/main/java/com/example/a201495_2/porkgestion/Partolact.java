@@ -29,9 +29,6 @@ public class Partolact extends AppCompatActivity {
                 miIntent = new Intent(Partolact.this, Parto_Activity.class);
                 break;
 
-            case R.id.btn_rlechones:
-                miIntent = new Intent(Partolact.this, lechon.class);
-                break;
 
         }
         startActivity(miIntent);

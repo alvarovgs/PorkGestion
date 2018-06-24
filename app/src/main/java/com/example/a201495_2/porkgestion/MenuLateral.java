@@ -66,18 +66,12 @@ public class MenuLateral extends AppCompatActivity {
                     return false;
                 }
 
-                else if(item.getTitle().toString().equals("Reproducción")) {
-                    Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
-                    startActivity(miIntent);
-                    return false;
-                }
-
                 else if (item.getTitle().toString().equals("Ventas")) {
                     Intent miIntent = new Intent(MenuLateral.this, ventas.class);
                     startActivity(miIntent);
                     return false;
                 }
-                else if (item.getTitle().toString().equals("Parto y Lactancia")) {
+                else if (item.getTitle().toString().equals("Parto")) {
                     Intent miIntent = new Intent(MenuLateral.this, Partolact.class);
                     startActivity(miIntent);
                     return false;

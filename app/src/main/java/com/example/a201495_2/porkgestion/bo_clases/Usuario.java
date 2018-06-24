@@ -110,7 +110,7 @@ public class Usuario {
         Usuario tmpObject = new Usuario(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("USUARIO", strColumns, "EMAIL=?", strArgs, null);
+        crResult = dbAcces.qweryDatabase("USUARIO", strColumns, "EMAIL=?");
         if (crResult.moveToFirst()) {
             tmpObject.setIdUsuario(crResult.getInt(0));
             tmpObject.setStrNombre(crResult.getString(1));
@@ -129,7 +129,7 @@ public class Usuario {
         Cursor crResult;
         ArrayList<Usuario> listObject = new ArrayList<Usuario>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("USUARIO", strColumns, null, null, "IDUSUARIO");
+        crResult = dbAcces.qweryDatabase("USUARIO", strColumns, null);
         if (crResult.moveToFirst()) {
             do {
                 Usuario tmpObject = new Usuario(appContext);
