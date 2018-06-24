@@ -66,7 +66,7 @@ public class fpp extends AppCompatActivity implements View.OnClickListener {
     }
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(fpp.this, reproduccion.class);
+        miIntent = new Intent(fpp.this, Partolact.class);
         startActivity(miIntent);
     }
 }
