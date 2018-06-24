@@ -13,11 +13,6 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey_10" />
-
 
         <View
             android:layout_width="match_parent"
@@ -68,6 +63,11 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_10" />
 
         <LinearLayout
             android:id="@+id/btn_rfinca"

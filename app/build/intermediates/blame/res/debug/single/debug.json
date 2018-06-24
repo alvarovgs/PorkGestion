@@ -980,6 +980,10 @@
         "source": "C:\\Users\\FABIO\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\42afd8d3963601a8d7aecfe320e5e874\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
+        "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_consultacerdo.xml.flat",
+        "source": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_consultacerdo.xml"
+    },
+    {
         "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_person_white_24dp.png.flat",
         "source": "C:\\Users\\FABIO\\.gradle\\caches\\transforms-1\\files-1.1\\MaterialChipsInput-1.0.5.aar\\503775168a9deddaa3776b3e9546faa9\\res\\drawable-hdpi-v4\\ic_person_white_24dp.png"
     },
@@ -1556,6 +1560,10 @@
         "source": "C:\\Users\\FABIO\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\2a39041a8ef33cafdf6ac99ce41f374d\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
+        "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_prenez.xml.flat",
+        "source": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_prenez.xml"
+    },
+    {
         "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\FABIO\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\42afd8d3963601a8d7aecfe320e5e874\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
@@ -1898,6 +1906,10 @@
     {
         "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_mdtp_time_title_view_v2.xml.flat",
         "source": "C:\\Users\\FABIO\\.gradle\\caches\\transforms-1\\files-1.1\\materialdatetimepicker-3.2.0.aar\\0a0b60d778ee89a79d46043122904109\\res\\layout\\mdtp_time_title_view_v2.xml"
+    },
+    {
+        "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_totalcerdos.xml.flat",
+        "source": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_totalcerdos.xml"
     },
     {
         "merged": "C:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",

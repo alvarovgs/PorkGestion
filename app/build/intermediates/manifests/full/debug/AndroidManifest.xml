@@ -64,6 +64,10 @@
         <activity android:name="com.example.a201495_2.porkgestion.DashReproductivo" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
         <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
+        <activity android:name="com.example.a201495_2.porkgestion.consultacerdo" />
+        <activity android:name="com.example.a201495_2.porkgestion.pajilla_Activity" />
+        <activity android:name="com.example.a201495_2.porkgestion.totalcerdos" />
+        <activity android:name="com.example.a201495_2.porkgestion.prenez" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

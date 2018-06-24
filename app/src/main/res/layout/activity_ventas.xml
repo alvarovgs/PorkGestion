@@ -7,176 +7,75 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
         android:text="VENTA"
+        android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="136dp"
+    <EditText
+        android:id="@+id/campoNumeroAniVenta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/et_nomba"
-        android:layout_alignStart="@+id/btnRegresar"
-        android:text="Numero del animal"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="100dp"
-        android:text="Nombre del animal"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="150dp"
-        android:text="Fecha de venta"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="200dp"
-        android:text="Peso vivo en Kg"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="250dp"
-        android:text="Precio total en pesos"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
+        android:layout_above="@+id/campoNombAniVenta"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Numero del cerdo"
+        android:inputType="number" />
 
     <EditText
-        android:id="@+id/et_numa"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoNombAniVenta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView10"
+        android:layout_above="@+id/campoFechaVenta"
+        android:layout_alignParentStart="true"
         android:ems="10"
-        android:hint="ingrese el numero"
-        android:inputType="number"
-        android:layout_alignParentRight="true" />
+        android:hint="Nombre del cerdo"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/et_nomba"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoFechaVenta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView11"
+        android:layout_above="@+id/campoPesoVenta"
+        android:layout_alignParentStart="true"
         android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
+        android:hint="Fecha de venta"
+        android:inputType="date" />
 
     <EditText
-        android:id="@+id/et_feve"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoPesoVenta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView12"
+        android:layout_above="@+id/campoPrecioVenta"
+        android:layout_alignParentStart="true"
         android:ems="10"
-        android:hint="ingrese la fecha"
-        android:inputType="date"
-        android:layout_alignParentRight="true" />
+        android:hint="Peso vivo en Kg"
+        android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/et_pesoven"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView13"
-        android:ems="10"
-        android:hint="ingrese el peso en Kg"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
-
-    <EditText
-        android:id="@+id/et_preven"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView14"
-        android:layout_alignParentEnd="true"
-        android:ems="10"
-        android:hint="ingrese el precio"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
-
-    <Button
-        android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoPrecioVenta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginBottom="230dp"
+        android:ems="10"
+        android:hint="Precio en pesos"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/btnRegistroVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:onClick="onClick"
-        android:text="REGRESAR"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="15dp" />
-
-    <Button
-        android:id="@+id/btn_registrar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignTop="@+id/btn_eliminar"
-        android:layout_toStartOf="@+id/btn_eliminar"
-        android:onClick="ingresar"
-        android:text="INGRESAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/btn_eliminar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_above="@+id/btn_consultar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="67dp"
-        android:onClick="eliminar"
-        android:text="ELIMINAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/btn_consultar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/btn_registrar"
-        android:onClick="consulta"
-        android:text="CONSULTAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/btn_actualizar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/btn_eliminar"
-        android:onClick="actualizar"
-        android:text="ACTUALIZAR"
-        android:textSize="10sp" />
+        android:text="Registrar Venta de Cerdo" />
 
 
 </RelativeLayout>

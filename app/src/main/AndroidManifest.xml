@@ -47,7 +47,11 @@
         <activity android:name=".raza" />
         <activity android:name=".DashReproductivo" />
         <activity android:name=".reporteventa" />
-        <activity android:name=".Partolact"></activity>
+        <activity android:name=".Partolact" />
+        <activity android:name=".consultacerdo" />
+        <activity android:name=".pajilla_Activity" />
+        <activity android:name=".totalcerdos" />
+        <activity android:name=".prenez"></activity>
     </application>
 
 </manifest>

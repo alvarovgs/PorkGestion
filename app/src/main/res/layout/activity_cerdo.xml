@@ -8,262 +8,94 @@
     tools:context=".cerdo">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
-        android:fontFamily="roboto"
         android:text="CERDO"
+        android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="30dp"/>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="136dp"
+    <EditText
+        android:id="@+id/campoId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        android:text="Numero del animal"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="8dp" />
-
-    <TextView
-        android:id="@+id/txt_nomcerda"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="100dp"
-        android:text="Nombre del animal"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="138dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="150dp"
-        android:text="Fecha de nacimiento"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="138dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="200dp"
-        android:text="Peso al nacer/Kg"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="250dp"
-        android:text="Sexo"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="290dp"
-        android:text="Raza"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="330dp"
-        android:text="Nombre de la madre"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView1"
-        android:layout_marginTop="380dp"
-        android:text="Nombre del padre"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView1" />
+        android:layout_marginTop="60dp"
+        android:hint="Numero del cerdo"
+        android:inputType="number" />
 
     <EditText
-        android:id="@+id/et_numa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView1"
-        android:ems="10"
-        android:hint="ingrese el numero"
-        android:inputType="number"
-        android:layout_alignParentRight="true" />
-
-    <EditText
-        android:id="@+id/et_nomba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/txt_nomcerda"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
-
-    <EditText
-        android:id="@+id/et_fena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView3"
-        android:ems="10"
-        android:hint="ingrese la fecha"
-        android:inputType="date"
-        android:layout_alignParentRight="true" />
-
-    <EditText
-        android:id="@+id/et_pena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView4"
-        android:ems="10"
-        android:hint="ingrese el peso"
-        android:inputType="number"
-        android:layout_alignParentRight="true" />
-
-    <Spinner
-        android:id="@+id/sp_sexo"
+        android:id="@+id/campoNombre"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_alignStart="@+id/et_numa"
-        android:layout_alignTop="@+id/textView5"
-        android:entries="@array/sexo"
-        android:layout_alignLeft="@+id/et_numa" />
-
-    <Spinner
-        android:id="@+id/sp_raza"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_alignStart="@+id/et_numa"
-        android:layout_alignTop="@+id/textView6"
-        android:entries="@array/raza"
-        android:layout_alignLeft="@+id/et_numa" />
-
-    <EditText
-        android:id="@+id/et_nommad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_numa"
-        android:layout_alignTop="@+id/textView7"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName"
-        android:layout_alignLeft="@+id/et_numa" />
-
-    <EditText
-        android:id="@+id/et_nompad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView8"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
-
-    <Button
-        android:id="@+id/btn_guardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="13dp"
-        android:onClick="onClick"
-        android:text="SIGUIENTE"
-        android:layout_alignParentRight="true" />
-
-    <Button
-        android:id="@+id/btn_registrar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignTop="@+id/btn_eliminar"
-        android:layout_toEndOf="@+id/btn_back"
-        android:onClick="ingresar"
-        android:text="INGRESAR"
-        android:textSize="10sp"
-        tools:ignore="OnClick"
-        android:layout_toRightOf="@+id/btn_back" />
-
-    <Button
-        android:id="@+id/btn_eliminar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="42dp"
-        android:layout_toEndOf="@+id/btn_consultar"
-        android:onClick="eliminar"
-        android:text="ELIMINAR"
-        android:textSize="10sp"
-        tools:ignore="OnClick"
-        android:layout_toRightOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/btn_consultar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/btn_registrar"
-        android:onClick="consulta"
-        android:text="CONSULTAR"
-        android:textSize="10sp"
-        android:layout_alignLeft="@+id/btn_registrar" />
-
-    <Button
-        android:id="@+id/btn_actualizar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/btn_registrar"
-        android:onClick="actualizar"
-        android:text="ACTUALIZAR"
-        android:textSize="10sp"
-        tools:ignore="OnClick"
-        android:layout_toRightOf="@+id/btn_registrar" />
-
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/btn_guardar"
+        android:layout_below="@+id/campoId"
+        android:hint="Nombre del cerdo"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/campoFechanace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoNombre"
+        android:hint="Fecha de nacimiento"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:onClick="onClick"
-        android:text="REGRESAR"
-        android:layout_alignParentLeft="true" />
+        android:text="Registrar Cerdo" />
+
+    <EditText
+        android:id="@+id/campoPesonace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoFechanace"
+        android:hint="Peso al nacer"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/campoNombremadre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboRazas"
+        android:ems="10"
+        android:hint="Nombre de la madre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/campoNombrepadre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoNombremadre"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Nombre del padre"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/comboRazas"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboSexo" />
+
+    <Spinner
+        android:id="@+id/comboSexo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/campoPesonace" />
 
 
 </RelativeLayout>

@@ -2,10 +2,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/nav_reprduccion"
-        android:icon="@drawable/ic_reproduccion"
-        android:title="@string/Reproduccion" />
+
     <group
         android:id="@+id/grp_1"
         android:checkableBehavior="single">

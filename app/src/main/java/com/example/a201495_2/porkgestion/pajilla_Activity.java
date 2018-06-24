@@ -12,7 +12,7 @@ public class pajilla_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pajilla);}
 
-        public void onClick(View view){
+        /*public void onClick(View view){
             Intent miIntent=null;
 
             switch (view.getId()) {
@@ -21,5 +21,5 @@ public class pajilla_Activity extends AppCompatActivity {
                     break;
             }
             startActivity(miIntent);
-        }
+        }*/
 }
