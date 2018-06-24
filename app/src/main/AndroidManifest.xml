@@ -46,7 +46,7 @@
         <activity android:name=".DashReproductivo" />
         <activity android:name=".reporteventa" />
         <activity android:name=".Partolact"></activity>
-        
+
     </application>
 
 </manifest>
