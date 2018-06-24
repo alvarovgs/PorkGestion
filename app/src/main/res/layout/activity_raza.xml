@@ -8,6 +8,10 @@
 
     <EditText
         android:id="@+id/et_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignParentEnd="true"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
@@ -38,6 +42,10 @@
 
     <EditText
         android:id="@+id/et_origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignParentEnd="true"
         android:layout_width="191dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView21"
