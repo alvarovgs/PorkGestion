@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jun 24 06:28:35 COT 2018
+#Sun Jun 24 12:16:24 COT 2018
 2.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 5.set=DEX
 0.path=classes.dex

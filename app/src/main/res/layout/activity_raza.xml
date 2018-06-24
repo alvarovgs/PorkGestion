@@ -6,153 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".raza">
 
-    <EditText
-        android:id="@+id/et_descripcion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignStart="@+id/et_origen"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
-
     <TextView
-        android:id="@+id/textView21"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="184dp"
-        android:layout_toStartOf="@+id/et_descrip"
-        android:text="Origen de la Raza"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="243dp"
-        android:text="Descripciones"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/et_origen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView21"
-        android:layout_alignParentEnd="true"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView21"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
-        android:fontFamily="roboto"
-        android:text="RAZA"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/et_nomraza"
-        android:layout_alignStart="@+id/btnRegresar"
-        android:text="Raza del animal"
-        android:textSize="18sp" />
+        android:text="RAZAS"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/et_nomraza"
-        android:layout_width="189dp"
+        android:id="@+id/campoIdRazaNew"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/et_origen"
-        android:layout_marginTop="109dp"
+        android:layout_above="@+id/campoRazanueva"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-173dp"
         android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
+        android:hint="ingrese el numero"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="101dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="235dp"
+    <EditText
+        android:id="@+id/campoRazanueva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="173dp"
+        android:ems="10"
+        android:hint="Ingrese el nombre de la raza"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnlimpiaraza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:text="Limpiar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnconsuraza"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="onClick"
+            android:text="CONSULTAR" />
+
+        <Button
+            android:id="@+id/btneliraza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_weight="0.5"
+            android:text="ELIMINAR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="179dp"
-        android:background="#D8FFFF"
-        android:text="@string/razas"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="15sp" />
-
-    <Button
-        android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="15dp"
-        android:onClick="onClick"
-        android:text="REGRESAR" />
+        android:layout_marginBottom="95dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignTop="@+id/button3"
-        android:layout_toStartOf="@+id/button3"
-        android:onClick="ingresar"
-        android:text="INGRESAR"
-        android:textSize="10sp" />
+        <Button
+            android:id="@+id/btningresar"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="onClick"
+            android:text="INGRESAR" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_above="@+id/bt_consultar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="67dp"
-        android:onClick="eliminar"
-        android:text="ELIMINAR"
-        android:textSize="10sp" />
+        <Button
+            android:id="@+id/btnactuaraza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="onClick"
+            android:text="ACTUALIZAR" />
 
-    <Button
-        android:id="@+id/bt_consultar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="236dp"
+        android:layout_height="79dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button2"
-        android:onClick="consulta"
-        android:text="CONSULTAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button3"
-        android:onClick="actualizar"
-        android:text="ACTUALIZAR"
-        android:textSize="10sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:background="#ffffff"
+        android:text="Ingrese el nombre de una nueva raza si esta no se encuentra en el módulo de NUEVO REGISTRO PARA CERDO en la opción de Seleccionar la raza"
+        android:textAlignment="center" />
 
 </RelativeLayout>

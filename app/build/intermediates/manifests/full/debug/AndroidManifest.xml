@@ -55,6 +55,7 @@
         <activity android:name="com.example.a201495_2.porkgestion.MainGlosario" />
         <activity android:name="com.example.a201495_2.porkgestion.MainDatosOrg" />
         <activity android:name="com.example.a201495_2.porkgestion.MainLinks" />
+        <activity android:name="com.example.a201495_2.porkgestion.pajillas" />
         <activity android:name="com.example.a201495_2.porkgestion.MainRecomendaciones" />
         <activity android:name="com.example.a201495_2.porkgestion.lechon" />
         <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
@@ -66,6 +67,8 @@
         <activity android:name="com.example.a201495_2.porkgestion.verraco" />
         <activity android:name="com.example.a201495_2.porkgestion.prenez" />
         <activity android:name="com.example.a201495_2.porkgestion.vergestantes" />
+        <activity android:name="com.example.a201495_2.porkgestion.pajilla_Activity" />
+        <activity android:name="com.example.a201495_2.porkgestion.totalcerdos" />
         <activity android:name="com.example.a201495_2.porkgestion.verpajillas" />
         <activity android:name="com.example.a201495_2.porkgestion.ververracos" />
         <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
