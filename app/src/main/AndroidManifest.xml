@@ -10,8 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,9 +41,16 @@
         <activity android:name=".MainRecomendaciones" />
         <activity android:name=".lechon" />
         <activity android:name=".MainReporteHV" />
-        <activity android:name=".raza" />
         <activity android:name=".DashReproductivo" />
         <activity android:name=".reporteventa" />
+        <activity android:name=".cepajillas" />
+        <activity android:name=".ceprenez" />
+        <activity android:name=".ceverracos" />
+        <activity android:name=".verraco"/>
+        <activity android:name=".prenez" />
+        <activity android:name=".vergestantes" />
+        <activity android:name=".verpajillas" />
+        <activity android:name=".ververracos" />
         <activity android:name=".Partolact"></activity>
     </application>
 

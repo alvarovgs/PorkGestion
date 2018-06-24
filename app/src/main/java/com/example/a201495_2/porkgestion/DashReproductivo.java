@@ -28,7 +28,7 @@ public class DashReproductivo extends AppCompatActivity {
         ibmonta.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View v) {
-            Intent ibmonta = new Intent(DashReproductivo.this, monta_Activity.class);
+            Intent ibmonta = new Intent(DashReproductivo.this, monta.class);
             startActivity(ibmonta);
             Toast mostrar = Toast.makeText(DashReproductivo.this, "Registro de Monta", Toast.LENGTH_LONG);
             mostrar.show();        }

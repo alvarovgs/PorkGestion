@@ -130,7 +130,9 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
     public Cursor qweryDatabase(String strTableName, String[] strColumns, String strValues){
         Cursor crResult=null;
         try {
-            crResult = dataBase.query(strTableName, strColumns, strValues, strArgs, null, null, strOrder);
+            String[] strArgs = new String[0];
+            String strOrder = null;
+            crResult = dataBase.query(strTableName, strColumns, strValues, strArgs, null, null,strOrder);
         }
         catch(Exception e){
             LogError objLogError = new LogError(mContext,"DATABASE.insertDatabase",e.getMessage());

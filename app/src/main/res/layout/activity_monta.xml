@@ -41,7 +41,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:ems="10"
-        android:hint="@string/fechamonta"
         android:inputType="date"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"

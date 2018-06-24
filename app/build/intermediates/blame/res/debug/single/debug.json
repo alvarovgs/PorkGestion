@@ -116,6 +116,10 @@
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\materialdatetimepicker-3.2.0.aar\\1a78c1494cd15dfcdfc471de9b0b598e\\res\\layout\\mdtp_time_header_label.xml"
     },
     {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_prenez.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_prenez.xml"
+    },
+    {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_editusuario.xml.flat",
         "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_main_editusuario.xml"
     },
@@ -186,6 +190,10 @@
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vergestantes.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_vergestantes.xml"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_design_tint_password_toggle.xml.flat",
@@ -370,6 +378,10 @@
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cepajillas.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_cepajillas.xml"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -944,6 +956,10 @@
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pajillas.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_pajillas.xml"
+    },
+    {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\color\\abc_tint_edittext.xml"
     },
@@ -1178,6 +1194,10 @@
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_verpajillas.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_verpajillas.xml"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -1472,12 +1492,12 @@
         "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\drawable\\ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_user.png.flat",
-        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_user.png"
-    },
-    {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_porkcolombia.png.flat",
         "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\drawable\\porkcolombia.png"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_user.png.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_user.png"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ciclo.png.flat",
@@ -1542,6 +1562,10 @@
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_verraco.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_verraco.xml"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -1816,6 +1840,10 @@
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ceprenez.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_ceprenez.xml"
+    },
+    {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
@@ -1970,6 +1998,10 @@
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_mdtp_date_picker_dialog.xml.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\materialdatetimepicker-3.2.0.aar\\1a78c1494cd15dfcdfc471de9b0b598e\\res\\layout\\mdtp_date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ververracos.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_ververracos.xml"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mdtp_done_background_color_dark.xml.flat",
@@ -2684,6 +2716,10 @@
         "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.jpg.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\drawable\\back.jpg"
+    },
+    {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\color_navigation_icon_state_list_color_light.xml.flat",
         "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\color\\navigation_icon_state_list_color_light.xml"
     },
@@ -2718,6 +2754,10 @@
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Ozzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c2db87b979f2cab2aed8cc715fa76aed\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ceverracos.xml.flat",
+        "source": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\src\\main\\res\\layout\\activity_ceverracos.xml"
     },
     {
         "merged": "C:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",

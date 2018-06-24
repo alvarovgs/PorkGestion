@@ -23,11 +23,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.a201495_2.porkgestion.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,6 +43,7 @@
         <activity android:name="com.example.a201495_2.porkgestion.reproduccion" />
         <activity android:name="com.example.a201495_2.porkgestion.reportes" />
         <activity android:name="com.example.a201495_2.porkgestion.monta" />
+        <activity android:name="com.example.a201495_2.porkgestion.raza" />
         <activity android:name="com.example.a201495_2.porkgestion.fpp" />
         <activity android:name="com.example.a201495_2.porkgestion.Parto_Activity" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteparto" />
@@ -57,9 +58,16 @@
         <activity android:name="com.example.a201495_2.porkgestion.MainRecomendaciones" />
         <activity android:name="com.example.a201495_2.porkgestion.lechon" />
         <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
-        <activity android:name="com.example.a201495_2.porkgestion.raza" />
         <activity android:name="com.example.a201495_2.porkgestion.DashReproductivo" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
+        <activity android:name="com.example.a201495_2.porkgestion.cepajillas" />
+        <activity android:name="com.example.a201495_2.porkgestion.ceprenez" />
+        <activity android:name="com.example.a201495_2.porkgestion.ceverracos" />
+        <activity android:name="com.example.a201495_2.porkgestion.verraco" />
+        <activity android:name="com.example.a201495_2.porkgestion.prenez" />
+        <activity android:name="com.example.a201495_2.porkgestion.vergestantes" />
+        <activity android:name="com.example.a201495_2.porkgestion.verpajillas" />
+        <activity android:name="com.example.a201495_2.porkgestion.ververracos" />
         <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

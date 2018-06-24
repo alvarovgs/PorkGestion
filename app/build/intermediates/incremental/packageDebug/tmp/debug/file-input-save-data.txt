@@ -1,15 +1,31 @@
 #Internal package file, do not edit.
-#Wed Jun 20 00:12:57 COT 2018
-1.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
-2.path=databases/Porkgestion.db
-0.baseType=DIRECTORY
-2.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
-2.set=ASSET
-1.baseType=DIRECTORY
-count=3
-1.set=ASSET
+#Sun Jun 24 06:11:19 COT 2018
+2.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+5.set=DEX
 0.path=classes.dex
-0.set=DEX
-0.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 2.baseType=DIRECTORY
-1.path=fonts/Roboto-Medium.ttf
+3.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+2.set=DEX
+1.path=databases/Porkgestion.db-journal
+4.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+count=7
+5.baseType=DIRECTORY
+2.path=classes.dex
+5.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+4.set=ASSET
+3.path=classes.dex
+6.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=fonts/Roboto-Medium.ttf
+6.set=ASSET
+1.baseType=DIRECTORY
+6.baseType=DIRECTORY
+5.path=classes.dex
+0.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+0.baseType=DIRECTORY
+3.set=DEX
+6.path=databases/Porkgestion.db
+1.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+4.baseType=DIRECTORY
+0.set=DEX
