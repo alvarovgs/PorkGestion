@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.example.a201495_2.porkgestion.AdminSQLiteOpenHelper;
-
 public class Parto_Activity extends AppCompatActivity {
     private EditText codigoparto,numerocerda, nombrecerda, fechaparto, totallechones, hembrasvivas, hembrasmuertas,
     machosvivos, machosmuertos;
@@ -53,6 +52,7 @@ public class Parto_Activity extends AppCompatActivity {
             regsitro.put("campo_nombrecerda", Nombrecerda);
             regsitro.put("campo_fechaparto", Fechaparto);
             regsitro.put("campo_hembrasvivas", Hembrasvivas);
+            regsitro.put("campo_totllechones", Totallechones);
             regsitro.put("campo_hembrasmuertas", Hembrasmuertas);
             regsitro.put("campo_machosvivos", Machosvivos);
             regsitro.put("campo_machosmuertos", Machosmuertos);
@@ -68,7 +68,8 @@ public class Parto_Activity extends AppCompatActivity {
             hembrasmuertas.setText("");
             machosvivos.setText("");
             machosmuertos.setText("");
-
+            codigoparto.requestFocus();
+            
             Toast.makeText(this,"Se ha Ingresado un regsitro de Parto",Toast.LENGTH_SHORT).show();
 
         }else{
