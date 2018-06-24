@@ -44,6 +44,7 @@
         <activity android:name="com.example.a201495_2.porkgestion.reproduccion" />
         <activity android:name="com.example.a201495_2.porkgestion.reportes" />
         <activity android:name="com.example.a201495_2.porkgestion.monta" />
+        <activity android:name="com.example.a201495_2.porkgestion.raza" />
         <activity android:name="com.example.a201495_2.porkgestion.fpp" />
         <activity android:name="com.example.a201495_2.porkgestion.Parto_Activity" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteparto" />

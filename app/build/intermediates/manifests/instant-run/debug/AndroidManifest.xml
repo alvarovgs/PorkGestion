@@ -44,6 +44,7 @@
         <activity android:name="com.example.a201495_2.porkgestion.reproduccion" />
         <activity android:name="com.example.a201495_2.porkgestion.reportes" />
         <activity android:name="com.example.a201495_2.porkgestion.monta" />
+        <activity android:name="com.example.a201495_2.porkgestion.raza" />
         <activity android:name="com.example.a201495_2.porkgestion.fpp" />
         <activity android:name="com.example.a201495_2.porkgestion.Parto_Activity" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteparto" />
@@ -56,7 +57,12 @@
         <activity android:name="com.example.a201495_2.porkgestion.MainDatosOrg" />
         <activity android:name="com.example.a201495_2.porkgestion.MainLinks" />
         <activity android:name="com.example.a201495_2.porkgestion.MainRecomendaciones" />
+        <activity android:name="com.example.a201495_2.porkgestion.lechon" />
         <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
+        <activity android:name="com.example.a201495_2.porkgestion.raza" />
+        <activity android:name="com.example.a201495_2.porkgestion.DashReproductivo" />
+        <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
+        <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

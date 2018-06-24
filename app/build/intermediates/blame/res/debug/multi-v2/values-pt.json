@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jenn\\StudioProjects\\PorkGestion\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "outputFile": "C:\\Users\\ASMEVIES\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jenn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\bd54eb8d4bb188126f813238a3e47726\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\ASMEVIES\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\94a0062ccc581e30c31e9f212e686e2f\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jenn\\.gradle\\caches\\transforms-1\\files-1.1\\materialdatetimepicker-3.2.0.aar\\a24cc1b7a3a01cfba462e19a70eaac7e\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\ASMEVIES\\.gradle\\caches\\transforms-1\\files-1.1\\materialdatetimepicker-3.2.0.aar\\1099145dc8cbb0db1df5c87a3171e4d2\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jenn\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\f445c6cb9dac088587bf5923f89148ef\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\ASMEVIES\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\87d2492cae8c1ea24d1786de88d5d063\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

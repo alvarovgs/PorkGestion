@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Sat Jun 16 22:43:48 COT 2018
+#Sun Jun 24 01:02:21 CDT 2018
+1.base=C\:\\Users\\ASMEVIES\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
 0.path=fonts/Roboto-Medium.ttf
 0.set=ASSET
-count=1
+0.base=C\:\\Users\\ASMEVIES\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+1.path=databases/Porkgestion.db

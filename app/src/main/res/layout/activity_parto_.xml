@@ -6,119 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".Parto_Activity">
 
-    <Button
-        android:id="@+id/btn_regresar3"
-        android:layout_width="142dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:onClick="onClick"
-        android:text="REGRESAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <EditText
-        android:id="@+id/edtxt_numpajilla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/numero_pajilla_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
-
-    <EditText
-        android:id="@+id/edtxt_tonamuertos"
-        android:layout_width="wrap_content"
+        android:id="@+id/ed_codigparto"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
-        android:hint="@string/total_namuertos_string"
+        android:hint="Código Parto"
         android:inputType="number"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_machosmuertos" />
+        app:layout_constraintTop_toBottomOf="@+id/TEX" />
 
     <EditText
-        android:id="@+id/edtxt_machosmuertos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/machos_muertos_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_machosvivos" />
-
-    <EditText
-        android:id="@+id/edtxt_embrasmuertas"
-        android:layout_width="wrap_content"
+        android:id="@+id/ed_numerocerda"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/embras_muertas_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_emb_vivas" />
-
-    <EditText
-        android:id="@+id/edtxt_machosvivos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/machos_vivos_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_embrasmuertas" />
-
-    <TextView
-        android:id="@+id/txt_nomcerda"
-        android:layout_width="146dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/nombre_cerda_string"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_numcerda" />
-
-    <EditText
-        android:id="@+id/edtxt_numcerda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
         android:ems="10"
         android:hint="@string/numero_cerda_string"
         android:inputType="number"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_codigparto" />
+
+    <TextView
+        android:id="@+id/TEX"
+        android:layout_width="237dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        android:text="REGISTRO DE PARTO"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="REGISTRO DE PARTO" />
 
     <EditText
-        android:id="@+id/edtxt_fechaparto"
-        android:layout_width="wrap_content"
+        android:id="@+id/ed_nombrecerda"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/nombre_cerda_string"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_numerocerda" />
+
+    <EditText
+        android:id="@+id/ed_fechaparto"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
@@ -126,13 +71,13 @@
         android:ems="10"
         android:hint="@string/fecha_parto_string"
         android:inputType="date"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_nomcerda" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_nombrecerda" />
 
     <EditText
-        android:id="@+id/edtex_lechonesxparto"
-        android:layout_width="wrap_content"
+        android:id="@+id/ed_totallechones"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
@@ -140,123 +85,143 @@
         android:ems="10"
         android:hint="@string/total_navivos_string"
         android:inputType="number"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_fechaparto" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_fechaparto" />
 
     <EditText
-        android:id="@+id/edtxt_emb_vivas"
+        android:id="@+id/ed_hembrasvivas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="@string/embrasvivas_string"
         android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtex_lechonesxparto" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="76dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/rd_mondir"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Monta Directa"
-            android:textSize="12sp" />
-
-        <RadioButton
-            android:id="@+id/rb_insartif"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Insiminación Artificial"
-            android:textSize="12sp" />
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/TEX" />
 
     <EditText
-        android:id="@+id/ed_numero_verraco"
+        android:id="@+id/ed_hembrasmuertas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/numero_verraco_string"
+        android:hint="@string/embras_muertas_string"
         android:inputType="number"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_hembrasvivas" />
+
+    <EditText
+        android:id="@+id/ed_machosvivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/machos_vivos_string"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_hembrasmuertas" />
+
+    <EditText
+        android:id="@+id/ed_machosmuertos"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/machos_muertos_string"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_machosvivos" />
 
     <Button
-        android:id="@+id/bt_nuevo"
+        android:id="@+id/bt_insertar"
         style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="150dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="NUEVO"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_numpajilla" />
-
-    <Button
-        android:id="@+id/bt_guardar"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="152dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="GUARDAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_nuevo" />
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:onClick="ingresar"
+        android:text="INSERTAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_totallechones" />
 
     <Button
         android:id="@+id/bt_consultar"
         style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="152dp"
-        android:layout_height="41dp"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="108dp"
+        android:onClick="Consultar"
         android:text="CONSULTAR"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_guardar" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_machosmuertos" />
 
     <Button
-        android:id="@+id/bt_editar"
+        android:id="@+id/bt_update"
         style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="153dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="EDITAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_consultar" />
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:text="ACTUALIZAR"
+        app:layout_constraintStart_toEndOf="@+id/bt_insertar"
+        app:layout_constraintTop_toBottomOf="@+id/ed_totallechones" />
 
     <Button
         android:id="@+id/bt_eliminar"
         style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="154dp"
-        android:layout_height="39dp"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="ELIMINAR"
+        app:layout_constraintStart_toEndOf="@+id/btn_regresar3"
+        app:layout_constraintTop_toBottomOf="@+id/bt_update" />
+
+    <Button
+        android:id="@+id/btn_regresar3"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/nombre_cerda_string"
+        android:onClick="onClick"
+        android:text="REGRESAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_insertar" />
+
+    <Button
+        android:id="@+id/bt_consultar2"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="ELIMINAR"
+        android:layout_marginTop="12dp"
+        android:onClick="Limpiar"
+        android:text="limpiar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_editar" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_consultar" />
 
 </android.support.constraint.ConstraintLayout>
