@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a201495_2.porkgestion">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
@@ -28,6 +27,7 @@
         <activity android:name=".reproduccion" />
         <activity android:name=".reportes" />
         <activity android:name=".monta" />
+        <activity android:name=".raza" />
         <activity android:name=".fpp" />
         <activity android:name=".Parto_Activity" />
         <activity android:name=".reporteparto" />
