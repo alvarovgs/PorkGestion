@@ -34,7 +34,7 @@ public class reproduccion extends AppCompatActivity {
                 break;
 
             case R.id.btn_apajilla:
-                miIntent = new Intent(reproduccion.this, monta.class);
+                miIntent = new Intent(reproduccion.this, consultapajilla.class);
                 break;
 
         }

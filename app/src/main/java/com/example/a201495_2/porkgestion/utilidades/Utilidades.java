@@ -51,4 +51,15 @@ public class Utilidades {
             "TEXT, "+CAMPO_FECHA2CELO+" TEXT, "+CAMPO_TIPOPRENEZ+" TEXT, "+CAMPO_NOMVERRACO+" TEXT, "+CAMPO_NUMPAJILLA+"" +
             "INTEGER, "+CAMPO_FECHAECO+" TEXT)";
 
+
+    public static final String TABLA_PAJILLA="pajilla";
+    public static final String CAMPO_IDPAJILLA="idpajilla";
+    public static final String CAMPO_FECHACOMPRAPAJILLA="fechacomprapajilla";
+    public static final String CAMPO_RAZAPAJILLA="razapajilla";
+    public static final String CAMPO_NOMPROVEPAJILLA="nomprovepajilla";
+    public static final String CAMPO_OBSEPAJILLA="obserpajilla";
+
+    public static final String CREAR_TABLA_PAJILLA="CREATE TABLE"+
+            ""+TABLA_PAJILLA+"("+CAMPO_IDPAJILLA+" INTEGER, "+CAMPO_FECHACOMPRAPAJILLA+" TEXT, "+CAMPO_RAZAPAJILLA+" " +
+            "TEXT, "+CAMPO_NOMPROVEPAJILLA+" TEXT, "+CAMPO_OBSEPAJILLA+" TEXT)";
 }

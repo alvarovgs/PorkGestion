@@ -51,7 +51,8 @@
         <activity android:name=".consultacerdo" />
         <activity android:name=".pajilla_Activity" />
         <activity android:name=".totalcerdos" />
-        <activity android:name=".prenez"></activity>
+        <activity android:name=".prenez" />
+        <activity android:name=".consultapajilla"></activity>
     </application>
 
 </manifest>
