@@ -103,10 +103,10 @@ public class Usuario {
         return dbAcces.getErrorDB()==null;
     }
 
-    public Object getUsuario(String strEmail){
+    public Usuario getUsuario(String strEmail){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDUSUARIO","NOMBRE","PASSWORD","EMAIL","TELEFONO"};
-        String strArgs[] = new String[]{strEmail,strEmail};
+        String strArgs[] = new String[]{strEmail};
         Usuario tmpObject = new Usuario(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
@@ -114,8 +114,8 @@ public class Usuario {
         if (crResult.moveToFirst()) {
             tmpObject.setIdUsuario(crResult.getInt(0));
             tmpObject.setStrNombre(crResult.getString(1));
-            tmpObject.setStrEmail(crResult.getString(2));
-            tmpObject.setStrPassword(crResult.getString(3));
+            tmpObject.setStrPassword(crResult.getString(2));
+            tmpObject.setStrEmail(crResult.getString(3));
             tmpObject.setStrTelefono(crResult.getString(4));
         }
         this.strError = dbAcces.getErrorDB();

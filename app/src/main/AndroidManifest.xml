@@ -52,6 +52,7 @@
         <activity android:name=".verpajillas" />
         <activity android:name=".ververracos" />
         <activity android:name=".Partolact"></activity>
+
     </application>
 
 </manifest>
