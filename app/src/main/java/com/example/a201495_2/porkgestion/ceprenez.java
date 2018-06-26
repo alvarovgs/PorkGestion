@@ -93,7 +93,7 @@ public class ceprenez extends AppCompatActivity {
 
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(ceprenez.this, reproduccion.class);
+        miIntent = new Intent(ceprenez.this, prenez.class);
         startActivity(miIntent);
     }
     private void consultar() {

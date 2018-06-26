@@ -88,7 +88,7 @@ public class cepajillas extends AppCompatActivity {
 
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(cepajillas.this, reproduccion.class);
+        miIntent = new Intent(cepajillas.this, prenez.class);
         startActivity(miIntent);
     }
     private void consultar() {

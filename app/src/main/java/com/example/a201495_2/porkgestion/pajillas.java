@@ -32,7 +32,7 @@ public class pajillas extends AppCompatActivity {
 
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(pajillas.this, reproduccion.class);
+        miIntent = new Intent(pajillas.this, prenez.class);
         startActivity(miIntent);
     }
 

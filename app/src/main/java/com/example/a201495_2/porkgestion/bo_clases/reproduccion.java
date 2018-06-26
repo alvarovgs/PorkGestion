@@ -123,7 +123,7 @@ public class reproduccion {
         reproduccion tmpObject = new reproduccion(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_REPRODUCCION", strColumns, "(IDHEMBRA=?)");
+        crResult = dbAcces.qweryDatabase("VW_REPRODUCCION", strColumns, "(IDHEMBRA=?)", null, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdHembra(crResult.getInt(0));
             tmpObject.setIdVerraco(crResult.getInt(1));
@@ -143,7 +143,7 @@ public class reproduccion {
         reproduccion tmpObject = new reproduccion(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("REPRODUCCION", strColumns, "(IDHEMBRA=?)");
+        crResult = dbAcces.qweryDatabase("REPRODUCCION", strColumns, "(IDHEMBRA=?)" , null, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdHembra(crResult.getInt(0));
             tmpObject.setIdVerraco(crResult.getInt(1));
@@ -163,7 +163,7 @@ public class reproduccion {
         Cursor crResult;
         ArrayList<reproduccion> listMonta = new ArrayList<>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_REPRODUCCION", strColumns, null);
+        crResult = dbAcces.qweryDatabase("VW_REPRODUCCION", strColumns, null, null, null);
         if (crResult.moveToFirst()) {
             do {
                 reproduccion tmpObject = new reproduccion(appContext);
@@ -188,7 +188,7 @@ public class reproduccion {
         Cursor crResult;
         ArrayList<reproduccion> listObject = new ArrayList<reproduccion>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("REPRODUCCION", strColumns, null);
+        crResult = dbAcces.qweryDatabase("REPRODUCCION", strColumns, null, null, null);
         if (crResult.moveToFirst()) {
             do {
                 reproduccion tmpObject = new reproduccion(appContext);
