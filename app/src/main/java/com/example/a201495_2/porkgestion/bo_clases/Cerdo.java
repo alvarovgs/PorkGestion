@@ -162,6 +162,7 @@ public class Cerdo {
         return dbAcces.getErrorDB()==null;
     }
 
+
     public Object getCerdoByView(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDCERDO","FECHANACIMIENTO","SEXO","PESONACIMIENTO","IDPADRE","IDMADRE","IDRAZA","CODIGO","PADRE","MADRE","NOMBRERAZA"};

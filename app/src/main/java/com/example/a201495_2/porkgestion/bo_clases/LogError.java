@@ -17,6 +17,7 @@ public class LogError {
 
     }
 
+
     public String getStrModule() {
         return strModule;
     }
