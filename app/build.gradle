@@ -17,11 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -49,4 +47,7 @@ dependencies {
     implementation 'com.github.pchmn:MaterialChipsInput:1.0.5'         // material chip
     implementation 'com.hootsuite.android:nachos:1.1.1'                // material chips
     implementation 'com.google.android:flexbox:0.3.2'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+    implementation 'com.facebook.stetho:stetho:1.4.2';
+
 }
