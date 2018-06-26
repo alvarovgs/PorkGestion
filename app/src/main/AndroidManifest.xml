@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a201495_2.porkgestion">
+
     <application
         android:allowBackup="true"
+        android:name=".GlobalClass"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
@@ -10,7 +12,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,20 +42,20 @@
         <activity android:name=".MainDatosOrg" />
         <activity android:name=".MainLinks" />
         <activity android:name=".MainRecomendaciones" />
-        <activity android:name=".lechon" />
         <activity android:name=".MainReporteHV" />
-        <activity android:name=".DashReproductivo" />
-        <activity android:name=".reporteventa" />
-        <activity android:name=".cepajillas" />
-        <activity android:name=".ceprenez" />
-        <activity android:name=".ceverracos" />
-        <activity android:name=".verraco"/>
-        <activity android:name=".prenez" />
-        <activity android:name=".vergestantes" />
-        <activity android:name=".verpajillas" />
-        <activity android:name=".ververracos" />
-        <activity android:name=".Partolact"></activity>
-
+        <activity
+            android:name=".SanidadActivity"
+            android:label="@string/title_activity_sanidad"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RazaActivity"
+            android:label="@string/title_activity_raza"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PajillaActivity"
+            android:label="@string/title_activity_pajilla"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>
