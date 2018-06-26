@@ -21,6 +21,7 @@ public class Raza {
         this.strDescripcion=strDescripcion;
     }
 
+
     public Raza(Context appContext) {
         this.appContext = appContext;
     }

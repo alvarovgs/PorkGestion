@@ -22,6 +22,7 @@ public class Sanidad {
         this.strObservaciones = strObservaciones;
     }
 
+
     public Sanidad(Context appContext) {
         this.appContext = appContext;
     }

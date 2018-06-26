@@ -17,6 +17,7 @@ public class SanidadCerdo {
     private String strTipoMedicamento, strNombremedicamente, strViaAdministracion, strFechaAdministracion;;
     private String strCodigoCerdo, strSexoCerdo, strError;;
 
+
     public SanidadCerdo(int idCerdo, int idSanidad, double dDosis, String strTipoMedicamento, String strNombremedicamente, String strViaAdministracion, String strFechaAdministracion, String strCodigoCerdo, String strSexoCerdo) {
         this.idCerdo = idCerdo;
         this.idSanidad = idSanidad;

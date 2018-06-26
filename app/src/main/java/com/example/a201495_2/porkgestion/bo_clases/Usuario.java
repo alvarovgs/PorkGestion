@@ -123,6 +123,7 @@ public class Usuario {
         return tmpObject;
     }
 
+
     public ArrayList<Usuario> getAllUsuario(){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDUSUARIO","NOMBRE","PASSWORD","EMAIL","TELEFONO"};

@@ -35,6 +35,7 @@ public class SpinData {
         Valor = Valor;
     }
 
+
     public SpinData[] getRaza(){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDRAZA","NOMBRERAZA"};
