@@ -21,8 +21,8 @@ public class Raza {
         this.strDescripcion=strDescripcion;
     }
 
-    public Raza(Context appPCOntext) {
-
+    public Raza(Context appContext) {
+        this.appContext = appContext;
     }
 
     public int getIdRaza() {
@@ -39,6 +39,10 @@ public class Raza {
 
     public String getStrDescripcion() {
         return strDescripcion;
+    }
+
+    public String getStrError() {
+        return strError;
     }
 
     public void setIdRaza(int idRaza) {
@@ -169,7 +173,7 @@ public class Raza {
         dbAcces = new dataBaseOpenHelper(appContext);
         Boolean bResult  = false;
         Cursor crResult;
-        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM RAZA WHERE CODIGO='%s'",strNombreRaza);
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM RAZA WHERE NOMBRERAZA='%s'",strNombreRaza);
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql(strSql);
         if (crResult.moveToFirst()) {

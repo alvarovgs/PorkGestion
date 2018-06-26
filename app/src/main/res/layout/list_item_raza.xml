@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <TextView
+            android:id="@+id/lblNombreRaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la Raza"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/lblOrigenRaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Origen de la raza"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/lblDescripcionRaza"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:text="Descripción"
+            android:textColor="@android:color/holo_blue_dark" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -58,6 +58,10 @@ public class Sanidad {
         this.strObservaciones = strObservaciones;
     }
 
+    public String getStrError() {
+        return strError;
+    }
+
     public boolean insertSanidad(){
         dbAcces = new dataBaseOpenHelper(appContext);
         ContentValues ctValores = new ContentValues();

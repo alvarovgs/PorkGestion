@@ -38,7 +38,7 @@ public class DashReproductivo extends AppCompatActivity {
         ibpajilla.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent ibpajilla =new Intent(DashReproductivo.this, pajilla_Activity.class);
+               Intent ibpajilla =new Intent(DashReproductivo.this, PajillaActivity.class);
                startActivity(ibpajilla);
                Toast mostarar =Toast.makeText(DashReproductivo.this, "Registro de Pajillas", Toast.LENGTH_LONG);
                mostarar.show();

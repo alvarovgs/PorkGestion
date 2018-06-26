@@ -1,20 +1,17 @@
 package com.example.a201495_2.porkgestion;
 
-import android.database.Cursor;
 import android.os.Bundle;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.TextView;
 
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
-
 import com.example.a201495_2.porkgestion.bo_clases.Usuario;
-import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
+import com.facebook.stetho.inspector.database.*;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv_registrar;
@@ -28,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tv_registrar=findViewById(R.id.tv_registrar);
         btn_ingresar=findViewById(R.id.btn_ingresar);
-
+        final GlobalClass datosGlobales = (GlobalClass) getApplicationContext();
 
         tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,11 +38,9 @@ public class MainActivity extends AppCompatActivity {
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario miusuario = new Usuario(getApplicationContext());
-
                 String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
                 String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
-
+                Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
                 if(!clsUtil.bValidaString(strUsuario,1))
                     Toast.makeText(getBaseContext(),"Debe digitar el usuario (email)",Toast.LENGTH_SHORT).show();
                 else if(!clsUtil.bValidaString(strUsuario,3))
@@ -54,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getBaseContext(),"Debe digitar el password",Toast.LENGTH_SHORT).show();
                 else{
                     if (miusuario.validateUsuario(strUsuario,strPassword)) {
+                        datosGlobales.setActiveUser(miusuario);
                         Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
                         Toast.makeText(getBaseContext(),"Bienvenido a PorkGestión",Toast.LENGTH_SHORT).show();
                         MainActivity.this.startActivity(IntentReg);
