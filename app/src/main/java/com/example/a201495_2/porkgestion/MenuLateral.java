@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+import com.facebook.stetho.Stetho;
 public class MenuLateral extends AppCompatActivity {
     private ActionBar actionBar;
     private Toolbar toolbar;
@@ -46,6 +47,41 @@ public class MenuLateral extends AppCompatActivity {
         nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
+                /*Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+                String strSelectedmenu = item.getTitle().toString();
+                Intent menuIntent;
+                switch (strSelectedmenu){
+                    case "Cerdo":
+                        menuIntent = new Intent(MenuLateral.this, cerdo.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Reproducción":
+                        menuIntent = new Intent(MenuLateral.this, reproduccion.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Ventas":
+                        menuIntent = new Intent(MenuLateral.this, ventas.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Reportes":
+                        menuIntent = new Intent(MenuLateral.this, reportes.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Info. General":
+                        menuIntent = new Intent(MenuLateral.this, MainInformacion.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Raza":
+                        menuIntent = new Intent(MenuLateral.this, raza.class);
+                        startActivity(menuIntent);
+                        return false;
+                    case "Cerrar":
+                        menuIntent = new Intent(MenuLateral.this, MainActivity.class);
+                        startActivity(menuIntent);
+                        System.exit(0);
+                        return false;
+                    default:
+                        Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();*/
                 Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
 
                 if (item.getTitle().toString().equals("Cerdo")) {
@@ -60,8 +96,20 @@ public class MenuLateral extends AppCompatActivity {
                     return false;
                 }
 
+                else if (item.getTitle().toString().equals("Cerdos en la finca")) {
+                    Intent miIntent = new Intent(MenuLateral.this, totalcerdos.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
                 else if (item.getTitle().toString().equals("Reproducción")) {
                     Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
+                    startActivity(miIntent);
+                    return false;
+                }
+
+                else if(item.getTitle().toString().equals("Reproducción")) {
+                    Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
                     startActivity(miIntent);
                     return false;
                 }
@@ -71,7 +119,7 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
-                else if (item.getTitle().toString().equals("Parto")) {
+                else if (item.getTitle().toString().equals("Parto y Lactancia")) {
                     Intent miIntent = new Intent(MenuLateral.this, Partolact.class);
                     startActivity(miIntent);
                     return false;
