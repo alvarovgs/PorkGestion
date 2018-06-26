@@ -9,36 +9,83 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+import com.example.a201495_2.porkgestion.bo_clases.Usuario;
 
 public class MainEditusuario extends AppCompatActivity {
-    Button btn_reg;
+    private Button btn_Actualizar;
+    private Button btn_Eliminar;
+    private EditText et_Usuario;
+    private EditText et_Nombre;
+    private EditText et_Password;
+    private EditText et_Telefono;
+    private Usuario miUsuario;
     private clsUtilidades clsUtil = new clsUtilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_editusuario);
+        final GlobalClass datosGlobales = (GlobalClass) getApplicationContext();
+        miUsuario = datosGlobales.getActiveUser();
 
-        btn_reg = findViewById(R.id.btn_reg);
+        btn_Actualizar = findViewById(R.id.btnActualizar);
+        btn_Eliminar = findViewById(R.id.btnEliminar);
+        et_Usuario = findViewById(R.id.txt_usuario);
+        et_Nombre = findViewById(R.id.txt_nombreusuario);
+        et_Password = findViewById(R.id.txt_pass);
+        et_Telefono = findViewById(R.id.txt_telefono);
 
-        btn_reg.setOnClickListener (new View.OnClickListener() {
+        et_Usuario.setText(miUsuario.getStrEmail());
+        et_Nombre.setText(miUsuario.getStrNombre());
+        et_Password.setText(miUsuario.getStrPassword());
+        et_Telefono.setText(miUsuario.getStrTelefono());
+
+        btn_Actualizar.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
-                String strPassword = ((EditText) findViewById(R.id.txt_pass)).getText().toString();
-                if(!clsUtil.bValidaString(strUsuario,1))
-                    Toast.makeText(getBaseContext(),"Debe digitar un nuevo usuario (email)",Toast.LENGTH_SHORT).show();
-                else if(!clsUtil.bValidaString(strUsuario,3))
-                    Toast.makeText(getBaseContext(),"El usuario debe ser un email válido",Toast.LENGTH_SHORT).show();
-                else if(!clsUtil.bValidaString(strPassword,1))
-                    Toast.makeText(getBaseContext(),"Debe digitar un nuevo password",Toast.LENGTH_SHORT).show();
-                else if (strUsuario.equals("admin@gmail.com")){
-                    //Todo  Validar aceso a BD
-                    Intent IntentReg= new Intent (MainEditusuario.this, MainActivity.class);
-                    MainEditusuario.this.startActivity(IntentReg);
+                    upateUsuario();
                 }
-
             }
-        });
+        );
 
-    }}
+        btn_Eliminar.setOnClickListener (new View.OnClickListener() {
+                                               @Override
+                                               public void onClick(View v) { deleteUsuario(); }
+                                           }
+        );
+    }
+
+    private void upateUsuario (){
+        String strPassword = et_Password.getText().toString();
+        String strNombre = et_Nombre.getText().toString();
+        String strTelefono = et_Telefono.getText().toString();
+        if(!clsUtil.bValidaString(strPassword,1))
+            Toast.makeText(getBaseContext(),"Debe digitar un nuevo password",Toast.LENGTH_SHORT).show();
+        else{
+            miUsuario.setStrPassword(strPassword);
+            miUsuario.setStrNombre(strNombre);
+            miUsuario.setStrTelefono(strTelefono);
+            if(miUsuario.updateUsuario()) {
+                Toast.makeText(getBaseContext(),"Usuario actualizado correctamente",Toast.LENGTH_SHORT).show();
+                Intent IntentReg = new Intent(MainEditusuario.this, MainActivity.class);
+                IntentReg.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                finish();
+                startActivity(IntentReg);
+            }else {
+                Toast.makeText(getBaseContext(),"Se presentaron errores actualizando el usuario",Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+    private void deleteUsuario (){
+        if(miUsuario.deleteUsuario()) {
+            Toast.makeText(getBaseContext(),"Usuario eliminado correctamente",Toast.LENGTH_SHORT).show();
+            finish();
+            Intent IntentReg = new Intent(MainEditusuario.this, MainActivity.class);
+            IntentReg.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            finish();
+            startActivity(IntentReg);
+        }else {
+            Toast.makeText(getBaseContext(),"Se presentaron errores eliminando el usuario",Toast.LENGTH_SHORT).show();
+        }
+    }
+}

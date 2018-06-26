@@ -21,22 +21,22 @@ public class reproduccion extends AppCompatActivity {
                 miIntent = new Intent(reproduccion.this, MenuLateral.class);
                 break;
 
-            case R.id.btn_rmonta:
-                miIntent = new Intent(reproduccion.this, monta.class);
+          /*  case R.id.btn_rmonta:
+                miIntent = new Intent(reproduccion.this, prenez.class);
                 break;
-
+*/
             case R.id.btn_amonta:
                 miIntent = new Intent(reproduccion.this, monta.class);
                 break;
 
             case R.id.btn_rpajilla:
-                miIntent = new Intent(reproduccion.this, monta.class);
+                miIntent = new Intent(reproduccion.this, PajillaActivity.class);
                 break;
-
+/*
             case R.id.btn_apajilla:
-                miIntent = new Intent(reproduccion.this, monta.class);
+                miIntent = new Intent(reproduccion.this, consultapajilla.class);
                 break;
-
+*/
         }
         startActivity(miIntent);
     }

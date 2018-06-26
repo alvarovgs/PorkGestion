@@ -15,7 +15,7 @@ public class raza extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_raza);
+        setContentView(R.layout.activity_raza_);
     }
 
     //codigo para que no cierre la app por no ingresar datos y presionar el boton consulta
