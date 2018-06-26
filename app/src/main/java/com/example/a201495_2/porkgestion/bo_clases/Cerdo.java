@@ -169,7 +169,7 @@ public class Cerdo {
         Cerdo tmpObject = new Cerdo(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)");
+        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)", strArgs, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdCerdo(crResult.getInt(0));
             tmpObject.setStrFechaNace(crResult.getString(1));
@@ -195,7 +195,7 @@ public class Cerdo {
         Cerdo tmpObject = new Cerdo(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)");
+        crResult = dbAcces.qweryDatabase("CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)", strArgs, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdCerdo(crResult.getInt(0));
             tmpObject.setStrFechaNace(crResult.getString(1));
@@ -217,7 +217,7 @@ public class Cerdo {
         Cursor crResult;
         ArrayList<Cerdo> listRaza = new ArrayList<Cerdo>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, null);
+        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, null, null, "CODIGO");
         if (crResult.moveToFirst()) {
             do {
                 Cerdo tmpObject = new Cerdo(appContext);
@@ -247,7 +247,7 @@ public class Cerdo {
         Cursor crResult;
         ArrayList<Cerdo> listObject = new ArrayList<Cerdo>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("CERDO", strColumns, null);
+        crResult = dbAcces.qweryDatabase("CERDO", strColumns, null, null, "CODIGO");
         if (crResult.moveToFirst()) {
             do {
                 Cerdo tmpObject = new Cerdo(appContext);
@@ -345,5 +345,8 @@ public class Cerdo {
         dbAcces.closeDataBase();
         return bResult;
     }
+
+
+
 
 }
