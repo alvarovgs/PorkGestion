@@ -1,158 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".raza">
+    tools:context=".RazaActivity">
 
-    <EditText
-        android:id="@+id/et_descripcion"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignStart="@+id/et_origen"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
+        android:theme="@style/AppTheme.AppBarOverlay">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_raza" />
     <TextView
-        android:id="@+id/textView21"
-        android:layout_width="155dp"
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="184dp"
-        android:layout_toStartOf="@+id/et_descrip"
-        android:text="Origen de la Raza"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="243dp"
-        android:text="Descripciones"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/et_origen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView21"
-        android:layout_alignParentEnd="true"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView21"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
-        android:fontFamily="roboto"
-        android:text="RAZA"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/et_nomraza"
-        android:layout_alignStart="@+id/btnRegresar"
-        android:text="Raza del animal"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/et_nomraza"
-        android:layout_width="189dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/et_origen"
-        android:layout_marginTop="109dp"
-        android:ems="10"
-        android:hint="ingrese el nombre"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="235dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="179dp"
-        android:background="#D8FFFF"
-        android:text="@string/razas"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="15sp" />
-
-    <Button
-        android:id="@+id/btnRegresar"
+        tools:text="Gestión Razas" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="15dp"
-        android:onClick="onClick"
-        android:text="REGRESAR" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignTop="@+id/button3"
-        android:layout_toStartOf="@+id/button3"
-        android:onClick="ingresar"
-        android:text="INGRESAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_above="@+id/bt_consultar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="67dp"
-        android:onClick="eliminar"
-        android:text="ELIMINAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/bt_consultar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button2"
-        android:onClick="consulta"
-        android:text="CONSULTAR"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button3"
-        android:onClick="actualizar"
-        android:text="ACTUALIZAR"
-        android:textSize="10sp" />
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
