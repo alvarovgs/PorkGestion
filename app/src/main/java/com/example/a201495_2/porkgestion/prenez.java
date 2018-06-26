@@ -35,7 +35,7 @@ public class prenez extends AppCompatActivity {
 
     public void Regresar(View view) {
         Intent miIntent=null;
-                miIntent = new Intent(prenez.this, reproduccion.class);
+                miIntent = new Intent(prenez.this, prenez.class);
         startActivity(miIntent);
     }
 

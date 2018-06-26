@@ -32,7 +32,7 @@ public class verraco extends AppCompatActivity {
 
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(verraco.this, reproduccion.class);
+        miIntent = new Intent(verraco.this, prenez.class);
         startActivity(miIntent);
     }
 

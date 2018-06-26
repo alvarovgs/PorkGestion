@@ -15,7 +15,7 @@ public class monta extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        Intent miIntent=new Intent(monta.this,reproduccion.class);
+        Intent miIntent=new Intent(monta.this,prenez.class);
         startActivity(miIntent);
 
 

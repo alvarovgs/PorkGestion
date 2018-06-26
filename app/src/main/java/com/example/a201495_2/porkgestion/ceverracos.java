@@ -90,7 +90,7 @@ public class ceverracos extends AppCompatActivity {
 
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(ceverracos.this, reproduccion.class);
+        miIntent = new Intent(ceverracos.this, prenez.class);
         startActivity(miIntent);
     }
     private void consultar() {
