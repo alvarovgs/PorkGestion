@@ -34,7 +34,7 @@ public class monta_Activity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.btn_regresar:
-                miIntent = new Intent(monta_Activity.this, reproduccion.class);
+                miIntent = new Intent(monta_Activity.this,  reproduccion.class);
                 break;
         }
         startActivity(miIntent);
