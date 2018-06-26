@@ -21,6 +21,7 @@ public class Raza {
         this.strDescripcion=strDescripcion;
     }
 
+
     public Raza(Context appContext) {
         this.appContext = appContext;
     }
@@ -100,7 +101,7 @@ public class Raza {
         Raza tmpObject = new Raza(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("RAZA", strColumns, "(IDRAZA=? OR NOMBRERAZA=?)");
+        crResult = dbAcces.qweryDatabase("RAZA", strColumns, "(IDRAZA=? OR NOMBRERAZA=?)", strArgs, null);
         if (crResult.moveToFirst()) {
                 tmpObject.setIdRaza(crResult.getInt(0));
                 tmpObject.setStrRaza(crResult.getString(1));
@@ -118,7 +119,7 @@ public class Raza {
         Cursor crResult;
         ArrayList<Raza> listObject = new ArrayList<Raza>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("RAZA", strColumns, null);
+        crResult = dbAcces.qweryDatabase("RAZA", strColumns, null, null, "NOMBRERAZA");
         if (crResult.moveToFirst()) {
             do {
                 Raza tmpObject = new Raza(appContext);
