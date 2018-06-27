@@ -16,42 +16,31 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/campoNumeroAniVenta"
+    <Spinner
+        android:id="@+id/comboNumeroAniVenta"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/campoNombAniVenta"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
-        android:ems="10"
-        android:hint="Numero del cerdo"
-        android:inputType="number" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="136dp" />
+
 
     <EditText
-        android:id="@+id/campoNombAniVenta"
+        android:id="@+id/campoEdadVenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/campoFechaVenta"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboNumeroAniVenta"
         android:ems="10"
-        android:hint="Nombre del cerdo"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/campoFechaVenta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/campoPesoVenta"
-        android:layout_alignParentStart="true"
-        android:ems="10"
-        android:hint="Fecha de venta"
+        android:hint="Edad"
         android:inputType="date" />
 
     <EditText
         android:id="@+id/campoPesoVenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/campoPrecioVenta"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoEdadVenta"
         android:ems="10"
         android:hint="Peso vivo en Kg"
         android:inputType="numberDecimal" />
@@ -60,9 +49,8 @@
         android:id="@+id/campoPrecioVenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="230dp"
+        android:layout_below="@+id/campoPesoVenta"
         android:ems="10"
         android:hint="Precio en pesos"
         android:inputType="number" />
@@ -75,7 +63,10 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:onClick="onClick"
-        android:text="Registrar Venta de Cerdo" />
+        android:textStyle="bold"
+        android:text="REGISTRAR" />
+
+
 
 
 </RelativeLayout>

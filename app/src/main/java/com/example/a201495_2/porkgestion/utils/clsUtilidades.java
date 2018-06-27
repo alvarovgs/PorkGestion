@@ -1,6 +1,9 @@
 package com.example.a201495_2.porkgestion.utils;
 
 import android.util.Patterns;
+import android.widget.Spinner;
+
+import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -39,6 +42,18 @@ public class clsUtilidades {
             return false;
         }
         return true;
+    }
+
+    public int obtenerPosicionItem(Spinner spinner, String strItem) {
+        int posicion = 0;
+        String valor;
+        for (int i = 0; i < spinner.getCount(); i++) {
+            SpinData sp_item = (SpinData)spinner.getItemAtPosition(i);
+            if (sp_item.getValor().equalsIgnoreCase(strItem)) {
+                posicion = i;
+            }
+        }
+        return posicion;
     }
 
 }

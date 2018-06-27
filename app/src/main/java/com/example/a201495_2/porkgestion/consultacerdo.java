@@ -6,33 +6,97 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.a201495_2.porkgestion.adapter.spinAdapter;
+import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
+import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.entidades.Usuario;
 import com.example.a201495_2.porkgestion.utilidades.Utilidades;
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 public class consultacerdo extends AppCompatActivity {
 
-    EditText campoIdConsulta,campoNombreConsulta,campoFechanaceConsulta,campoPesonaceConsulta, campoSexoConsulta, campoRazaConsulta, campoNombremadreConsulta, campoNombrepadreConsulta;
-
-    ConexionSQLiteHelper conn;
+    EditText campoIdConsulta,campoNombreConsulta,campoFechanaceConsulta,campoPesonaceConsulta;
+    spinAdapter sp_AdapterRaza;
+    spinAdapter sp_AdapterSexo;
+    spinAdapter sp_AdapterPadre;
+    spinAdapter sp_AdapterMadre;
+    Spinner comboRazas, comboSexo, comboPadre, comboMadre;
+    int idRaza = 0;
+    String strSexo="";
+    int idPadre = 0;
+    int idMadre = 0;
+    private clsUtilidades objUtil = new clsUtilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultacerdo);
 
-        //conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios",null,8);
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_porcinos", null,1);
         campoIdConsulta= (EditText) findViewById(R.id.campoIdConsulta);
         campoNombreConsulta= (EditText) findViewById(R.id.campoNombreConsulta);
         campoFechanaceConsulta= (EditText) findViewById(R.id.campoFechanaceConsulta);
         campoPesonaceConsulta=(EditText) findViewById(R.id.campoPesonaceConsulta);
-        campoSexoConsulta=(EditText) findViewById(R.id.campoSexoConsulta);
-        campoRazaConsulta=(EditText) findViewById(R.id.campoRazaConsulta);
-        campoNombremadreConsulta=(EditText) findViewById(R.id.campoNombremadreConsulta);
-        campoNombrepadreConsulta=(EditText) findViewById(R.id.campoNombrepadreConsulta);
+        comboRazas = (Spinner) findViewById(R.id.campoRazaConsulta);
+        comboSexo = (Spinner) findViewById(R.id.campoSexoConsulta);
+        comboPadre= (Spinner) findViewById(R.id.campoNombrepadreConsulta);
+        comboMadre= (Spinner) findViewById(R.id.campoNombremadreConsulta);
+
+        SpinData Sexo[] = new SpinData(getApplicationContext()).getSexoCerdo();
+        sp_AdapterSexo = new spinAdapter(this, android.R.layout.simple_spinner_item, Sexo);
+        comboSexo.setAdapter(sp_AdapterSexo);
+
+
+        SpinData Razas[] = new SpinData(getApplicationContext()).getRaza();
+        sp_AdapterRaza = new spinAdapter(this, android.R.layout.simple_spinner_item, Razas);
+        comboRazas.setAdapter(sp_AdapterRaza );
+
+        llenarcombo ();
+
+        comboRazas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterRaza.getItem(position);
+                idRaza = sp_item.getId();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
+
+        comboSexo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterSexo.getItem(position);
+                strSexo = sp_item.getValor();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
+
+        comboPadre.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterPadre.getItem(position);
+                idPadre = sp_item.getId();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
+
+        comboMadre.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterMadre.getItem(position);
+                idMadre = sp_item.getId();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
 
     }
 
@@ -46,93 +110,86 @@ public class consultacerdo extends AppCompatActivity {
             case R.id.btnLimpiar:
                 limpiar();
                 break;
-            case R.id.btnActualizar: actualizarUsuario();
+            case R.id.btnActualizar: actualizarCerdo();
                 break;
-            case R.id.btnEliminar: eliminarUsuario();
+            case R.id.btnEliminar: eliminarCerdo();
                 break;
         }
     }
 
-    private void eliminarUsuario() {
-        SQLiteDatabase db=conn.getWritableDatabase();
-        String[] parametros={campoIdConsulta.getText().toString()};
-        db.delete(Utilidades.TABLA_USUARIO,Utilidades.CAMPO_ID+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Ya se Eliminó el cerdo",Toast.LENGTH_LONG).show();
-        campoIdConsulta.setText("");
-        db.close();
-        limpiar();
+    private void eliminarCerdo() {
+        Cerdo micerdo=new Cerdo(getApplicationContext());
+        micerdo.setIdCerdo(Integer.parseInt(campoIdConsulta.getText().toString()));
+        if (micerdo.deleteCerdo()){
+            Toast.makeText(getApplicationContext(),"Cerdo eliminado correctamente ",Toast.LENGTH_LONG).show();
+            limpiar();
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"Error eliminando el cerdo ",Toast.LENGTH_SHORT).show();
+        }
     }
 
-    private void actualizarUsuario() {
-        SQLiteDatabase db=conn.getWritableDatabase();
-        String[] parametros={campoIdConsulta.getText().toString()};
-        ContentValues values=new ContentValues();
-        values.put(Utilidades.CAMPO_NOMBRE,campoNombreConsulta.getText().toString());
-        values.put(Utilidades.CAMPO_FECHANACE,campoFechanaceConsulta.getText().toString());
-        values.put(Utilidades.CAMPO_PESONACE,campoPesonaceConsulta.getText().toString());
-        values.put(Utilidades.CAMPO_SEXO,campoSexoConsulta.getText().toString());
-        values.put(Utilidades.CAMPO_RAZA,campoRazaConsulta.getText().toString());
-        values.put(Utilidades.CAMPO_NOMBREMADRE,campoNombremadreConsulta.getText().toString());
-        values.put(Utilidades.CAMPO_NOMBREPADRE,campoNombrepadreConsulta.getText().toString());
-
-        db.update(Utilidades.TABLA_USUARIO,values,Utilidades.CAMPO_ID+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Ya se actualizó el cerdo",Toast.LENGTH_LONG).show();
-        db.close();
-        limpiar();
+    private void actualizarCerdo() {
+        Cerdo micerdo=new Cerdo(getApplicationContext());
+        micerdo = micerdo.getCerdoByView(campoIdConsulta.getText().toString());
+        micerdo.setStrCodigo(campoNombreConsulta.getText().toString());
+        micerdo.setStrFechaNace(campoFechanaceConsulta.getText().toString());
+        micerdo.setlPesoNace(Long.parseLong(campoPesonaceConsulta.getText().toString()));
+        micerdo.setStrSexo(strSexo);
+        micerdo.setIdRaza(idRaza);
+        micerdo.setIdMadre(idMadre);
+        micerdo.setIdPadre(idPadre);
+        if (micerdo.updateCerdo()){
+            Toast.makeText(getApplicationContext(),"Cerdo actualizado correctamente ",Toast.LENGTH_LONG).show();
+            limpiar();
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"Error actualizando el cerdo ",Toast.LENGTH_SHORT).show();
+        }
 
     }
 
-//    private void consultarSql() {
-//        SQLiteDatabase db=conn.getReadableDatabase();
-//        String[] parametros={campoId.getText().toString()};
-//
-//        try {
-//            //select nombre,telefono from usuario where codigo=?
-//            Cursor cursor=db.rawQuery("SELECT "+Utilidades.CAMPO_NOMBRE+","+Utilidades.CAMPO_TELEFONO+
-//                    " FROM "+Utilidades.TABLA_USUARIO+" WHERE "+Utilidades.CAMPO_ID+"=? ",parametros);
-//
-//            cursor.moveToFirst();
-//            campoNombre.setText(cursor.getString(0));
-//            campoTelefono.setText(cursor.getString(1));
-//
-//        }catch (Exception e){
-//            Toast.makeText(getApplicationContext(),"El documento no existe",Toast.LENGTH_LONG).show();
-//            limpiar();
-//        }
-//    }
 
     private void consultar() {
-        SQLiteDatabase db=conn.getReadableDatabase();
-        String[] parametros={campoIdConsulta.getText().toString()};
-        String[] campos={Utilidades.CAMPO_NOMBRE,Utilidades.CAMPO_FECHANACE,Utilidades.CAMPO_PESONACE,Utilidades.CAMPO_SEXO,Utilidades.CAMPO_RAZA,Utilidades.CAMPO_NOMBREMADRE,Utilidades.CAMPO_NOMBREPADRE};
-
-        try {
-            Cursor cursor =db.query(Utilidades.TABLA_USUARIO,campos,Utilidades.CAMPO_ID+"=?",parametros,null,null,null);
-            cursor.moveToFirst();
-            campoNombreConsulta.setText(cursor.getString(0));
-            campoFechanaceConsulta.setText(cursor.getString(1));
-            campoPesonaceConsulta.setText(cursor.getString(2));
-            campoSexoConsulta.setText(cursor.getString(3));
-            campoRazaConsulta.setText(cursor.getString(4));
-            campoNombremadreConsulta.setText(cursor.getString(5));
-            campoNombrepadreConsulta.setText(cursor.getString(6));
-            cursor.close();
-        }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"El cerdo no existe",Toast.LENGTH_LONG).show();
+        Cerdo micerdo=new Cerdo(getApplicationContext());
+        if (micerdo.existCerdo(campoIdConsulta.getText().toString())){
+            micerdo = micerdo.getCerdoByView(campoIdConsulta.getText().toString());
+            campoNombreConsulta.setText(micerdo.getStrCodigo());
+            campoFechanaceConsulta.setText(micerdo.getStrFechaNace());
+            campoPesonaceConsulta.setText(String.valueOf(micerdo.getlPesoNace()));
+            comboSexo.setSelection(objUtil.obtenerPosicionItem(comboSexo, micerdo.getStrSexo()));
+            comboRazas.setSelection(objUtil.obtenerPosicionItem(comboRazas, micerdo.getStrRaza()));
+            comboPadre.setSelection(objUtil.obtenerPosicionItem(comboPadre, micerdo.getStrCodPadre()));
+            comboMadre.setSelection(objUtil.obtenerPosicionItem(comboMadre, micerdo.getStrCodMadre()));
         }
+        else {
+            Toast.makeText(getApplicationContext(),"El documento no existe",Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void llenarcombo(){
+        SpinData Padre[] = new SpinData(getApplicationContext()).getCerdobySexo("MACHO");
+        sp_AdapterPadre = new spinAdapter(this, android.R.layout.simple_spinner_item, Padre);
+        comboPadre.setAdapter(sp_AdapterPadre);
+        SpinData Madre[] = new SpinData(getApplicationContext()).getCerdobySexo("HEMBRA");
+        sp_AdapterMadre = new spinAdapter(this, android.R.layout.simple_spinner_item, Madre);
+        comboMadre.setAdapter(sp_AdapterMadre);
     }
 
     private void limpiar() {
+        llenarcombo ();
         campoIdConsulta.setText("");
         campoNombreConsulta.setText("");
         campoFechanaceConsulta.setText("");
         campoPesonaceConsulta.setText("");
-        campoSexoConsulta.setText("");
-        campoRazaConsulta.setText("");
-        campoNombremadreConsulta.setText("");
-        campoNombrepadreConsulta.setText("");
+        comboSexo.setSelection(0);
+        comboRazas.setSelection(0);
+        comboPadre.setSelection(0);
+        comboMadre.setSelection(0);
         campoIdConsulta.requestFocus();
+
     }
+
 
 
 }

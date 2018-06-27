@@ -11,6 +11,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
 import com.example.a201495_2.porkgestion.entidades.Usuario;
 import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
@@ -22,30 +24,28 @@ public class totalcerdos extends AppCompatActivity {
     ArrayList<String> listaInformacion;
     ArrayList<Usuario> listaUsuarios;
 
-    ConexionSQLiteHelper conn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_totalcerdos);
 
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_porcinos",null,1);
 
         listViewCerdos= (ListView) findViewById(R.id.listViewCerdos);
-
-        consultarListaPersonas();
+        Cerdo lista = new Cerdo(getApplicationContext());
+        listaInformacion = lista.consultaCerdo();
+       // consultarListaPersonas();
 
         ArrayAdapter adaptador=new ArrayAdapter(this,android.R.layout.simple_spinner_item,listaInformacion);
         listViewCerdos.setAdapter(adaptador);
 
-        listViewCerdos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*listViewCerdos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
                 String informacion="id: "+listaUsuarios.get(pos).getId()+"\n";
                 informacion+="Nombre: "+listaUsuarios.get(pos).getNombre()+"\n";
 
 
-                Toast.makeText(getApplicationContext(),informacion,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),informacion,Toast.LENGTH_LONG).show();
 
 //                Usuario user=listaUsuarios.get(pos);
 //
@@ -58,10 +58,10 @@ public class totalcerdos extends AppCompatActivity {
 //                startActivity(intent);
 
             }
-        });
+        });*/
     }
 
-    private void consultarListaPersonas() {
+  /*  private void consultarListaPersonas() {
         SQLiteDatabase db=conn.getReadableDatabase();
 
         Usuario usuario=null;
@@ -86,5 +86,5 @@ public class totalcerdos extends AppCompatActivity {
                     +listaUsuarios.get(i).getNombre());
         }
 
-    }
+    }*/
 }

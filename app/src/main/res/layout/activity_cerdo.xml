@@ -16,22 +16,14 @@
         android:textStyle="bold"
         android:layout_marginBottom="30dp"/>
 
-    <EditText
-        android:id="@+id/campoId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
-        android:hint="Numero del cerdo"
-        android:inputType="number" />
 
     <EditText
         android:id="@+id/campoNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/campoId"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
         android:hint="Nombre del cerdo"
         android:inputType="text" />
 
@@ -51,7 +43,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:onClick="onClick"
-        android:text="Registrar Cerdo" />
+        android:textStyle="bold"
+        android:text="REGISTRAR" />
 
     <EditText
         android:id="@+id/campoPesonace"
@@ -62,25 +55,6 @@
         android:hint="Peso al nacer"
         android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/campoNombremadre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/comboRazas"
-        android:ems="10"
-        android:hint="Nombre de la madre"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/campoNombrepadre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/campoNombremadre"
-        android:layout_alignParentStart="true"
-        android:ems="10"
-        android:hint="Nombre del padre"
-        android:inputType="text" />
 
     <Spinner
         android:id="@+id/comboRazas"
@@ -94,8 +68,21 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="5dp"
         android:layout_below="@+id/campoPesonace" />
+
+    <Spinner
+        android:id="@+id/comboMadre"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboRazas" />
+
+    <Spinner
+        android:id="@+id/comboPadre"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboMadre" />
 
 
 </RelativeLayout>

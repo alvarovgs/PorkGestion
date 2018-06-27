@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+import com.facebook.stetho.Stetho;
 public class MenuLateral extends AppCompatActivity {
     private ActionBar actionBar;
     private Toolbar toolbar;
@@ -20,6 +21,7 @@ public class MenuLateral extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_lateral);
+        Stetho.initializeWithDefaults(this);
         initToolbar();
         initNavigationMenu();
     }

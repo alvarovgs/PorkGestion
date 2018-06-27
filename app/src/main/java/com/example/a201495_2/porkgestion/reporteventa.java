@@ -7,107 +7,118 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.a201495_2.porkgestion.adapter.spinAdapter;
+import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
+import com.example.a201495_2.porkgestion.bo_clases.SpinData;
+import com.example.a201495_2.porkgestion.bo_clases.Venta;
 import com.example.a201495_2.porkgestion.entidades.Usuario;
 import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
 public class reporteventa extends AppCompatActivity {
 
-    EditText campoIdConsuVe,campoNomConsuVe,campoFeConsuVe,campoPeConsuVe, campoPreConsuVe;
+    EditText campoIdConsuVe,campoEdadConsuVe,campoPesoConsuVe,campoPreConsuVe;
+    Spinner comboIdConsuVe;
+    spinAdapter sp_AdapterNumventa;
+    int idcerdo = 0;
 
-    ConexionSQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporteventa);
 
-        //conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios",null,8);
-        conn=new ConexionSQLiteHelper(getApplicationContext(), "bd_porcinos", null, 1);
 
-        campoIdConsuVe= (EditText) findViewById(R.id.campoIdConsuVe);
-        campoNomConsuVe= (EditText) findViewById(R.id.campoNomConsuVe);
-        campoFeConsuVe= (EditText) findViewById(R.id.campoFeConsuVe);
-        campoPeConsuVe=(EditText) findViewById(R.id.campoPeConsuVe);
+        //campoIdConsuVe= (EditText) findViewById(R.id.campoIdConsuVe);
+        campoEdadConsuVe= (EditText) findViewById(R.id.campoEdadConsuVe);
+        campoPesoConsuVe= (EditText) findViewById(R.id.campoPesoConsuVe);
         campoPreConsuVe=(EditText) findViewById(R.id.campoPreConsuVe);
+        comboIdConsuVe= (Spinner) findViewById(R.id.comboIdConsuVe);
+
+        SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdo();
+        sp_AdapterNumventa = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);
+        comboIdConsuVe.setAdapter(sp_AdapterNumventa);
+
+
+        comboIdConsuVe.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterNumventa.getItem(position);
+                idcerdo = sp_item.getId();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
     }
 
     public void onClick(View view) {
 
         switch (view.getId()){
-            case R.id.btnConsultar: consultar();
+            case R.id.btnConsultar: consultarVenta();
                 break;
             case R.id.btnLimpiar: limpiar();
                 break;
-            case R.id.btnActualizar: actualizarUsuario();
+            case R.id.btnActualizar: actualizarVenta();
                 break;
-            case R.id.btnEliminar: eliminarUsuario();
+            case R.id.btnEliminar: eliminarVenta();
                 break;
         }
     }
 
-    private void eliminarUsuario() {
-        SQLiteDatabase db=conn.getWritableDatabase();
-        String[] parametros={campoIdConsuVe.getText().toString()};
-        db.delete(Utilidades.TABLA_VENTA,Utilidades.CAMPO_IDANIMALVENTA+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Ya se Eliminó el cerdo",Toast.LENGTH_LONG).show();
-        campoIdConsuVe.setText("");
-        db.close();
-        limpiar();
+    private void eliminarVenta() {
+        //SQLiteDatabase db=conn.getWritableDatabase();
+        Venta miventa=new Venta(getApplicationContext());
+        miventa.setIdCerdo(idcerdo);
+        if (miventa.deleteVenta()){
+            Toast.makeText(getApplicationContext(),"Venta eliminada correctamente ",Toast.LENGTH_LONG).show();
+            limpiar();
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"Error eliminando la venta ",Toast.LENGTH_SHORT).show();
+        }
+
     }
 
-    private void actualizarUsuario() {
-        SQLiteDatabase db=conn.getWritableDatabase();
-        String[] parametros={campoIdConsuVe.getText().toString()};
-        ContentValues values=new ContentValues();
-        values.put(Utilidades.CAMPO_IDANIMALVENTA,campoIdConsuVe.getText().toString());
-        values.put(Utilidades.CAMPO_NOMBREVENTA,campoNomConsuVe.getText().toString());
-        values.put(Utilidades.CAMPO_FECHAVENTA,campoFeConsuVe.getText().toString());
-        values.put(Utilidades.CAMPO_PESOVENTA,campoPeConsuVe.getText().toString());
-        values.put(Utilidades.CAMPO_PRECIOVENTA,campoPreConsuVe.getText().toString());
+    private void actualizarVenta() {
+        Venta miventa=new Venta(getApplicationContext());
+        miventa = miventa.getVenta(idcerdo);
+        miventa.setEdad(Integer.parseInt(campoEdadConsuVe.getText().toString()));
+        miventa.setPesoVivo(Long.parseLong(campoPesoConsuVe.getText().toString()));
+        miventa.setPrecioventa(Double.parseDouble(campoPreConsuVe.getText().toString()));
+        if (miventa.updateVenta()){
+            Toast.makeText(getApplicationContext(),"Venta actualizada correctamente ",Toast.LENGTH_LONG).show();
+            limpiar();
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"Error actualizando la venta ",Toast.LENGTH_SHORT).show();
+        }
 
-        db.update(Utilidades.TABLA_VENTA,values,Utilidades.CAMPO_IDANIMALVENTA+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Ya se actualizó el cerdo",Toast.LENGTH_LONG).show();
-        db.close();
-        limpiar();
     }
 
 
-    private void consultar() {
-        SQLiteDatabase db=conn.getReadableDatabase();
-        String[] parametros={campoIdConsuVe.getText().toString()};
-        String[] campos={Utilidades.CAMPO_NOMBREVENTA,Utilidades.CAMPO_FECHAVENTA,Utilidades.CAMPO_PESOVENTA,Utilidades.CAMPO_PRECIOVENTA};
-
-        try {
-            Cursor cursor =db.query(Utilidades.TABLA_VENTA,campos,Utilidades.CAMPO_IDANIMALVENTA+"=?",parametros,null,null,null);
-            cursor.moveToFirst();
-            campoNomConsuVe.setText(cursor.getString(0));
-            campoFeConsuVe.setText(cursor.getString(1));
-            campoPeConsuVe.setText(cursor.getString(2));
-            campoPreConsuVe.setText(cursor.getString(3));
-            cursor.close();
-        }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"El cerdo no existe",Toast.LENGTH_LONG).show();
+    private void consultarVenta() {
+        Venta miventa=new Venta(getApplicationContext());
+        if (miventa.existVenta(idcerdo)){
+            miventa = miventa.getVenta(idcerdo);
+            campoEdadConsuVe.setText(String.valueOf(miventa.getEdad()));
+            campoPesoConsuVe.setText(String.valueOf(miventa.getPesoVivo()));
+            campoPreConsuVe.setText(String.valueOf(miventa.getPrecioventa()));
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"El documento no existe",Toast.LENGTH_LONG).show();
         }
     }
 
     private void limpiar() {
-        campoIdConsuVe.setText("");
-        campoNomConsuVe.setText("");
-        campoFeConsuVe.setText("");
-        campoPeConsuVe.setText("");
+        comboIdConsuVe.setSelection(0);
+        campoEdadConsuVe.setText("");
+        campoPesoConsuVe.setText("");
         campoPreConsuVe.setText("");
-        campoIdConsuVe.requestFocus();
+        comboIdConsuVe.requestFocus();
     }
 
-
-
-
-
-    /*public void onClick(View view){
-        Intent miIntent=new Intent(reporteventa.this,reportes.class);
-        startActivity(miIntent);
-    }*/
 }
