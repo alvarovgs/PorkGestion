@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,15 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese el E-mail actual de el Usuario"
+        android:focusable="false"
         android:inputType="textEmailAddress" />
-
-    <Button
-        android:id="@+id/btnConsultar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="onClick"
-        android:text="CONSULTAR" />
 
     <EditText
         android:id="@+id/txt_nombreusuario"
@@ -49,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese un número de Teléfono (Opcional)"
-        android:inputType="number|phone" />
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,15 +57,13 @@
             android:layout_width="189dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:onClick="onClick"
+            android:onClick="updateUsuario"
             android:text="ACTUALIZAR" />
-
         <Button
             android:id="@+id/btnEliminar"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:onClick="onClick"
             android:text="Eliminar" />
 
     </LinearLayout>
