@@ -20,7 +20,7 @@ public class DashReproductivo extends AppCompatActivity {
         public void onClick(View v) {
             Intent ibparto =new Intent(DashReproductivo.this, Parto_Activity.class);
             startActivity(ibparto);
-            Toast mostrar  = Toast.makeText(DashReproductivo.this, "Registo de Partos",Toast.LENGTH_LONG);
+            Toast mostrar  = Toast.makeText(DashReproductivo.this, "Registro de Partos",Toast.LENGTH_LONG);
             mostrar.show();
         }
         });
@@ -28,9 +28,9 @@ public class DashReproductivo extends AppCompatActivity {
         ibmonta.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View v) {
-            Intent ibmonta = new Intent(DashReproductivo.this, monta_Activity.class);
+            Intent ibmonta = new Intent(DashReproductivo.this, monta.class);
             startActivity(ibmonta);
-            Toast mostrar = Toast.makeText(DashReproductivo.this, "Regsito de Montas", Toast.LENGTH_LONG);
+            Toast mostrar = Toast.makeText(DashReproductivo.this, "Registro de Monta", Toast.LENGTH_LONG);
             mostrar.show();        }
          });
 
@@ -40,7 +40,7 @@ public class DashReproductivo extends AppCompatActivity {
            public void onClick(View v) {
                Intent ibpajilla =new Intent(DashReproductivo.this, PajillaActivity.class);
                startActivity(ibpajilla);
-               Toast mostarar =Toast.makeText(DashReproductivo.this, "Regstro de Pajillas", Toast.LENGTH_LONG);
+               Toast mostarar =Toast.makeText(DashReproductivo.this, "Registro de Pajillas", Toast.LENGTH_LONG);
                mostarar.show();
 
            }

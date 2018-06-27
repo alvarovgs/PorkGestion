@@ -138,7 +138,8 @@
                     style="@style/Button.Accent"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content"
-                    android:text="REPRODUCCION GENERAL" />
+                    android:onClick="onClick"
+                    android:text="GESTACION" />
             </LinearLayout>
         </LinearLayout>
 
@@ -261,11 +262,12 @@
 
 
                 <Button
-                    android:id="@+id/btn_celo"
+                    android:id="@+id/btn_pajillas"
                     style="@style/Button.Accent"
                     android:layout_width="290dp"
                     android:layout_height="match_parent"
-                    android:text="CELO Y APAREAMIENTO" />
+                    android:onClick="onClick"
+                    android:text="PAJILLAS" />
             </LinearLayout>
 
 

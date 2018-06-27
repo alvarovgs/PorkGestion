@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Sat Jun 16 22:43:48 COT 2018
-0.baseType=DIRECTORY
-0.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
-0.path=fonts/Roboto-Medium.ttf
-0.set=ASSET
-count=1

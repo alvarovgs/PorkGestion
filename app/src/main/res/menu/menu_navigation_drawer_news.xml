@@ -35,7 +35,7 @@
         <item
             android:id="@+id/nav_lactancia"
             android:icon="@drawable/ic_lactancia"
-            android:title="Parto y Lactancia" />
+            android:title="Parto" />
         <item
             android:id="@+id/nav_ventas"
             android:icon="@drawable/ic_dolar"
@@ -61,7 +61,6 @@
             android:id="@+id/nav_cerrar"
             android:icon="@drawable/ic_cerrar"
             android:title="@string/Cerrar" />
-
     </group>
 
 </menu>

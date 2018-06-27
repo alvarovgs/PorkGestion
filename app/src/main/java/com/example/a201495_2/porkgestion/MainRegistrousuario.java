@@ -18,7 +18,7 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
         @Override
      protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-             setContentView(R.layout.activity_main_registrousuario);
+            setContentView(R.layout.activity_main_registrousuario);
 
         btn_reg = findViewById(R.id.btn_reg);
 
@@ -28,7 +28,7 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
 
                         Usuario miUsuario = new Usuario(getApplicationContext());
 
-                        String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
+                        String strUsuario = ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
                         String strPassword = ((EditText) findViewById(R.id.txt_pass)).getText().toString();
                         String strNombre = ((EditText) findViewById(R.id.txt_nombreusuario)).getText().toString();
                         String strTelefono = ((EditText) findViewById(R.id.txt_telefono)).getText().toString();
@@ -40,6 +40,8 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
                             Toast.makeText(getBaseContext(),"El usuario debe ser un email válido",Toast.LENGTH_SHORT).show();
                         else if(!clsUtil.bValidaString(strPassword,1))
                             Toast.makeText(getBaseContext(),"Debe digitar el password",Toast.LENGTH_SHORT).show();
+                        else if(!clsUtil.bValidaString(strNombre,1))
+                            Toast.makeText(getBaseContext(),"Debe digitar un nombre de usuario",Toast.LENGTH_SHORT).show();
                         else {
                             miUsuario.setStrEmail(strUsuario);
                             miUsuario.setStrPassword(strPassword);

@@ -67,7 +67,7 @@ public class MenuLateral extends AppCompatActivity {
                 }
 
                 else if (item.getTitle().toString().equals("Reproducción")) {
-                    Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
+                    Intent miIntent = new Intent(MenuLateral.this, prenez.class);
                     startActivity(miIntent);
                     return false;
                 }
