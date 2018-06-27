@@ -38,7 +38,6 @@
         <activity android:name=".MainGlosario" />
         <activity android:name=".MainDatosOrg" />
         <activity android:name=".MainLinks" />
-        <activity android:name=".pajillas" />
         <activity android:name=".MainRecomendaciones" />
         <activity android:name=".lechon" />
         <activity android:name=".MainReporteHV" />
@@ -50,8 +49,6 @@
         <activity android:name=".verraco"/>
         <activity android:name=".prenez" />
         <activity android:name=".vergestantes" />
-        <activity android:name=".pajilla_Activity" />
-        <activity android:name=".totalcerdos" />
         <activity android:name=".verpajillas" />
         <activity android:name=".ververracos" />
         <activity android:name=".Partolact"></activity>

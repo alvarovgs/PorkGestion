@@ -25,18 +25,18 @@ public class ceverracos extends AppCompatActivity {
 
         conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null, 1);
 
-        campoid_verraco= (EditText)findViewById(R.id.id_verraco);
-        camponameverraco = (EditText)findViewById(R.id.nameverraco);
-        camponameraza= (EditText)findViewById(R.id.nameraza);
-        camponacimientov=(EditText)findViewById(R.id.nacimientov);
-        campopesoverraco=(EditText)findViewById(R.id.pesoverraco);
+        campoid_verraco= (EditText)findViewById(R.id.idcerda);
+        camponameverraco = (EditText)findViewById(R.id.tipomonta);
+        camponameraza= (EditText)findViewById(R.id.idverraco);
+        camponacimientov=(EditText)findViewById(R.id.idpajilla);
+        campopesoverraco=(EditText)findViewById(R.id.idraza);
         campoobservacionesv=(EditText)findViewById(R.id.observacionesv);
 
 
     }
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.btn_actverraco:
+            case R.id.btn_act:
                 actualizarverracos();
                 break;
 

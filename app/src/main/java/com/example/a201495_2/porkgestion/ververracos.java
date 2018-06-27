@@ -67,7 +67,7 @@ public class ververracos extends AppCompatActivity {
     }
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(ververracos.this, reportes.class);
+        miIntent = new Intent(ververracos.this, reproduccion.class);
         startActivity(miIntent);
     }
 }

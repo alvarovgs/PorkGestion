@@ -125,7 +125,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"
-        android:onClick="Regresar"
+        android:onClick="onClick"
         android:text="REGRESAR" />
 
     <Button

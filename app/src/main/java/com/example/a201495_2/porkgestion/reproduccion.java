@@ -21,31 +21,19 @@ public class reproduccion extends AppCompatActivity {
         Intent miIntent=null;
 
         switch (view.getId()) {
-            case R.id.btn_preñez:
+            case R.id.btn_prenez:
                 miIntent = new Intent(reproduccion.this, prenez.class);
                 break;
 
-            case R.id.btn_gestantes:
+            case R.id.btn_actprenez:
                 miIntent = new Intent(reproduccion.this, ceprenez.class);
                 break;
 
 
-            case R.id.btn_pajilla:
-                miIntent = new Intent(reproduccion.this, pajillas.class);
-                break;
-
-            case R.id.btn_acpajillas:
-                miIntent = new Intent(reproduccion.this, cepajillas.class);
-                break;
-
-
-            case R.id.btn_verracos:
+            case R.id.btn_actverraco:
                 miIntent = new Intent(reproduccion.this, verraco.class);
                 break;
 
-            case R.id.btc_acverracos:
-                miIntent = new Intent(reproduccion.this, ceverracos.class);
-                break;
 
         }
         startActivity(miIntent);

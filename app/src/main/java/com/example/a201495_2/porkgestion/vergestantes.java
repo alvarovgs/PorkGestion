@@ -68,7 +68,7 @@ public class vergestantes extends AppCompatActivity {
 }
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(vergestantes.this, reportes.class);
+        miIntent = new Intent(vergestantes.this, reproduccion.class);
         startActivity(miIntent);
     }
 }

@@ -1,65 +1,78 @@
 package com.example.a201495_2.porkgestion;
 
-import android.content.ContentValues;
-import android.database.sqlite.SQLiteDatabase;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.content.Intent;
-
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
+import com.example.a201495_2.porkgestion.bo_clases.reproduccion;
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 
 public class prenez extends AppCompatActivity {
+    Button btn_reg;
 
-    EditText campoidcerda, camponombrecerda, campofechamonta, campoprimercelo, campopesomonta, campoidpajilla, camponombreverraco, campoestado;
+
+    private clsUtilidades clsUtil = new clsUtilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prenez);
 
-        campoidcerda= (EditText)findViewById(R.id.id_verraco);
-        camponombrecerda= (EditText)findViewById(R.id.nameverraco);
-        campofechamonta= (EditText)findViewById(R.id.nameraza);
-        campoprimercelo=(EditText)findViewById(R.id.nacimientov);
-        campopesomonta=(EditText)findViewById(R.id.proveedor);
-        campoidpajilla=(EditText)findViewById(R.id.idpajilla);
-        camponombreverraco=(EditText)findViewById(R.id.nombreverraco);
-        campoestado=(EditText)findViewById(R.id.estado);
+        btn_reg = findViewById(R.id.btn_reg);
 
-    }
+        btn_reg.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-    public void Regresar(View view) {
-        Intent miIntent=null;
-                miIntent = new Intent(prenez.this, reproduccion.class);
-        startActivity(miIntent);
-    }
+                reproduccion prenez = new reproduccion(getApplicationContext());
 
-    public void onClick (View view) {
-        registroprenez();
-    }
-
-    private void registroprenez() {
-
-        ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this,"bd_reproduccion",null,1);
-        SQLiteDatabase db=conn.getWritableDatabase();
-        ContentValues values= new ContentValues();
-        values.put(Utilidades.CAMPO_IDCERDA,campoidcerda.getText().toString());
-        values.put(Utilidades.CAMPO_NOMBRECERDA,camponombrecerda.getText().toString());
-        values.put(Utilidades.CAMPO_FECHAMONTA,campofechamonta.getText().toString());
-        values.put(Utilidades.CAMPO_PRIMERCELO,campoprimercelo.getText().toString());
-        values.put(Utilidades.CAMPO_PESOMONTA,campopesomonta.getText().toString());
-        values.put(Utilidades.CAMPO_IDPAJILLA,campoidpajilla.getText().toString());
-        values.put(Utilidades.CAMPO_NOMBREVERRACO,camponombreverraco.getText().toString());
-        values.put(Utilidades.CAMPO_ESTADO,campoestado.getText().toString());
+                String strTipoMonta = ((EditText) findViewById(R.id.tipomonta)).getText().toString();
+                String strIdHembra = ((EditText) findViewById(R.id.idcerda)).getText().toString();
+                String strIdVerraco = ((EditText) findViewById(R.id.idverraco)).getText().toString();
+                String strIdPajilla = ((EditText) findViewById(R.id.idpajilla)).getText().toString();
+                String strFechaMonta = ((EditText) findViewById(R.id.fechamonta)).getText().toString();
+                String strEstado = ((EditText) findViewById(R.id.estado)).getText().toString();
 
 
-     Long idResultante= db.insert(Utilidades.TABLA_USUARIOS, Utilidades.CAMPO_IDCERDA,values);
-        Toast.makeText(getApplicationContext(),"id Registro: "+ idResultante, Toast.LENGTH_SHORT).show();
+                if(!clsUtil.bValidaString(strTipoMonta,1))
+                    Toast.makeText(getBaseContext(),"Debe registrar tipo de monta",Toast.LENGTH_SHORT).show();
+                else if(!clsUtil.bValidaString(strIdHembra,2))
+                    Toast.makeText(getBaseContext(),"Debe registrar el ID de la Hembra",Toast.LENGTH_SHORT).show();
+                else if(!clsUtil.bValidaString(strFechaMonta,4))
+                    Toast.makeText(getBaseContext(),"Debe registrar Fecha de monta",Toast.LENGTH_SHORT).show();
+                else if(!clsUtil.bValidaString(strEstado,1))
+                    Toast.makeText(getBaseContext(),"Debe registrar estado de la Prenez",Toast.LENGTH_SHORT).show();
+                else {
+                    prenez.setStrTipoMonta(strTipoMonta);
+                    prenez.setIdHembra(Integer.parseInt(strIdHembra));
+                    prenez.setIdVerraco(Integer.parseInt(strIdVerraco));
+                    prenez.setIdPajilla(Integer.parseInt(strIdPajilla));
+                    prenez.setStrFechaMonta(strFechaMonta);
+                    prenez.setStrEstado(strEstado);
 
-    }
-}
+
+
+
+                    if(prenez.regprenez()) {
+                            Toast.makeText(getApplicationContext(), "Prenez registrada correctamente", Toast.LENGTH_SHORT).show();
+                            Intent IntentReg = new Intent(prenez.this, prenez.class);
+                            prenez.this.startActivity(IntentReg);
+                        }
+                        else{
+                            String error = prenez.getStrError();
+                            Toast.makeText(getApplicationContext(), "Se presento un error" + error, Toast.LENGTH_SHORT).show();
+                        }
+
+                }
+
+            }
+        }
+
+
+
+        );}}

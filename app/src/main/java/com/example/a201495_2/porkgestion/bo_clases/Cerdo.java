@@ -3,6 +3,8 @@ package com.example.a201495_2.porkgestion.bo_clases;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.support.annotation.IdRes;
+
 import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
 import java.util.ArrayList;
 
@@ -156,9 +158,10 @@ public class Cerdo {
     public Boolean deleteCerdo(){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strArgs[] = new String[]{String.valueOf(this.idCerdo)};
-        dbAcces.deleteDatabase ("CERDO","CODIGO=?",strArgs);
+        dbAcces.deleteDatabase ("CERDO","IDCERDO=?",strArgs);
         return dbAcces.getErrorDB()==null;
     }
+
 
     public Object getCerdoByView(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
@@ -167,7 +170,7 @@ public class Cerdo {
         Cerdo tmpObject = new Cerdo(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)");
+        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)", strArgs, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdCerdo(crResult.getInt(0));
             tmpObject.setStrFechaNace(crResult.getString(1));
@@ -193,7 +196,7 @@ public class Cerdo {
         Cerdo tmpObject = new Cerdo(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)");
+        crResult = dbAcces.qweryDatabase("CERDO", strColumns, "(CODIGO=? OR IDCERDO=?)", strArgs, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdCerdo(crResult.getInt(0));
             tmpObject.setStrFechaNace(crResult.getString(1));
@@ -215,7 +218,7 @@ public class Cerdo {
         Cursor crResult;
         ArrayList<Cerdo> listRaza = new ArrayList<Cerdo>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, null);
+        crResult = dbAcces.qweryDatabase("VW_CERDO", strColumns, null, null, "CODIGO");
         if (crResult.moveToFirst()) {
             do {
                 Cerdo tmpObject = new Cerdo(appContext);
@@ -245,7 +248,7 @@ public class Cerdo {
         Cursor crResult;
         ArrayList<Cerdo> listObject = new ArrayList<Cerdo>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("CERDO", strColumns, null);
+        crResult = dbAcces.qweryDatabase("CERDO", strColumns, null, null, "CODIGO");
         if (crResult.moveToFirst()) {
             do {
                 Cerdo tmpObject = new Cerdo(appContext);
@@ -322,6 +325,29 @@ public class Cerdo {
         }
         dbAcces.closeDataBase();
         return bResult;
-  }
+    }
+
+    public Boolean existCerdoByRaza(int idRaza){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        Boolean bResult  = false;
+        Cursor crResult;
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE IDRAZA='%s'", idRaza);
+        dbAcces.openDataBase();
+        crResult = dbAcces.qweryDatabaseBySql(strSql);
+        if (dbAcces.getErrorDB()==null) {
+            if (crResult.moveToFirst()) {
+                bResult = crResult.getInt(0) > 0;
+            }
+        }
+        else{
+            this.strError = dbAcces.getErrorDB();
+            bResult = false;
+        }
+        dbAcces.closeDataBase();
+        return bResult;
+    }
+
+
+
 
 }

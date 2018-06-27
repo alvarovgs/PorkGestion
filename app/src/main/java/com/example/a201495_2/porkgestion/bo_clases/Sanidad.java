@@ -95,7 +95,7 @@ public class Sanidad {
         Sanidad tmpObject = new Sanidad(appContext);
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("SANIDAD", strColumns, "NOMBREMEDICAMENTO=?");
+        crResult = dbAcces.qweryDatabase("SANIDAD", strColumns, "NOMBREMEDICAMENTO=?",null,null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdSanidad(crResult.getInt(0));
             tmpObject.setStrTipoMedicamento(crResult.getString(1));
@@ -113,7 +113,7 @@ public class Sanidad {
         Cursor crResult;
         ArrayList<Sanidad> listObject = new ArrayList<Sanidad>();
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("SANIDAD", strColumns, null);
+        crResult = dbAcces.qweryDatabase("SANIDAD", strColumns, null,null,null);
         if (crResult.moveToFirst()) {
             do {
                 Sanidad tmpObject = new Sanidad(appContext);

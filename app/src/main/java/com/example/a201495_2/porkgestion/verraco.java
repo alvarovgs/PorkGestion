@@ -21,11 +21,11 @@ public class verraco extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verraco);
 
-        campoid_verraco= (EditText)findViewById(R.id.id_verraco);
-        camponameverraco = (EditText)findViewById(R.id.nameverraco);
-        camponameraza= (EditText)findViewById(R.id.nameraza);
-        camponacimientov=(EditText)findViewById(R.id.nacimientov);
-        campopesoverraco=(EditText)findViewById(R.id.pesoverraco);
+        campoid_verraco= (EditText)findViewById(R.id.idcerda);
+        camponameverraco = (EditText)findViewById(R.id.tipomonta);
+        camponameraza= (EditText)findViewById(R.id.idverraco);
+        camponacimientov=(EditText)findViewById(R.id.idpajilla);
+        campopesoverraco=(EditText)findViewById(R.id.idraza);
         campoobservacionesv=(EditText)findViewById(R.id.observacionesv);
 
     }

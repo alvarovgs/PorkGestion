@@ -16,7 +16,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/id_verraco"
+        app:layout_constraintBottom_toTopOf="@+id/idcerda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         android:layout_alignStart="@+id/tituloverracos"
         android:text="Id de Pajilla:"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/id_verraco"
+        app:layout_constraintEnd_toStartOf="@+id/idcerda"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -44,7 +44,7 @@
         android:layout_marginTop="59dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/nameverraco"
+        app:layout_constraintBottom_toTopOf="@+id/tipomonta"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -55,7 +55,7 @@
         android:layout_alignStart="@+id/tituloverracos"
         android:text="Nombre de Verraco:"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toStartOf="@+id/nameverraco"
+        app:layout_constraintEnd_toStartOf="@+id/tipomonta"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -67,7 +67,7 @@
         android:layout_alignParentEnd="true"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/nameraza"
+        app:layout_constraintBottom_toTopOf="@+id/idverraco"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -79,7 +79,7 @@
         android:layout_marginTop="203dp"
         android:text="Fecha de Vencimiento:"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/nameraza"
+        app:layout_constraintEnd_toStartOf="@+id/idverraco"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -91,7 +91,7 @@
         android:layout_alignParentEnd="true"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/nacimientov"
+        app:layout_constraintBottom_toTopOf="@+id/idpajilla"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -102,7 +102,7 @@
         android:layout_alignStart="@+id/tituloverracos"
         android:text="Raza:"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toStartOf="@+id/nacimientov"
+        app:layout_constraintEnd_toStartOf="@+id/idpajilla"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -111,7 +111,7 @@
         android:layout_width="197dp"
         android:layout_height="40dp"
         android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignStart="@+id/nameverraco"
+        android:layout_alignStart="@+id/tipomonta"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/proveedor"

@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
-
 public class pajillas extends AppCompatActivity {
 
     EditText camponumpajilla, camponomverraco, camponomraza, campovencimiento, campoproveedor, campoobservaciones;
@@ -22,12 +21,12 @@ public class pajillas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pajillas);
 
-        camponumpajilla= (EditText)findViewById(R.id.id_verraco);
-        camponomverraco= (EditText)findViewById(R.id.nameverraco);
-        camponomraza= (EditText)findViewById(R.id.nameraza);
-        campovencimiento=(EditText)findViewById(R.id.nacimientov);
+        camponumpajilla= (EditText)findViewById(R.id.numpajilla);
+        camponomverraco= (EditText)findViewById(R.id.nomverraco);
+        camponomraza= (EditText)findViewById(R.id.nomraza);
+        campovencimiento=(EditText)findViewById(R.id.vencimiento);
         campoproveedor=(EditText)findViewById(R.id.proveedor);
-        campoobservaciones=(EditText)findViewById(R.id.idpajilla);
+        campoobservaciones=(EditText)findViewById(R.id.observaciones);
 
     }
 
@@ -43,7 +42,7 @@ public class pajillas extends AppCompatActivity {
 
     private void registropajillas() {
 
-        // ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this,"bd_reproduccion",null,2);
+       // ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this,"bd_reproduccion",null,2);
         ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this,"bd_reproduccion",null,1);
         SQLiteDatabase db=conn.getWritableDatabase();
         ContentValues values= new ContentValues();

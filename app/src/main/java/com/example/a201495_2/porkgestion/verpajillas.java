@@ -67,7 +67,7 @@ public class verpajillas extends AppCompatActivity {
     }
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(verpajillas.this, reportes.class);
+        miIntent = new Intent(verpajillas.this, reproduccion.class);
         startActivity(miIntent);
     }
 }

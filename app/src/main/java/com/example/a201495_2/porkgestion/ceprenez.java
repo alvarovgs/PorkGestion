@@ -1,138 +1,124 @@
 package com.example.a201495_2.porkgestion;
 
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
+import com.example.a201495_2.porkgestion.bo_clases.reproduccion;
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 
 public class ceprenez extends AppCompatActivity {
-    EditText campoidcerda, camponombrecerda, campofechamonta, campoprimercelo, campopesomonta, campoidpajilla, camponombreverraco, campoestado;
+    Button btn_act;
+    Button btn_buscar;
+    Button btn_eliminar;
 
-    ConexionSQLiteHelper conn;
+    private clsUtilidades clsUtil = new clsUtilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ceprenez);
 
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null, 1);
-
-        campoidcerda= (EditText)findViewById(R.id.id_verraco);
-        camponombrecerda= (EditText)findViewById(R.id.nameverraco);
-        campofechamonta= (EditText)findViewById(R.id.nameraza);
-        campoprimercelo=(EditText)findViewById(R.id.nacimientov);
-        campopesomonta=(EditText)findViewById(R.id.proveedor);
-        campoidpajilla=(EditText)findViewById(R.id.idpajilla);
-        camponombreverraco=(EditText)findViewById(R.id.nombreverraco);
-        campoestado=(EditText)findViewById(R.id.estado);
-
-    }
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.btn_actverraco:
-                actualizarprenez();
-                break;
-
-            case R.id.btn_eliminar:
-                eliminarprenez();
-                break;
-
-            case R.id.btn_clean:
-                limpiar();
-                break;
-
-            case R.id.btn_buscar:
+        btn_act = findViewById(R.id.btn_act);
+        btn_buscar = findViewById(R.id.btn_buscar);
+        btn_buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 consultar();
-                break;
+            }
+        });
+
+        btn_eliminar = findViewById(R.id.btn_eliminar);
+        btn_eliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                eliminar();
+            }
+        });
+
+        btn_act.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                reproduccion prenez = new reproduccion(getApplicationContext());
+
+                String strTipoMonta = ((EditText) findViewById(R.id.tipomonta)).getText().toString();
+                String strIdHembra = ((EditText) findViewById(R.id.idcerda)).getText().toString();
+                String strIdVerraco = ((EditText) findViewById(R.id.idverraco)).getText().toString();
+                String strIdPajilla = ((EditText) findViewById(R.id.idpajilla)).getText().toString();
+                String strFechaMonta = ((EditText) findViewById(R.id.fechamonta)).getText().toString();
+                String strEstado = ((EditText) findViewById(R.id.estado)).getText().toString();
+
+
+                if(!clsUtil.bValidaString(strTipoMonta,1))
+                    Toast.makeText(getBaseContext(),"Debe digitar tipo de monta",Toast.LENGTH_SHORT).show();
+                else if(!clsUtil.bValidaString(strIdHembra,2))
+                    Toast.makeText(getBaseContext(),"Debe digitar el ID de la Hembra",Toast.LENGTH_SHORT).show();
+                else if(!clsUtil.bValidaString(strFechaMonta,4))
+                    Toast.makeText(getBaseContext(),"Debe digitar Fecha de monta",Toast.LENGTH_SHORT).show();
+                else if(!clsUtil.bValidaString(strEstado,1))
+                    Toast.makeText(getBaseContext(),"Debe digitar estado de la Prenez",Toast.LENGTH_SHORT).show();
+                else {
+                    prenez.setStrTipoMonta(strTipoMonta);
+                    prenez.setIdHembra(Integer.parseInt(strIdHembra));
+                    prenez.setIdVerraco(Integer.parseInt(strIdVerraco));
+                    prenez.setIdPajilla(Integer.parseInt(strIdPajilla));
+                    prenez.setStrFechaMonta(strFechaMonta);
+                    prenez.setStrEstado(strEstado);
+
+
+
+                    if(prenez.updateprenez()) {
+                        Toast.makeText(getApplicationContext(), "Prenez actualizada correctamente", Toast.LENGTH_SHORT).show();
+                        Intent IntentReg = new Intent(ceprenez.this, ceprenez.class);
+                        ceprenez.this.startActivity(IntentReg);
+                    }
+                    else{
+                        String error = prenez.getStrError();
+                        Toast.makeText(getApplicationContext(), "Se presento un error" + error, Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+
+            }
+        });}
+
+    private void eliminar() {
+        String strIdCerda = ((EditText) findViewById(R.id.idcerda)).getText().toString();
+        reproduccion eliminar = new reproduccion(getApplicationContext());
+        eliminar.setIdHembra(Integer.parseInt(strIdCerda));
+        if (eliminar.deleteprenez()){
+            Toast.makeText(getApplicationContext(), "Registro Preñez Eliminado", Toast.LENGTH_SHORT).show();
+            Intent IntentReg = new Intent(ceprenez.this, ceprenez.class);
+            ceprenez.this.startActivity(IntentReg);
 
         }
-
-
+        else{
+            Toast.makeText(getApplicationContext(), "Se presento un error", Toast.LENGTH_SHORT).show();
+        }
     }
 
-    private void eliminarprenez() {
-        SQLiteDatabase db=conn.getWritableDatabase();
-        String [] parametros={campoidcerda.getText().toString()};
-
-        db.delete(Utilidades.TABLA_USUARIOS, Utilidades.CAMPO_IDCERDA+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Datos Eliminados",Toast.LENGTH_LONG).show();
-        camponombrecerda.setText("");
-        campofechamonta.setText("");
-        campoprimercelo.setText("");
-        campopesomonta.setText("");
-        campoidpajilla.setText("");
-        camponombreverraco.setText("");
-        campoestado.setText("");
-        db.close();
-    }
-
-    private void actualizarprenez() {
-        SQLiteDatabase db=conn.getWritableDatabase();
-        String [] parametros={campoidcerda.getText().toString()};
-        ContentValues values=new ContentValues();
-        values.put(Utilidades.CAMPO_NOMBRECERDA, camponombrecerda.getText().toString());
-        values.put(Utilidades.CAMPO_FECHAMONTA, campofechamonta.getText().toString());
-        values.put(Utilidades.CAMPO_PRIMERCELO, campoprimercelo.getText().toString());
-        values.put(Utilidades.CAMPO_PESOMONTA, campopesomonta.getText().toString());
-        values.put(Utilidades.CAMPO_IDPAJILLA, campoidpajilla.getText().toString());
-        values.put(Utilidades.CAMPO_NOMBREVERRACO, camponombreverraco.getText().toString());
-        values.put(Utilidades.CAMPO_ESTADO, campoestado.getText().toString());
-
-        db.update(Utilidades.TABLA_USUARIOS,values, Utilidades.CAMPO_IDCERDA+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Datos Actualizados",Toast.LENGTH_LONG).show();
-        db.close();
-    }
-
-    public void Regresar(View view) {
-        Intent miIntent=null;
-        miIntent = new Intent(ceprenez.this, reproduccion.class);
-        startActivity(miIntent);
-    }
     private void consultar() {
+        String strIdCerda = ((EditText) findViewById(R.id.idcerda)).getText().toString();
+        reproduccion consultar = new reproduccion(getApplicationContext());
+        consultar= (reproduccion) consultar.getPrenezByView(strIdCerda);
+        ((EditText) findViewById(R.id.tipomonta)).setText(consultar.getStrTipoMonta());
+        ((EditText) findViewById(R.id.idverraco)).setText(String.valueOf(consultar.getIdVerraco()));
+        ((EditText) findViewById(R.id.idpajilla)).setText(String.valueOf(consultar.getIdPajilla()));
+        ((EditText) findViewById(R.id.fechamonta)).setText(consultar.getStrFechaMonta());
+        ((EditText) findViewById(R.id.estado)).setText(consultar.getStrEstado());
 
-        SQLiteDatabase db=conn.getReadableDatabase();
-        String [] parametros={campoidcerda.getText().toString()};
-        String [] campos={Utilidades.CAMPO_NOMBRECERDA, Utilidades.CAMPO_FECHAMONTA, Utilidades.CAMPO_PRIMERCELO,
-                Utilidades.CAMPO_PESOMONTA, Utilidades.CAMPO_IDPAJILLA, Utilidades.CAMPO_NOMBREVERRACO, Utilidades.CAMPO_ESTADO};
 
-        try{
-            Cursor cursor= db.query(Utilidades.TABLA_USUARIOS,campos, Utilidades.CAMPO_IDCERDA+"=?",parametros,null,null,null);
-            cursor.moveToFirst();
-            camponombrecerda.setText(cursor.getString(0));
-            campofechamonta.setText(cursor.getString(1));
-            campoprimercelo.setText(cursor.getString(2));
-            campopesomonta.setText(cursor.getString(3));
-            campoidpajilla.setText(cursor.getString(4));
-            camponombreverraco.setText(cursor.getString(5));
-            campoestado.setText(cursor.getString(6));
-            cursor.close();
-
-        }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"ID de cerda no valido",Toast.LENGTH_LONG).show();
-            limpiar();
         }
 
 
     }
 
-    private void limpiar() {
-        camponombrecerda.setText("");
-        campofechamonta.setText("");
-        campoprimercelo.setText("");
-        campopesomonta.setText("");
-        campoidpajilla.setText("");
-        camponombreverraco.setText("");
-        campoestado.setText("");
-    }
 
 
 
-}

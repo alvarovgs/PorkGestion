@@ -50,7 +50,7 @@ public class cerdoAdapter extends BaseAdapter {
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             rowView = inflater.inflate(R.layout.list_item_cerdo, parent, false);
         }
-        TextView tv_Codigo= (TextView) rowView.findViewById(R.id.codigo);
+        TextView tv_Codigo= (TextView) rowView.findViewById(R.id.idcerda);
         TextView tv_Fechanace= (TextView) rowView.findViewById(R.id.fechanace);
         TextView tv_PesoNace= (TextView) rowView.findViewById(R.id.pesonace);
         TextView tv_Raza= (TextView) rowView.findViewById(R.id.raza);

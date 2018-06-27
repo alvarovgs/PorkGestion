@@ -20,7 +20,6 @@ public class fpp extends AppCompatActivity implements View.OnClickListener {
     EditText efecha;
     EditText efpp;
     private  int dia,mes,ano;
-    public EditText partes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +39,12 @@ public class fpp extends AppCompatActivity implements View.OnClickListener {
             final Calendar c = Calendar.getInstance();
             dia = c.get(Calendar.DAY_OF_MONTH);
             mes = c.get(Calendar.MONTH);
-            ano = c.get(YEAR);
+            ano = c.get(Calendar.YEAR);
 
             DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                    efecha.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                    efecha.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
                     int fpp;
                     fpp=year;
                     fpp=(monthOfYear-1)+(fpp*12);
