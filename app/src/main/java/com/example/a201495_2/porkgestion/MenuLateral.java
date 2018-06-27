@@ -25,7 +25,7 @@ public class MenuLateral extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_lateral);
-        Stetho.initializeWithDefaults(this);
+        Stetho.initializeWithDefaults(getApplicationContext());
         initToolbar();
         initNavigationMenu();
     }
@@ -90,8 +90,8 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
-                else if (item.getTitle().toString().equals("Parto y Lactancia")) {
-                    Intent miIntent = new Intent(MenuLateral.this, Partolact.class);
+                else if (item.getTitle().toString().equals("Parto")) {
+                    Intent miIntent = new Intent(MenuLateral.this, PartoActivity.class);
                     startActivity(miIntent);
                     return false;
                 }

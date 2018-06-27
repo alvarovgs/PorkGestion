@@ -38,7 +38,7 @@ public class reportes extends AppCompatActivity {
                 break;
 
             case R.id.btn_pajillas:
-                miIntent = new Intent(reportes.this, verpajillas.class);
+                miIntent = new Intent(reportes.this, PajillaActivity.class);
                 break;
                 
             case R.id.btn_hv:

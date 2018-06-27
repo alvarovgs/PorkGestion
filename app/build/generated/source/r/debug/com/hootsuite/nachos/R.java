@@ -27,10 +27,10 @@ public final class R {
         public static final int chip_default_right_margin = 0x7f070053;
     }
     public static final class string {
-        public static final int chip_ellipsis = 0x7f0e0034;
+        public static final int chip_ellipsis = 0x7f0e0035;
     }
     public static final class style {
-        public static final int DefaultChipSuggestionTextView = 0x7f0f00b0;
+        public static final int DefaultChipSuggestionTextView = 0x7f0f00b4;
     }
     public static final class styleable {
         public static final int[] NachoTextView = { 0x7f040063, 0x7f040064, 0x7f040065, 0x7f040066, 0x7f040067, 0x7f040068 };
