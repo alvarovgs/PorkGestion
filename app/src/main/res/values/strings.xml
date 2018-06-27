@@ -70,6 +70,7 @@
     <string name="title_activity_sanidad">Gestión de sanidad</string>
     <string name="title_activity_raza">Gestión de razas</string>
     <string name="title_activity_pajilla">Gestión de pajillas</string>
+    <string name="title_activity_parto">PartoActivity</string>
 
 
 </resources>

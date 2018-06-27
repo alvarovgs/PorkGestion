@@ -6,7 +6,6 @@ import android.database.Cursor;
 
 import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
 
-import java.io.InvalidClassException;
 import java.util.ArrayList;
 
 public class SanidadCerdo {
@@ -14,16 +13,16 @@ public class SanidadCerdo {
     private dataBaseOpenHelper dbAcces;
     private int idCerdo, idSanidad;
     private double dDosis;
-    private String strTipoMedicamento, strNombremedicamente, strViaAdministracion, strFechaAdministracion;;
+    private String strTipoMedicamento, strNombremedicamento, strViaAdministracion, strFechaAdministracion;;
     private String strCodigoCerdo, strSexoCerdo, strError;;
 
 
-    public SanidadCerdo(int idCerdo, int idSanidad, double dDosis, String strTipoMedicamento, String strNombremedicamente, String strViaAdministracion, String strFechaAdministracion, String strCodigoCerdo, String strSexoCerdo) {
+    public SanidadCerdo(int idCerdo, int idSanidad, double dDosis, String strTipoMedicamento, String strNombremedicamento, String strViaAdministracion, String strFechaAdministracion, String strCodigoCerdo, String strSexoCerdo) {
         this.idCerdo = idCerdo;
         this.idSanidad = idSanidad;
         this.dDosis = dDosis;
         this.strTipoMedicamento = strTipoMedicamento;
-        this.strNombremedicamente = strNombremedicamente;
+        this.strNombremedicamento = strNombremedicamento;
         this.strViaAdministracion = strViaAdministracion;
         this.strFechaAdministracion = strFechaAdministracion;
         this.strCodigoCerdo = strCodigoCerdo;
@@ -66,12 +65,12 @@ public class SanidadCerdo {
         this.strTipoMedicamento = strTipoMedicamento;
     }
 
-    public String getStrNombremedicamente() {
-        return strNombremedicamente;
+    public String getStrNombremedicamento() {
+        return strNombremedicamento;
     }
 
-    public void setStrNombremedicamente(String strNombremedicamente) {
-        this.strNombremedicamente = strNombremedicamente;
+    public void setStrNombremedicamento(String strNombremedicamento) {
+        this.strNombremedicamento = strNombremedicamento;
     }
 
     public String getStrViaAdministracion() {
@@ -156,7 +155,7 @@ public class SanidadCerdo {
             tmpObject.setStrCodigoCerdo(crResult.getString(2));
             tmpObject.setStrSexoCerdo(crResult.getString(3));
             tmpObject.setStrTipoMedicamento(crResult.getString(4));
-            tmpObject.setStrNombremedicamente(crResult.getString(5));
+            tmpObject.setStrNombremedicamento(crResult.getString(5));
             tmpObject.setStrFechaAdministracion(crResult.getString(6));
             tmpObject.setStrViaAdministracion(crResult.getString(7));
         }
@@ -180,7 +179,7 @@ public class SanidadCerdo {
                 tmpObject.setStrCodigoCerdo(crResult.getString(2));
                 tmpObject.setStrSexoCerdo(crResult.getString(3));
                 tmpObject.setStrTipoMedicamento(crResult.getString(4));
-                tmpObject.setStrNombremedicamente(crResult.getString(5));
+                tmpObject.setStrNombremedicamento(crResult.getString(5));
                 tmpObject.setStrFechaAdministracion(crResult.getString(6));
                 tmpObject.setStrViaAdministracion(crResult.getString(7));
                 listObject.add(tmpObject);
@@ -208,7 +207,7 @@ public class SanidadCerdo {
                 tmpObject.setStrCodigoCerdo(crResult.getString(2));
                 tmpObject.setStrSexoCerdo(crResult.getString(3));
                 tmpObject.setStrTipoMedicamento(crResult.getString(4));
-                tmpObject.setStrNombremedicamente(crResult.getString(5));
+                tmpObject.setStrNombremedicamento(crResult.getString(5));
                 tmpObject.setStrFechaAdministracion(crResult.getString(6));
                 tmpObject.setStrViaAdministracion(crResult.getString(7));
                 listObject.add(tmpObject);

@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.a201495_2.porkgestion.entidades.Usuario;
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
 
 import java.util.ArrayList;
@@ -19,14 +18,14 @@ public class vergestantes extends AppCompatActivity {
     ArrayList<String> listainformacion;
     ArrayList<Usuario> listagestantes;
     ListView listviewgestantes;
-    ConexionSQLiteHelper conn;
+    //ConexionSQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vergestantes);
 
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null,1);
+       // conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null,1);
         listviewgestantes=(ListView) findViewById(R.id.listviewgestantes);
 
     consultarlistagestantes();
@@ -35,13 +34,13 @@ public class vergestantes extends AppCompatActivity {
     }
 
     private void consultarlistagestantes() {
-        SQLiteDatabase db=conn.getReadableDatabase();
+      //  SQLiteDatabase db=conn.getReadableDatabase();
 
         Usuario usuario=null;
         listagestantes= new ArrayList<Usuario>();
-        Cursor cursor=db.rawQuery("SELECT * FROM "+ Utilidades.TABLA_USUARIOS,null);
+      //  Cursor cursor=db.rawQuery("SELECT * FROM "+ Utilidades.TABLA_USUARIOS,null);
 
-        while (cursor.moveToNext()){
+     /*   while (cursor.moveToNext()){
             usuario= new Usuario();
             usuario.setIdcerda(cursor.getInt(0));
             usuario.setNombrecerda(cursor.getString(1));
@@ -55,7 +54,7 @@ public class vergestantes extends AppCompatActivity {
             listagestantes.add(usuario);
 
         }
-
+*/
         obtenerlista();
     }
 

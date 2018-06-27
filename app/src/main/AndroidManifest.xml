@@ -3,8 +3,8 @@
     package="com.example.a201495_2.porkgestion">
 
     <application
-        android:allowBackup="true"
         android:name=".GlobalClass"
+        android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
@@ -29,9 +29,7 @@
         <activity android:name=".reproduccion" />
         <activity android:name=".reportes" />
         <activity android:name=".monta" />
-        <activity android:name=".raza" />
         <activity android:name=".fpp" />
-        <activity android:name=".Parto_Activity" />
         <activity android:name=".reporteparto" />
         <activity android:name=".reporteverracos" />
         <activity android:name=".MainInformacion" />
@@ -54,8 +52,11 @@
         <activity
             android:name=".PajillaActivity"
             android:label="@string/title_activity_pajilla"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".PartoActivity"
+            android:label="@string/title_activity_parto"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

@@ -18,7 +18,7 @@ public class DashReproductivo extends AppCompatActivity {
         ibparto.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent ibparto =new Intent(DashReproductivo.this, Parto_Activity.class);
+            Intent ibparto =new Intent(DashReproductivo.this, PartoActivity.class);
             startActivity(ibparto);
             Toast mostrar  = Toast.makeText(DashReproductivo.this, "Registro de Partos",Toast.LENGTH_LONG);
             mostrar.show();

@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
-
 
 public class prenez extends AppCompatActivity {
 
@@ -45,7 +43,7 @@ public class prenez extends AppCompatActivity {
 
     private void registroprenez() {
 
-        ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this,"bd_reproduccion",null,1);
+     /*   ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this,"bd_reproduccion",null,1);
         SQLiteDatabase db=conn.getWritableDatabase();
         ContentValues values= new ContentValues();
         values.put(Utilidades.CAMPO_IDCERDA,campoidcerda.getText().toString());
@@ -60,6 +58,6 @@ public class prenez extends AppCompatActivity {
 
      Long idResultante= db.insert(Utilidades.TABLA_USUARIOS, Utilidades.CAMPO_IDCERDA,values);
         Toast.makeText(getApplicationContext(),"id Registro: "+ idResultante, Toast.LENGTH_SHORT).show();
-
+*/
     }
 }
