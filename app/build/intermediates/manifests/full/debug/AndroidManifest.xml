@@ -23,7 +23,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.a201495_2.porkgestion.MainActivity"
@@ -47,6 +46,7 @@
         <activity android:name="com.example.a201495_2.porkgestion.fpp" />
         <activity android:name="com.example.a201495_2.porkgestion.Parto_Activity" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteparto" />
+        <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteverracos" />
         <activity android:name="com.example.a201495_2.porkgestion.MainInformacion" />
         <activity android:name="com.example.a201495_2.porkgestion.MainContenido" />
@@ -72,6 +72,10 @@
         <activity android:name="com.example.a201495_2.porkgestion.verpajillas" />
         <activity android:name="com.example.a201495_2.porkgestion.ververracos" />
         <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
+        <activity android:name="com.example.a201495_2.porkgestion.consultacerdo" />
+        <activity android:name="com.example.a201495_2.porkgestion.pajilla_Activity" />
+        <activity android:name="com.example.a201495_2.porkgestion.totalcerdos" />
+        <activity android:name="com.example.a201495_2.porkgestion.prenez" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

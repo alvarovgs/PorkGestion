@@ -1,4 +1,5 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Sun Jun 24 12:16:24 COT 2018
 2.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 5.set=DEX
@@ -29,3 +30,19 @@ count=7
 1.base=C\:\\Users\\Ozzy\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
 4.baseType=DIRECTORY
 0.set=DEX
+=======
+#Sat Jun 23 19:46:48 COT 2018
+1.base=C\:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+2.path=databases/Porkgestion.db
+0.baseType=DIRECTORY
+2.base=C\:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=C\:\\Users\\FABIO\\AndroidStudioProjects\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+2.baseType=DIRECTORY
+1.path=fonts/Roboto-Medium.ttf
+>>>>>>> origin/fabian

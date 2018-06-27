@@ -3,9 +3,16 @@ package com.example.a201495_2.porkgestion.bo_clases;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+<<<<<<< HEAD
 import android.support.annotation.IdRes;
+=======
+import android.database.sqlite.SQLiteDatabase;
+>>>>>>> origin/fabian
 
 import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
+import com.example.a201495_2.porkgestion.entidades.Usuario;
+import com.example.a201495_2.porkgestion.utilidades.Utilidades;
+
 import java.util.ArrayList;
 
 public class Cerdo {
@@ -162,8 +169,12 @@ public class Cerdo {
         return dbAcces.getErrorDB()==null;
     }
 
+<<<<<<< HEAD
 
     public Object getCerdoByView(String strCodigo){
+=======
+    public Cerdo getCerdoByView(String strCodigo){
+>>>>>>> origin/fabian
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDCERDO","FECHANACIMIENTO","SEXO","PESONACIMIENTO","IDPADRE","IDMADRE","IDRAZA","CODIGO","PADRE","MADRE","NOMBRERAZA"};
         String strArgs[] = new String[]{strCodigo,strCodigo};
@@ -186,10 +197,10 @@ public class Cerdo {
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();
-        return dbAcces.getErrorDB()==null;
+        return tmpObject;
     }
 
-    public Object getCerdoByTable(String strCodigo){
+    public Cerdo getCerdoByTable(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDCERDO","FECHANACIMIENTO","SEXO","PESONACIMIENTO","IDPADRE","IDMADRE","IDRAZA","CODIGO"};
         String strArgs[] = new String[]{strCodigo,strCodigo};
@@ -311,7 +322,7 @@ public class Cerdo {
         dbAcces = new dataBaseOpenHelper(appContext);
         Boolean bResult  = false;
         Cursor crResult;
-        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE CODIGO='%s'",strCodigo);
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE IDCERDO='%s'",StrCodigo);
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql(strSql);
         if (dbAcces.getErrorDB()==null) {
@@ -350,4 +361,25 @@ public class Cerdo {
 
 
 
+    public ArrayList<String> consultaCerdo() {
+       // SQLiteDatabase db=conn.getReadableDatabase();
+
+        ArrayList<String> listacerdos=new ArrayList<String>();
+        dbAcces = new dataBaseOpenHelper(appContext);
+        dbAcces.openDataBase();
+       // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
+        //select * from usuarios
+        String strSql = "SELECT IDCERDO, CODIGO FROM CERDO ";
+        Cursor cursor;
+        cursor = dbAcces.qweryDatabaseBySql(strSql);
+        while (cursor.moveToNext()){
+            /*Cerdo marrano=new Cerdo(appContext);
+            marrano.setIdCerdo(cursor.getInt(0));
+            marrano.setStrCodigo(cursor.getString(1));*/
+            listacerdos.add(cursor.getInt(0)+" - " + cursor.getString(1));
+        }
+        return listacerdos;
+    }
+
 }
+

@@ -13,7 +13,7 @@ public class Parto_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_parto_);
     }
 
-    public void onClick(View view){
+   /* public void onClick(View view){
         Intent miIntent=null;
 
         switch (view.getId()) {
@@ -22,5 +22,5 @@ public class Parto_Activity extends AppCompatActivity {
                 break;
         }
         startActivity(miIntent);
-    }
+    }*/
 }

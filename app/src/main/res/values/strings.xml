@@ -8,7 +8,11 @@
     <string name="Raza">Raza</string>
     <string name="razas">Ingrese el nombre de una nueva raza si no se encuentra en el modulo de cerdo.</string>
     <string name="Reproduccion">Reproducción</string>
+<<<<<<< HEAD
     <string name="Lactancia">Parto</string>
+=======
+    <string name="Lactancia">Parto y Lactancia</string>
+>>>>>>> origin/fabian
     <string name="Sanidad">Sanidad</string>
     <string name="Ventas">Ventas</string>
     <string name="Reportes">Reportes</string>
@@ -30,7 +34,11 @@
         <item>YORKSHIRE</item>
         <item>ZUNGO</item>
     </string-array>
+<<<<<<< HEAD
     <string-array name="tipopreñez">
+=======
+    <string-array name="tipoprenez">
+>>>>>>> origin/fabian
         <item>Seleccione el tipo de preñez</item>
         <item>MONTA NATURAL</item>
         <item>INSEMINACION ARTIFICIAL</item>
