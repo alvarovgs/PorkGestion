@@ -77,12 +77,6 @@ public class MenuLateral extends AppCompatActivity {
                     return false;
                 }
 
-                else if(item.getTitle().toString().equals("Reproducción")) {
-                    Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
-                    startActivity(miIntent);
-                    return false;
-                }
-
                 else if(item.getTitle().toString().equals("Sanidad")) {
                     Intent miIntent = new Intent(MenuLateral.this, SanidadActivity.class);
                     startActivity(miIntent);

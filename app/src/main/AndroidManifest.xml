@@ -54,6 +54,10 @@
         <activity android:name=".consultapajilla"/>
         <activity android:name=".menucerdo"/>
         <activity android:name=".SanidadActivity"/>
+        <activity android:name=".ceprenez"/>
+        <activity android:name=".vergestantes"/>
+        <activity android:name=".ververracos"/>
+        <activity android:name=".listaverracos"/>
 
     </application>
 

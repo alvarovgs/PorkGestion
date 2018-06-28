@@ -32,7 +32,7 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:text="avargas@yahoo.com"
+        android:text=""
         android:hint="E-mail del Usuario"
         android:inputType="textEmailAddress|textPersonName"
         android:textColorHint="@color/amber_50"
@@ -49,7 +49,7 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
-        android:text="12345"
+        android:text=""
         android:hint="Password"
         android:textColorHint="@color/amber_50"
         android:inputType="textPassword" />
