@@ -32,6 +32,10 @@ public class reproduccion extends AppCompatActivity {
             case R.id.btn_rpajilla:
                 miIntent = new Intent(reproduccion.this, PajillaActivity.class);
                 break;
+
+            case R.id.btn_fpp:
+                miIntent = new Intent(reproduccion.this, fpp.class);
+                break;
         }
         startActivity(miIntent);
     }
