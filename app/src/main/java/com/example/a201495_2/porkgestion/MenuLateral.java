@@ -55,7 +55,7 @@ public class MenuLateral extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
 
                 if (item.getTitle().toString().equals("Cerdo")) {
-                    Intent miIntent = new Intent(MenuLateral.this, cerdo.class);
+                    Intent miIntent = new Intent(MenuLateral.this, menucerdo.class);
                     startActivity(miIntent);
                     return false;
                 }
