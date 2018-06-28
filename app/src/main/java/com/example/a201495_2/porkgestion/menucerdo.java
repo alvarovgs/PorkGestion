@@ -5,12 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class reproduccion extends AppCompatActivity {
+public class menucerdo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reproduccion);
+        setContentView(R.layout.activity_menucerdo);
     }
 
     public void onClick(View view){
@@ -18,19 +18,19 @@ public class reproduccion extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.btn_back:
-                miIntent = new Intent(reproduccion.this, MenuLateral.class);
+                miIntent = new Intent(menucerdo.this, MenuLateral.class);
                 break;
 
-            case R.id.btn_rmonta:
-                miIntent = new Intent(reproduccion.this, prenez.class);
+            case R.id.btn_newcerdo:
+                miIntent = new Intent(menucerdo.this, cerdo.class);
                 break;
 
-            case R.id.btn_amonta:
-                miIntent = new Intent(reproduccion.this, monta.class);
+            case R.id.btn_cacerdo:
+                miIntent = new Intent(menucerdo.this, consultacerdo.class);
                 break;
 
-            case R.id.btn_rpajilla:
-                miIntent = new Intent(reproduccion.this, pajilla_Activity.class);
+            case R.id.btn_sanicerdo:
+                miIntent = new Intent(menucerdo.this, consultacerdo.class);
                 break;
 
             /*case R.id.btn_apajilla:
@@ -40,6 +40,5 @@ public class reproduccion extends AppCompatActivity {
         }
         startActivity(miIntent);
     }
+
 }
-
-

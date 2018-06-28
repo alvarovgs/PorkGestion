@@ -16,6 +16,7 @@
     <string name="Ayuda">Info. General</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Inicio">Inicio</string>
+    <string name="Menucerdo">Menu cerdo</string>
     <string-array name="sexo">
         <item>Seleccione el sexo</item>
         <item>HEMBRA</item>
