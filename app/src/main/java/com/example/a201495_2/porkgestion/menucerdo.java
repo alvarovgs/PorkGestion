@@ -31,7 +31,7 @@ public class menucerdo extends AppCompatActivity {
                 break;
 
             case R.id.btn_sanicerdo:
-                Toast.makeText(getApplicationContext(),"Gestión de Sanidad",Toast.LENGTH_SHORT).show();
+                miIntent = new Intent(menucerdo.this, MenuLateral.class);
                 break;
         }
         startActivity(miIntent);
