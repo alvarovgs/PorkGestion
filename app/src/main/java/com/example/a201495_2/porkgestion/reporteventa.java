@@ -27,10 +27,10 @@ public class reporteventa extends AppCompatActivity {
 
 
         //campoIdConsuVe= (EditText) findViewById(R.id.campoIdConsuVe);
-        campoEdadConsuVe= (EditText) findViewById(R.id.campoEdadConsuVe);
-        campoPesoConsuVe= (EditText) findViewById(R.id.campoPesoConsuVe);
-        campoPreConsuVe=(EditText) findViewById(R.id.campoPreConsuVe);
-        comboIdConsuVe= (Spinner) findViewById(R.id.comboIdConsuVe);
+        campoEdadConsuVe= findViewById(R.id.campoEdadConsuVe);
+        campoPesoConsuVe= findViewById(R.id.campoPesoConsuVe);
+        campoPreConsuVe= findViewById(R.id.campoPreConsuVe);
+        comboIdConsuVe= findViewById(R.id.comboIdConsuVe);
 
         SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdo();
         sp_AdapterNumventa = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);

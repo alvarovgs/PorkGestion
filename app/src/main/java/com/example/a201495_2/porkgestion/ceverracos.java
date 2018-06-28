@@ -19,12 +19,12 @@ public class ceverracos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ceverracos);
 
-        campoid_verraco= (EditText)findViewById(R.id.id_verraco);
-        camponameverraco = (EditText)findViewById(R.id.nameverraco);
-        camponameraza= (EditText)findViewById(R.id.nameraza);
-        camponacimientov=(EditText)findViewById(R.id.nacimientov);
-        campopesoverraco=(EditText)findViewById(R.id.pesoverraco);
-        campoobservacionesv=(EditText)findViewById(R.id.observacionesv);
+        campoid_verraco= findViewById(R.id.id_verraco);
+        camponameverraco = findViewById(R.id.nameverraco);
+        camponameraza= findViewById(R.id.nameraza);
+        camponacimientov= findViewById(R.id.nacimientov);
+        campopesoverraco= findViewById(R.id.pesoverraco);
+        campoobservacionesv= findViewById(R.id.observacionesv);
 
 
     }

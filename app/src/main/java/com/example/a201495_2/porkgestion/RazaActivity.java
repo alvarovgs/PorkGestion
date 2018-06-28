@@ -32,9 +32,9 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raza);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +47,7 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
         lvRazaResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                Raza objItemRaza = (Raza)arrListRaza.get(position);
+                Raza objItemRaza = arrListRaza.get(position);
                 showCustomDialog(objItemRaza);
             }
         });
@@ -56,7 +56,7 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
     private void displayResult(){
         Raza objRaza = new Raza(getApplicationContext());
         arrListRaza = objRaza.getAllRaza();
-        lvRazaResult = (ListView) findViewById(R.id.list_razaResult);
+        lvRazaResult = findViewById(R.id.list_razaResult);
         lvRazaResult.setAdapter(new razaAdapter(getApplicationContext(), arrListRaza));
     }
 
@@ -73,10 +73,10 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         TextView lbltitulo = dialog.findViewById(R.id.lblTitulo);
-        final TextView lblError = (TextView) dialog.findViewById(R.id.lblError);
-        final EditText et_nombreRaza = (EditText) dialog.findViewById(R.id.et_nombreRaza);
-        final EditText et_origenRaza = (EditText) dialog.findViewById(R.id.et_origenRaza);
-        final EditText et_descRaza = (EditText) dialog.findViewById(R.id.et_descRaza);
+        final TextView lblError = dialog.findViewById(R.id.lblError);
+        final EditText et_nombreRaza = dialog.findViewById(R.id.et_nombreRaza);
+        final EditText et_origenRaza = dialog.findViewById(R.id.et_origenRaza);
+        final EditText et_descRaza = dialog.findViewById(R.id.et_descRaza);
 
         lbltitulo.setText("Gestión de razas");
 
@@ -85,13 +85,13 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
         et_descRaza.setText(objRaza.getStrDescripcion());
         idRaza = objRaza.getIdRaza();
 
-        ((Button) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
             }
         });
-        ((Button) dialog.findViewById(R.id.bt_save)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Raza objClass = new Raza(getApplicationContext());
@@ -122,7 +122,7 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
             }
         });
 
-        ((Button) dialog.findViewById(R.id.bt_delete)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Cerdo objClassTemp=new Cerdo(getApplicationContext());

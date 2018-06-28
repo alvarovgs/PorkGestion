@@ -22,7 +22,7 @@ public class vergestantes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vergestantes);
-        listviewgestantes=(ListView) findViewById(R.id.listviewgestantes);
+        listviewgestantes= findViewById(R.id.listviewgestantes);
         consultarlistagestantes();
         ArrayAdapter adaptador=new ArrayAdapter(this,android.R.layout.simple_list_item_1,listainformacion);
         listviewgestantes.setAdapter(adaptador);

@@ -36,10 +36,10 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pajilla);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +51,7 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
         lvPajillaResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                Pajilla objItemPajilla = (Pajilla)arrListPajilla.get(position);
+                Pajilla objItemPajilla = arrListPajilla.get(position);
                 showCustomDialog(objItemPajilla);
             }
         });
@@ -60,7 +60,7 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
     private void displayResult(){
         Pajilla objPajilla = new Pajilla(getApplicationContext());
         arrListPajilla = objPajilla.getAllPajillaByView();
-        lvPajillaResult = (ListView) findViewById(R.id.list_pajillaresult);
+        lvPajillaResult = findViewById(R.id.list_pajillaresult);
         lvPajillaResult.setAdapter(new pajillaAdapter(getApplicationContext(), arrListPajilla ));
     }
 
@@ -82,10 +82,10 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         TextView lbltitulo = dialog.findViewById(R.id.lblTitulo);
-        final TextView lblError = (TextView) dialog.findViewById(R.id.lblError);
-        final Spinner sp_razaPajilla = (Spinner) dialog.findViewById(R.id.sp_razaPajilla);
-        final EditText et_fechaVencePajilla = (EditText) dialog.findViewById(R.id.et_fechaVencePajilla);
-        final EditText et_codigoPajilla = (EditText) dialog.findViewById(R.id.et_codigoPajilla);
+        final TextView lblError = dialog.findViewById(R.id.lblError);
+        final Spinner sp_razaPajilla = dialog.findViewById(R.id.sp_razaPajilla);
+        final EditText et_fechaVencePajilla = dialog.findViewById(R.id.et_fechaVencePajilla);
+        final EditText et_codigoPajilla = dialog.findViewById(R.id.et_codigoPajilla);
 
         lbltitulo.setText("Gestión de pajillas");
         /*llenar el sinner*/
@@ -110,13 +110,13 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
         et_codigoPajilla.setText(objPajilla.getStrCodigoPajilla());
         idPajilla = objPajilla.getIdPajilla();
 
-        ((Button) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
             }
         });
-        ((Button) dialog.findViewById(R.id.bt_save)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Pajilla objClass =new Pajilla(getApplicationContext());
@@ -146,7 +146,7 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
             }
         });
 
-        ((Button) dialog.findViewById(R.id.bt_delete)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Pajilla objClass =new Pajilla(getApplicationContext());

@@ -23,10 +23,10 @@ public class ventas extends AppCompatActivity {
         setContentView(R.layout.activity_ventas);
 
 
-        comboNumeroAniVenta= (Spinner) findViewById(R.id.comboNumeroAniVenta);
-        campoEdadVenta= (EditText) findViewById(R.id.campoEdadVenta);
-        campoPesoVenta= (EditText) findViewById(R.id.campoPesoVenta);
-        campoPrecioVenta=(EditText) findViewById(R.id.campoPrecioVenta);
+        comboNumeroAniVenta= findViewById(R.id.comboNumeroAniVenta);
+        campoEdadVenta= findViewById(R.id.campoEdadVenta);
+        campoPesoVenta= findViewById(R.id.campoPesoVenta);
+        campoPrecioVenta= findViewById(R.id.campoPrecioVenta);
 
         SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdonovendido();
         sp_AdapterNumventa = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);

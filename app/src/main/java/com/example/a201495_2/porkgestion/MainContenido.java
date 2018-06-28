@@ -18,7 +18,7 @@ public class MainContenido extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contenido_inicio);
-        imgbutton=(ImageView) findViewById(R.id.ibt_repro);
+        imgbutton= findViewById(R.id.ibt_repro);
         imgbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -26,7 +26,7 @@ public class MainContenido extends AppCompatActivity{
                 Intent imgbutton=new Intent(MainContenido.this, DashReproductivo.class);
                 startActivity(imgbutton);
 
-        strigbutton=(TextView)findViewById(R.id.repro_string);
+        strigbutton= findViewById(R.id.repro_string);
         strigbutton.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
