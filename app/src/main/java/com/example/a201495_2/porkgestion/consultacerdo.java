@@ -1,8 +1,5 @@
 package com.example.a201495_2.porkgestion;
 
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,8 +11,6 @@ import android.widget.Toast;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
-import com.example.a201495_2.porkgestion.entidades.Usuario;
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 public class consultacerdo extends AppCompatActivity {

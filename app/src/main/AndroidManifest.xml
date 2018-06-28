@@ -51,7 +51,6 @@
         <activity android:name=".PajillaActivity" />
         <activity android:name=".totalcerdos" />
         <activity android:name=".prenez" />
-        <activity android:name=".consultapajilla"/>
         <activity android:name=".menucerdo"/>
         <activity android:name=".SanidadActivity"/>
         <activity android:name=".ceprenez"/>

@@ -9,12 +9,9 @@ import android.widget.Toast;
 import android.widget.EditText;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
 
 public class  cerdo extends AppCompatActivity {
-//    private clsUtilidades clsUtil = new clsUtilidades();
-    private Utilidades clsUtil = new Utilidades();
     EditText campoId,campoNombre,campoFechanace,campoPesonace;
     spinAdapter sp_AdapterRaza;
     spinAdapter sp_AdapterSexo;

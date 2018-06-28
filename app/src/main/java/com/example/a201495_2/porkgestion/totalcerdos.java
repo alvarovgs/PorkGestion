@@ -1,28 +1,19 @@
 package com.example.a201495_2.porkgestion;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
-import com.example.a201495_2.porkgestion.entidades.Usuario;
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
-
 
 
 public class totalcerdos extends AppCompatActivity {
 
     ListView listViewCerdos;
     ArrayList<String> listaInformacion;
-    ArrayList<Usuario> listaUsuarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
