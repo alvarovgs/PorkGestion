@@ -42,7 +42,7 @@ public class reportes extends AppCompatActivity {
                 break;
                 
             case R.id.btn_hv:
-                miIntent = new Intent(reportes.this, MainReporteHV.class);
+                miIntent = new Intent(reportes.this, consultacerdo.class);
                 break;
         }
         startActivity(miIntent);

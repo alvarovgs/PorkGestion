@@ -9,7 +9,7 @@
         android:id="@+id/textView24"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView23"
         android:text="Nacidos Vivos Machos: 7" />
 
@@ -17,7 +17,7 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView22"
         android:text="Fecha de Parto: 25/04/2018" />
 
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_marginTop="197dp"
         android:text="Id de Cerda: 124" />
 
@@ -60,7 +60,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView17"
         android:text="Nacidos Vivos Hembras: 2" />
 
@@ -68,7 +68,7 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView24"
         android:text="Nacidos Vivos Hembras: 3" />
 
@@ -76,7 +76,7 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_centerVertical="true"
         android:text="Mamas activas: 8" />
 
@@ -84,7 +84,7 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView18"
         android:text="Mamas activas: 6" />
 
@@ -92,7 +92,7 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView26"
         android:text="Fecha del destete: 15/05/2018" />
 
@@ -101,12 +101,12 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/btn_actualizar"
         android:layout_below="@+id/textView19"
         android:text="Fecha del destete: 25/06/2018" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
