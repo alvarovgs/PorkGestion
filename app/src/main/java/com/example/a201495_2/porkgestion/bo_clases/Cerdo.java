@@ -313,7 +313,7 @@ public class Cerdo {
         dbAcces = new dataBaseOpenHelper(appContext);
         Boolean bResult  = false;
         Cursor crResult;
-        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE IDCERDO='%s'",StrCodigo);
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE (CODIGO='%s' OR IDCERDO='%s')",StrCodigo, StrCodigo);
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql(strSql);
         if (dbAcces.getErrorDB()==null) {

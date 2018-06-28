@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strUsuario= ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
+                String strUsuario= ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
                 String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
                 Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
                 if(!clsUtil.bValidaString(strUsuario,1))

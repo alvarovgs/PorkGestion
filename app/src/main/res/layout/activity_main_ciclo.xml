@@ -36,8 +36,8 @@
                     android:maxLines="2"
                     android:text="Ciclo Productivo Porcino"
                     android:textColor="@color/grey_80"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textSize="30sp"
+                    android:textStyle="normal" />
 
                 <ImageView
                     android:id="@+id/im_ciclo"
