@@ -108,7 +108,7 @@ public class  cerdo extends AppCompatActivity {
         micerdo.setIdPadre(idPadre);
         if (micerdo.insertCerdo()){
             Toast.makeText(getApplicationContext(),"Cerdo registrado correctamente ",Toast.LENGTH_LONG).show();
-            //limpiar();
+            limpiar();
         }
         else {
             Toast.makeText(getApplicationContext(),"Error registrando el cerdo ",Toast.LENGTH_SHORT).show();
