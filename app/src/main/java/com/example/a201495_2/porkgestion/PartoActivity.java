@@ -57,7 +57,6 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         });
     }
 
-
     private void displayResult(){
         Parto objParto = new Parto(getApplicationContext());
         arrListParto = objParto.getAllPartoByView();
