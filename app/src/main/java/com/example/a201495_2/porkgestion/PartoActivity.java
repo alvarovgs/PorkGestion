@@ -36,10 +36,10 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parto);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +51,7 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         lvPartoResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                Parto objItemParto = (Parto) arrListParto.get(position);
+                Parto objItemParto = arrListParto.get(position);
                 showCustomDialog(objItemParto);
             }
         });
@@ -60,7 +60,7 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
     private void displayResult(){
         Parto objParto = new Parto(getApplicationContext());
         arrListParto = objParto.getAllPartoByView();
-        lvPartoResult = (ListView) findViewById(R.id.list_partoresult);
+        lvPartoResult = findViewById(R.id.list_partoresult);
         lvPartoResult.setAdapter(new partoAdapter(getApplicationContext(), arrListParto));
     }
 
@@ -78,15 +78,15 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         TextView lbltitulo = dialog.findViewById(R.id.lblTitulo);
-        final TextView lblError = (TextView) dialog.findViewById(R.id.lblError);
+        final TextView lblError = dialog.findViewById(R.id.lblError);
 
-        final Spinner sp_Cerdas = (Spinner) dialog.findViewById(R.id.sp_Cerdas);
-        final EditText et_fechaParto = (EditText) dialog.findViewById(R.id.et_FechaParto);
-        final EditText et_HembrasMuertas = (EditText) dialog.findViewById(R.id.et_HembrasMuertas);
-        final EditText et_HembrasVivas = (EditText) dialog.findViewById(R.id.et_HembrasVivas);
-        final EditText et_MachosMuertos = (EditText) dialog.findViewById(R.id.et_MachosMuertos);
-        final EditText et_MachosVivos = (EditText) dialog.findViewById(R.id.et_MachosVivos);
-        final EditText et_PesoParto = (EditText) dialog.findViewById(R.id.et_PesoParto);
+        final Spinner sp_Cerdas = dialog.findViewById(R.id.sp_Cerdas);
+        final EditText et_fechaParto = dialog.findViewById(R.id.et_FechaParto);
+        final EditText et_HembrasMuertas = dialog.findViewById(R.id.et_HembrasMuertas);
+        final EditText et_HembrasVivas = dialog.findViewById(R.id.et_HembrasVivas);
+        final EditText et_MachosMuertos = dialog.findViewById(R.id.et_MachosMuertos);
+        final EditText et_MachosVivos = dialog.findViewById(R.id.et_MachosVivos);
+        final EditText et_PesoParto = dialog.findViewById(R.id.et_PesoParto);
 
         lbltitulo.setText("Gestión de parto");
         /*llenar el sinner*/
@@ -115,13 +115,13 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         et_PesoParto.setText(String.valueOf(objParto.getPromediPeso()));
         idParto = objParto.getIdParto();
 
-        ((Button) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
             }
         });
-        ((Button) dialog.findViewById(R.id.bt_save)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Parto objClass =new Parto(getApplicationContext());
@@ -155,7 +155,7 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
             }
         });
 
-        ((Button) dialog.findViewById(R.id.bt_delete)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Parto objClass =new Parto(getApplicationContext());

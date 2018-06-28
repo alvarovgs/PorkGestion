@@ -14,7 +14,7 @@ public class DashReproductivo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashreproductivo);
-        ImageButton ibparto =(ImageButton) findViewById(R.id.ib_parto);
+        ImageButton ibparto = findViewById(R.id.ib_parto);
         ibparto.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -24,7 +24,7 @@ public class DashReproductivo extends AppCompatActivity {
             mostrar.show();
         }
         });
-        ImageButton ibmonta=(ImageButton) findViewById(R.id.ib_monta);
+        ImageButton ibmonta= findViewById(R.id.ib_monta);
         ibmonta.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View v) {
@@ -34,7 +34,7 @@ public class DashReproductivo extends AppCompatActivity {
             mostrar.show();        }
          });
 
-        ImageButton ibpajilla =(ImageButton)findViewById(R.id.ib_pajilla);
+        ImageButton ibpajilla = findViewById(R.id.ib_pajilla);
         ibpajilla.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

@@ -39,7 +39,7 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
         return strErrorDB;
     }
 
-    public void createDataBase() throws IOException {
+    public void createDataBase() {
         boolean dbExist = checkDataBase();
         if(dbExist){
             //la base de datos existe y no hacemos nada.
@@ -71,7 +71,7 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
         if(checkDB != null){
             checkDB.close();
         }
-        return checkDB != null ? true : false;
+        return checkDB != null;
     }
 
     /**
@@ -101,7 +101,7 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
         //Abre la base de datos
         try {
             createDataBase();
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new Error("Ha sido imposible crear la Base de Datos");
         }
         String strPath = DATABASE_PATH + DATABASE_NAME;

@@ -29,13 +29,13 @@ public class  cerdo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cerdo);
 
-        campoNombre= (EditText) findViewById(R.id.campoNombre);
-        campoFechanace= (EditText) findViewById(R.id.campoFechanace);
-        campoPesonace=(EditText) findViewById(R.id.campoPesonace);
-        comboRazas = (Spinner) findViewById(R.id.comboRazas);
-        comboSexo = (Spinner) findViewById(R.id.comboSexo);
-        comboPadre= (Spinner) findViewById(R.id.comboPadre);
-        comboMadre= (Spinner) findViewById(R.id.comboMadre);
+        campoNombre= findViewById(R.id.campoNombre);
+        campoFechanace= findViewById(R.id.campoFechanace);
+        campoPesonace= findViewById(R.id.campoPesonace);
+        comboRazas = findViewById(R.id.comboRazas);
+        comboSexo = findViewById(R.id.comboSexo);
+        comboPadre= findViewById(R.id.comboPadre);
+        comboMadre= findViewById(R.id.comboMadre);
 
         SpinData Sexo[] = new SpinData(getApplicationContext()).getSexoCerdo();
         sp_AdapterSexo = new spinAdapter(this, android.R.layout.simple_spinner_item, Sexo);

@@ -32,14 +32,14 @@ public class consultacerdo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultacerdo);
 
-        campoIdConsulta= (EditText) findViewById(R.id.campoIdConsulta);
-        campoNombreConsulta= (EditText) findViewById(R.id.campoNombreConsulta);
-        campoFechanaceConsulta= (EditText) findViewById(R.id.campoFechanaceConsulta);
-        campoPesonaceConsulta=(EditText) findViewById(R.id.campoPesonaceConsulta);
-        comboRazas = (Spinner) findViewById(R.id.campoRazaConsulta);
-        comboSexo = (Spinner) findViewById(R.id.campoSexoConsulta);
-        comboPadre= (Spinner) findViewById(R.id.campoNombrepadreConsulta);
-        comboMadre= (Spinner) findViewById(R.id.campoNombremadreConsulta);
+        campoIdConsulta= findViewById(R.id.campoIdConsulta);
+        campoNombreConsulta= findViewById(R.id.campoNombreConsulta);
+        campoFechanaceConsulta= findViewById(R.id.campoFechanaceConsulta);
+        campoPesonaceConsulta= findViewById(R.id.campoPesonaceConsulta);
+        comboRazas = findViewById(R.id.campoRazaConsulta);
+        comboSexo = findViewById(R.id.campoSexoConsulta);
+        comboPadre= findViewById(R.id.campoNombrepadreConsulta);
+        comboMadre= findViewById(R.id.campoNombremadreConsulta);
 
         SpinData Sexo[] = new SpinData(getApplicationContext()).getSexoCerdo();
         sp_AdapterSexo = new spinAdapter(this, android.R.layout.simple_spinner_item, Sexo);

@@ -36,9 +36,9 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sanidad);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +51,7 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
         lvSanidadResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                Sanidad objItemSanidad = (Sanidad)arrListSanidad.get(position);
+                Sanidad objItemSanidad = arrListSanidad.get(position);
                 showCustomDialog(objItemSanidad);
             }
 
@@ -61,7 +61,7 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
     private void displayResult(){
         Sanidad objSanidad = new Sanidad(getApplicationContext());
         arrListSanidad = objSanidad.getAllSanidad();
-        lvSanidadResult = (ListView) findViewById(R.id.list_sanidadresult);
+        lvSanidadResult = findViewById(R.id.list_sanidadresult);
         lvSanidadResult.setAdapter(new sanidadAdapter(getApplicationContext(), arrListSanidad ));
     }
 
@@ -79,10 +79,10 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         TextView lbltitulo = dialog.findViewById(R.id.lblTitulo);
-        final TextView lblError = (TextView) dialog.findViewById(R.id.lblError);
-        final Spinner sp_tipoMed = (Spinner) dialog.findViewById(R.id.sp_tipoMed);
-        final EditText et_nombreMed = (EditText) dialog.findViewById(R.id.et_nombreMed);
-        final EditText et_descMed = (EditText) dialog.findViewById(R.id.et_descMed);
+        final TextView lblError = dialog.findViewById(R.id.lblError);
+        final Spinner sp_tipoMed = dialog.findViewById(R.id.sp_tipoMed);
+        final EditText et_nombreMed = dialog.findViewById(R.id.et_nombreMed);
+        final EditText et_descMed = dialog.findViewById(R.id.et_descMed);
 
         sp_tipoMed.setOnItemSelectedListener(null);
 
@@ -107,13 +107,13 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
         et_descMed.setText(objSanidad.getStrObservaciones());
         idSanidad = objSanidad.getIdSanidad();
 
-        ((Button) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
             }
         });
-        ((Button) dialog.findViewById(R.id.bt_save)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Sanidad objClass =new Sanidad(getApplicationContext());
@@ -143,7 +143,7 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
             }
         });
 
-        ((Button) dialog.findViewById(R.id.bt_delete)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SanidadCerdo objClassTemp =new SanidadCerdo(getApplicationContext());

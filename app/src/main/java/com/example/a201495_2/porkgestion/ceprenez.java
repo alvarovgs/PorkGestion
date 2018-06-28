@@ -106,7 +106,7 @@ public class ceprenez extends AppCompatActivity {
     private void consultar() {
         String strIdCerda = ((EditText) findViewById(R.id.idcerda)).getText().toString();
         reproduccion consultar = new reproduccion(getApplicationContext());
-        consultar= (reproduccion) consultar.getPrenezByView(strIdCerda);
+        consultar= consultar.getPrenezByView(strIdCerda);
         ((EditText) findViewById(R.id.tipomonta)).setText(consultar.getStrTipoMonta());
         ((EditText) findViewById(R.id.idverraco)).setText(String.valueOf(consultar.getIdVerraco()));
         ((EditText) findViewById(R.id.idpajilla)).setText(String.valueOf(consultar.getIdPajilla()));

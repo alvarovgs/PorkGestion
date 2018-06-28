@@ -13,8 +13,8 @@ public class SanidadCerdo {
     private dataBaseOpenHelper dbAcces;
     private int idCerdo, idSanidad;
     private double dDosis;
-    private String strTipoMedicamento, strNombreMedicamento, strViaAdministracion, strFechaAdministracion;;
-    private String strCodigoCerdo, strSexoCerdo, strError;;
+    private String strTipoMedicamento, strNombreMedicamento, strViaAdministracion, strFechaAdministracion;
+    private String strCodigoCerdo, strSexoCerdo, strError;
 
     public SanidadCerdo(int idCerdo, int idSanidad, double dDosis, String strTipoMedicamento, String strNombreMedicamento, String strViaAdministracion, String strFechaAdministracion, String strCodigoCerdo, String strSexoCerdo) {
         this.idCerdo = idCerdo;

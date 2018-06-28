@@ -22,7 +22,7 @@ public class ververracos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ververracos);
-        listviewverracos=(ListView) findViewById(R.id.listviewverracos);
+        listviewverracos= findViewById(R.id.listviewverracos);
         consultarlistaverracos();
         ArrayAdapter adaptador=new ArrayAdapter(this,android.R.layout.simple_list_item_1,listainformacion);
         listviewverracos.setAdapter(adaptador);
