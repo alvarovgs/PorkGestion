@@ -63,7 +63,7 @@ public class MainReporteHV extends AppCompatActivity {
         et_idhembra = findViewById(R.id.et_idhembra);
         et_idverraco = findViewById(R.id.et_idverraco);
         et_idpajilla = findViewById(R.id.et_idpajilla);
-        et_fechacelo = findViewById(R.id.et_fechacelo);
+        //et_fechacelo = findViewById(R.id.et_fechacelo);
         et_fechamonta = findViewById(R.id.et_fechamonta);
         et_tipomonta = findViewById(R.id.et_tipomonta);
 
@@ -113,7 +113,7 @@ public class MainReporteHV extends AppCompatActivity {
                                 et_idhembra.setText(String.valueOf(mireproduccion.getIdHembra()));
                                 et_idverraco.setText(String.valueOf(mireproduccion.getIdVerraco()));
                                 et_idpajilla.setText(String.valueOf(mireproduccion.getIdPajilla()));
-                                et_fechacelo.setText(mireproduccion.getStrFechaCelo());
+                               // et_fechacelo.setText(mireproduccion.getStrFechaCelo());
                                 et_fechamonta.setText(mireproduccion.getStrFechaMonta());
                                 et_tipomonta.setText(mireproduccion.getStrTipoMonta());
 
@@ -122,7 +122,7 @@ public class MainReporteHV extends AppCompatActivity {
                                 et_idhembra.setText("");
                                 et_idverraco.setText("");
                                 et_idpajilla.setText("");
-                                et_fechacelo.setText("");
+                               // et_fechacelo.setText("");
                                 et_fechamonta.setText("");
                                 et_tipomonta.setText("");
                             }
