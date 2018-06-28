@@ -19,14 +19,15 @@
                 android:id="@+id/lblCerda"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Cerda:"
                 android:layout_marginLeft="@dimen/spacing_large"
+                android:text="Cerda:"
                 android:textSize="18sp" />
+
             <Spinner
                 android:id="@+id/sp_Cerdas"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:spinnerMode="dropdown">
 
             </Spinner>
@@ -42,8 +43,8 @@
             <TextView
                 android:id="@+id/lblFechaParto"
                 android:layout_width="110dp"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Fecha Parto:"
                 android:textSize="18sp" />
 
@@ -52,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="@dimen/spacing_large"
-                android:hint="Nombre de medicamento"
+                android:hint="@string/fecha_parto_string"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         </LinearLayout>
 
@@ -61,14 +62,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/lblVivos"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_large"
-            android:layout_height="wrap_content"
-            android:text="Cerdos nacidos vivos:"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/lblVivos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:text="Cerdos nacidos vivos:"
+                android:textSize="18sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,8 +79,8 @@
             <TextView
                 android:id="@+id/lblMachosVivos"
                 android:layout_width="70dp"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Machos:"
                 android:textSize="18sp" />
 
@@ -90,11 +92,12 @@
                 android:hint="Cant."
                 android:inputType="number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
             <TextView
                 android:id="@+id/lblHembrasVivas"
                 android:layout_width="80dp"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Hembras:"
                 android:textSize="18sp" />
 
@@ -116,11 +119,12 @@
             <TextView
                 android:id="@+id/lblVivos"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Cerdos nacidos muertos:"
                 android:textSize="18sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -129,8 +133,8 @@
             <TextView
                 android:id="@+id/lblMachosMuertos"
                 android:layout_width="70dp"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Machos:"
                 android:textSize="18sp" />
 
@@ -142,11 +146,12 @@
                 android:hint="Cant."
                 android:inputType="number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
             <TextView
                 android:id="@+id/lblHembrasMuertas"
                 android:layout_width="80dp"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Hembras:"
                 android:textSize="18sp" />
 
@@ -159,6 +164,7 @@
                 android:inputType="number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -167,8 +173,8 @@
             <TextView
                 android:id="@+id/lblPesoParto"
                 android:layout_width="130dp"
-                android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
                 android:text="Peso Promedio:"
                 android:textSize="18sp" />
 
@@ -195,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Guardar"/>
+                android:text="Guardar" />
 
             <Button
                 android:id="@+id/bt_close"
@@ -205,6 +211,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Cancelar" />
+
             <Button
                 android:id="@+id/bt_delete"
                 style="@android:style/Widget.Material.Light.Button.Borderless"
