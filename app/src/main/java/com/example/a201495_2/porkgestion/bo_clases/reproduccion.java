@@ -117,7 +117,7 @@ public class reproduccion {
         return dbAcces.getErrorDB()==null;
     }
 
-    public Object getMontaByView(String strCodigo){
+    public reproduccion getMontaByView(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDHEMBRA","IDVERRACO","IDPAJILLA","FECHACELO","FECHAMONTA","TIPOMONTA"};
         reproduccion tmpObject = new reproduccion(appContext);
@@ -134,23 +134,23 @@ public class reproduccion {
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();
-        return dbAcces.getErrorDB()==null;
+        return tmpObject;
     }
 
-    public Object getreproduccionByTable(String strCodigo){
+    public reproduccion getreproduccionByTable(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
-        String strColumns[] = new String[]{"IDHEMBRA","IDVERRACO","IDPAJILLA","FECHACELO","FECHAMONTA","TIPOMONTA"};
+        String strColumns[] = new String[]{"IDHEMBRA","IDVERRACO","IDPAJILLA","FECHA","TIPO"};
         reproduccion tmpObject = new reproduccion(appContext);
+        String strArgs[] = new String[]{strCodigo};
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("REPRODUCCION", strColumns, "(IDHEMBRA=?)" , null, null);
+        crResult = dbAcces.qweryDatabase("REPRODUCCION", strColumns, "(IDHEMBRA=?)" , strArgs, null);
         if (crResult.moveToFirst()) {
             tmpObject.setIdHembra(crResult.getInt(0));
             tmpObject.setIdVerraco(crResult.getInt(1));
             tmpObject.setIdPajilla(crResult.getInt(2));
-            tmpObject.setStrFechaCelo(crResult.getString(3));
-            tmpObject.setStrFechaMonta(crResult.getString(4));
-            tmpObject.setStrTipoMonta(crResult.getString(5));
+            tmpObject.setStrFechaMonta(crResult.getString(3));
+            tmpObject.setStrTipoMonta(crResult.getString(4));
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();
@@ -243,5 +243,18 @@ public class reproduccion {
         return dbAcces.getErrorDB()==null;
     }
 
+    public Boolean existReproduccion(int idCerdo){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        Boolean bResult  = false;
+        Cursor crResult;
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM REPRODUCCION WHERE IDREPRODUCCION='%s'",idCerdo);
+        dbAcces.openDataBase();
+        crResult = dbAcces.qweryDatabaseBySql(strSql);
+        if (crResult.moveToFirst()) {
+            bResult  =  crResult.getInt(0)>0;
+        }
+        dbAcces.closeDataBase();
+        return bResult;
+    }
 
 }

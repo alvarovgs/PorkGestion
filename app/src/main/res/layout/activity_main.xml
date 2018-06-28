@@ -20,7 +20,7 @@
 
 
     <EditText
-        android:id="@+id/txt_usuario"
+        android:id="@+id/et_Codigo"
         android:layout_width="250sp"
         android:layout_height="40sp"
         android:layout_alignParentBottom="true"
@@ -42,8 +42,8 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/txt_usuario"
-        android:layout_alignLeft="@+id/txt_usuario"
+        android:layout_alignStart="@+id/et_Codigo"
+        android:layout_alignLeft="@+id/et_Codigo"
         android:layout_marginBottom="168dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_pass"
@@ -83,6 +83,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="53dp"
-        android:text="Registrate Aqui" />
+        android:text="Registrate Aqui"
+        android:textStyle="bold" />
 
 </RelativeLayout>

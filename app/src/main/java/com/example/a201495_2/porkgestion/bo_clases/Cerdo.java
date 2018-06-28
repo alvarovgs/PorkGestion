@@ -162,7 +162,7 @@ public class Cerdo {
         return dbAcces.getErrorDB()==null;
     }
 
-    public Object getCerdoByView(String strCodigo){
+    public Cerdo getCerdoByView(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDCERDO","FECHANACIMIENTO","SEXO","PESONACIMIENTO","IDPADRE","IDMADRE","IDRAZA","CODIGO","PADRE","MADRE","NOMBRERAZA"};
         String strArgs[] = new String[]{strCodigo,strCodigo};
@@ -185,7 +185,7 @@ public class Cerdo {
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();
-        return dbAcces.getErrorDB()==null;
+        return tmpObject;
     }
 
     public Object getCerdoByTable(String strCodigo){
@@ -310,7 +310,7 @@ public class Cerdo {
         dbAcces = new dataBaseOpenHelper(appContext);
         Boolean bResult  = false;
         Cursor crResult;
-        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE CODIGO='%s'",strCodigo);
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE (CODIGO='%s' OR IDCERDO='%s')",StrCodigo, StrCodigo);
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql(strSql);
         if (dbAcces.getErrorDB()==null) {

@@ -30,7 +30,7 @@ public class MainEditusuario extends AppCompatActivity {
 
         btn_Actualizar = findViewById(R.id.btnActualizar);
         btn_Eliminar = findViewById(R.id.btnEliminar);
-        et_Usuario = findViewById(R.id.txt_usuario);
+        et_Usuario = findViewById(R.id.et_Codigo);
         et_Nombre = findViewById(R.id.txt_nombreusuario);
         et_Password = findViewById(R.id.txt_pass);
         et_Telefono = findViewById(R.id.txt_telefono);

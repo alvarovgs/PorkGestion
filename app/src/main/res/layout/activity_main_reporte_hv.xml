@@ -1,94 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainReporteHV"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="16dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reporte Hoja de Vida:"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/et_Codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el Id del Cerdo"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="BUSCAR"
+        android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/codigo"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:background="@color/colorAccentLight"
-            android:padding="5dp"
-            android:text="codigo"
-            android:textAlignment="center"
-            android:textColor="#570212"
-            android:textSize="18sp"
-            app:fontFamily="sans-serif" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="DATOS BÁSICOS:"
+            android:textSize="25sp" />
 
-        <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Cerdo:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_nombrecerdo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Nacimiento:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_fechanace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso del Animal:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raza:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SANIDAD:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Medicamento:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/et_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Medicamento:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/et_nombreMed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vía de Administración:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/et_via"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosis del Medicamento:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_dosis"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:inputType="none" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/lblfechanace"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fecha Nacimiento"
-                    android:textColor="@color/blue_grey_300" />
-                <TextView
-                    android:id="@+id/lblpesonace"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Peso al Nacer"
-                    android:textColor="@color/blue_grey_300" />
-                <TextView
-                    android:id="@+id/lblsexo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sexo"
-                    android:textColor="@color/blue_grey_300" />
-                <TextView
-                    android:id="@+id/lblraza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Raza"
-                    android:textColor="@color/blue_grey_300" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/fechanace"
-                    android:layout_width="89dp"
-                    android:layout_height="wrap_content"
-                    android:text="fecha"
-                    android:textColor="@color/blue_grey_300" />
-                <TextView
-                    android:id="@+id/pesonace"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="peso"
-                    android:textColor="@color/blue_grey_300" />
-                <TextView
-                    android:id="@+id/sexo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sexo"
-                    android:textColor="@color/blue_grey_300" />
-                <TextView
-                    android:id="@+id/raza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="raza"
-                    android:textColor="@color/blue_grey_300" />
-            </LinearLayout>
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Administración:"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/et_Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="REPRODUCCIÓN:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Hembra:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_idhembra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Verraco:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_idverraco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Pajilla:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_idpajilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha Celo:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_fechacelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha Monta:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_fechamonta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo Monta:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_tipomonta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
     </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+   </android.support.v4.widget.NestedScrollView>

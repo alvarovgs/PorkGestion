@@ -6,7 +6,6 @@ import android.database.Cursor;
 
 import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
 
-import java.io.InvalidClassException;
 import java.util.ArrayList;
 
 public class SanidadCerdo {
@@ -14,15 +13,15 @@ public class SanidadCerdo {
     private dataBaseOpenHelper dbAcces;
     private int idCerdo, idSanidad;
     private double dDosis;
-    private String strTipoMedicamento, strNombremedicamente, strViaAdministracion, strFechaAdministracion;;
+    private String strTipoMedicamento, strNombreMedicamento, strViaAdministracion, strFechaAdministracion;;
     private String strCodigoCerdo, strSexoCerdo, strError;;
 
-    public SanidadCerdo(int idCerdo, int idSanidad, double dDosis, String strTipoMedicamento, String strNombremedicamente, String strViaAdministracion, String strFechaAdministracion, String strCodigoCerdo, String strSexoCerdo) {
+    public SanidadCerdo(int idCerdo, int idSanidad, double dDosis, String strTipoMedicamento, String strNombreMedicamento, String strViaAdministracion, String strFechaAdministracion, String strCodigoCerdo, String strSexoCerdo) {
         this.idCerdo = idCerdo;
         this.idSanidad = idSanidad;
         this.dDosis = dDosis;
         this.strTipoMedicamento = strTipoMedicamento;
-        this.strNombremedicamente = strNombremedicamente;
+        this.strNombreMedicamento = strNombreMedicamento;
         this.strViaAdministracion = strViaAdministracion;
         this.strFechaAdministracion = strFechaAdministracion;
         this.strCodigoCerdo = strCodigoCerdo;
@@ -65,12 +64,12 @@ public class SanidadCerdo {
         this.strTipoMedicamento = strTipoMedicamento;
     }
 
-    public String getStrNombremedicamente() {
-        return strNombremedicamente;
+    public String getStrNombreMedicamento() {
+        return strNombreMedicamento;
     }
 
-    public void setStrNombremedicamente(String strNombremedicamente) {
-        this.strNombremedicamente = strNombremedicamente;
+    public void setStrNombreMedicamento(String strNombreMedicamento) {
+        this.strNombreMedicamento = strNombreMedicamento;
     }
 
     public String getStrViaAdministracion() {
@@ -141,23 +140,25 @@ public class SanidadCerdo {
         return dbAcces.getErrorDB()==null;
     }
 
-    public Object getSanidadCerdo(int idCerdo){
+    public SanidadCerdo getSanidadCerdo(int idCerdo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDSANIDAD","IDCERDO","CODIGO","SEXO","TIPOMEDICAMENTO","NOMBREMEDICAMENTO","FECHAADMINISTRACION","VIAADMINISTRACION"};
         String strArgs[] = new String[]{String.valueOf(idCerdo)};
         SanidadCerdo tmpObject = new SanidadCerdo(appContext);
+        String sql="SELECT SANIDAD.IDSANIDAD,CERDO.IDCERDO, CERDO.CODIGO,CERDO.SEXO,SANIDAD.TIPOMEDICAMENTO,SANIDAD.NOMBREMEDICAMENTO,SANIDAD.OBSERVACIONES,SANIDADCERDO.FECHAADMINISTRACION,SANIDADCERDO.VIAADMINISTRACION,SANIDADCERDO.DOSIS FROM SANIDADCERDO INNER JOIN CERDO ON SANIDADCERDO.IDCERDO = CERDO.IDCERDO INNER JOIN SANIDAD ON SANIDAD.IDSANIDAD=SANIDADCERDO.IDSANIDAD";
         Cursor crResult;
         dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabase("VW_SANIDADCERDO", strColumns, "IDCERDO=?", strArgs, null);
+        crResult = dbAcces.qweryDatabaseBySql (sql);
         if (crResult.moveToFirst()) {
             tmpObject.setIdSanidad(crResult.getInt(0));
             tmpObject.setIdCerdo(crResult.getInt(1));
             tmpObject.setStrCodigoCerdo(crResult.getString(2));
             tmpObject.setStrSexoCerdo(crResult.getString(3));
             tmpObject.setStrTipoMedicamento(crResult.getString(4));
-            tmpObject.setStrNombremedicamente(crResult.getString(5));
-            tmpObject.setStrFechaAdministracion(crResult.getString(6));
-            tmpObject.setStrViaAdministracion(crResult.getString(7));
+            tmpObject.setStrNombreMedicamento(crResult.getString(5));
+            tmpObject.setStrFechaAdministracion(crResult.getString(7));
+            tmpObject.setStrViaAdministracion(crResult.getString(8));
+            tmpObject.setdDosis(crResult.getDouble(9));
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();
@@ -179,7 +180,7 @@ public class SanidadCerdo {
                 tmpObject.setStrCodigoCerdo(crResult.getString(2));
                 tmpObject.setStrSexoCerdo(crResult.getString(3));
                 tmpObject.setStrTipoMedicamento(crResult.getString(4));
-                tmpObject.setStrNombremedicamente(crResult.getString(5));
+                tmpObject.setStrNombreMedicamento(crResult.getString(5));
                 tmpObject.setStrFechaAdministracion(crResult.getString(6));
                 tmpObject.setStrViaAdministracion(crResult.getString(7));
                 listObject.add(tmpObject);
@@ -207,7 +208,7 @@ public class SanidadCerdo {
                 tmpObject.setStrCodigoCerdo(crResult.getString(2));
                 tmpObject.setStrSexoCerdo(crResult.getString(3));
                 tmpObject.setStrTipoMedicamento(crResult.getString(4));
-                tmpObject.setStrNombremedicamente(crResult.getString(5));
+                tmpObject.setStrNombreMedicamento(crResult.getString(5));
                 tmpObject.setStrFechaAdministracion(crResult.getString(6));
                 tmpObject.setStrViaAdministracion(crResult.getString(7));
                 listObject.add(tmpObject);

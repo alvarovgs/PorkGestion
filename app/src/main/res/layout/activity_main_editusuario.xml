@@ -12,23 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Actualización Datos de Usuario:"
-        android:textSize="25sp" />
+        android:text="Consulta de usuario:"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/txt_usuario"
+        android:id="@+id/et_Codigo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese el E-mail actual de el Usuario"
         android:inputType="textEmailAddress" />
-
-    <Button
-        android:id="@+id/btnConsultar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="onClick"
-        android:text="CONSULTAR" />
 
     <EditText
         android:id="@+id/txt_nombreusuario"
@@ -65,7 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="onClick"
-            android:text="ACTUALIZAR" />
+            android:text="ACTUALIZAR"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnEliminar"
@@ -73,7 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:onClick="onClick"
-            android:text="Eliminar" />
+            android:text="Eliminar"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

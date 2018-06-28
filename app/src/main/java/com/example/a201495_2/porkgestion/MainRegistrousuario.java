@@ -28,7 +28,7 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
 
                         Usuario miUsuario = new Usuario(getApplicationContext());
 
-                        String strUsuario = ((EditText) findViewById(R.id.txt_usuario)).getText().toString();
+                        String strUsuario = ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
                         String strPassword = ((EditText) findViewById(R.id.txt_pass)).getText().toString();
                         String strNombre = ((EditText) findViewById(R.id.txt_nombreusuario)).getText().toString();
                         String strTelefono = ((EditText) findViewById(R.id.txt_telefono)).getText().toString();

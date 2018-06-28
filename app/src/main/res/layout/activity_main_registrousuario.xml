@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Registro de Usuario:"
-        android:textSize="25sp" />
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/txt_nombreusuario"
@@ -23,7 +23,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/txt_usuario"
+        android:id="@+id/et_Codigo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-mail del Usuario"
@@ -48,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="REGISTRAR" />
+        android:text="REGISTRAR"
+        android:textStyle="bold" />
 
 </LinearLayout>
