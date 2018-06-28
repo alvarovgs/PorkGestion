@@ -3,7 +3,6 @@
     package="com.example.a201495_2.porkgestion">
 
     <application
-        android:name=".GlobalClass"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
@@ -29,8 +28,11 @@
         <activity android:name=".reproduccion" />
         <activity android:name=".reportes" />
         <activity android:name=".monta" />
+        <activity android:name=".raza" />
         <activity android:name=".fpp" />
+        <activity android:name=".Parto_Activity" />
         <activity android:name=".reporteparto" />
+        <activity android:name=".reporteventa" />
         <activity android:name=".reporteverracos" />
         <activity android:name=".MainInformacion" />
         <activity android:name=".MainContenido" />
@@ -40,23 +42,17 @@
         <activity android:name=".MainDatosOrg" />
         <activity android:name=".MainLinks" />
         <activity android:name=".MainRecomendaciones" />
+        <activity android:name=".lechon" />
         <activity android:name=".MainReporteHV" />
-        <activity
-            android:name=".SanidadActivity"
-            android:label="@string/title_activity_sanidad"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".RazaActivity"
-            android:label="@string/title_activity_raza"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".PajillaActivity"
-            android:label="@string/title_activity_pajilla"
-            android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".PartoActivity"
-            android:label="@string/title_activity_parto"
-            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".raza" />
+        <activity android:name=".DashReproductivo" />
+        <activity android:name=".reporteventa" />
+        <activity android:name=".Partolact" />
+        <activity android:name=".consultacerdo" />
+        <activity android:name=".pajilla_Activity" />
+        <activity android:name=".totalcerdos" />
+        <activity android:name=".prenez" />
+        <activity android:name=".consultapajilla"></activity>
     </application>
 
 </manifest>

@@ -1,33 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PajillaActivity">
+    tools:context=".pajilla_Activity"
+    tools:layout_editor_absoluteY="25dp">
 
-    <android.support.design.widget.AppBarLayout
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="PAJILLAS" />
+
+    <EditText
+        android:id="@+id/campoNumpajilla"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Numero de la pajilla" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_pajilla" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/campoFecompajilla"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoNumpajilla"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fecha de compra de la pajilla" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <Spinner
+        android:id="@+id/comboRazas"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:entries="@array/raza"
+        android:layout_below="@+id/campoFecompajilla" />
+
+    <EditText
+        android:id="@+id/campoNompro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboRazas"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre del proveedor de la pajilla" />
+
+    <EditText
+        android:id="@+id/campoObpajilla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoNompro"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Observaciones" />
+
+    <Button
+        android:id="@+id/btn_regpajillas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:text="Registro de pajillas" />
+
+</RelativeLayout>
