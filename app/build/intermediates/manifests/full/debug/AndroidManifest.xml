@@ -17,6 +17,7 @@
         android:required="true" />
 
     <application
+        android:name="com.example.a201495_2.porkgestion.GlobalClass"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/icon"
@@ -43,9 +44,9 @@
         <activity android:name="com.example.a201495_2.porkgestion.reproduccion" />
         <activity android:name="com.example.a201495_2.porkgestion.reportes" />
         <activity android:name="com.example.a201495_2.porkgestion.monta" />
-        <activity android:name="com.example.a201495_2.porkgestion.raza" />
+        <activity android:name="com.example.a201495_2.porkgestion.RazaActivity" />
         <activity android:name="com.example.a201495_2.porkgestion.fpp" />
-        <activity android:name="com.example.a201495_2.porkgestion.Parto_Activity" />
+        <activity android:name="com.example.a201495_2.porkgestion.PartoActivity" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteparto" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
         <activity android:name="com.example.a201495_2.porkgestion.reporteverracos" />
@@ -59,14 +60,15 @@
         <activity android:name="com.example.a201495_2.porkgestion.MainRecomendaciones" />
         <activity android:name="com.example.a201495_2.porkgestion.lechon" />
         <activity android:name="com.example.a201495_2.porkgestion.MainReporteHV" />
-        <activity android:name="com.example.a201495_2.porkgestion.raza" />
         <activity android:name="com.example.a201495_2.porkgestion.DashReproductivo" />
-        <activity android:name="com.example.a201495_2.porkgestion.reporteventa" />
         <activity android:name="com.example.a201495_2.porkgestion.Partolact" />
         <activity android:name="com.example.a201495_2.porkgestion.consultacerdo" />
-        <activity android:name="com.example.a201495_2.porkgestion.pajilla_Activity" />
+        <activity android:name="com.example.a201495_2.porkgestion.PajillaActivity" />
         <activity android:name="com.example.a201495_2.porkgestion.totalcerdos" />
         <activity android:name="com.example.a201495_2.porkgestion.prenez" />
+        <activity android:name="com.example.a201495_2.porkgestion.consultapajilla" />
+        <activity android:name="com.example.a201495_2.porkgestion.menucerdo" />
+        <activity android:name="com.example.a201495_2.porkgestion.SanidadActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

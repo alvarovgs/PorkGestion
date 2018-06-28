@@ -32,11 +32,6 @@ public class menucerdo extends AppCompatActivity {
             case R.id.btn_sanicerdo:
                 miIntent = new Intent(menucerdo.this, consultacerdo.class);
                 break;
-
-            /*case R.id.btn_apajilla:
-                miIntent = new Intent(reproduccion.this, consultapajilla.class);
-                break;*/
-
         }
         startActivity(miIntent);
     }
