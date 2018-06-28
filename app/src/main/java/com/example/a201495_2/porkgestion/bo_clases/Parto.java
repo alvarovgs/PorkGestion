@@ -17,9 +17,9 @@ public class Parto {
     private float indicemortalidad;
     private String strFechaParto, strCodigoCerdo,strError;
 
-
     public Parto(Context appContext, int idParto, int idCerdo, int vivosMachos, int vivosHembras, int muertosMachos, int muertosHembras, long promediPeso, float indicemortalidad, String strFechaParto, String strCodigoCerdo) {
         this.appContext = appContext;
+
         this.idParto = idParto;
         this.idCerdo = idCerdo;
         this.vivosMachos = vivosMachos;
