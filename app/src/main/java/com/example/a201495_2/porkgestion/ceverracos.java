@@ -12,16 +12,12 @@ import android.widget.Toast;
 
 
 public class ceverracos extends AppCompatActivity {
-
     EditText campoid_verraco, camponameverraco, camponameraza, camponacimientov, campopesoverraco, campoobservacionesv;
-    //ConexionSQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ceverracos);
-
-      //  conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null, 1);
 
         campoid_verraco= (EditText)findViewById(R.id.id_verraco);
         camponameverraco = (EditText)findViewById(R.id.nameverraco);
@@ -56,34 +52,11 @@ public class ceverracos extends AppCompatActivity {
     }
 
     private void eliminarverracos() {
- /*       SQLiteDatabase db=conn.getWritableDatabase();
-        String [] parametros={campoid_verraco.getText().toString()};
 
-        db.delete(Utilidades.TABLA_VERRACOS, Utilidades.CAMPO_IDVERRACO+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Datos Eliminados",Toast.LENGTH_LONG).show();
-        campoid_verraco.setText("");
-        camponameverraco.setText("");
-        camponameraza.setText("");
-        camponacimientov.setText("");
-        campopesoverraco.setText("");
-        campoobservacionesv.setText("");
-        db.close();*/
     }
 
     private void actualizarverracos() {
-       /* SQLiteDatabase db=conn.getWritableDatabase();
-        String [] parametros={campoid_verraco.getText().toString()};
-        ContentValues values=new ContentValues();
-        values.put(Utilidades.CAMPO_NAMEVERRACO, camponameverraco.getText().toString());
-        values.put(Utilidades.CAMPO_NAMERAZA, camponameraza.getText().toString());
-        values.put(Utilidades.CAMPO_NACIMIENTOV, camponacimientov.getText().toString());
-        values.put(Utilidades.CAMPO_PESOVERRACO, campopesoverraco.getText().toString());
-        values.put(Utilidades.CAMPO_OBSERVACIONESV, campoobservacionesv.getText().toString());
 
-
-        db.update(Utilidades.TABLA_VERRACOS,values, Utilidades.CAMPO_IDVERRACO+"=?",parametros);
-        Toast.makeText(getApplicationContext(),"Datos Actualizados",Toast.LENGTH_LONG).show();
-        db.close();*/
     }
 
     public void Regresar(View view) {
@@ -93,25 +66,7 @@ public class ceverracos extends AppCompatActivity {
     }
     private void consultar() {
 
-      /*  SQLiteDatabase db=conn.getReadableDatabase();
-        String [] parametros={campoid_verraco.getText().toString()};
-        String [] campos={Utilidades.CAMPO_NAMEVERRACO, Utilidades.CAMPO_NAMEVERRACO, Utilidades.CAMPO_NACIMIENTOV,
-                Utilidades.CAMPO_PESOVERRACO, Utilidades.CAMPO_OBSERVACIONESV,};
 
-        try{
-            Cursor cursor= db.query(Utilidades.TABLA_VERRACOS,campos, Utilidades.CAMPO_IDVERRACO+"=?",parametros,null,null,null);
-            cursor.moveToFirst();
-            camponameverraco.setText(cursor.getString(0));
-            camponameraza.setText(cursor.getString(1));
-            camponacimientov.setText(cursor.getString(2));
-            campopesoverraco.setText(cursor.getString(3));
-            campoobservacionesv.setText(cursor.getString(4));
-            cursor.close();
-
-        }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"ID de Verraco no valido",Toast.LENGTH_LONG).show();
-            limpiar();
-        }*/
 
 
     }

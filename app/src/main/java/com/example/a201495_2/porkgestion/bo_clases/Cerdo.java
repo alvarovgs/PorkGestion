@@ -3,11 +3,8 @@ package com.example.a201495_2.porkgestion.bo_clases;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 
 import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
-import com.example.a201495_2.porkgestion.entidades.Usuario;
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
 import java.util.ArrayList;
 

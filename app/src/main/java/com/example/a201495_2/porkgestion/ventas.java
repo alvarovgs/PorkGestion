@@ -11,11 +11,7 @@ import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.bo_clases.Venta;
 
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
-
 public class ventas extends AppCompatActivity {
-
-    private Utilidades clsUtil = new Utilidades();
     EditText campoEdadVenta, campoPesoVenta, campoPrecioVenta;
     spinAdapter sp_AdapterNumventa;
     Spinner comboNumeroAniVenta;
