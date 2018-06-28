@@ -17,8 +17,8 @@ public class Partolact extends AppCompatActivity {
         Intent miIntent=null;
 
         switch (view.getId()) {
-            case R.id.btn_back:
-                miIntent = new Intent(Partolact.this, MenuLateral.class);
+            case R.id.btn_rlechones:
+                miIntent = new Intent(Partolact.this, lechon.class);
                 break;
 
             case R.id.btn_fpp:
@@ -26,7 +26,7 @@ public class Partolact extends AppCompatActivity {
                 break;
 
             case R.id.btn_rparto:
-                miIntent = new Intent(Partolact.this, PartoActivity.class);
+                miIntent = new Intent(Partolact.this, Parto_Activity.class);
                 break;
 
 

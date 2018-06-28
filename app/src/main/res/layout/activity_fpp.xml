@@ -2,89 +2,54 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/FPP"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fafafa"
     tools:context=".fpp">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="31dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_marginTop="112dp"
-        android:text="ID de Cerda:" />
-
-    <EditText
-        android:id="@+id/efpp"
-        style="@android:style/Widget.Holo.Light.EditText"
-        android:layout_width="91dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="114dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textAppearance="@style/TextAppearance.Subhead.Bold" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bfecha"
-        android:layout_toStartOf="@+id/bfecha"
-        android:text="Fecha de Ultimo celo:" />
-
-    <EditText
+    <Button
         android:id="@+id/bfecha"
-        android:layout_width="199dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="23dp"
-        android:layout_marginTop="164dp"
-        android:ems="10"
-        android:inputType="date" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView11"
-        android:layout_marginBottom="261dp"
-        android:text="Fecha de la monta:" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:onClick="onClick"
+        android:text="Fecha de Monta"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/efecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView15"
-        android:layout_alignEnd="@+id/bfecha"
-        android:ems="10"
-        android:inputType="date" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:hint="DD-MM-AAAA" />
 
-    <Button
-        android:id="@+id/btn_registrar"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView11"
-        android:layout_alignTop="@+id/btn_eliminar"
-        android:text="CALCULAR" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="CALCULAR FPP"
+        android:textColor="@color/grey_60"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_eliminar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+
+        android:id="@+id/efpp"
+        android:layout_width="347dp"
+        android:layout_height="211dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="147dp"
-        android:text="BORRAR" />
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/back"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button4"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -93,24 +58,4 @@
         android:onClick="onClick"
         android:text="REGRESAR" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="92dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="44dp"
-        app:srcCompat="@drawable/see" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="364dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="31dp"
-        android:text="CALCULAR FECHA PROBABLE DE PARTO"
-        android:textColor="@android:color/black"
-        android:textSize="19sp"
-        android:textStyle="bold" />
 </RelativeLayout>

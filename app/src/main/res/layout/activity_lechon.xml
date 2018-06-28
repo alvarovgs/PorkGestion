@@ -5,7 +5,6 @@
     android:id="@+id/lechon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f5f2f2"
     tools:context=".lechon">
 
     <TextView
@@ -13,10 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
         android:fontFamily="roboto"
         android:text="LECHON"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/grey_60"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,22 +26,11 @@
         android:id="@+id/textView1"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/et_nomba"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="103dp"
         android:text="ID del animal"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:id="@+id/edtxt_descripajilla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="-150dp"
-        android:text="Nombre del animal"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -94,44 +81,32 @@
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="197dp"
         android:text="ID de la madre"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="139dp"
         android:text="Id de Padre"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/et_numa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/edtxt_descripajilla"
+        android:layout_alignBaseline="@+id/textView1"
         android:layout_alignParentEnd="true"
         android:ems="10"
         android:hint="ID"
-        android:inputType="number"
-        android:layout_alignParentRight="true" />
-
-    <EditText
-        android:id="@+id/et_nomba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edtxt_descripajilla"
-        android:layout_alignParentEnd="true"
-        android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/et_fena"
@@ -179,10 +154,10 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView7"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:ems="10"
         android:hint="Madre"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/et_nompad"
@@ -190,10 +165,10 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView8"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:ems="10"
         android:hint="Padre"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btn_registrar"
@@ -212,11 +187,11 @@
         android:layout_height="35dp"
         android:layout_alignEnd="@+id/edtxt_descripajilla"
         android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edtxt_descripajilla"
         android:layout_marginBottom="76dp"
         android:text="BORRAR"
         android:textSize="10sp"
-        tools:ignore="OnClick"
-        android:layout_alignRight="@+id/edtxt_descripajilla" />
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btn_back"
