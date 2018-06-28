@@ -6,137 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".reporteventa">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/campoEdadConsuVe"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+       <!-- <EditText
+            android:id="@+id/campoIdConsuVe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="Nombre"
+            android:inputType="number" />-->
+
+        <Spinner
+            android:id="@+id/comboIdConsuVe"
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.4"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="Buscar" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/campoEdadConsuVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/campoPesoConsuVe"
+        android:layout_alignParentStart="true"
+        android:hint="Edad"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/campoPesoConsuVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/campoPreConsuVe"
+        android:layout_alignParentStart="true"
+        android:hint="Peso vivo en Kg"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/campoPreConsuVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="230dp"
+        android:hint="Precio"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="ce" />
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="17dp"
-        android:text="REPORTE DE VENTA POR ANIMAL"
+        android:text="VENTA DE CERDO"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_marginTop="110dp"
-        android:text="Numero del animal"
-        android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="136dp"
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="172dp"
-        android:text="Nombre del animal"
-        android:textSize="18sp" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:text="CONSULTAR Y EDITAR"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="243dp"
-        android:text="Fecha de venta"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/et_pesoven"
-        android:layout_alignStart="@+id/textView10"
-        android:text="Peso vivo en Kg"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/et_preven"
-        android:layout_toStartOf="@+id/btnRegresar"
-        android:text="Precio total en pesos"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/et_numa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView10"
-        android:ems="10"
-        android:hint="ingrese el numero"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/et_nomba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView11"
-        android:ems="10"
-        android:hint="nombre del animal"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/et_feve"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView12"
-        android:layout_alignParentEnd="true"
-        android:ems="10"
-        android:hint="fecha de venta"
-        android:inputType="date" />
-
-    <EditText
-        android:id="@+id/et_pesoven"
-        android:layout_width="wrap_content"
+    <!--<Spinner
+        android:id="@+id/comboIdConsuVe"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="232dp"
-        android:ems="10"
-        android:hint="peso en Kg"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/et_preven"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="170dp"
-        android:ems="10"
-        android:hint="precio de venta"
-        android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:onClick="onClick"
-        android:text="REGRESAR" />
-
-    <Button
-        android:id="@+id/bt_consultar"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="94dp"
-        android:onClick="onClick"
-        android:text="CONSULTAR"
-        android:textSize="10sp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="175dp" />-->
 
 </RelativeLayout>

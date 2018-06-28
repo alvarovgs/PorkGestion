@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.a201495_2.porkgestion.entidades.Usuario;
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
 
 import java.util.ArrayList;
@@ -19,14 +18,14 @@ public class ververracos extends AppCompatActivity {
     ArrayList<String> listainformacion;
     ArrayList<Usuario> listaverracos;
     ListView listviewverracos;
-    ConexionSQLiteHelper conn;
+    //ConexionSQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ververracos);
 
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null,1);
+      //  conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null,1);
         listviewverracos=(ListView) findViewById(R.id.listviewverracos);
 
         consultarlistaverracos();
@@ -35,11 +34,12 @@ public class ververracos extends AppCompatActivity {
     }
 
     private void consultarlistaverracos() {
-        SQLiteDatabase db=conn.getReadableDatabase();
+        //SQLiteDatabase db=conn.getReadableDatabase();
 
         Usuario usuario=null;
         listaverracos= new ArrayList<Usuario>();
-        Cursor cursor=db.rawQuery("SELECT * FROM "+ Utilidades.TABLA_VERRACOS,null);
+        //Cursor cursor=db.rawQuery("SELECT * FROM "+ Utilidades.TABLA_VERRACOS,null);
+/*
 
         while (cursor.moveToNext()){
             usuario= new Usuario();
@@ -54,6 +54,7 @@ public class ververracos extends AppCompatActivity {
             listaverracos.add(usuario);
 
         }
+*/
 
         obtenerlista();
     }

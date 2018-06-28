@@ -25,7 +25,7 @@ public class MenuLateral extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_lateral);
-        Stetho.initializeWithDefaults(this);
+        Stetho.initializeWithDefaults(getApplicationContext());
         initToolbar();
         initNavigationMenu();
     }
@@ -52,10 +52,10 @@ public class MenuLateral extends AppCompatActivity {
         nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
-                Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
 
                 if (item.getTitle().toString().equals("Cerdo")) {
-                    Intent miIntent = new Intent(MenuLateral.this, cerdo.class);
+                    Intent miIntent = new Intent(MenuLateral.this, menucerdo.class);
                     startActivity(miIntent);
                     return false;
                 }
@@ -65,9 +65,14 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
+                else if (item.getTitle().toString().equals("Cerdos en la finca")) {
+                    Intent miIntent = new Intent(MenuLateral.this, totalcerdos.class);
+                    startActivity(miIntent);
+                    return false;
+                }
 
                 else if (item.getTitle().toString().equals("Reproducción")) {
-                    Intent miIntent = new Intent(MenuLateral.this, prenez.class);
+                    Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
                     startActivity(miIntent);
                     return false;
                 }
@@ -81,7 +86,6 @@ public class MenuLateral extends AppCompatActivity {
                 else if(item.getTitle().toString().equals("Sanidad")) {
                     Intent miIntent = new Intent(MenuLateral.this, SanidadActivity.class);
                     startActivity(miIntent);
-                    actionBar.setTitle("Gestión Sanidad");
                     return false;
                 }
 
@@ -90,8 +94,8 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
-                else if (item.getTitle().toString().equals("Parto y Lactancia")) {
-                    Intent miIntent = new Intent(MenuLateral.this, Partolact.class);
+                else if (item.getTitle().toString().equals("Parto")) {
+                    Intent miIntent = new Intent(MenuLateral.this, PartoActivity.class);
                     startActivity(miIntent);
                     return false;
                 }

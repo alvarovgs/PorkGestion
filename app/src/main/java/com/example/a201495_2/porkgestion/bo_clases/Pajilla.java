@@ -14,6 +14,7 @@ public class Pajilla {
     public boolean expanded = false;
     private dataBaseOpenHelper dbAcces;
 
+
     public Pajilla(Context appContext, int idPajilla, int idRaa, String strCodigoPajilla, String strFechaVence, String strNombreRaza) {
         this.appContext = appContext;
         this.idPajilla = idPajilla;

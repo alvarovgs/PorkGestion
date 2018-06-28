@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese el E-mail actual de el Usuario"
+        android:focusable="false"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -42,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese un número de Teléfono (Opcional)"
-        android:inputType="number|phone" />
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_width="match_parent"

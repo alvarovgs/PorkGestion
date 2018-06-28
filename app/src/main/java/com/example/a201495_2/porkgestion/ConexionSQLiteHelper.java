@@ -6,9 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.a201495_2.porkgestion.utilidades.Utilidades;
 
-
-public class ConexionSQLiteHelper extends SQLiteOpenHelper {
-
+public class ConexionSQLiteHelper extends SQLiteOpenHelper{
 
     public ConexionSQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -17,17 +15,21 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Utilidades.CREAR_TABLA_USUARIO);
-        db.execSQL(Utilidades.CREAR_TABLA_PAJILLAS);
-        db.execSQL(Utilidades.CREAR_TABLA_VERRACOS);
-
+        db.execSQL(Utilidades.CREAR_TABLA_RAZAS);
+        db.execSQL(Utilidades.CREAR_TABLA_VENTA);
+        db.execSQL(Utilidades.CREAR_TABLA_PRENEZ);
+        db.execSQL(Utilidades.CREAR_TABLA_PAJILLA);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    db.execSQL("DROP TABLE IF EXISTS utilidades.Usuarios");
-    db.execSQL("DROP TABLE IF EXISTS utilidades.pajillas");
-    db.execSQL("DROP TABLE IF EXISTS utilidades.verracos");
-
-    onCreate(db);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_USUARIO);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_RAZAS);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_VENTA);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_PRENEZ);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_PAJILLA);
+        onCreate(db);
     }
+
+
 }

@@ -1,129 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".monta_Activity">
 
-    <EditText
-        android:id="@+id/edtxt_numeropajilla"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/numero_pajilla_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_numero_verraco" />
+        android:text="PREÑEZ"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
     <EditText
-        android:id="@+id/edtxt_numeropajilla"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoIdanimonta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
         android:ems="10"
-        android:hint="@string/numero_cerda_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPersonName"
+        android:hint="Numero de la cerda"/>
 
     <EditText
-        android:id="@+id/edtxt_fechaprimercelo"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoNombremonta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoIdanimonta"
         android:ems="10"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="152dp" />
+        android:inputType="textPersonName"
+        android:hint="Nombre de la cerda" />
 
     <EditText
-        android:id="@+id/fechacelo"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:hint="@string/fechaprimercelo"
-        android:inputType="date"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="91dp" />
-
-    <EditText
-        android:id="@+id/ed_numero_verraco"
-        android:layout_width="wrap_content"
+        android:id="@+id/campoEdadmonta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoNombremonta"
         android:ems="10"
-        android:hint="@string/numero_verraco_string"
-        android:inputType="number"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_tipomonta" />
+        android:inputType="textPersonName"
+        android:hint="Edad al momento de la monta" />
 
-    <Button
-        android:id="@+id/bt_guardar"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="152dp"
-        android:layout_height="38dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/btguardar"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="275dp" />
+    <EditText
+        android:id="@+id/campoPesomonta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoEdadmonta"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Peso de la cerda al momento de la monta" />
 
-    <Button
-        android:id="@+id/bt_eliminar"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="154dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/bteliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="275dp" />
+    <EditText
+        android:id="@+id/campoFecha1celo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoPesomonta"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fecha primer celo" />
+
+    <EditText
+        android:id="@+id/campoFecha2celo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoFecha1celo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fecha segundo celo" />
+
 
     <Spinner
-        android:id="@+id/sp_tipomonta"
-        android:layout_width="201dp"
-        android:layout_height="27dp"
-        android:entries="@array/tipo_monta"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="36dp" />
+        android:id="@+id/comboTipoprenez"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:entries="@array/tipoprenez"
+        android:layout_below="@+id/campoFecha2celo" />
+
+    <Spinner
+        android:id="@+id/comboNomverraco"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:entries="@array/nomverraco"
+        android:layout_below="@+id/comboTipoprenez" />
+
+    <Spinner
+        android:id="@+id/comboNumpajilla"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:entries="@array/numpajilla"
+        android:layout_below="@+id/comboNomverraco" />
+
+    <EditText
+        android:id="@+id/campoFechaeco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comboNumpajilla"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fecha de ecografia confirmatoria de preñez" />
 
     <Button
-        android:id="@+id/btn_regresar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_regpreñez"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="168dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:onClick="onClick"
-        android:text="REGRESAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_alignParentStart="true"
+        android:text="Registro de preñez" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="98dp"
-        android:layout_height="79dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/see"
-        tools:layout_editor_absoluteX="143dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

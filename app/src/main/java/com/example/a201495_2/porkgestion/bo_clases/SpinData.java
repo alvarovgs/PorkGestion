@@ -43,8 +43,9 @@ public class SpinData {
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabase("RAZA", strColumns, null, null, "NOMBRERAZA");
         if (crResult.moveToFirst()) {
-            collData = new SpinData[crResult.getCount()];
-            int i=0;
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0] = new SpinData(0,"Seleccione la raza");
+            int i=1;
             do {
                 collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
                 i=i+1;
@@ -62,8 +63,30 @@ public class SpinData {
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabase("CERDO", strColumns, null, null, "CODIGO");
         if (crResult.moveToFirst()) {
-            collData = new SpinData[crResult.getCount()];
-            int i=0;
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0]=new SpinData(0,"Seleccione el nombre del cerdo");
+            int i=1;
+            do {
+                collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
+                i=i+1;
+            } while (crResult.moveToNext());
+        }
+        dbAcces.closeDataBase();
+        return collData;
+    }
+
+    public SpinData[] getCerdonovendido(){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        String strColumns[] = new String[]{"IDCERDO","CODIGO"};
+        Cursor crResult;
+        SpinData[] collData=new SpinData[0];
+        dbAcces.openDataBase();
+        String sql="SELECT IDCERDO, CODIGO FROM CERDO WHERE IDCERDO NOT IN (SELECT IDCERDO FROM VENTACERDO)";
+        crResult = dbAcces.qweryDatabaseBySql(sql);
+        if (crResult.moveToFirst()) {
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0]=new SpinData(0,"Seleccione el nombre del cerdo");
+            int i=1;
             do {
                 collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
                 i=i+1;
@@ -74,6 +97,14 @@ public class SpinData {
     }
     public SpinData[] getCerdobySexo(String strSexo){
         dbAcces = new dataBaseOpenHelper(appContext);
+        String titulo;
+        if(strSexo == "MACHO"){
+            titulo = "Nombre del padre";
+        }
+        else{
+            titulo = "Nombre de la madre";
+        }
+
         String strColumns[] = new String[]{"IDCERDO","CODIGO"};
         String strArgs[] = new String[]{strSexo};
         Cursor crResult;
@@ -81,8 +112,9 @@ public class SpinData {
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabase("CERDO", strColumns, "SEXO=?", strArgs, "CODIGO");
         if (crResult.moveToFirst()) {
-            collData = new SpinData[crResult.getCount()];
-            int i=0;
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0] = new SpinData(0,titulo);
+            int i=1;
             do {
                 collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
                 i=i+1;
@@ -103,8 +135,9 @@ public class SpinData {
     public SpinData[] getSexoCerdo(){
         SpinData[] collData=new SpinData[0];
         collData = new SpinData[3];
-        collData[0] = new SpinData(1,"MACHO");
-        collData[1] = new SpinData(2,"HEMBRA");
+        collData[0] = new SpinData(0,"Seleccione el sexo");
+        collData[1] = new SpinData(1,"HEMBRA");
+        collData[2] = new SpinData(2,"MACHO");
         return collData;
     }
 

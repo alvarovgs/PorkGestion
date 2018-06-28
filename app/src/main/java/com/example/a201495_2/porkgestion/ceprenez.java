@@ -10,20 +10,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.a201495_2.porkgestion.utilidades.Utilidades;
-
 
 public class ceprenez extends AppCompatActivity {
     EditText campoidcerda, camponombrecerda, campofechamonta, campoprimercelo, campopesomonta, campoidpajilla, camponombreverraco, campoestado;
 
-    ConexionSQLiteHelper conn;
+    //ConexionSQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ceprenez);
 
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null, 1);
+        //conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_reproduccion",null, 1);
 
         campoidcerda= (EditText)findViewById(R.id.id_verraco);
         camponombrecerda= (EditText)findViewById(R.id.nameverraco);
@@ -59,7 +57,7 @@ public class ceprenez extends AppCompatActivity {
     }
 
     private void eliminarprenez() {
-        SQLiteDatabase db=conn.getWritableDatabase();
+       /* SQLiteDatabase db=conn.getWritableDatabase();
         String [] parametros={campoidcerda.getText().toString()};
 
         db.delete(Utilidades.TABLA_USUARIOS, Utilidades.CAMPO_IDCERDA+"=?",parametros);
@@ -71,11 +69,11 @@ public class ceprenez extends AppCompatActivity {
         campoidpajilla.setText("");
         camponombreverraco.setText("");
         campoestado.setText("");
-        db.close();
+        db.close();*/
     }
 
     private void actualizarprenez() {
-        SQLiteDatabase db=conn.getWritableDatabase();
+       /* SQLiteDatabase db=conn.getWritableDatabase();
         String [] parametros={campoidcerda.getText().toString()};
         ContentValues values=new ContentValues();
         values.put(Utilidades.CAMPO_NOMBRECERDA, camponombrecerda.getText().toString());
@@ -88,7 +86,7 @@ public class ceprenez extends AppCompatActivity {
 
         db.update(Utilidades.TABLA_USUARIOS,values, Utilidades.CAMPO_IDCERDA+"=?",parametros);
         Toast.makeText(getApplicationContext(),"Datos Actualizados",Toast.LENGTH_LONG).show();
-        db.close();
+        db.close();*/
     }
 
     public void Regresar(View view) {
@@ -98,7 +96,7 @@ public class ceprenez extends AppCompatActivity {
     }
     private void consultar() {
 
-        SQLiteDatabase db=conn.getReadableDatabase();
+       /* SQLiteDatabase db=conn.getReadableDatabase();
         String [] parametros={campoidcerda.getText().toString()};
         String [] campos={Utilidades.CAMPO_NOMBRECERDA, Utilidades.CAMPO_FECHAMONTA, Utilidades.CAMPO_PRIMERCELO,
                 Utilidades.CAMPO_PESOMONTA, Utilidades.CAMPO_IDPAJILLA, Utilidades.CAMPO_NOMBREVERRACO, Utilidades.CAMPO_ESTADO};
@@ -119,7 +117,7 @@ public class ceprenez extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"ID de cerda no valido",Toast.LENGTH_LONG).show();
             limpiar();
         }
-
+*/
 
     }
 

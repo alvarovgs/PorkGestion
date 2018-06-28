@@ -26,7 +26,7 @@ public class Partolact extends AppCompatActivity {
                 break;
 
             case R.id.btn_rparto:
-                miIntent = new Intent(Partolact.this, Parto_Activity.class);
+                miIntent = new Intent(Partolact.this, PartoActivity.class);
                 break;
 
 

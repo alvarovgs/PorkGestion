@@ -41,17 +41,17 @@ public class MainEditusuario extends AppCompatActivity {
         et_Telefono.setText(miUsuario.getStrTelefono());
 
         btn_Actualizar.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    upateUsuario();
-                }
-            }
+                                               @Override
+                                               public void onClick(View v) {
+                                                   upateUsuario();
+                                               }
+                                           }
         );
 
         btn_Eliminar.setOnClickListener (new View.OnClickListener() {
-                                               @Override
-                                               public void onClick(View v) { deleteUsuario(); }
-                                           }
+                                             @Override
+                                             public void onClick(View v) { deleteUsuario(); }
+                                         }
         );
     }
 
