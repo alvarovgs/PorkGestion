@@ -55,7 +55,6 @@
         <activity android:name=".menucerdo"/>
         <activity android:name=".SanidadActivity"/>
 
-
     </application>
 
 </manifest>
