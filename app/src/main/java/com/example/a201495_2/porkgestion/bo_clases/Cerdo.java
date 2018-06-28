@@ -348,6 +348,26 @@ public class Cerdo {
         }
         return listacerdos;
     }
+    public Boolean existCerdoByRaza(int idRaza){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        Boolean bResult  = false;
+        Cursor crResult;
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM CERDO WHERE IDRAZA='%s'", idRaza);
+        dbAcces.openDataBase();
+        crResult = dbAcces.qweryDatabaseBySql(strSql);
+        if (dbAcces.getErrorDB()==null) {
+            if (crResult.moveToFirst()) {
+                bResult = crResult.getInt(0) > 0;
+            }
+        }
+        else{
+            this.strError = dbAcces.getErrorDB();
+            bResult = false;
+        }
+        dbAcces.closeDataBase();
+        return bResult;
+    }
+
 
 }
 

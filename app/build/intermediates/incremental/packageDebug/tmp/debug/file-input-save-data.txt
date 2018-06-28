@@ -1,19 +1,19 @@
 #Internal package file, do not edit.
-#Wed Jun 27 17:14:17 COT 2018
+#Wed Jun 27 23:19:37 COT 2018
 1.base=E\:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\assets\\debug
-2.path=fonts/Roboto-Medium.ttf
+2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=E\:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\assets\\debug
+2.base=E\:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
 3.set=ASSET
-2.set=ASSET
+2.set=DEX
 1.baseType=DIRECTORY
 3.path=databases/Porkgestion.db
 count=4
 1.set=ASSET
-0.path=classes.dex
+0.path=databases/Porkgestion.db-journal
 3.base=E\:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\assets\\debug
-0.set=DEX
-0.base=E\:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.set=ASSET
+0.base=E\:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\assets\\debug
 2.baseType=DIRECTORY
-1.path=databases/Porkgestion.db-journal
+1.path=fonts/Roboto-Medium.ttf

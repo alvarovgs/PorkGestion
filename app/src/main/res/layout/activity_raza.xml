@@ -1,125 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".raza">
+    tools:context=".RazaActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_raza" />
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/lblTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="RAZAS"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/campoIdRazaNew"
-        android:layout_width="match_parent"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        tools:text="Gestión Razas" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/campoRazanueva"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="-173dp"
-        android:ems="10"
-        android:hint="ingrese el numero"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="101dp" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
-    <EditText
-        android:id="@+id/campoRazanueva"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="173dp"
-        android:ems="10"
-        android:hint="Ingrese el nombre de la raza"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="174dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnlimpiaraza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:layout_weight="1"
-            android:text="Limpiar" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="50dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnconsuraza"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:onClick="onClick"
-            android:text="CONSULTAR" />
-
-        <Button
-            android:id="@+id/btneliraza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:layout_weight="0.5"
-            android:text="ELIMINAR" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="95dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btningresar"
-            android:layout_width="111dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:onClick="onClick"
-            android:text="INGRESAR" />
-
-        <Button
-            android:id="@+id/btnactuaraza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:onClick="onClick"
-            android:text="ACTUALIZAR" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="236dp"
-        android:layout_height="79dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="183dp"
-        android:background="#ffffff"
-        android:text="Ingrese el nombre de una nueva raza si esta no se encuentra en el módulo de NUEVO REGISTRO PARA CERDO en la opción de Seleccionar la raza"
-        android:textAlignment="center" />
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

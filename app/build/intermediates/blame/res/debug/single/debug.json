@@ -1,11 +1,15 @@
 [
     {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_pass.png.flat",
         "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_pass.png"
     },
     {
-        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lechon.jpg.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\drawable\\lechon.jpg"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_usuario.xml.flat",
@@ -68,12 +72,12 @@
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\MaterialChipsInput-1.0.5.aar\\df723777f9d653cb8d60c430f22af81f\\res\\drawable-xxhdpi-v4\\ic_cancel_grey_24dp.png"
     },
     {
-        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_pass.png.flat",
-        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_pass.png"
-    },
-    {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_pass.png.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_pass.png"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -158,6 +162,10 @@
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\ee8d9de40d6ecc921c5a9d8702b04ba9\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_consultacerdo.xml.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_consultacerdo.xml"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -346,6 +354,10 @@
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\ee8d9de40d6ecc921c5a9d8702b04ba9\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cerdonew.jpg.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\drawable\\cerdonew.jpg"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
@@ -574,6 +586,10 @@
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_raza.xml.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_raza.xml"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -1030,6 +1046,10 @@
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menucerdo.xml.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_menucerdo.xml"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -1526,6 +1546,10 @@
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\87c6b2527caf3325c7313f1184a9c98d\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_consultapajilla.xml.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_consultapajilla.xml"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -2288,6 +2312,10 @@
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_totalcerdos.xml.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_totalcerdos.xml"
+    },
+    {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_powered_by_google_light.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\98fc311ff0fc79f513765938e51225b7\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
     },
@@ -2452,6 +2480,10 @@
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\ee8d9de40d6ecc921c5a9d8702b04ba9\\res\\drawable\\design_fab_background.xml"
     },
     {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parto_.xml.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_parto_.xml"
+    },
+    {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
@@ -2592,10 +2624,6 @@
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\98fc311ff0fc79f513765938e51225b7\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
     },
     {
-        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_raza_.xml.flat",
-        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\layout\\activity_raza_.xml"
-    },
-    {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\anim_tooltip_exit.xml.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\anim\\tooltip_exit.xml"
     },
@@ -2726,6 +2754,10 @@
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Alvaro Vargas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ac9314fe5cbdd4cd9ffc3138e496b063\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sancerdo.jpg.flat",
+        "source": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\src\\main\\res\\drawable\\sancerdo.jpg"
     },
     {
         "merged": "E:\\Documentos\\Personal\\UNAD\\CompMovil\\Desarrollo\\GitHub\\PorkGestion\\PorkGestion\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_ic_clear.png.flat",

@@ -52,7 +52,7 @@ public class MenuLateral extends AppCompatActivity {
         nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
-                Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
 
                 if (item.getTitle().toString().equals("Cerdo")) {
                     Intent miIntent = new Intent(MenuLateral.this, menucerdo.class);
@@ -65,9 +65,14 @@ public class MenuLateral extends AppCompatActivity {
                     startActivity(miIntent);
                     return false;
                 }
+                else if (item.getTitle().toString().equals("Cerdos en la finca")) {
+                    Intent miIntent = new Intent(MenuLateral.this, totalcerdos.class);
+                    startActivity(miIntent);
+                    return false;
+                }
 
                 else if (item.getTitle().toString().equals("Reproducción")) {
-                    Intent miIntent = new Intent(MenuLateral.this, prenez.class);
+                    Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
                     startActivity(miIntent);
                     return false;
                 }
@@ -81,7 +86,6 @@ public class MenuLateral extends AppCompatActivity {
                 else if(item.getTitle().toString().equals("Sanidad")) {
                     Intent miIntent = new Intent(MenuLateral.this, SanidadActivity.class);
                     startActivity(miIntent);
-                    actionBar.setTitle("Gestión Sanidad");
                     return false;
                 }
 
