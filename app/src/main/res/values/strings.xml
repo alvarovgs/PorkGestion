@@ -16,7 +16,9 @@
     <string name="Ayuda">Info. General</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Inicio">Inicio</string>
-    <string name="Menucerdo">Menu cerdo</string>
+
+    <string name="add_medicamento">Agregar medicamento</string>
+
     <string-array name="sexo">
         <item>Seleccione el sexo</item>
         <item>HEMBRA</item>
@@ -81,6 +83,10 @@
         <item>Directa</item>
         <item>Artificial</item>
     </string-array>
+    <string name="title_activity_sanidad">Gestión de sanidad</string>
+    <string name="title_activity_raza">Gestión de razas</string>
+    <string name="title_activity_pajilla">Gestión de pajillas</string>
+    <string name="title_activity_parto">PartoActivity</string>
 
 
 </resources>
