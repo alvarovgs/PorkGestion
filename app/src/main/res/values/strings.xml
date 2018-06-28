@@ -9,13 +9,16 @@
     <string name="razas">Ingrese el nombre de una nueva raza si no se encuentra en el modulo de cerdo.</string>
     <string name="Reproduccion">Reproducción</string>
     <string name="Lactancia">Parto y Lactancia</string>
-    <string name="Sanidad">Registro Medico</string>
+    <string name="Sanidad">Sanidad</string>
     <string name="Ventas">Ventas</string>
     <string name="Reportes">Reportes</string>
     <string name="Usuario">Edit. Usuario</string>
     <string name="Ayuda">Info. General</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Inicio">Inicio</string>
+
+    <string name="add_medicamento">Agregar medicamento</string>
+
     <string-array name="sexo">
         <item>seleccione el sexo</item>
         <item>HEMBRA</item>
@@ -64,6 +67,9 @@
         <item>Directa</item>
         <item>Artificial</item>
     </string-array>
+    <string name="title_activity_sanidad">Gestión de sanidad</string>
+    <string name="title_activity_raza">Gestión de razas</string>
+    <string name="title_activity_pajilla">Gestión de pajillas</string>
 
 
 </resources>

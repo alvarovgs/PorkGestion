@@ -12,6 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.a201495_2.porkgestion.bo_clases.Sanidad;
+import com.facebook.stetho.Stetho;
+
+
 public class MenuLateral extends AppCompatActivity {
     private ActionBar actionBar;
     private Toolbar toolbar;
@@ -20,6 +25,7 @@ public class MenuLateral extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_lateral);
+        Stetho.initializeWithDefaults(this);
         initToolbar();
         initNavigationMenu();
     }
@@ -55,13 +61,13 @@ public class MenuLateral extends AppCompatActivity {
                 }
 
                 else if (item.getTitle().toString().equals("Raza")) {
-                    Intent miIntent = new Intent(MenuLateral.this, raza.class);
+                    Intent miIntent = new Intent(MenuLateral.this, RazaActivity.class);
                     startActivity(miIntent);
                     return false;
                 }
 
                 else if (item.getTitle().toString().equals("Reproducción")) {
-                    Intent miIntent = new Intent(MenuLateral.this, reproduccion.class);
+                    Intent miIntent = new Intent(MenuLateral.this, prenez.class);
                     startActivity(miIntent);
                     return false;
                 }
@@ -69,6 +75,13 @@ public class MenuLateral extends AppCompatActivity {
                 else if(item.getTitle().toString().equals("Reproducción")) {
                     Intent miIntent = new Intent(MenuLateral.this, DashReproductivo.class);
                     startActivity(miIntent);
+                    return false;
+                }
+
+                else if(item.getTitle().toString().equals("Sanidad")) {
+                    Intent miIntent = new Intent(MenuLateral.this, SanidadActivity.class);
+                    startActivity(miIntent);
+                    actionBar.setTitle("Gestión Sanidad");
                     return false;
                 }
 
@@ -102,12 +115,12 @@ public class MenuLateral extends AppCompatActivity {
                 }
 
                 else if (item.getTitle().toString().equals("Cerrar")) {
-                    Intent miIntent = new Intent(MenuLateral.this, MainActivity.class);
-                    startActivity(miIntent);
-                    System.exit(0);
+                    finish();
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
                 }
-
-                actionBar.setTitle(item.getTitle());
                 drawer.closeDrawers();
                 return true;
             }
