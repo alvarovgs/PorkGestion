@@ -1,138 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".reporteparto">
 
     <TextView
-        android:id="@+id/textView24"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView23"
-        android:text="Nacidos Vivos Machos: 7" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView22"
-        android:text="Fecha de Parto: 25/04/2018" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_width="382dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_marginTop="197dp"
-        android:text="Id de Cerda: 124" />
+        android:layout_centerHorizontal="true"
+        android:text="PARTOS REPORTADOS"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_below="@+id/textView6"
-        android:text="Fecha de Parto: 15/04/2018" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="48dp"
-        android:text="Id de Cerda: 123" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_below="@+id/textView16"
-        android:text="Nacidos Vivos Machos: 3" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView17"
-        android:text="Nacidos Vivos Hembras: 2" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView24"
-        android:text="Nacidos Vivos Hembras: 3" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_centerVertical="true"
-        android:text="Mamas activas: 8" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView18"
-        android:text="Mamas activas: 6" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView26"
-        android:text="Fecha del destete: 15/05/2018" />
-
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_actualizar"
-        android:layout_below="@+id/textView19"
-        android:text="Fecha del destete: 25/06/2018" />
+    <ListView
+        android:id="@+id/listViewPartos"
+        android:layout_width="360dp"
+        android:layout_height="440dp"
+        android:layout_above="@+id/btn_back"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="20sp" />
 
     <Button
-        android:id="@+id/btn_actualizar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView16"
-        android:layout_marginBottom="142dp"
-        android:onClick="onClick"
-        android:text="REGRESAR" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="REPORTE DE PARTOS"
-        android:textColor="@android:color/black"
-        android:textSize="24sp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="107dp"
-        android:layout_height="62dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="27dp"
-        app:srcCompat="@drawable/see" />
-
+        android:layout_alignParentStart="true"
+        android:onClick="Regresar"
+        android:text="REGRESAR"
+        android:textStyle="bold" />
 
 </RelativeLayout>

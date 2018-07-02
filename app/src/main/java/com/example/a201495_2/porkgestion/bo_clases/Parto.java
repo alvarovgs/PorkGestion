@@ -157,6 +157,35 @@ public class Parto {
         return dbAcces.getErrorDB()==null;
     }
 
+    public ArrayList<String> consultaparto() {
+        // SQLiteDatabase db=conn.getReadableDatabase();
+
+        ArrayList<String> listapartos=new ArrayList<String>();
+        dbAcces = new dataBaseOpenHelper(appContext);
+        dbAcces.openDataBase();
+        // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
+        //select * from usuarios
+        String strSql = "SELECT IDPARTO, IDCERDO, FECHAPARTO,LECHONESVIVOSMACHOS,LECHONESVIVOSHEMBRAS,LECHONESMUERTOSMACHOS,LECHONESMUERTOSHEMBRAS, PROMEDIOPESO FROM PARTO";
+        Cursor cursor;
+        cursor = dbAcces.qweryDatabaseBySql(strSql);
+        while (cursor.moveToNext()){
+            /*Cerdo marrano=new Cerdo(appContext);
+            marrano.setIdCerdo(cursor.getInt(0));
+            marrano.setStrCodigo(cursor.getString(1));*/
+            listapartos.add("ID PARTO: " +cursor.getInt(0));
+            listapartos.add("Id Cerda: " +cursor.getInt(1));
+            listapartos.add("Fecha de Parto: " + cursor.getString(2));
+            listapartos.add("Lechones Vivos Machos: "+cursor.getString(3));
+            listapartos.add("Lechones Vivos Hembras: " + cursor.getString(4));
+            listapartos.add("Lechones Muertos Machos: "+cursor.getString(5));
+            listapartos.add("Lechones Muertos Hembras: " + cursor.getString(6));
+            listapartos.add("Peso Promedio: " + cursor.getString(7)+"KG");
+            listapartos.add("");
+        }
+        return listapartos;
+    }
+
+
     public Boolean deleteParto(){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strArgs[] = new String[]{String.valueOf(this.idParto)};

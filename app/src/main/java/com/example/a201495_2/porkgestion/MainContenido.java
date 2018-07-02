@@ -23,14 +23,14 @@ public class MainContenido extends AppCompatActivity{
 
             @Override
             public void onClick(View v) {
-                Intent imgbutton=new Intent(MainContenido.this, DashReproductivo.class);
+                Intent imgbutton=new Intent(MainContenido.this, reproduccion.class);
                 startActivity(imgbutton);
 
         strigbutton= findViewById(R.id.repro_string);
         strigbutton.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent strigbutton = new Intent(MainContenido.this, DashReproductivo.class);
+                 Intent strigbutton = new Intent(MainContenido.this, reproduccion.class);
                  startActivity(strigbutton);
 
              }

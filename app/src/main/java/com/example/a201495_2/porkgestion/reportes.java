@@ -25,8 +25,12 @@ public class reportes extends AppCompatActivity {
                 miIntent = new Intent(reportes.this, reporteparto.class);
                 break;
 
+            case R.id.btn_reproduccion:
+                miIntent = new Intent(reportes.this, vergestantes.class);
+                break;
+
             case R.id.btn_verracos:
-                miIntent = new Intent(reportes.this, listaverracos.class);
+                miIntent = new Intent(reportes.this, ververracos.class);
                 break;
 
             case R.id.btn_ventas:
@@ -37,6 +41,12 @@ public class reportes extends AppCompatActivity {
                 miIntent = new Intent(reportes.this, MainReporteHV.class);
                 break;
         }
+        startActivity(miIntent);
+    }
+
+    public void Regresar(View view) {
+        Intent miIntent=null;
+        miIntent = new Intent(reportes.this, MenuLateral.class);
         startActivity(miIntent);
     }
 }
