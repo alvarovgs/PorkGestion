@@ -100,10 +100,10 @@ public class SpinData {
         dbAcces = new dataBaseOpenHelper(appContext);
         String titulo;
         if(strSexo == "MACHO"){
-            titulo = "Nombre del verraco";
+            titulo = "ID del Padre";
         }
         else{
-            titulo = "Nombre de la hembra";
+            titulo = "ID de la Madre";
         }
 
         String strColumns[] = new String[]{"IDCERDO","CODIGO"};
