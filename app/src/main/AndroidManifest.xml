@@ -29,7 +29,6 @@
         <activity android:name=".ventas" />
         <activity android:name=".reproduccion" />
         <activity android:name=".reportes" />
-        <activity android:name=".monta" />
         <activity android:name=".RazaActivity" />
         <activity android:name=".fpp" />
         <activity android:name=".PartoActivity" />
@@ -46,18 +45,17 @@
         <activity android:name=".MainRecomendaciones" />
         <activity android:name=".lechon" />
         <activity android:name=".MainReporteHV" />
-        <activity android:name=".DashReproductivo" />
         <activity android:name=".Partolact" />
         <activity android:name=".consultacerdo" />
         <activity android:name=".PajillaActivity" />
         <activity android:name=".totalcerdos" />
-        <activity android:name=".prenez" />
         <activity android:name=".menucerdo"/>
         <activity android:name=".SanidadActivity"/>
-        <activity android:name=".ceprenez"/>
         <activity android:name=".vergestantes"/>
         <activity android:name=".ververracos"/>
         <activity android:name=".listaverracos"/>
+        <activity android:name=".gestantes"/>
+
 
     </application>
 

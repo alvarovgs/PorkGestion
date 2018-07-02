@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblIDCerda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID de la cerda"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/lblFechaMonta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de la Monta"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/lblVerraco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="ID Verraco o Pajilla"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/lblTipoMonta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Tipo de Monta"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/lblEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Estado"
+            android:textColor="@android:color/holo_blue_dark" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

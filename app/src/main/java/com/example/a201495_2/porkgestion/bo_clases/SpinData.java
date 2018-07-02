@@ -95,14 +95,15 @@ public class SpinData {
         dbAcces.closeDataBase();
         return collData;
     }
+
     public SpinData[] getCerdobySexo(String strSexo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String titulo;
         if(strSexo == "MACHO"){
-            titulo = "Nombre del padre";
+            titulo = "ID del Padre";
         }
         else{
-            titulo = "Nombre de la madre";
+            titulo = "ID de la Madre";
         }
 
         String strColumns[] = new String[]{"IDCERDO","CODIGO"};
@@ -123,6 +124,7 @@ public class SpinData {
         dbAcces.closeDataBase();
         return collData;
     }
+
     public SpinData[] getTipoMed(){
         SpinData[] collData=new SpinData[0];
         collData = new SpinData[3];
@@ -141,5 +143,42 @@ public class SpinData {
         return collData;
     }
 
+    public SpinData[] getPajilla(){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        String strColumns[] = new String[]{"IDPAJILLA","CODIGOPAJILLA"};
+        Cursor crResult;
+        SpinData[] collData=new SpinData[0];
+        dbAcces.openDataBase();
+        crResult = dbAcces.qweryDatabase("PAJILLA", strColumns, null, null, "CODIGOPAJILLA");
+        if (crResult.moveToFirst()) {
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0] = new SpinData(0,"Seleccione la pajilla");
+            int i=1;
+            do {
+                collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
+                i=i+1;
+            } while (crResult.moveToNext());
+        }
+        dbAcces.closeDataBase();
+        return collData;
+    }
+
+    public SpinData[] getEstadoMonta(){
+        SpinData[] collData=new SpinData[0];
+        collData = new SpinData[3];
+        collData[0] = new SpinData(0,"Selecione Estado");
+        collData[1] = new SpinData(1,"Confirmada");
+        collData[2] = new SpinData(2,"Sin Confirmar");
+        return collData;
+    }
+
+    public SpinData[] getTipoMonta(){
+        SpinData[] collData=new SpinData[0];
+        collData = new SpinData[3];
+        collData[0] = new SpinData(0,"Selecione Monta");
+        collData[1] = new SpinData(1,"Natural");
+        collData[2] = new SpinData(2,"Artificial");
+        return collData;
+    }
 
 }

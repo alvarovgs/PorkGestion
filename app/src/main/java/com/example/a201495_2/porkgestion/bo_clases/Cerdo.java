@@ -188,6 +188,30 @@ public class Cerdo {
         return tmpObject;
     }
 
+    public ArrayList<String> consultaVerracos() {
+        // SQLiteDatabase db=conn.getReadableDatabase();
+
+        ArrayList<String> listacerdos=new ArrayList<String>();
+        dbAcces = new dataBaseOpenHelper(appContext);
+        dbAcces.openDataBase();
+        // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
+        //select * from usuarios
+        String strSql = "SELECT IDCERDO, CODIGO, PESONACIMIENTO, IDRAZA FROM CERDO WHERE SEXO = \"MACHO\"";
+        Cursor cursor;
+        cursor = dbAcces.qweryDatabaseBySql(strSql);
+        while (cursor.moveToNext()){
+            /*Cerdo marrano=new Cerdo(appContext);
+            marrano.setIdCerdo(cursor.getInt(0));
+            marrano.setStrCodigo(cursor.getString(1));*/
+            listacerdos.add("ID CERDO:" +cursor.getInt(0));
+            listacerdos.add("Codigo:" + cursor.getString(1));
+            listacerdos.add("Peso al Nacimiento:"+cursor.getString(2)+"KG");
+            listacerdos.add("Raza:" + cursor.getString(3));
+            listacerdos.add("");
+        }
+        return listacerdos;
+    }
+
     public Cerdo getCerdoByTable(String strCodigo){
         dbAcces = new dataBaseOpenHelper(appContext);
         String strColumns[] = new String[]{"IDCERDO","FECHANACIMIENTO","SEXO","PESONACIMIENTO","IDPADRE","IDMADRE","IDRAZA","CODIGO"};

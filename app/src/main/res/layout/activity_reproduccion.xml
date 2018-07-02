@@ -8,9 +8,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="478dp"
+        android:layout_height="450dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView33"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
 
         <View
@@ -20,23 +20,23 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="121dp"
+            android:layout_height="149dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="105dp"
-                android:layout_height="105dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/montacerda" />
 
             <View
-                android:layout_width="10dp"
+                android:layout_width="8dp"
                 android:layout_height="80dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="130dp"
+                android:layout_height="133dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -53,10 +53,11 @@
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="Registre los datos de la monta de la cerda como su nombre, edad, peso, fechas de celo, tipo de preñez, código de verraco o pajilla y la fecha de confirmación de la preñez."
+                    android:layout_height="90dp"
+                    android:text="Registre, consulte, modifique o elimine los datos de la monta de la cerda como su nombre, edad, peso, fechas de celo, tipo de monta, código de verraco o pajilla y la fecha de confirmación de la preñez."
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/blue_grey_800"
                     android:textSize="12sp" />
 
                 <TextView
@@ -76,77 +77,26 @@
             android:layout_height="1dp"
             android:background="@color/grey_10" />
 
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="137dp"
+            android:layout_height="121dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="105dp"
-                android:layout_height="105dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pigger" />
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="80dp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_gravity="top"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/btn_amonta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClick"
-                    android:text="CONSULTA Y ACTUALIZACION DE MONTA"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:maxLines="5"
-                    android:text="Consulte y actualice datos de preñez de la cerda como su fecha de monta, tipo de preñez, código de verraco o pajilla y la confirmación de la preñez."
-                    android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/grey_80"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey_10" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="107dp"
-            android:orientation="horizontal"
-            android:padding="@dimen/spacing_middle">
-
-            <ImageView
-                android:layout_width="105dp"
-                android:layout_height="105dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/seleccion_semen" />
 
             <View
-                android:layout_width="10dp"
+                android:layout_width="8dp"
                 android:layout_height="80dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="116dp"
+                android:layout_height="105dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -161,7 +111,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="47dp"
+                    android:layout_height="51dp"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
                     android:text="Registre los datos de las pajillas usadas para la preñez, su raza y fecha de vencimiento."
@@ -173,25 +123,26 @@
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="113dp"
+            android:layout_height="136dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
             <ImageView
-                android:layout_width="105dp"
-                android:layout_height="105dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/fpp" />
 
             <View
-                android:layout_width="10dp"
+                android:layout_width="8dp"
                 android:layout_height="80dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="116dp"
+                android:layout_height="107dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -206,10 +157,10 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="56dp"
+                    android:layout_height="44dp"
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:maxLines="5"
-                    android:text="Calcule aqui la FPP segun se fecha de monta."
+                    android:text="Calcule aqui la Fecha Problable de Parto segun se fecha de monta."
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/grey_80"
@@ -231,10 +182,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
         android:onClick="onClick"
-        android:textStyle="bold"
-        android:text="REGRESAR" />
+        android:text="REGRESAR"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView33"
@@ -242,10 +193,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:textStyle="bold"
-        android:textSize="30sp"
+        android:text="REPRODUCCION"
         android:textAlignment="center"
-        android:text="REPRODUCCION" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

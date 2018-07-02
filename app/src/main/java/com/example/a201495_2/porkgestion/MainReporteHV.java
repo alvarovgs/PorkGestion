@@ -84,7 +84,7 @@ public class MainReporteHV extends AppCompatActivity {
                     if(miCerdo.existCerdo(Codigo)) {
                         miCerdo = miCerdo.getCerdoByView(Codigo);
                         misanidad = misanidad.getSanidadCerdo(miCerdo.getIdCerdo());
-                        mireproduccion = mireproduccion.getreproduccionByTable(String.valueOf(miCerdo.getIdCerdo()));
+                        mireproduccion = mireproduccion.getReproduccionByTable(String.valueOf(miCerdo.getIdCerdo()));
 
                         et_NombreCerdo.setText(miCerdo.getStrCodigo());
                         et_FechaNace.setText(miCerdo.getStrFechaNace());

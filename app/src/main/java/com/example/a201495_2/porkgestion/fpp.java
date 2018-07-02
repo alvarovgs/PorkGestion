@@ -3,13 +3,14 @@ package com.example.a201495_2.porkgestion;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TimePicker;
+import android.widget.DatePicker;
 
 import java.util.Calendar;
 
@@ -26,22 +27,21 @@ public class fpp extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fpp);
 
-        bfecha= findViewById(R.id.bfecha);
-        efecha= findViewById(R.id.efecha);
-        efpp= findViewById(R.id.efpp);
-        bfecha.setOnClickListener(this);
+        efecha=(EditText)findViewById(R.id.efecha);
+        efpp=(EditText)findViewById(R.id.efpp);
+        efecha.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        if(v==bfecha) {
+        if(v==efecha) {
             final Calendar c = Calendar.getInstance();
             dia = c.get(Calendar.DAY_OF_MONTH);
             mes = c.get(Calendar.MONTH);
             ano = c.get(Calendar.YEAR);
 
-            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            DatePickerDialog dpd = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     efecha.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
@@ -59,13 +59,19 @@ public class fpp extends AppCompatActivity implements View.OnClickListener {
                     , dia, mes, ano);
 
 
-            datePickerDialog.show();
+
+            c.add(Calendar.MONTH, -3);
+            dpd.getDatePicker().setMinDate(c.getTimeInMillis());
+
+            dpd.show();
         }
+
+
 
     }
     public void Regresar(View view) {
         Intent miIntent=null;
-        miIntent = new Intent(fpp.this, Partolact.class);
+        miIntent = new Intent(fpp.this, reproduccion.class);
         startActivity(miIntent);
     }
 }
