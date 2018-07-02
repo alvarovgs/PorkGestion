@@ -181,4 +181,29 @@ public class SpinData {
         return collData;
     }
 
+    public ArrayList<String> reportereproduccion() {
+        ArrayList<String> listareporte=new ArrayList<String>();
+        dbAcces = new dataBaseOpenHelper(appContext);
+        dbAcces.openDataBase();
+        String strSql = "SELECT COUNT(IDPARTO),(SUM(LECHONESVIVOSMACHOS)+SUM(LECHONESMUERTOSMACHOS)+SUM(LECHONESVIVOSHEMBRAS)+SUM(LECHONESMUERTOSHEMBRAS)),(SUM(LECHONESVIVOSHEMBRAS)+SUM(LECHONESVIVOSMACHOS)),(SUM(LECHONESMUERTOSHEMBRAS)+SUM(LECHONESMUERTOSMACHOS)),SUM(LECHONESVIVOSHEMBRAS),SUM(LECHONESMUERTOSHEMBRAS),SUM(LECHONESVIVOSMACHOS),SUM(LECHONESMUERTOSMACHOS),ROUND(((SUM(LECHONESVIVOSHEMBRAS)+SUM(LECHONESVIVOSMACHOS))*100)/(SUM(LECHONESVIVOSMACHOS)+SUM(LECHONESMUERTOSMACHOS)+SUM(LECHONESVIVOSHEMBRAS)+SUM(LECHONESMUERTOSHEMBRAS)),1),ROUND(((SUM(LECHONESMUERTOSHEMBRAS)+SUM(LECHONESMUERTOSMACHOS))*100)/(SUM(LECHONESVIVOSMACHOS)+SUM(LECHONESMUERTOSMACHOS)+SUM(LECHONESVIVOSHEMBRAS)+SUM(LECHONESMUERTOSHEMBRAS)),1) FROM PARTO";
+        Cursor cursor;
+        cursor = dbAcces.qweryDatabaseBySql(strSql);
+        while (cursor.moveToNext()){
+
+            listareporte.add("Total Partos Reportados: " +cursor.getInt(0));
+            listareporte.add("Total Lechones: " +cursor.getInt(1));
+            listareporte.add("Total Nacidos Vivos: " + cursor.getInt(2));
+            listareporte.add("Total Nacidos Muertos: "+cursor.getInt(3));
+            listareporte.add("Total Hembras Nacidas Vivas: " + cursor.getInt(4));
+            listareporte.add("Total Hembras Nacidas Muertas: "+cursor.getInt(5));
+            listareporte.add("Total Machos Nacidos Vivos: "+cursor.getInt(6));
+            listareporte.add("Total Machos Nacidos Muertos: "+cursor.getInt(7));
+            listareporte.add("Porcentaje de Natalidad: " + cursor.getInt(8)+"%");
+            listareporte.add("Porcentaje de Mortalidad: " + cursor.getInt(9)+"%");
+            listareporte.add("");
+        }
+        return listareporte;
+    }
+
+
 }

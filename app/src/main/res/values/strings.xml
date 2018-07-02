@@ -87,6 +87,7 @@
     <string name="title_activity_raza">Gestión de razas</string>
     <string name="title_activity_pajilla">Gestión de pajillas</string>
     <string name="title_activity_parto">Gestión de Partos</string>
+    <string name="title_activity_rreproduccion">rreproduccion</string>
 
 
 </resources>

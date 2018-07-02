@@ -36,6 +36,9 @@ public class reportes extends AppCompatActivity {
             case R.id.btn_ventas:
                 miIntent = new Intent(reportes.this, reporteventa.class);
                 break;
+            case R.id.btn_rreproduccion:
+                miIntent = new Intent(reportes.this, rreproduccion.class);
+                break;
 
             case R.id.btn_hv:
                 miIntent = new Intent(reportes.this, MainReporteHV.class);
