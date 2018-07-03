@@ -25,14 +25,10 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
         btn_reg.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                        Usuario miUsuario = new Usuario(getApplicationContext());
-
                         String strUsuario = ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
                         String strPassword = ((EditText) findViewById(R.id.txt_pass)).getText().toString();
                         String strNombre = ((EditText) findViewById(R.id.txt_nombreusuario)).getText().toString();
                         String strTelefono = ((EditText) findViewById(R.id.txt_telefono)).getText().toString();
-
 
                         if(!clsUtil.bValidaString(strUsuario,1))
                             Toast.makeText(getBaseContext(),"Debe digitar el usuario (email)",Toast.LENGTH_SHORT).show();
@@ -43,6 +39,7 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
                         else if(!clsUtil.bValidaString(strNombre,1))
                             Toast.makeText(getBaseContext(),"Debe digitar un nombre de usuario",Toast.LENGTH_SHORT).show();
                         else {
+                            Usuario miUsuario = new Usuario(getApplicationContext());
                             miUsuario.setStrEmail(strUsuario);
                             miUsuario.setStrPassword(strPassword);
                             miUsuario.setStrNombre(strNombre);

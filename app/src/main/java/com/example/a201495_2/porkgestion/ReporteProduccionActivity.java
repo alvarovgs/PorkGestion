@@ -46,13 +46,13 @@ public class ReporteProduccionActivity extends AppCompatActivity {
             }
         });
 
-        ((TextView) findViewById(R.id.et_FechaInicial)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.et_FechaInicial).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialogDatePickerLight((TextView) view);
             }
         });
-        ((TextView) findViewById(R.id.et_FechaFinal)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.et_FechaFinal).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialogDatePickerLight((TextView) view);

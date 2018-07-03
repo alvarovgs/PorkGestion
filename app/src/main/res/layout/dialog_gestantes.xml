@@ -8,8 +8,7 @@
         android:orientation="vertical">
 
         <include
-            layout="@layout/dialog_head"
-            android:layout_height="58dp" />
+            layout="@layout/dialog_head" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -150,7 +149,6 @@
 
             <Button
                 android:id="@+id/bt_save"
-                style="@android:style/Widget.Material.Button.Borderless.Colored"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -159,7 +157,6 @@
 
             <Button
                 android:id="@+id/bt_close"
-                style="@android:style/Widget.Material.Light.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -167,12 +164,11 @@
                 android:text="Cancelar" />
             <Button
                 android:id="@+id/bt_delete"
-                style="@android:style/Widget.Material.Light.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Borrar" />
+                android:text="ELIMINAR" />
 
         </LinearLayout>
 

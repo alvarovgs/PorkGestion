@@ -42,11 +42,11 @@ public class SanidadCerdoActivity extends AppCompatActivity implements AdapterVi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sanidad_cerdo);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Gestión de Sanidad");
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -158,7 +158,7 @@ public class SanidadCerdoActivity extends AppCompatActivity implements AdapterVi
         et_Dosis.setText(objSanidad.getStrDosis());
         et_ViaAdmin.setText(objSanidad.getStrViaAdministracion());
 
-        ((TextView) dialog.findViewById(R.id.et_FechaAdmin)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.et_FechaAdmin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialogDatePickerLight((TextView) view);

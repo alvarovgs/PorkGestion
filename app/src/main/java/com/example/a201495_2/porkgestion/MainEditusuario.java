@@ -49,7 +49,7 @@ public class MainEditusuario extends AppCompatActivity {
         btn_Actualizar.setOnClickListener (new View.OnClickListener() {
                                                @Override
                                                public void onClick(View v) {
-                                                   upateUsuario();
+                                                   updateUsuario();
                                                }
                                            }
         );
@@ -61,7 +61,7 @@ public class MainEditusuario extends AppCompatActivity {
         );
     }
 
-    private void upateUsuario (){
+    private void updateUsuario(){
         String strPassword = et_Password.getText().toString();
         String strNombre = et_Nombre.getText().toString();
         String strTelefono = et_Telefono.getText().toString();

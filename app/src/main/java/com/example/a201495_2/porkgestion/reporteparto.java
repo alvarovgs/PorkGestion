@@ -30,7 +30,7 @@ public class reporteparto extends AppCompatActivity {
         setContentView(R.layout.activity_reporteparto);
 
 
-        listViewPartos= (ListView) findViewById(R.id.listViewPartos);
+        listViewPartos= findViewById(R.id.listViewPartos);
         Parto lista = new Parto(getApplicationContext());
         listaInformacion = lista.consultaparto();
 
