@@ -52,7 +52,7 @@ import com.example.a201495_2.porkgestion.bo_clases.Usuario;
                                 if(miUsuario.insertUsuario()) {
                                     Toast.makeText(getApplicationContext(), "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
                                     Intent IntentReg = new Intent(MainRegistrousuario.this, MainActivity.class);
-                                    MainRegistrousuario.this.startActivity(IntentReg);
+                                    startActivity(IntentReg);
                                 }
                                 else{
                                     String error = miUsuario.getStrError();
