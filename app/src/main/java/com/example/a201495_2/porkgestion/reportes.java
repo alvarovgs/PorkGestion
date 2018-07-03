@@ -20,26 +20,24 @@ public class reportes extends AppCompatActivity {
             case R.id.btn_regresar:
                 miIntent = new Intent(reportes.this, MenuLateral.class);
                 break;
-
             case R.id.btn_parto:
                 miIntent = new Intent(reportes.this, reporteparto.class);
                 break;
-
+            case R.id.btn_produccion:
+                miIntent = new Intent(reportes.this, ReporteProduccionActivity.class);
+                break;
             case R.id.btn_reproduccion:
                 miIntent = new Intent(reportes.this, vergestantes.class);
                 break;
-
             case R.id.btn_verracos:
                 miIntent = new Intent(reportes.this, ververracos.class);
                 break;
-
-            case R.id.btn_repoventas:
+            case R.id.btn_ventas:
                 miIntent = new Intent(reportes.this, repovecerdo.class);
                 break;
             case R.id.btn_rreproduccion:
                 miIntent = new Intent(reportes.this, rreproduccion.class);
                 break;
-
             case R.id.btn_hv:
                 miIntent = new Intent(reportes.this, MainReporteHV.class);
                 break;

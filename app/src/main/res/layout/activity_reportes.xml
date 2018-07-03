@@ -87,6 +87,7 @@
                     android:id="@+id/btn_produccion"
                     android:layout_width="290dp"
                     android:layout_height="match_parent"
+                    android:onClick="onClick"
                     android:text="PRODUCCION DE LA FINCA"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -99,7 +100,7 @@
             android:background="@color/grey_10" />
 
         <LinearLayout
-            android:id="@+id/btn_rreproduccion"
+            android:id="@+id/ly_rreproduccion"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:orientation="horizontal"
@@ -228,7 +229,7 @@
 
 
         <LinearLayout
-            android:id="@+id/btn_rventas"
+            android:id="@+id/btn_rptventas"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:orientation="horizontal"

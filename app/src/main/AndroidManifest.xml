@@ -55,8 +55,15 @@
         <activity android:name=".ververracos"/>
         <activity android:name=".listaverracos"/>
         <activity android:name=".gestantes"/>
+        <activity android:name=".repovecerdo"/>
+        <activity android:name=".menuventa"/>
         <activity android:name=".rreproduccion"/>
-
+        <activity
+            android:name=".SanidadCerdoActivity"
+            android:label="@string/title_activity_sanidad_cerdo"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ReporteProduccionActivity"
+            android:screenOrientation="landscape" />
 
     </application>
 
