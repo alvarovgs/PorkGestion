@@ -8,16 +8,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="478dp"
-        android:layout_alignParentBottom="true"
+        android:layout_height="490dp"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/btn_rhv"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -62,7 +62,7 @@
         <LinearLayout
             android:id="@+id/btn_rfinca"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -87,7 +87,6 @@
                     android:id="@+id/btn_produccion"
                     android:layout_width="290dp"
                     android:layout_height="match_parent"
-                    android:onClick="onClick"
                     android:text="PRODUCCION DE LA FINCA"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -102,7 +101,7 @@
         <LinearLayout
             android:id="@+id/btn_rreproduccion"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -186,7 +185,7 @@
         <LinearLayout
             android:id="@+id/btn_rverracos"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -231,7 +230,7 @@
         <LinearLayout
             android:id="@+id/btn_rventas"
             android:layout_width="match_parent"
-            android:layout_height="71dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:padding="@dimen/spacing_middle">
 
@@ -261,6 +260,52 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="50dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_rventas"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/camada" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_rreproduccion"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="INFORME DE REPRODUCCION"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="50dp" />
                 <View
                     android:layout_width="15dp"
                     android:layout_height="50dp" />

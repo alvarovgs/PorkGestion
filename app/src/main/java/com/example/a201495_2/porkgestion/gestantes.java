@@ -80,7 +80,7 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
                         calendar.set(Calendar.MONTH, monthOfYear);
                         calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
                         long date_ship_millis = calendar.getTimeInMillis();
-                        tv.setText(Tools.getFormattedDateSimple(date_ship_millis));
+                        tv.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
                     }
                 },
                 cur_calender.get(Calendar.YEAR),
