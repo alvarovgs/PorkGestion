@@ -13,6 +13,7 @@
         android:layout_alignParentTop="true"
         android:text="VENTA"
         android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -66,7 +67,17 @@
         android:textStyle="bold"
         android:text="REGISTRAR" />
 
-
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:text="REGISTRAR"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
 
 </RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".repovecerdo">
+
+    <LinearLayout
+        android:id="@+id/ini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+        <!-- <EditText
+            android:id="@+id/campoIdConsuVe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="Nombre"
+            android:inputType="number" />-->
+
+        <Spinner
+            android:id="@+id/comboIdConsuVe"
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.4"
+            android:onClick="onClick"
+            android:text="GENERAR"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--<EditText-->
+    <!--android:id="@+id/campoEdadConsuVe"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/campoPesoConsuVe"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_marginStart="0dp"-->
+    <!--android:hint="Edad"-->
+    <!--android:inputType="numberDecimal" />-->
+
+    <!--<EditText
+        android:id="@+id/campoPesoConsuVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/campoPreConsuVe"
+        android:layout_alignParentStart="true"
+        android:hint="Peso vivo en Kg"
+        android:inputType="numberDecimal" />-->
+
+    <!-- <EditText
+         android:id="@+id/campoPreConsuVe"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentStart="true"
+         android:layout_marginBottom="230dp"
+         android:hint="Precio"
+         android:inputType="numberDecimal" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!--<Button
+            android:id="@+id/btn_regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="REGRESAR" />-->
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="LIMPIAR" />
+
+        <!--<Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text="LIMPIAR" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="VENTA"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:text="REPORTE POR ANIMAL"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/spe"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="223dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp"
+            android:text="Edad en meses" />
+
+        <TextView
+            android:id="@+id/campoEdadConsuVe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sppes"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spe"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp"
+            android:text="Peso vivo en Kg" />
+
+        <TextView
+            android:id="@+id/campoPesoConsuVe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sppes"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp"
+            android:text="Precio en pesos" />
+
+        <TextView
+            android:id="@+id/campoPreConsuVe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:text="" />
+    </LinearLayout>
+
+
+    <!--<Spinner
+        android:id="@+id/comboIdConsuVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="175dp" />-->
+
+
+</RelativeLayout>

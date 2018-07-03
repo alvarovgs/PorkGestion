@@ -141,5 +141,26 @@ public class SpinData {
         return collData;
     }
 
+    public SpinData[] getCerdovendido(){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        String strColumns[] = new String[]{"IDCERDO","CODIGO"};
+        Cursor crResult;
+        SpinData[] collData=new SpinData[0];
+        dbAcces.openDataBase();
+        String sql="SELECT IDCERDO, CODIGO FROM CERDO WHERE IDCERDO IN (SELECT IDCERDO FROM VENTACERDO)";
+        crResult = dbAcces.qweryDatabaseBySql(sql);
+        if (crResult.moveToFirst()) {
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0]=new SpinData(0,"Seleccione el nombre del cerdo");
+            int i=1;
+            do {
+                collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
+                i=i+1;
+            } while (crResult.moveToNext());
+        }
+        dbAcces.closeDataBase();
+        return collData;
+    }
+
 
 }

@@ -13,28 +13,31 @@ import android.widget.Toast;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.bo_clases.Venta;
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
-public class reporteventa extends AppCompatActivity {
 
-    EditText campoIdConsuVe,campoEdadConsuVe,campoPesoConsuVe,campoPreConsuVe;
+public class repovecerdo extends AppCompatActivity {
+
+    //EditText campoIdConsuVe,campoEdadConsuVe,campoPesoConsuVe,campoPreConsuVe;
+    TextView campoIdConsuVe,campoEdadConsuVe,campoPesoConsuVe,campoPreConsuVe;
     Spinner comboIdConsuVe;
     spinAdapter sp_AdapterNumventa;
     int idcerdo = 0;
+    private clsUtilidades clsUtil = new clsUtilidades();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reporteventa);
+        setContentView(R.layout.activity_repovecerdo);
 
-
-        //campoIdConsuVe= (EditText) findViewById(R.id.campoIdConsuVe);
+//campoIdConsuVe= (EditText) findViewById(R.id.campoIdConsuVe);
         campoEdadConsuVe= findViewById(R.id.campoEdadConsuVe);
         campoPesoConsuVe= findViewById(R.id.campoPesoConsuVe);
         campoPreConsuVe= findViewById(R.id.campoPreConsuVe);
         comboIdConsuVe= findViewById(R.id.comboIdConsuVe);
 
-        SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdovendido();
+        SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdo();
         sp_AdapterNumventa = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);
         comboIdConsuVe.setAdapter(sp_AdapterNumventa);
 
@@ -57,68 +60,56 @@ public class reporteventa extends AppCompatActivity {
                 break;
             case R.id.btnLimpiar: limpiar();
                 break;
-            case R.id.btnActualizar: actualizarVenta();
-                break;
-            case R.id.btnEliminar: eliminarVenta();
-                break;
+            /*case R.id.btnActualizar: actualizarVenta();
+                break;*/
+/*            case R.id.btn_regresar: regresar();
+//                miIntent = new Intent(reporteventa.this, reportes.class);
+                break;*/
+//            case R.id.btnEliminar: eliminarVenta();
+//                break;
         }
     }
 
-    private void eliminarVenta() {
+/*    private void btn_regresar(View view) {
+        Intent miIntent=new
+        Intent(reporteventa.this, reportes.class);
+        startActivity(miIntent);
+    }*/
+
+    /*private void eliminarVenta() {
         //SQLiteDatabase db=conn.getWritableDatabase();
-
-        if(idcerdo==0) {
-           Toast.makeText(getBaseContext(), "Debe seleccionar el nombre del cerdo", Toast.LENGTH_SHORT).show();
+        Venta miventa=new Venta(getApplicationContext());
+        miventa.setIdCerdo(idcerdo);
+        if (miventa.deleteVenta()){
+            Toast.makeText(getApplicationContext(),"Venta eliminada correctamente ",Toast.LENGTH_LONG).show();
+            limpiar();
         }
-
         else {
-
-            Venta miventa = new Venta(getApplicationContext());
-            miventa.setIdCerdo(idcerdo);
-
-            miventa = miventa.getVenta(idcerdo);
-            //miventa.setIdCerdo(Integer.parseInt(comboIdConsuVe.getText().toString()));
-            if (miventa.deleteVenta()) {
-                Toast.makeText(getApplicationContext(), "Venta eliminada correctamente ", Toast.LENGTH_LONG).show();
-                limpiar();
-            } else {
-                Toast.makeText(getApplicationContext(), "Error eliminando la venta ", Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(getApplicationContext(),"Error eliminando la venta ",Toast.LENGTH_SHORT).show();
         }
+    }*/
 
-    }
-
-    private void actualizarVenta() {
-
-        if(idcerdo==0) {
-            Toast.makeText(getBaseContext(), "Debe seleccionar el nombre del cerdo", Toast.LENGTH_SHORT).show();
+    /*private void actualizarVenta() {
+        Venta miventa=new Venta(getApplicationContext());
+        miventa = miventa.getVenta(idcerdo);
+        miventa.setEdad(Integer.parseInt(campoEdadConsuVe.getText().toString()));
+        miventa.setPesoVivo(Long.parseLong(campoPesoConsuVe.getText().toString()));
+        miventa.setPrecioventa(Double.parseDouble(campoPreConsuVe.getText().toString()));
+        if (miventa.updateVenta()){
+            Toast.makeText(getApplicationContext(),"Venta actualizada correctamente ",Toast.LENGTH_LONG).show();
+            limpiar();
         }
-
         else {
-
-            Venta miventa = new Venta(getApplicationContext());
-            miventa = miventa.getVenta(idcerdo);
-            miventa.setEdad(Integer.parseInt(campoEdadConsuVe.getText().toString()));
-            miventa.setPesoVivo(Long.parseLong(campoPesoConsuVe.getText().toString()));
-            miventa.setPrecioventa(Double.parseDouble(campoPreConsuVe.getText().toString()));
-            if (miventa.updateVenta()) {
-                Toast.makeText(getApplicationContext(), "Venta actualizada correctamente ", Toast.LENGTH_LONG).show();
-                limpiar();
-            } else {
-                Toast.makeText(getApplicationContext(), "Error actualizando la venta ", Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(getApplicationContext(),"Error actualizando la venta ",Toast.LENGTH_SHORT).show();
         }
-
-    }
+    }*/
 
 
     private void consultarVenta() {
 
-        if(idcerdo==0) {
+        if (comboIdConsuVe.getSelectedItemPosition()==0) {
             Toast.makeText(getBaseContext(), "Debe seleccionar el nombre del cerdo", Toast.LENGTH_SHORT).show();
-        }
-            else {
-
+        } else {
             Venta miventa = new Venta(getApplicationContext());
             if (miventa.existVenta(idcerdo)) {
                 miventa = miventa.getVenta(idcerdo);

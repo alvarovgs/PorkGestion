@@ -13,6 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="CERDOS EN LA FINCA"
+        android:textColor="@android:color/background_dark"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
