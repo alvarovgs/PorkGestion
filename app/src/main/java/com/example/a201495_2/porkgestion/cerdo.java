@@ -121,7 +121,6 @@ public class  cerdo extends AppCompatActivity {
         comboMadre.setAdapter(sp_AdapterMadre);
     }
 
-
     private void limpiar() {
         llenarcombo ();
         campoNombre.setText("");

@@ -31,7 +31,7 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
     private int idSanidad=0;
     private String strTipoMed;
     private clsUtilidades objUtil = new clsUtilidades();
-    private ArrayAdapter<String> sanidadAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

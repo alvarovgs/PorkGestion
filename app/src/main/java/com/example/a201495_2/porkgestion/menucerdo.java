@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.a201495_2.porkgestion.bo_clases.SanidadCerdo;
+
 public class menucerdo extends AppCompatActivity {
 
     @Override
@@ -31,7 +33,7 @@ public class menucerdo extends AppCompatActivity {
                 break;
 
             case R.id.btn_sanicerdo:
-                miIntent = new Intent(menucerdo.this, MenuLateral.class);
+                miIntent = new Intent(menucerdo.this, SanidadCerdoActivity.class);
                 break;
         }
         startActivity(miIntent);

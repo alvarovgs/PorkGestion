@@ -87,6 +87,7 @@
                     android:id="@+id/btn_produccion"
                     android:layout_width="290dp"
                     android:layout_height="match_parent"
+                    android:onClick="onClick"
                     android:text="PRODUCCION DE LA FINCA"
                     android:textStyle="bold" />
             </LinearLayout>

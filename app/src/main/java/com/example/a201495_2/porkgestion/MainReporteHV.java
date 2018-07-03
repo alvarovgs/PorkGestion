@@ -97,7 +97,7 @@ public class MainReporteHV extends AppCompatActivity {
                             et_tipo.setText(misanidad.getStrTipoMedicamento());
                             et_nombreMed.setText(misanidad.getStrNombreMedicamento());
                             et_via.setText(misanidad.getStrViaAdministracion());
-                            et_dosis.setText(String.valueOf(misanidad.getdDosis()));
+                            et_dosis.setText(String.valueOf(misanidad.getStrDosis()));
                             et_fecha.setText(misanidad.getStrFechaAdministracion());
 
                         }else {
