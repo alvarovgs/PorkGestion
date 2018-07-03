@@ -22,11 +22,7 @@ public class reproduccion extends AppCompatActivity {
                 break;
 
             case R.id.btn_rmonta:
-                miIntent = new Intent(reproduccion.this, MenuLateral.class);
-                break;
-
-            case R.id.btn_amonta:
-                miIntent = new Intent(reproduccion.this, ceprenez.class);
+                miIntent = new Intent(reproduccion.this, gestantes.class);
                 break;
 
             case R.id.btn_rpajilla:
@@ -39,6 +35,8 @@ public class reproduccion extends AppCompatActivity {
         }
         startActivity(miIntent);
     }
+
+
 }
 
 
