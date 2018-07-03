@@ -37,6 +37,7 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sanidad);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gestión de Medicamentos");
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
