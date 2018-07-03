@@ -51,7 +51,8 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
             try {
                 copyDataBase();
             } catch (IOException e) {
-                throw new Error("Error copiando Base de Datos");
+                this.strErrorDB = e.getMessage();
+                //throw new Error("Error copiando Base de Datos");
             }
         }
     }
@@ -102,7 +103,8 @@ public class dataBaseOpenHelper extends SQLiteAssetHelper{
         try {
             createDataBase();
         } catch (Exception e) {
-            throw new Error("Ha sido imposible crear la Base de Datos");
+            this.strErrorDB = e.getMessage();
+            //throw new Error("Ha sido imposible crear la Base de Datos");
         }
         String strPath = DATABASE_PATH + DATABASE_NAME;
         dataBase = SQLiteDatabase.openDatabase(strPath,null,SQLiteDatabase.OPEN_READWRITE);

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 import com.example.a201495_2.porkgestion.bo_clases.Usuario;
+import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.inspector.database.*;
 
@@ -20,18 +21,20 @@ public class MainActivity extends AppCompatActivity {
 
     private clsUtilidades clsUtil = new clsUtilidades();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tv_registrar=findViewById(R.id.tv_registrar);
-        btn_ingresar=findViewById(R.id.btn_ingresar);
+        tv_registrar = findViewById(R.id.tv_registrar);
+        btn_ingresar = findViewById(R.id.btn_ingresar);
         final GlobalClass datosGlobales = (GlobalClass) getApplicationContext();
+        validateDB();
 
         tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent IntentReg= new Intent (MainActivity.this, MainRegistrousuario.class);
+                Intent IntentReg = new Intent(MainActivity.this, MainRegistrousuario.class);
                 startActivity(IntentReg);
             }
         });
@@ -39,37 +42,42 @@ public class MainActivity extends AppCompatActivity {
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    String strUsuario = ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
-                    String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
-                    if (!clsUtil.bValidaString(strUsuario, 1))
-                        Toast.makeText(getBaseContext(), "Debe digitar el usuario (email)", Toast.LENGTH_SHORT).show();
-                    else if (!clsUtil.bValidaString(strUsuario, 3))
-                        Toast.makeText(getBaseContext(), "El usuario debe ser un email válido", Toast.LENGTH_SHORT).show();
-                    else if (!clsUtil.bValidaString(strPassword, 1))
-                        Toast.makeText(getBaseContext(), "Debe digitar el password", Toast.LENGTH_SHORT).show();
-                    else {
-                        Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
+                String strUsuario = ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
+                String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
+                if (!clsUtil.bValidaString(strUsuario, 1))
+                    Toast.makeText(getBaseContext(), "Debe digitar el usuario (email)", Toast.LENGTH_SHORT).show();
+                else if (!clsUtil.bValidaString(strUsuario, 3))
+                    Toast.makeText(getBaseContext(), "El usuario debe ser un email válido", Toast.LENGTH_SHORT).show();
+                else if (!clsUtil.bValidaString(strPassword, 1))
+                    Toast.makeText(getBaseContext(), "Debe digitar el password", Toast.LENGTH_SHORT).show();
+                else {
+                    try {
+                        Usuario miusuario = new Usuario(getApplicationContext());
                         if (miusuario.validateUsuario(strUsuario, strPassword)) {
-                            datosGlobales.setActiveUser(miusuario);
+                            datosGlobales.setActiveUser(miusuario.getUsuario(strUsuario));
                             Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
                             Toast.makeText(getBaseContext(), "Bienvenido a PorkGestión", Toast.LENGTH_SHORT).show();
                             startActivity(IntentReg);
                         } else {
                             Toast.makeText(getApplicationContext(), "No existe un usuario con los datos suministrados", Toast.LENGTH_SHORT).show();
                         }
+                    } catch (Exception e) {
+                        Toast.makeText(getBaseContext(), "No existe un usuario con los datos suministrados.", Toast.LENGTH_SHORT).show();
                     }
-                }
-                catch(Exception e){
-                    Toast.makeText(getBaseContext(),"Se ha presentado un error",Toast.LENGTH_SHORT).show();
-                    Intent miIntent = new Intent(MainActivity.this, MainActivity.class);
-                    miIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                    finish();
-                    startActivity(miIntent);
                 }
             }
         });
     }
 
- }
+    private void validateDB() {
+        dataBaseOpenHelper testDb = new dataBaseOpenHelper(getApplicationContext());
+        try{
+            testDb.openDataBase();
+        }
+        catch(Exception e){
+            Toast.makeText(getBaseContext(), e.toString(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+}
 
