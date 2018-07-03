@@ -146,7 +146,7 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         et_PesoParto.setText(String.valueOf(objParto.getPromediPeso()));
         idParto = objParto.getIdParto();
 
-        ((TextView) dialog.findViewById(R.id.et_FechaParto)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.et_FechaParto).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialogDatePickerLight((TextView) view);

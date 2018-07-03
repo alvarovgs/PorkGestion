@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     String strUsuario = ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
                     String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
-                    Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
                     if (!clsUtil.bValidaString(strUsuario, 1))
                         Toast.makeText(getBaseContext(), "Debe digitar el usuario (email)", Toast.LENGTH_SHORT).show();
                     else if (!clsUtil.bValidaString(strUsuario, 3))
@@ -50,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     else if (!clsUtil.bValidaString(strPassword, 1))
                         Toast.makeText(getBaseContext(), "Debe digitar el password", Toast.LENGTH_SHORT).show();
                     else {
+                        Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
                         if (miusuario.validateUsuario(strUsuario, strPassword)) {
                             datosGlobales.setActiveUser(miusuario);
                             Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);

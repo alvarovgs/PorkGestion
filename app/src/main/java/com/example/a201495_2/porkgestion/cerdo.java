@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.EditText;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
+import com.example.a201495_2.porkgestion.utils.Tools;
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 import java.util.Calendar;
@@ -51,6 +53,13 @@ public class  cerdo extends AppCompatActivity {
         SpinData Razas[] = new SpinData(getApplicationContext()).getRaza();
         sp_AdapterRaza = new spinAdapter(this, android.R.layout.simple_spinner_item, Razas);
         comboRazas.setAdapter(sp_AdapterRaza );
+
+        findViewById(R.id.campoFechanace).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogDatePickerLight((TextView) view);
+            }
+        });
 
         llenarcombo ();
 
@@ -142,26 +151,6 @@ public class  cerdo extends AppCompatActivity {
         }
     }
 
-    public void fecha(View v) {
-        if(v==campoFechanace) {
-            final Calendar c = Calendar.getInstance();
-            dia = c.get(Calendar.DAY_OF_MONTH);
-            mes = c.get(Calendar.MONTH);
-            ano = c.get(Calendar.YEAR);
-
-            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                    campoFechanace.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);}}
-                    , dia, mes, ano);
-            datePickerDialog.show();
-
-            }
-        }
-
-
-
-
 
     private void llenarcombo(){
         SpinData Padre[] = new SpinData(getApplicationContext()).getCerdobySexo("MACHO");
@@ -185,5 +174,28 @@ public class  cerdo extends AppCompatActivity {
 
     }
 
-
+    private void dialogDatePickerLight(final TextView tv) {
+        Calendar cur_calender = Calendar.getInstance();
+        com.wdullaer.materialdatetimepicker.date.DatePickerDialog datePicker = com.wdullaer.materialdatetimepicker.date.DatePickerDialog.newInstance(
+                new com.wdullaer.materialdatetimepicker.date.DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(com.wdullaer.materialdatetimepicker.date.DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+                        Calendar calendar = Calendar.getInstance();
+                        calendar.set(Calendar.YEAR, year);
+                        calendar.set(Calendar.MONTH, monthOfYear);
+                        calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        long date_ship_millis = calendar.getTimeInMillis();
+                        tv.setText(Tools.getFormattedDateSimple(date_ship_millis));
+                    }
+                },
+                cur_calender.get(Calendar.YEAR),
+                cur_calender.get(Calendar.MONTH),
+                cur_calender.get(Calendar.DAY_OF_MONTH)
+        );
+        //set dark light
+        datePicker.setThemeDark(false);
+        datePicker.setAccentColor(getResources().getColor(R.color.colorPrimary));
+        //datePicker.setMinDate(cur_calender);
+        datePicker.show(getFragmentManager(), "Datepickerdialog");
+    }
 }

@@ -29,7 +29,7 @@ public class totalcerdos extends AppCompatActivity {
         setContentView(R.layout.activity_totalcerdos);
 
 
-        listViewCerdos = (ListView) findViewById(R.id.listViewCerdos);
+        listViewCerdos = findViewById(R.id.listViewCerdos);
         Cerdo lista = new Cerdo(getApplicationContext());
         listaInformacion = lista.consultaCerdo();
         // consultarListaPersonas();

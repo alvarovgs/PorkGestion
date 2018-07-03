@@ -30,7 +30,7 @@ public class rreproduccion extends AppCompatActivity {
         setContentView(R.layout.activity_rreproduccion);
 
 
-        listViewReproduccion= (ListView) findViewById(R.id.listViewReproduccion);
+        listViewReproduccion= findViewById(R.id.listViewReproduccion);
         SpinData lista = new SpinData(getApplicationContext());
         listaInformacion = lista.reportereproduccion();
 

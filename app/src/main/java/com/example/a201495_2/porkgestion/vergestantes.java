@@ -30,7 +30,7 @@ public class vergestantes extends AppCompatActivity {
         setContentView(R.layout.activity_vergestantes);
 
 
-        listViewGestantes = (ListView) findViewById(R.id.listViewGestantes);
+        listViewGestantes = findViewById(R.id.listViewGestantes);
         reproduccion lista = new reproduccion(getApplicationContext());
         listaInformacion = lista.consultagestantes();
         // consultarListaPersonas();

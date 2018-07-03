@@ -291,7 +291,7 @@ public class reproduccion {
         dbAcces = new dataBaseOpenHelper(appContext);
         Boolean bResult  = false;
         Cursor crResult;
-        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM REPRODUCCION WHERE IDREPRODUCCION='%s'",idCerdo);
+        String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM REPRODUCCION WHERE IDHEMBRA='%s'",idCerdo);
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql(strSql);
         if (crResult.moveToFirst()) {
@@ -302,20 +302,13 @@ public class reproduccion {
     }
 
     public ArrayList<String> consultagestantes() {
-        // SQLiteDatabase db=conn.getReadableDatabase();
-
         ArrayList<String> listagestantes=new ArrayList<String>();
         dbAcces = new dataBaseOpenHelper(appContext);
         dbAcces.openDataBase();
-        // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
-        //select * from usuarios
         String strSql = "SELECT IDHEMBRA, TIPO, IDVERRACO,IDPAJILLA,FECHA,ESTADO FROM REPRODUCCION";
         Cursor cursor;
         cursor = dbAcces.qweryDatabaseBySql(strSql);
         while (cursor.moveToNext()){
-            /*Cerdo marrano=new Cerdo(appContext);
-            marrano.setIdCerdo(cursor.getInt(0));
-            marrano.setStrCodigo(cursor.getString(1));*/
             listagestantes.add("ID HEMBRA: " +cursor.getInt(0));
             listagestantes.add("Tipo de Monta: " +cursor.getString(1));
             listagestantes.add("Id del Verraco o Pajilla: " + cursor.getInt(2)+" - "+ cursor.getInt(3));
@@ -325,6 +318,5 @@ public class reproduccion {
         }
         return listagestantes;
     }
-
 
 }
