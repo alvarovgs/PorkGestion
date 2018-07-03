@@ -100,10 +100,10 @@ public class SpinData {
         dbAcces = new dataBaseOpenHelper(appContext);
         String titulo;
         if(strSexo == "MACHO"){
-            titulo = "ID del Padre";
+            titulo = "Nombre del verraco";
         }
         else{
-            titulo = "ID de la Madre";
+            titulo = "Nombre de la hembra";
         }
 
         String strColumns[] = new String[]{"IDCERDO","CODIGO"};
@@ -124,6 +124,27 @@ public class SpinData {
         dbAcces.closeDataBase();
         return collData;
     }
+
+    public SpinData[] getMedicamento(){
+        dbAcces = new dataBaseOpenHelper(appContext);
+        String strColumns[] = new String[]{"IDSANIDAD","NOMBREMEDICAMENTO"};
+        Cursor crResult;
+        SpinData[] collData=new SpinData[0];
+        dbAcces.openDataBase();
+        crResult = dbAcces.qweryDatabase("SANIDAD", strColumns, null,null, "NOMBREMEDICAMENTO");
+        if (crResult.moveToFirst()) {
+            collData = new SpinData[crResult.getCount()+1];
+            collData[0] = new SpinData(0,"Medicamento");
+            int i=1;
+            do {
+                collData[i] = new SpinData(crResult.getInt(0),crResult.getString(1));
+                i=i+1;
+            } while (crResult.moveToNext());
+        }
+        dbAcces.closeDataBase();
+        return collData;
+    }
+
 
     public SpinData[] getTipoMed(){
         SpinData[] collData=new SpinData[0];
