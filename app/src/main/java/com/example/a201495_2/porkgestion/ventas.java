@@ -10,12 +10,14 @@ import android.widget.Toast;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.bo_clases.Venta;
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 
 public class ventas extends AppCompatActivity {
     EditText campoEdadVenta, campoPesoVenta, campoPrecioVenta;
     spinAdapter sp_AdapterNumventa;
     Spinner comboNumeroAniVenta;
     int idcerdo = 0;
+    private clsUtilidades clsUtil = new clsUtilidades();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,17 +53,31 @@ public class ventas extends AppCompatActivity {
 
     private void registrarVenta() {
 
-        Venta miventa = new Venta(getApplicationContext());
-        miventa.setIdCerdo(idcerdo);
-        miventa.setEdad(Integer.parseInt(campoEdadVenta.getText().toString()));
-        miventa.setPesoVivo(Long.parseLong(campoPesoVenta.getText().toString()));
-        miventa.setPrecioventa(Double.parseDouble(campoPrecioVenta.getText().toString()));
+        if(idcerdo==0) {
+            Toast.makeText(getBaseContext(), "Debe seleccionar el nombre del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(!clsUtil.bValidaString(campoEdadVenta.getText().toString(),1)) {
+            Toast.makeText(getBaseContext(), "Debe digitar la edad del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(!clsUtil.bValidaString(campoPesoVenta.getText().toString(),1)) {
+            Toast.makeText(getBaseContext(), "Debe digitar el peso del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(!clsUtil.bValidaString(campoPrecioVenta.getText().toString(),1)) {
+            Toast.makeText(getBaseContext(), "Debe digitar el precio de venta del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Venta miventa = new Venta(getApplicationContext());
+            miventa.setIdCerdo(idcerdo);
+            miventa.setEdad(Integer.parseInt(campoEdadVenta.getText().toString()));
+            miventa.setPesoVivo(Long.parseLong(campoPesoVenta.getText().toString()));
+            miventa.setPrecioventa(Double.parseDouble(campoPrecioVenta.getText().toString()));
 
-        if (miventa.insertVenta()) {
-            Toast.makeText(getApplicationContext(), "Venta registrada correctamente ", Toast.LENGTH_LONG).show();
-            limpiar();
-        } else {
-            Toast.makeText(getApplicationContext(), "Error registrando la venta ", Toast.LENGTH_SHORT).show();
+            if (miventa.insertVenta()) {
+                Toast.makeText(getApplicationContext(), "Venta registrada correctamente ", Toast.LENGTH_LONG).show();
+                limpiar();
+            } else {
+                Toast.makeText(getApplicationContext(), "Error registrando la venta ", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
