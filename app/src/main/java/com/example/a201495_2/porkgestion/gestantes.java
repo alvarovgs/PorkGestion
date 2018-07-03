@@ -119,7 +119,7 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
         final Spinner sp_estado = dialog.findViewById(R.id.sp_estadoprenez);
         idReproduccion = objReproduccion.getIdReproduccion();
 
-        lbltitulo.setText("Gestión de reproduccion");
+        lbltitulo.setText("Gestión de reproducción");
         /*llenar el sinner de cerdas*/
         SpinData Cerda[] = new SpinData(getApplicationContext()).getCerdobySexo("HEMBRA");
         sp_Adapcerda = new spinAdapter(this, android.R.layout.simple_spinner_item, Cerda);

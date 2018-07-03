@@ -208,16 +208,20 @@ public class Usuario {
         Boolean bResult  = false;
         Cursor crResult;
         String strSql = String.format("SELECT COUNT(*) AS TOTAL FROM USUARIO WHERE EMAIL='%s' AND PASSWORD ='%s' ", strEmail, strPassword);
-        dbAcces.openDataBase();
-        crResult = dbAcces.qweryDatabaseBySql(strSql);
-        if (dbAcces.getErrorDB()==null) {
-            if (crResult.moveToFirst()) {
-                bResult = crResult.getInt(0) > 0;
+        try {
+            dbAcces.openDataBase();
+            crResult = dbAcces.qweryDatabaseBySql(strSql);
+            if (dbAcces.getErrorDB() == null) {
+                if (crResult.moveToFirst()) {
+                    bResult = crResult.getInt(0) > 0;
+                }
+            } else {
+                this.strError = dbAcces.getErrorDB();
+                bResult = false;
             }
         }
-        else {
-            this.strError = dbAcces.getErrorDB();
-            bResult = false;
+        catch(Exception e){
+            dbAcces.closeDataBase();
         }
         dbAcces.closeDataBase();
         return bResult;
