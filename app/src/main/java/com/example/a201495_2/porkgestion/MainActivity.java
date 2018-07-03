@@ -39,33 +39,37 @@ public class MainActivity extends AppCompatActivity {
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strUsuario= ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
-                String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
-                Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
-                if(!clsUtil.bValidaString(strUsuario,1))
-                    Toast.makeText(getBaseContext(),"Debe digitar el usuario (email)",Toast.LENGTH_SHORT).show();
-                else if(!clsUtil.bValidaString(strUsuario,3))
-                    Toast.makeText(getBaseContext(),"El usuario debe ser un email válido",Toast.LENGTH_SHORT).show();
-                else if(!clsUtil.bValidaString(strPassword,1))
-                    Toast.makeText(getBaseContext(),"Debe digitar el password",Toast.LENGTH_SHORT).show();
-                else{
-                    if (miusuario.validateUsuario(strUsuario,strPassword)) {
-                        datosGlobales.setActiveUser(miusuario);
-                        Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
-                        Toast.makeText(getBaseContext(),"Bienvenido a PorkGestión",Toast.LENGTH_SHORT).show();
-                        startActivity(IntentReg);
+                try {
+                    String strUsuario = ((EditText) findViewById(R.id.et_Codigo)).getText().toString();
+                    String strPassword = ((EditText) findViewById(R.id.txt_password)).getText().toString();
+                    Usuario miusuario = new Usuario(getApplicationContext()).getUsuario(strUsuario);
+                    if (!clsUtil.bValidaString(strUsuario, 1))
+                        Toast.makeText(getBaseContext(), "Debe digitar el usuario (email)", Toast.LENGTH_SHORT).show();
+                    else if (!clsUtil.bValidaString(strUsuario, 3))
+                        Toast.makeText(getBaseContext(), "El usuario debe ser un email válido", Toast.LENGTH_SHORT).show();
+                    else if (!clsUtil.bValidaString(strPassword, 1))
+                        Toast.makeText(getBaseContext(), "Debe digitar el password", Toast.LENGTH_SHORT).show();
+                    else {
+                        if (miusuario.validateUsuario(strUsuario, strPassword)) {
+                            datosGlobales.setActiveUser(miusuario);
+                            Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
+                            Toast.makeText(getBaseContext(), "Bienvenido a PorkGestión", Toast.LENGTH_SHORT).show();
+                            startActivity(IntentReg);
+                        } else {
+                            Toast.makeText(getApplicationContext(), "No existe un usuario con los datos suministrados", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                    else{
-                        Toast.makeText(getApplicationContext(), "No existe un usuario con los datos suministrados", Toast.LENGTH_SHORT).show();
-                    }
+                }
+                catch(Exception e){
+                    Toast.makeText(getBaseContext(),"Se ha presentado un error",Toast.LENGTH_SHORT).show();
+                    Intent miIntent = new Intent(MainActivity.this, MainActivity.class);
+                    miIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    finish();
+                    startActivity(miIntent);
                 }
             }
         });
     }
-    public void onClick(View view){
-        Intent IntentReg=new Intent(MainActivity.this,MainRegistrousuario.class);
-        startActivity(IntentReg);
-    }
 
-}
+ }
 

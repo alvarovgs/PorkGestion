@@ -37,7 +37,7 @@ public class repovecerdo extends AppCompatActivity {
         campoPreConsuVe= findViewById(R.id.campoPreConsuVe);
         comboIdConsuVe= findViewById(R.id.comboIdConsuVe);
 
-        SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdo();
+        SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdovendido();
         sp_AdapterNumventa = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);
         comboIdConsuVe.setAdapter(sp_AdapterNumventa);
 
