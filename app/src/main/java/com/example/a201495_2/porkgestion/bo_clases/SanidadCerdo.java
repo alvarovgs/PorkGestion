@@ -162,19 +162,24 @@ public class SanidadCerdo {
         dbAcces = new dataBaseOpenHelper(appContext);
         Cursor crResult;
         SanidadCerdo tmpObject = new SanidadCerdo(appContext);
-        String strSql = String.format("SELECT SANIDAD.IDSANIDAD,CERDO.IDCERDO, CERDO.CODIGO,CERDO.SEXO,SANIDAD.TIPOMEDICAMENTO,SANIDAD.NOMBREMEDICAMENTO,SANIDAD.OBSERVACIONES,SANIDADCERDO.FECHAADMINISTRACION,SANIDADCERDO.VIAADMINISTRACION,SANIDADCERDO.DOSIS FROM SANIDADCERDO LEFT JOIN CERDO ON SANIDADCERDO.IDCERDO = CERDO.IDCERDO LEFT JOIN SANIDAD ON SANIDAD.IDSANIDAD=SANIDADCERDO.IDSANIDAD WHERE IDCERDO = '%s'",String.valueOf(idCerdo));
+        String strSql = String.format("SELECT SANIDAD.IDSANIDAD,CERDO.IDCERDO, CERDO.CODIGO,CERDO.SEXO,SANIDAD.TIPOMEDICAMENTO,SANIDAD.NOMBREMEDICAMENTO,SANIDAD.OBSERVACIONES,SANIDADCERDO.FECHAADMINISTRACION,SANIDADCERDO.VIAADMINISTRACION,SANIDADCERDO.DOSIS FROM SANIDADCERDO LEFT JOIN CERDO ON SANIDADCERDO.IDCERDO = CERDO.IDCERDO LEFT JOIN SANIDAD ON SANIDAD.IDSANIDAD=SANIDADCERDO.IDSANIDAD WHERE CERDO.IDCERDO = '%s'",String.valueOf(idCerdo));
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql (strSql);
-        if (crResult.moveToFirst()) {
-            tmpObject.setIdSanidad(crResult.getInt(0));
-            tmpObject.setIdCerdo(crResult.getInt(1));
-            tmpObject.setStrCodigoCerdo(crResult.getString(2));
-            tmpObject.setStrSexoCerdo(crResult.getString(3));
-            tmpObject.setStrTipoMedicamento(crResult.getString(4));
-            tmpObject.setStrNombreMedicamento(crResult.getString(5));
-            tmpObject.setStrFechaAdministracion(crResult.getString(7));
-            tmpObject.setStrViaAdministracion(crResult.getString(8));
-            tmpObject.setStrDosis(crResult.getString(9));
+        try {
+            if (crResult.moveToFirst()) {
+                tmpObject.setIdSanidad(crResult.getInt(0));
+                tmpObject.setIdCerdo(crResult.getInt(1));
+                tmpObject.setStrCodigoCerdo(crResult.getString(2));
+                tmpObject.setStrSexoCerdo(crResult.getString(3));
+                tmpObject.setStrTipoMedicamento(crResult.getString(4));
+                tmpObject.setStrNombreMedicamento(crResult.getString(5));
+                tmpObject.setStrFechaAdministracion(crResult.getString(7));
+                tmpObject.setStrViaAdministracion(crResult.getString(8));
+                tmpObject.setStrDosis(crResult.getString(9));
+            }
+        }
+        catch(Exception e){
+            //this.strError="Error consultando";
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();
