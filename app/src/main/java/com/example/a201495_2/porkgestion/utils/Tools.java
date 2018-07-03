@@ -15,6 +15,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.a201495_2.porkgestion.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Tools {
 
     public static void setSystemBarColor(Activity act) {
@@ -84,5 +87,19 @@ public class Tools {
         }
     }
 
+    public static String getFormattedDateSimple(Long dateTime) {
+        SimpleDateFormat newFormat = new SimpleDateFormat("dd/MM/yyyy");
+        return newFormat.format(new Date(dateTime));
+    }
+
+    public static String getFormattedDateEvent(Long dateTime) {
+        SimpleDateFormat newFormat = new SimpleDateFormat("EEE, MMM dd yyyy");
+        return newFormat.format(new Date(dateTime));
+    }
+
+    public static String getFormattedTimeEvent(Long time) {
+        SimpleDateFormat newFormat = new SimpleDateFormat("h:mm a");
+        return newFormat.format(new Date(time));
+    }
 
 }

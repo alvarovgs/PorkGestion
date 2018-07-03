@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,65 +16,97 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/lblCodigoPajilla"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:text="Código:"
-                android:layout_marginLeft="@dimen/spacing_large"
-                android:textSize="18sp" />
-            <EditText
-                android:id="@+id/et_codigoPajilla"
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/spacing_large"
-                android:hint="Código de la pajilla"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/lblFechaVencimiento"
-                android:layout_width="110dp"
+                android:id="@+id/lblCerdo"
+                android:layout_width="120dp"
                 android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="wrap_content"
-                android:text="Vencimiento:"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/et_fechaVencePajilla"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/spacing_large"
-                android:hint="Fecha de vencimiento:"
-                android:inputType="date"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/lblRazaPajilla"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/spacing_large"
-                android:text="Raza:"
+                android:text="Cerdo:"
                 android:textSize="18sp" />
 
             <Spinner
-                android:id="@+id/sp_razaPajilla"
-                android:layout_width="wrap_content"
+                android:id="@+id/sp_Cerdo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblNombreMed"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Medicamento:"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/sp_nombreMed"
+                android:layout_width="match_parent"
                 android:layout_marginLeft="@dimen/spacing_large"
                 android:layout_height="40dp"
                 android:spinnerMode="dropdown">
             </Spinner>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblFechaAdmin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:textSize="18sp"
+            android:text="Fec. Admin:"/>
+
+        <EditText
+            android:id="@+id/et_FechaAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:hint="Fecha admin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lblDosis"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:textSize="18sp"
+                android:text="Dosis:"/>
+            <EditText
+                android:id="@+id/et_Dosis"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:hint="mg/ml"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <TextView
+                android:id="@+id/lblViaAdmin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Vía Admin.:"/>
+            <EditText
+                android:id="@+id/et_ViaAdmin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="IM/ORAL"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,4 +148,5 @@
             android:textSize="14sp" />
 
     </LinearLayout>
+
 </LinearLayout>

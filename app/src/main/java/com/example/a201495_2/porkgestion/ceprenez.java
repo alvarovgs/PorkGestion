@@ -52,7 +52,7 @@ public class ceprenez extends AppCompatActivity {
                 String strIdVerraco = ((EditText) findViewById(R.id.idverraco)).getText().toString();
                 String strIdPajilla = ((EditText) findViewById(R.id.idpajilla)).getText().toString();
                 String strFechaMonta = ((EditText) findViewById(R.id.fechamonta)).getText().toString();
-                String strEstado = ((EditText) findViewById(R.id.estado)).getText().toString();
+                int strEstado = Integer.parseInt(((EditText)  findViewById(R.id.estado)).getText().toString());
 
 
                 if(!clsUtil.bValidaString(strTipoMonta,1))
@@ -61,7 +61,7 @@ public class ceprenez extends AppCompatActivity {
                     Toast.makeText(getBaseContext(),"Debe digitar el ID de la Hembra",Toast.LENGTH_SHORT).show();
                 else if(!clsUtil.bValidaString(strFechaMonta,4))
                     Toast.makeText(getBaseContext(),"Debe digitar Fecha de monta",Toast.LENGTH_SHORT).show();
-                else if(!clsUtil.bValidaString(strEstado,1))
+                else if(!clsUtil.bValidaString(String.valueOf(strEstado),1))
                     Toast.makeText(getBaseContext(),"Debe digitar estado de la Prenez",Toast.LENGTH_SHORT).show();
                 else {
                     prenez.setStrTipoMonta(strTipoMonta);
@@ -69,11 +69,11 @@ public class ceprenez extends AppCompatActivity {
                     prenez.setIdVerraco(Integer.parseInt(strIdVerraco));
                     prenez.setIdPajilla(Integer.parseInt(strIdPajilla));
                     prenez.setStrFechaMonta(strFechaMonta);
-                    prenez.setStrEstado(strEstado);
+                    prenez.setIdEstado(strEstado);
 
 
 
-                    if(prenez.updateprenez()) {
+                    if(prenez.updateReproduccion()) {
                         Toast.makeText(getApplicationContext(), "Prenez actualizada correctamente", Toast.LENGTH_SHORT).show();
                         Intent IntentReg = new Intent(ceprenez.this, ceprenez.class);
                         ceprenez.this.startActivity(IntentReg);
@@ -92,7 +92,7 @@ public class ceprenez extends AppCompatActivity {
         String strIdCerda = ((EditText) findViewById(R.id.idcerda)).getText().toString();
         reproduccion eliminar = new reproduccion(getApplicationContext());
         eliminar.setIdHembra(Integer.parseInt(strIdCerda));
-        if (eliminar.deleteprenez()){
+        if (eliminar.deleteReproduccion()){
             Toast.makeText(getApplicationContext(), "Registro Preñez Eliminado", Toast.LENGTH_SHORT).show();
             Intent IntentReg = new Intent(ceprenez.this, ceprenez.class);
             ceprenez.this.startActivity(IntentReg);
@@ -106,12 +106,12 @@ public class ceprenez extends AppCompatActivity {
     private void consultar() {
         String strIdCerda = ((EditText) findViewById(R.id.idcerda)).getText().toString();
         reproduccion consultar = new reproduccion(getApplicationContext());
-        consultar= consultar.getPrenezByView(strIdCerda);
+        consultar= consultar.getReroduccionByView(strIdCerda);
         ((EditText) findViewById(R.id.tipomonta)).setText(consultar.getStrTipoMonta());
         ((EditText) findViewById(R.id.idverraco)).setText(String.valueOf(consultar.getIdVerraco()));
         ((EditText) findViewById(R.id.idpajilla)).setText(String.valueOf(consultar.getIdPajilla()));
         ((EditText) findViewById(R.id.fechamonta)).setText(consultar.getStrFechaMonta());
-        ((EditText) findViewById(R.id.estado)).setText(consultar.getStrEstado());
+        ((EditText) findViewById(R.id.estado)).setText(consultar.getIdEstado());
 
 
     }

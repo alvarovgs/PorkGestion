@@ -327,20 +327,13 @@ public class Cerdo {
   }
 
     public ArrayList<String> consultaCerdo() {
-       // SQLiteDatabase db=conn.getReadableDatabase();
-
         ArrayList<String> listacerdos=new ArrayList<String>();
         dbAcces = new dataBaseOpenHelper(appContext);
         dbAcces.openDataBase();
-       // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
-        //select * from usuarios
         String strSql = "SELECT IDCERDO, CODIGO FROM CERDO ";
         Cursor cursor;
         cursor = dbAcces.qweryDatabaseBySql(strSql);
         while (cursor.moveToNext()){
-            /*Cerdo marrano=new Cerdo(appContext);
-            marrano.setIdCerdo(cursor.getInt(0));
-            marrano.setStrCodigo(cursor.getString(1));*/
             listacerdos.add(cursor.getInt(0)+" - " + cursor.getString(1));
         }
         return listacerdos;

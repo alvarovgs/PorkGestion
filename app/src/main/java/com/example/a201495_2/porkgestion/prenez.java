@@ -53,12 +53,12 @@ public class prenez extends AppCompatActivity {
                                                 prenez.setIdVerraco(Integer.parseInt(strIdVerraco));
                                                 prenez.setIdPajilla(Integer.parseInt(strIdPajilla));
                                                 prenez.setStrFechaMonta(strFechaMonta);
-                                                prenez.setStrEstado(strEstado);
+                                                prenez.setIdEstado(Integer.parseInt(strEstado));
 
 
 
 
-                                                if(prenez.regprenez()) {
+                                                if(prenez.insertReproduccion()) {
                                                     Toast.makeText(getApplicationContext(), "Prenez registrada correctamente", Toast.LENGTH_SHORT).show();
                                                     Intent IntentReg = new Intent(prenez.this, prenez.class);
                                                     prenez.this.startActivity(IntentReg);

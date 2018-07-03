@@ -22,7 +22,7 @@ public class reproduccion extends AppCompatActivity {
                 break;
 
             case R.id.btn_rmonta:
-                miIntent = new Intent(reproduccion.this, prenez.class);
+                miIntent = new Intent(reproduccion.this, MenuLateral.class);
                 break;
 
             case R.id.btn_amonta:

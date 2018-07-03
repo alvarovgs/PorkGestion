@@ -19,11 +19,14 @@ import android.widget.TextView;
 
 import com.example.a201495_2.porkgestion.adapter.partoAdapter;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
+import com.example.a201495_2.porkgestion.utils.Tools;
 import com.example.a201495_2.porkgestion.bo_clases.Parto;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class PartoActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     private ListView lvPartoResult;
@@ -63,6 +66,32 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         lvPartoResult = findViewById(R.id.list_partoresult);
         lvPartoResult.setAdapter(new partoAdapter(getApplicationContext(), arrListParto));
     }
+
+    private void dialogDatePickerLight(final TextView tv) {
+        Calendar cur_calender = Calendar.getInstance();
+        DatePickerDialog datePicker = DatePickerDialog.newInstance(
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+                        Calendar calendar = Calendar.getInstance();
+                        calendar.set(Calendar.YEAR, year);
+                        calendar.set(Calendar.MONTH, monthOfYear);
+                        calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        long date_ship_millis = calendar.getTimeInMillis();
+                        tv.setText(Tools.getFormattedDateSimple(date_ship_millis));
+                    }
+                },
+                cur_calender.get(Calendar.YEAR),
+                cur_calender.get(Calendar.MONTH),
+                cur_calender.get(Calendar.DAY_OF_MONTH)
+        );
+        //set dark light
+        datePicker.setThemeDark(false);
+        datePicker.setAccentColor(getResources().getColor(R.color.colorPrimary));
+        //datePicker.setMinDate(cur_calender);
+        datePicker.show(getFragmentManager(), "Datepickerdialog");
+    }
+
 
     private void showCustomDialog(Parto objParto) {
         final Dialog dialog = new Dialog(this);
@@ -114,6 +143,13 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         et_MachosVivos.setText(String.valueOf(objParto.getVivosMachos()));
         et_PesoParto.setText(String.valueOf(objParto.getPromediPeso()));
         idParto = objParto.getIdParto();
+
+        ((TextView) dialog.findViewById(R.id.et_FechaParto)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogDatePickerLight((TextView) view);
+            }
+        });
 
         dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override

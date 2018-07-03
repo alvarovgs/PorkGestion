@@ -9,7 +9,10 @@
     <LinearLayout
         android:layout_width="311dp"
         android:layout_height="100dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="7dp">
+
 
         <TextView
             android:id="@+id/lblNombreCerda"
