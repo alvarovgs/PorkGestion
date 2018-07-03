@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent IntentReg= new Intent (MainActivity.this, MainRegistrousuario.class);
-                MainActivity.this.startActivity(IntentReg);
+                startActivity(IntentReg);
             }
         });
 
@@ -53,18 +53,18 @@ public class MainActivity extends AppCompatActivity {
                         datosGlobales.setActiveUser(miusuario);
                         Intent IntentReg = new Intent(MainActivity.this, MenuLateral.class);
                         Toast.makeText(getBaseContext(),"Bienvenido a PorkGestión",Toast.LENGTH_SHORT).show();
-                        MainActivity.this.startActivity(IntentReg);
+                        startActivity(IntentReg);
                     }
                     else{
-                        Toast.makeText(getApplicationContext(), "No existe usuario con los datos suministrados", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "No existe un usuario con los datos suministrados", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
         });
     }
     public void onClick(View view){
-        Intent miIntent=new Intent(MainActivity.this,MainRegistrousuario.class);
-        startActivity(miIntent);
+        Intent IntentReg=new Intent(MainActivity.this,MainRegistrousuario.class);
+        startActivity(IntentReg);
     }
 
 }

@@ -11,10 +11,10 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_height="241dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="38dp"
         android:contentDescription="Logo"
         app:srcCompat="@drawable/logotipo" />
 
@@ -24,17 +24,14 @@
         android:layout_width="250sp"
         android:layout_height="40sp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="230dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="216dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:text=""
         android:hint="E-mail del Usuario"
         android:inputType="textEmailAddress|textPersonName"
+        android:text=""
         android:textColorHint="@color/amber_50"
         android:textSize="16dp" />
 
@@ -43,40 +40,29 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/et_Codigo"
-        android:layout_alignLeft="@+id/et_Codigo"
-        android:layout_marginBottom="168dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="163dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
-        android:text=""
         android:hint="Password"
+        android:inputType="textPassword"
+        android:text=""
         android:textColorHint="@color/amber_50"
-        android:inputType="textPassword" />
+        android:textSize="16dp" />
 
     <Button
         android:id="@+id/btn_ingresar"
         style="@style/Button.Accent"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="87dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
+        android:layout_marginBottom="84dp"
+        android:onClick="onClick"
         android:text="LOGIN"
         tools:ignore="MissingPrefix" />
-
-    <RelativeLayout
-        android:id="@+id/btn_iniciar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
-
-    </RelativeLayout>
 
     <TextView
         android:id="@+id/tv_registrar"
