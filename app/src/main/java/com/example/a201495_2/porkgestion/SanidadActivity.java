@@ -31,12 +31,13 @@ public class SanidadActivity extends AppCompatActivity implements AdapterView.On
     private int idSanidad=0;
     private String strTipoMed;
     private clsUtilidades objUtil = new clsUtilidades();
-    private ArrayAdapter<String> sanidadAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sanidad);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gestión de Medicamentos");
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

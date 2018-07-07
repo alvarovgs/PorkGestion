@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainReporteHV"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -24,45 +23,62 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/et_Codigo"
+            <Spinner
+                android:id="@+id/comboIdConsulta"
+                android:layout_width="142dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.6" />
+
+
+            <Button
+                android:id="@+id/btnConsultar"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:text="BUSCAR"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="DATOS BÁSICOS:"
+                android:textSize="25sp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese el Id del Cerdo"
-        android:inputType="none" />
-
-    <Button
-        android:id="@+id/btnConsultar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="onClick"
-        android:text="BUSCAR"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="DATOS BÁSICOS:"
-            android:textSize="25sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Nombre del Cerdo:"
             android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/txt_nombrecerdo"
+        <TextView
+            android:id="@+id/txt_nombrecerdo"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="text" />
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Fecha de Nacimiento:"
             android:textSize="15sp" />
@@ -72,8 +88,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Peso del Animal:"
             android:textSize="15sp" />
@@ -84,8 +107,15 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Raza:"
             android:textSize="15sp" />
@@ -96,8 +126,15 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Sexo:"
             android:textSize="15sp" />
@@ -108,15 +145,22 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
-        <TextView
+    </LinearLayout>
+
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="SANIDAD:"
             android:textSize="25sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:text="Tipo de Medicamento:"
             android:textSize="15sp" />
@@ -127,8 +171,15 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:text="Nombre del Medicamento:"
             android:textSize="15sp" />
@@ -139,8 +190,15 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:text="Vía de Administración:"
             android:textSize="15sp" />
@@ -151,8 +209,15 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:text="Dosis del Medicamento:"
             android:textSize="15sp" />
@@ -163,8 +228,15 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:text="Fecha de Administración:"
             android:textSize="15sp" />
@@ -175,6 +247,8 @@
         android:layout_height="wrap_content"
         android:inputType="none" />
 
+    </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -182,8 +256,13 @@
             android:text="REPRODUCCIÓN:"
             android:textSize="25sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:text="Id Hembra:"
             android:textSize="15sp" />
@@ -194,8 +273,15 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:text="Id Verraco:"
             android:textSize="15sp" />
@@ -206,8 +292,15 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:text="Id Pajilla:"
             android:textSize="15sp" />
@@ -218,9 +311,15 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:text="Fecha Monta:"
             android:textSize="15sp" />
@@ -231,8 +330,15 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:text="Tipo Monta:"
             android:textSize="15sp" />
@@ -243,5 +349,6 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
 
+    </LinearLayout>
     </LinearLayout>
    </android.support.v4.widget.NestedScrollView>

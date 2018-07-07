@@ -37,6 +37,7 @@ public class PajillaActivity extends AppCompatActivity  implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pajilla);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gestión de Pajillas");
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);

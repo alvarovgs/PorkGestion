@@ -3,21 +3,26 @@ package com.example.a201495_2.porkgestion;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.a201495_2.porkgestion.adapter.spinAdapter;
+import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
 import com.example.a201495_2.porkgestion.bo_clases.SanidadCerdo;
 import com.example.a201495_2.porkgestion.bo_clases.reproduccion;
-//import com.example.a201495_2.porkgestion.bo_clases.parto;
 import com.example.a201495_2.porkgestion.database.dataBaseOpenHelper;
 
 public class MainReporteHV extends AppCompatActivity {
     private Button btnConsultar;
-    private EditText et_Codigo;
+    Spinner comboIdConsulta;
+    spinAdapter sp_AdapterNumero;
+    int idcerdo = 0;
+
     private TextView et_NombreCerdo;
     private TextView et_FechaNace;
     private TextView et_Peso;
@@ -47,7 +52,6 @@ public class MainReporteHV extends AppCompatActivity {
         btnConsultar = findViewById(R.id.btnConsultar);
         dataBaseOpenHelper midb = new dataBaseOpenHelper(getApplicationContext());
 
-        et_Codigo = findViewById(R.id.et_Codigo);
         et_NombreCerdo = findViewById(R.id.txt_nombrecerdo);
         et_FechaNace = findViewById(R.id.txt_fechanace);
         et_Peso = findViewById(R.id.txt_peso);
@@ -63,11 +67,27 @@ public class MainReporteHV extends AppCompatActivity {
         et_idhembra = findViewById(R.id.et_idhembra);
         et_idverraco = findViewById(R.id.et_idverraco);
         et_idpajilla = findViewById(R.id.et_idpajilla);
-        //et_fechacelo = findViewById(R.id.et_fechacelo);
         et_fechamonta = findViewById(R.id.et_fechamonta);
         et_tipomonta = findViewById(R.id.et_tipomonta);
 
+        comboIdConsulta= findViewById(R.id.comboIdConsulta);
 
+        SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdo();
+        sp_AdapterNumero = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);
+        comboIdConsulta.setAdapter(sp_AdapterNumero);
+
+
+        comboIdConsulta.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterNumero.getItem(position);
+                idcerdo = sp_item.getId();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
+
+        btnConsultar = findViewById(R.id.btnConsultar);
         btnConsultar.setOnClickListener (new View.OnClickListener() {
 
             @Override
@@ -76,10 +96,10 @@ public class MainReporteHV extends AppCompatActivity {
                 SanidadCerdo misanidad = new SanidadCerdo(getApplicationContext());
                 reproduccion mireproduccion = new reproduccion(getApplicationContext());
 
-                String Codigo= et_Codigo.getText().toString();
+                String Codigo=String.valueOf(idcerdo);
 
-                if(!clsUtil.bValidaString( Codigo,1))
-                    Toast.makeText(getBaseContext(),"Debe digitar el código o el nombre del cerdo",Toast.LENGTH_SHORT).show();
+                if(idcerdo==0)
+                    Toast.makeText(getBaseContext(),"Seleccione una Opción",Toast.LENGTH_SHORT).show();
                 else{
                     if(miCerdo.existCerdo(Codigo)) {
                         miCerdo = miCerdo.getCerdoByView(Codigo);
@@ -97,7 +117,7 @@ public class MainReporteHV extends AppCompatActivity {
                             et_tipo.setText(misanidad.getStrTipoMedicamento());
                             et_nombreMed.setText(misanidad.getStrNombreMedicamento());
                             et_via.setText(misanidad.getStrViaAdministracion());
-                            et_dosis.setText(String.valueOf(misanidad.getdDosis()));
+                            et_dosis.setText(String.valueOf(misanidad.getStrDosis()));
                             et_fecha.setText(misanidad.getStrFechaAdministracion());
 
                         }else {
@@ -113,7 +133,6 @@ public class MainReporteHV extends AppCompatActivity {
                                 et_idhembra.setText(String.valueOf(mireproduccion.getIdHembra()));
                                 et_idverraco.setText(String.valueOf(mireproduccion.getIdVerraco()));
                                 et_idpajilla.setText(String.valueOf(mireproduccion.getIdPajilla()));
-                               // et_fechacelo.setText(mireproduccion.getStrFechaCelo());
                                 et_fechamonta.setText(mireproduccion.getStrFechaMonta());
                                 et_tipomonta.setText(mireproduccion.getStrTipoMonta());
 
@@ -122,7 +141,6 @@ public class MainReporteHV extends AppCompatActivity {
                                 et_idhembra.setText("");
                                 et_idverraco.setText("");
                                 et_idpajilla.setText("");
-                               // et_fechacelo.setText("");
                                 et_fechamonta.setText("");
                                 et_tipomonta.setText("");
                             }

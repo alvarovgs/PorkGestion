@@ -277,32 +277,6 @@ public class reproduccion {
     }
 
 
-    public ArrayList<String> consultagestantes() {
-        // SQLiteDatabase db=conn.getReadableDatabase();
-
-        ArrayList<String> listagestantes=new ArrayList<String>();
-        dbAcces = new dataBaseOpenHelper(appContext);
-        dbAcces.openDataBase();
-        // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
-        //select * from usuarios
-        String strSql = "SELECT IDHEMBRA, TIPO, IDVERRACO,IDPAJILLA,FECHA,ESTADO FROM REPRODUCCION";
-        Cursor cursor;
-        cursor = dbAcces.qweryDatabaseBySql(strSql);
-        while (cursor.moveToNext()){
-            /*Cerdo marrano=new Cerdo(appContext);
-            marrano.setIdCerdo(cursor.getInt(0));
-            marrano.setStrCodigo(cursor.getString(1));*/
-            listagestantes.add("ID HEMBRA: " +cursor.getInt(0));
-            listagestantes.add("Tipo de Monta: " +cursor.getString(1));
-            listagestantes.add("Id del Verraco o Pajilla: " + cursor.getInt(2)+" - "+ cursor.getInt(3));
-            listagestantes.add("Fecha de Monta: "+cursor.getString(4));
-            listagestantes.add("Estado de Prenez: " + cursor.getString(5));
-            listagestantes.add("");
-        }
-        return listagestantes;
-    }
-
-
     public Boolean execDatabaseByQwery(String strvalor1, String strValor2, String strVaslor3){
         dbAcces = new dataBaseOpenHelper(appContext);
         Cursor crResult;
@@ -327,7 +301,30 @@ public class reproduccion {
         return bResult;
     }
 
+    public ArrayList<String> consultagestantes() {
+        // SQLiteDatabase db=conn.getReadableDatabase();
 
+        ArrayList<String> listagestantes=new ArrayList<String>();
+        dbAcces = new dataBaseOpenHelper(appContext);
+        dbAcces.openDataBase();
+        // com.example.a201495_2.porkgestion.entidades.Usuario usuario=null;
+        //select * from usuarios
+        String strSql = "SELECT IDHEMBRA, TIPO, IDVERRACO,IDPAJILLA,FECHA,ESTADO FROM REPRODUCCION";
+        Cursor cursor;
+        cursor = dbAcces.qweryDatabaseBySql(strSql);
+        while (cursor.moveToNext()){
+            /*Cerdo marrano=new Cerdo(appContext);
+            marrano.setIdCerdo(cursor.getInt(0));
+            marrano.setStrCodigo(cursor.getString(1));*/
+            listagestantes.add("ID HEMBRA: " +cursor.getInt(0));
+            listagestantes.add("Tipo de Monta: " +cursor.getString(1));
+            listagestantes.add("Id del Verraco o Pajilla: " + cursor.getInt(2)+" - "+ cursor.getInt(3));
+            listagestantes.add("Fecha de Monta: "+cursor.getString(4));
+            listagestantes.add("Estado de Prenez: " + cursor.getString(5));
+            listagestantes.add("");
+        }
+        return listagestantes;
+    }
 
 
 }

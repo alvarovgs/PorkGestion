@@ -33,6 +33,7 @@ public class RazaActivity extends AppCompatActivity  implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raza);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gestión de Razas");
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

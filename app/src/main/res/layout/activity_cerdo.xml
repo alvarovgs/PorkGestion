@@ -8,13 +8,27 @@
     tools:context=".cerdo">
 
     <TextView
+        android:id="@+id/tite1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CERDO"
+        android:textColor="@android:color/background_dark"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tite1"
+        android:layout_marginTop="-30dp"
+        android:text="REGISTRAR"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 
     <EditText
@@ -23,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="107dp"
+        android:layout_marginTop="121dp"
         android:hint="Nombre del cerdo"
         android:inputType="text" />
 
@@ -33,8 +47,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/campoNombre"
+        android:clickable="true"
+        android:focusable="false"
         android:hint="Fecha de nacimiento"
-        android:inputType="text" />
+        android:inputType="none"
+        android:onClick="fecha" />
 
     <Button
         android:id="@+id/btnRegistro"
@@ -68,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/campoPesonace" />
+        android:layout_centerVertical="true" />
 
     <Spinner
         android:id="@+id/comboMadre"

@@ -83,7 +83,7 @@ public class MenuLateral extends AppCompatActivity {
                 }
 
                 else if (item.getTitle().toString().equals("Ventas")) {
-                    Intent miIntent = new Intent(MenuLateral.this, ventas.class);
+                    Intent miIntent = new Intent(MenuLateral.this, menuventa.class);
                     startActivity(miIntent);
                     return false;
                 }

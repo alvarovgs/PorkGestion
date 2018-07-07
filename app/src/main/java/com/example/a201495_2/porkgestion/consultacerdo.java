@@ -1,9 +1,11 @@
 package com.example.a201495_2.porkgestion;
 
+import android.app.DatePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -12,6 +14,8 @@ import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+
+import java.util.Calendar;
 
 public class consultacerdo extends AppCompatActivity {
 
@@ -25,21 +29,49 @@ public class consultacerdo extends AppCompatActivity {
     String strSexo="";
     int idPadre = 0;
     int idMadre = 0;
+    private  int dia,mes,ano;
     private clsUtilidades objUtil = new clsUtilidades();
+    private clsUtilidades clsUtil = new clsUtilidades();
+
+
+
+    Spinner comboIdConsulta;
+    spinAdapter sp_AdapterCerdo;
+    int idcerdo = 0;
+    String codigocerdo="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultacerdo);
 
-        campoIdConsulta= findViewById(R.id.campoIdConsulta);
-        campoNombreConsulta= findViewById(R.id.campoNombreConsulta);
+        //campoIdConsulta= findViewById(R.id.campoIdConsulta);
+        //campoNombreConsulta= findViewById(R.id.campoNombreConsulta);
         campoFechanaceConsulta= findViewById(R.id.campoFechanaceConsulta);
         campoPesonaceConsulta= findViewById(R.id.campoPesonaceConsulta);
         comboRazas = findViewById(R.id.campoRazaConsulta);
         comboSexo = findViewById(R.id.campoSexoConsulta);
         comboPadre= findViewById(R.id.campoNombrepadreConsulta);
         comboMadre= findViewById(R.id.campoNombremadreConsulta);
+        comboIdConsulta= findViewById(R.id.comboIdConsulta);
+
+       SpinData IDCERDO [] = new SpinData(getApplicationContext()).getCerdo();
+        sp_AdapterCerdo = new spinAdapter(this, android.R.layout.simple_spinner_item, IDCERDO);
+        comboIdConsulta.setAdapter(sp_AdapterCerdo);
+
+
+        comboIdConsulta.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                SpinData sp_item = sp_AdapterCerdo.getItem(position);
+                idcerdo = sp_item.getId();
+                codigocerdo = sp_item.getValor();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> sp_Adapter) {  }
+        });
+
+
 
         SpinData Sexo[] = new SpinData(getApplicationContext()).getSexoCerdo();
         sp_AdapterSexo = new spinAdapter(this, android.R.layout.simple_spinner_item, Sexo);
@@ -98,7 +130,7 @@ public class consultacerdo extends AppCompatActivity {
     public void onClick(View view) {
 
         switch (view.getId()){
-            case R.id.btnConsultar:
+            case R.id.btnConsultarr:
                 consultar();
                 //consultarSql();
                 break;
@@ -113,21 +145,34 @@ public class consultacerdo extends AppCompatActivity {
     }
 
     private void eliminarCerdo() {
-        Cerdo micerdo=new Cerdo(getApplicationContext());
-        micerdo.setIdCerdo(Integer.parseInt(campoIdConsulta.getText().toString()));
-        if (micerdo.deleteCerdo()){
-            Toast.makeText(getApplicationContext(),"Cerdo eliminado correctamente ",Toast.LENGTH_LONG).show();
-            limpiar();
+
+        if(idcerdo==0) {
+            Toast.makeText(getBaseContext(), "Debe seleccionar el nombre del cerdo", Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(getApplicationContext(),"Error eliminando el cerdo ",Toast.LENGTH_SHORT).show();
+
+            Cerdo micerdo = new Cerdo(getApplicationContext());
+            micerdo.setIdCerdo(idcerdo);
+            if (micerdo.deleteCerdo()) {
+                Toast.makeText(getApplicationContext(), "Cerdo eliminado correctamente ", Toast.LENGTH_LONG).show();
+                limpiar();
+            } else {
+                Toast.makeText(getApplicationContext(), "Error eliminando el cerdo ", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
     private void actualizarCerdo() {
+
+        if(idcerdo==0) {
+           Toast.makeText(getBaseContext(), "Debe seleccionar el nombre del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else {
+
+
         Cerdo micerdo=new Cerdo(getApplicationContext());
-        micerdo = micerdo.getCerdoByView(campoIdConsulta.getText().toString());
-        micerdo.setStrCodigo(campoNombreConsulta.getText().toString());
+        micerdo = micerdo.getCerdoByView(codigocerdo);
+        micerdo.setStrCodigo(codigocerdo);
         micerdo.setStrFechaNace(campoFechanaceConsulta.getText().toString());
         micerdo.setlPesoNace(Long.parseLong(campoPesonaceConsulta.getText().toString()));
         micerdo.setStrSexo(strSexo);
@@ -142,25 +187,55 @@ public class consultacerdo extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Error actualizando el cerdo ",Toast.LENGTH_SHORT).show();
         }
 
+        }
+
+    }
+
+    public void fecha(View v) {
+        if(v==campoFechanaceConsulta) {
+            final Calendar c = Calendar.getInstance();
+            dia = c.get(Calendar.DAY_OF_MONTH);
+            mes = c.get(Calendar.MONTH);
+            ano = c.get(Calendar.YEAR);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                    campoFechanaceConsulta.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);}}
+                    , dia, mes, ano);
+            datePickerDialog.show();
+
+        }
     }
 
 
     private void consultar() {
-        Cerdo micerdo=new Cerdo(getApplicationContext());
-        if (micerdo.existCerdo(campoIdConsulta.getText().toString())){
-            micerdo = micerdo.getCerdoByView(campoIdConsulta.getText().toString());
-            campoNombreConsulta.setText(micerdo.getStrCodigo());
-            campoFechanaceConsulta.setText(micerdo.getStrFechaNace());
-            campoPesonaceConsulta.setText(String.valueOf(micerdo.getlPesoNace()));
-            comboSexo.setSelection(objUtil.obtenerPosicionItem(comboSexo, micerdo.getStrSexo()));
-            comboRazas.setSelection(objUtil.obtenerPosicionItem(comboRazas, micerdo.getStrRaza()));
-            comboPadre.setSelection(objUtil.obtenerPosicionItem(comboPadre, micerdo.getStrCodPadre()));
-            comboMadre.setSelection(objUtil.obtenerPosicionItem(comboMadre, micerdo.getStrCodMadre()));
+        if(idcerdo==0) {
+            Toast.makeText(getBaseContext(), "Debe digitar el numero del cerdo", Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(getApplicationContext(),"El documento no existe",Toast.LENGTH_LONG).show();
+
+
+            Cerdo micerdo=new Cerdo(getApplicationContext());
+            if (micerdo.existCerdo(codigocerdo)){
+                micerdo = micerdo.getCerdoByView(codigocerdo);
+
+
+                //campoNombreConsulta.setText(micerdo.getStrCodigo());
+                campoFechanaceConsulta.setText(micerdo.getStrFechaNace());
+                campoPesonaceConsulta.setText(String.valueOf(micerdo.getlPesoNace()));
+                comboSexo.setSelection(objUtil.obtenerPosicionItem(comboSexo, micerdo.getStrSexo()));
+                comboRazas.setSelection(objUtil.obtenerPosicionItem(comboRazas, micerdo.getStrRaza()));
+                comboPadre.setSelection(objUtil.obtenerPosicionItem(comboPadre, micerdo.getStrCodPadre()));
+                comboMadre.setSelection(objUtil.obtenerPosicionItem(comboMadre, micerdo.getStrCodMadre()));
+            }
+            else {
+                Toast.makeText(getApplicationContext(),"El documento no existe",Toast.LENGTH_LONG).show();
+            }
+
         }
     }
+
 
     private void llenarcombo(){
         SpinData Padre[] = new SpinData(getApplicationContext()).getCerdobySexo("MACHO");
@@ -173,15 +248,15 @@ public class consultacerdo extends AppCompatActivity {
 
     private void limpiar() {
         llenarcombo ();
-        campoIdConsulta.setText("");
-        campoNombreConsulta.setText("");
+        comboIdConsulta.setSelection(0);
+        //campoNombreConsulta.setText("");
         campoFechanaceConsulta.setText("");
         campoPesonaceConsulta.setText("");
         comboSexo.setSelection(0);
         comboRazas.setSelection(0);
         comboPadre.setSelection(0);
         comboMadre.setSelection(0);
-        campoIdConsulta.requestFocus();
+        comboIdConsulta.requestFocus();
 
     }
 

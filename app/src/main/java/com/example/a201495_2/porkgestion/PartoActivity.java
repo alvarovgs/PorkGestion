@@ -16,14 +16,18 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.a201495_2.porkgestion.adapter.partoAdapter;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
+import com.example.a201495_2.porkgestion.utils.Tools;
 import com.example.a201495_2.porkgestion.bo_clases.Parto;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class PartoActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     private ListView lvPartoResult;
@@ -37,6 +41,7 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parto);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gestión de Partos");
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -64,6 +69,32 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         lvPartoResult.setAdapter(new partoAdapter(getApplicationContext(), arrListParto));
     }
 
+    private void dialogDatePickerLight(final TextView tv) {
+        Calendar cur_calender = Calendar.getInstance();
+        DatePickerDialog datePicker = DatePickerDialog.newInstance(
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+                        Calendar calendar = Calendar.getInstance();
+                        calendar.set(Calendar.YEAR, year);
+                        calendar.set(Calendar.MONTH, monthOfYear);
+                        calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        long date_ship_millis = calendar.getTimeInMillis();
+                        tv.setText(Tools.getFormattedDateSimple(date_ship_millis));
+                    }
+                },
+                cur_calender.get(Calendar.YEAR),
+                cur_calender.get(Calendar.MONTH),
+                cur_calender.get(Calendar.DAY_OF_MONTH)
+        );
+        //set dark light
+        datePicker.setThemeDark(false);
+        datePicker.setAccentColor(getResources().getColor(R.color.colorPrimary));
+        //datePicker.setMinDate(cur_calender);
+        datePicker.show(getFragmentManager(), "Datepickerdialog");
+    }
+
+
     private void showCustomDialog(Parto objParto) {
         final Dialog dialog = new Dialog(this);
         final spinAdapter sp_Adapter;
@@ -90,7 +121,7 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
 
         lbltitulo.setText("Gestión de parto");
         /*llenar el sinner*/
-        SpinData Cerdo[] = new SpinData(getApplicationContext()).getCerdo();
+        SpinData Cerdo[] = new SpinData(getApplicationContext()).getCerdobySexo("HEMBRA");
         sp_Adapter = new spinAdapter(this, android.R.layout.simple_spinner_item, Cerdo);
         sp_Cerdas.setAdapter(sp_Adapter);
 
@@ -114,6 +145,13 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
         et_MachosVivos.setText(String.valueOf(objParto.getVivosMachos()));
         et_PesoParto.setText(String.valueOf(objParto.getPromediPeso()));
         idParto = objParto.getIdParto();
+
+        ((TextView) dialog.findViewById(R.id.et_FechaParto)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogDatePickerLight((TextView) view);
+            }
+        });
 
         dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,17 +178,22 @@ public class PartoActivity extends AppCompatActivity implements AdapterView.OnIt
                     dialog.dismiss();
                 }
                 else {
-                    objClass.setIdCerdo(idCerdo);
-                    objClass.setStrFechaParto(et_fechaParto.getText().toString());
-                    objClass.setPromediPeso(Long.parseLong(et_PesoParto.getText().toString()));
-                    objClass.setVivosHembras(Integer.parseInt(et_HembrasVivas.getText().toString()));
-                    objClass.setVivosMachos(Integer.parseInt(et_MachosVivos.getText().toString()));
-                    objClass.setMuertosHembras(Integer.parseInt(et_HembrasMuertas.getText().toString()));
-                    objClass.setMuertosMachos(Integer.parseInt(et_MachosMuertos.getText().toString()));
-                    objClass.setIndicemortalidad(objClass.indiceMortalidad());
-                    objClass.insertParto();
-                    displayResult();
-                    dialog.dismiss();
+                    if((idCerdo==0)||(et_fechaParto.getText().toString().equals(""))) {
+                        Toast.makeText(getApplicationContext(),"Selecciones todos los datos del parto",Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        objClass.setIdCerdo(idCerdo);
+                        objClass.setStrFechaParto(et_fechaParto.getText().toString());
+                        objClass.setPromediPeso(Long.parseLong(et_PesoParto.getText().toString()));
+                        objClass.setVivosHembras(Integer.parseInt(et_HembrasVivas.getText().toString()));
+                        objClass.setVivosMachos(Integer.parseInt(et_MachosVivos.getText().toString()));
+                        objClass.setMuertosHembras(Integer.parseInt(et_HembrasMuertas.getText().toString()));
+                        objClass.setMuertosMachos(Integer.parseInt(et_MachosMuertos.getText().toString()));
+                        objClass.setIndicemortalidad(objClass.indiceMortalidad());
+                        objClass.insertParto();
+                        displayResult();
+                        dialog.dismiss();
+                    }
                 }
             }
         });

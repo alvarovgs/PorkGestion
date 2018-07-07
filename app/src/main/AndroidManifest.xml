@@ -49,6 +49,7 @@
         <activity android:name=".consultacerdo" />
         <activity android:name=".PajillaActivity" />
         <activity android:name=".totalcerdos" />
+<<<<<<< HEAD
         <activity android:name=".menucerdo" />
         <activity android:name=".SanidadActivity" />
         <activity android:name=".vergestantes" />
@@ -56,6 +57,17 @@
         <activity android:name=".listaverracos" />
         <activity android:name=".gestantes" />
         <activity android:name=".rreproduccion"></activity>
+=======
+        <activity android:name=".menucerdo"/>
+        <activity android:name=".SanidadActivity"/>
+        <activity android:name=".vergestantes"/>
+        <activity android:name=".ververracos"/>
+        <activity android:name=".listaverracos"/>
+        <activity android:name=".gestantes"/>
+        <activity android:name=".rreproduccion"/>
+
+
+>>>>>>> master
     </application>
 
 </manifest>

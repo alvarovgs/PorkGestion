@@ -1,15 +1,20 @@
 package com.example.a201495_2.porkgestion;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.EditText;
 import com.example.a201495_2.porkgestion.adapter.spinAdapter;
 import com.example.a201495_2.porkgestion.bo_clases.SpinData;
 import com.example.a201495_2.porkgestion.bo_clases.Cerdo;
+import com.example.a201495_2.porkgestion.utils.clsUtilidades;
+
+import java.util.Calendar;
 
 public class  cerdo extends AppCompatActivity {
     EditText campoId,campoNombre,campoFechanace,campoPesonace;
@@ -22,6 +27,8 @@ public class  cerdo extends AppCompatActivity {
     String strSexo="";
     int idPadre = 0;
     int idMadre = 0;
+    private  int dia,mes,ano;
+    private clsUtilidades clsUtil = new clsUtilidades();
 
 
     @Override
@@ -95,22 +102,66 @@ public class  cerdo extends AppCompatActivity {
 
     private void registrarCerdo() {
         //instanciar el objeto de la clase cerdo
-        Cerdo micerdo=new Cerdo(getApplicationContext());
-        micerdo.setStrCodigo(campoNombre.getText().toString());
-        micerdo.setStrFechaNace(campoFechanace.getText().toString());
-        micerdo.setlPesoNace(Long.parseLong(campoPesonace.getText().toString()));
-        micerdo.setStrSexo(strSexo);
-        micerdo.setIdRaza(idRaza);
-        micerdo.setIdMadre(idMadre);
-        micerdo.setIdPadre(idPadre);
-        if (micerdo.insertCerdo()){
-            Toast.makeText(getApplicationContext(),"Cerdo registrado correctamente ",Toast.LENGTH_LONG).show();
-            limpiar();
+        if(!clsUtil.bValidaString(campoNombre.getText().toString(),1)) {
+            Toast.makeText(getBaseContext(), "Debe digitar el nombre del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(!clsUtil.bValidaString(campoFechanace.getText().toString(),1)) {
+            Toast.makeText(getBaseContext(), "Debe digitar la fecha de nacimiento del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(!clsUtil.bValidaString(campoPesonace.getText().toString(),1)) {
+            Toast.makeText(getBaseContext(), "Debe digitar el peso al nacimiento del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(comboSexo.getSelectedItemPosition()==0) {
+            Toast.makeText(getBaseContext(), "Debe seleccionar el sexo del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(idRaza==0) {
+            Toast.makeText(getBaseContext(), "Debe seleccionar la raza del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(idMadre==0) {
+            Toast.makeText(getBaseContext(), "Debe seleccionar la madre del cerdo", Toast.LENGTH_SHORT).show();
+        }
+        else if(idPadre==0) {
+            Toast.makeText(getBaseContext(), "Debe seleccionar el padre del cerdo", Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(getApplicationContext(),"Error registrando el cerdo ",Toast.LENGTH_SHORT).show();
+
+            Cerdo micerdo = new Cerdo(getApplicationContext());
+            micerdo.setStrCodigo(campoNombre.getText().toString());
+            micerdo.setStrFechaNace(campoFechanace.getText().toString());
+            micerdo.setlPesoNace(Long.parseLong(campoPesonace.getText().toString()));
+            micerdo.setStrSexo(strSexo);
+            micerdo.setIdRaza(idRaza);
+            micerdo.setIdMadre(idMadre);
+            micerdo.setIdPadre(idPadre);
+            if (micerdo.insertCerdo()) {
+                Toast.makeText(getApplicationContext(), "Cerdo registrado correctamente ", Toast.LENGTH_LONG).show();
+                limpiar();
+            } else {
+                Toast.makeText(getApplicationContext(), "Error registrando el cerdo ", Toast.LENGTH_SHORT).show();
+            }
         }
     }
+
+    public void fecha(View v) {
+        if(v==campoFechanace) {
+            final Calendar c = Calendar.getInstance();
+            dia = c.get(Calendar.DAY_OF_MONTH);
+            mes = c.get(Calendar.MONTH);
+            ano = c.get(Calendar.YEAR);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                    campoFechanace.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);}}
+                    , dia, mes, ano);
+            datePickerDialog.show();
+
+            }
+        }
+
+
+
+
 
     private void llenarcombo(){
         SpinData Padre[] = new SpinData(getApplicationContext()).getCerdobySexo("MACHO");
@@ -120,7 +171,6 @@ public class  cerdo extends AppCompatActivity {
         sp_AdapterMadre = new spinAdapter(this, android.R.layout.simple_spinner_item, Madre);
         comboMadre.setAdapter(sp_AdapterMadre);
     }
-
 
     private void limpiar() {
         llenarcombo ();
