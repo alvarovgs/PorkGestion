@@ -43,9 +43,7 @@
         <activity android:name=".MainDatosOrg" />
         <activity android:name=".MainLinks" />
         <activity android:name=".MainRecomendaciones" />
-        <activity android:name=".lechon" />
         <activity android:name=".MainReporteHV" />
-        <activity android:name=".Partolact" />
         <activity android:name=".consultacerdo" />
         <activity android:name=".PajillaActivity" />
         <activity android:name=".totalcerdos" />
@@ -64,8 +62,16 @@
         <activity android:name=".ververracos"/>
         <activity android:name=".listaverracos"/>
         <activity android:name=".gestantes"/>
-        <activity android:name=".rreproduccion"/>
+        <activity android:name=".repovecerdo"/>
+        <activity android:name=".menuventa"/>
 
+        <activity android:name=".rreproduccion"/>
+        <activity
+            android:name=".SanidadCerdoActivity"
+            android:label="@string/title_activity_sanidad_cerdo"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ReporteProduccionActivity"
+            android:screenOrientation="landscape" />
 
 >>>>>>> master
     </application>

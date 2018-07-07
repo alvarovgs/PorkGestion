@@ -129,7 +129,6 @@ public class MainReporteHV extends AppCompatActivity {
                             Toast.makeText(getBaseContext(),"No existe Información de Sanidad asociada a éste Código",Toast.LENGTH_SHORT).show();
                         }
                          if (mireproduccion.existReproduccion(miCerdo.getIdCerdo())) {
-
                                 et_idhembra.setText(String.valueOf(mireproduccion.getIdHembra()));
                                 et_idverraco.setText(String.valueOf(mireproduccion.getIdVerraco()));
                                 et_idpajilla.setText(String.valueOf(mireproduccion.getIdPajilla()));

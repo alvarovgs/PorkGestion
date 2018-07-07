@@ -53,6 +53,7 @@ public class MenuLateral extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(final MenuItem item) {
                 Toast.makeText(getApplicationContext(), " Seleccionado: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+
                 if (item.getTitle().toString().equals("Cerdo")) {
                     Intent miIntent = new Intent(MenuLateral.this, menucerdo.class);
                     startActivity(miIntent);

@@ -274,21 +274,26 @@ public class Parto {
         ArrayList<Parto> listObject = new ArrayList<Parto>();
         dbAcces.openDataBase();
         crResult = dbAcces.qweryDatabaseBySql(strSql);
-        if (crResult.moveToFirst()) {
-            do {
-                Parto tmpObject = new Parto(appContext);
-                tmpObject.setIdParto(crResult.getInt(0));
-                tmpObject.setIdCerdo(crResult.getInt(1));
-                tmpObject.setStrFechaParto(crResult.getString(2));
-                tmpObject.setVivosMachos(Integer.parseInt(crResult.getString(3)));
-                tmpObject.setVivosHembras(Integer.parseInt(crResult.getString(4)));
-                tmpObject.setMuertosMachos(Integer.parseInt(crResult.getString(5)));
-                tmpObject.setMuertosHembras(Integer.parseInt(crResult.getString(6)));
-                tmpObject.setIndicemortalidad(Integer.parseInt(crResult.getString(7)));
-                tmpObject.setPromediPeso(Long.parseLong(crResult.getString(8)));
-                tmpObject.setStrCodigoCerdo(crResult.getString(9));
-                listObject.add(tmpObject);
-            } while (crResult.moveToNext());
+        try {
+            if (crResult.moveToFirst()) {
+                do {
+                    Parto tmpObject = new Parto(appContext);
+                    tmpObject.setIdParto(crResult.getInt(0));
+                    tmpObject.setIdCerdo(crResult.getInt(1));
+                    tmpObject.setStrFechaParto(crResult.getString(2));
+                    tmpObject.setVivosMachos(Integer.parseInt(crResult.getString(3)));
+                    tmpObject.setVivosHembras(Integer.parseInt(crResult.getString(4)));
+                    tmpObject.setMuertosMachos(Integer.parseInt(crResult.getString(5)));
+                    tmpObject.setMuertosHembras(Integer.parseInt(crResult.getString(6)));
+                    tmpObject.setIndicemortalidad(Integer.parseInt(crResult.getString(7)));
+                    tmpObject.setPromediPeso(Long.parseLong(crResult.getString(8)));
+                    tmpObject.setStrCodigoCerdo(crResult.getString(9));
+                    listObject.add(tmpObject);
+                } while (crResult.moveToNext());
+            }
+        }
+        catch(Exception e){
+            //Manejo del error
         }
         this.strError = dbAcces.getErrorDB();
         dbAcces.closeDataBase();

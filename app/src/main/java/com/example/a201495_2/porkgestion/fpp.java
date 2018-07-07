@@ -27,8 +27,8 @@ public class fpp extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fpp);
 
-        efecha=(EditText)findViewById(R.id.efecha);
-        efpp=(EditText)findViewById(R.id.efpp);
+        efecha= findViewById(R.id.efecha);
+        efpp= findViewById(R.id.efpp);
         efecha.setOnClickListener(this);
 
     }

@@ -26,24 +26,30 @@ public class MainEditusuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_editusuario);
         final GlobalClass datosGlobales = (GlobalClass) getApplicationContext();
-        miUsuario = datosGlobales.getActiveUser();
-
         btn_Actualizar = findViewById(R.id.btnActualizar);
         btn_Eliminar = findViewById(R.id.btnEliminar);
         et_Usuario = findViewById(R.id.et_Codigo);
         et_Nombre = findViewById(R.id.txt_nombreusuario);
         et_Password = findViewById(R.id.txt_pass);
         et_Telefono = findViewById(R.id.txt_telefono);
-
-        et_Usuario.setText(miUsuario.getStrEmail());
-        et_Nombre.setText(miUsuario.getStrNombre());
-        et_Password.setText(miUsuario.getStrPassword());
-        et_Telefono.setText(miUsuario.getStrTelefono());
-
+        try {
+            miUsuario = datosGlobales.getActiveUser();
+            et_Usuario.setText(miUsuario.getStrEmail());
+            et_Nombre.setText(miUsuario.getStrNombre());
+            et_Password.setText(miUsuario.getStrPassword());
+            et_Telefono.setText(miUsuario.getStrTelefono());
+        }
+        catch(Exception e){
+            Toast.makeText(getBaseContext(),"Se ha presentado un error",Toast.LENGTH_SHORT).show();
+            Intent miIntent = new Intent(MainEditusuario.this, MenuLateral.class);
+            miIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            finish();
+            startActivity(miIntent);
+        }
         btn_Actualizar.setOnClickListener (new View.OnClickListener() {
                                                @Override
                                                public void onClick(View v) {
-                                                   upateUsuario();
+                                                   updateUsuario();
                                                }
                                            }
         );
@@ -55,7 +61,7 @@ public class MainEditusuario extends AppCompatActivity {
         );
     }
 
-    private void upateUsuario (){
+    private void updateUsuario(){
         String strPassword = et_Password.getText().toString();
         String strNombre = et_Nombre.getText().toString();
         String strTelefono = et_Telefono.getText().toString();

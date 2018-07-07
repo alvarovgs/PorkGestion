@@ -12,7 +12,8 @@
         android:layout_height="66dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="7dp">
+        tools:layout_editor_absoluteY="7dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/lblTipoMed"

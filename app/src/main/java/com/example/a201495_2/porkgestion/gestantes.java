@@ -41,10 +41,11 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gestantes);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gestión de Monta");
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +57,7 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
         lvGestantesResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                reproduccion objItemreproduccion = (reproduccion) arrListreproduccion.get(position);
+                reproduccion objItemreproduccion = arrListreproduccion.get(position);
                 showCustomDialog(objItemreproduccion);
             }
         });
@@ -65,7 +66,7 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
     private void displayResult(){
         reproduccion objreproduccion = new reproduccion(getApplicationContext());
         arrListreproduccion = objreproduccion.getAllReproduccionByView();
-        lvGestantesResult = (ListView) findViewById(R.id.list_gestacionresult);
+        lvGestantesResult = findViewById(R.id.list_gestacionresult);
         lvGestantesResult.setAdapter(new reproduccionAdapter(getApplicationContext(), arrListreproduccion));
     }
 
@@ -108,17 +109,17 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         TextView lbltitulo = dialog.findViewById(R.id.lblTitulo);
-        final TextView lblError = (TextView) dialog.findViewById(R.id.lblError);
+        final TextView lblError = dialog.findViewById(R.id.lblError);
 
-        final Spinner sp_Cerdas = (Spinner) dialog.findViewById(R.id.sp_idCerda);
-        final Spinner sp_tipomonta = (Spinner) dialog.findViewById(R.id.sp_tipomonta);
-        final EditText fechamonta = (EditText) dialog.findViewById(R.id.FechaMonta);
-        final Spinner sp_idverraco = (Spinner) dialog.findViewById(R.id.sp_idverraco);
-        final Spinner sp_idpajilla = (Spinner) dialog.findViewById(R.id.sp_idPajilla);
-        final Spinner sp_estado = (Spinner) dialog.findViewById(R.id.sp_estadoprenez);
+        final Spinner sp_Cerdas = dialog.findViewById(R.id.sp_idCerda);
+        final Spinner sp_tipomonta = dialog.findViewById(R.id.sp_tipomonta);
+        final EditText fechamonta = dialog.findViewById(R.id.FechaMonta);
+        final Spinner sp_idverraco = dialog.findViewById(R.id.sp_idverraco);
+        final Spinner sp_idpajilla = dialog.findViewById(R.id.sp_idPajilla);
+        final Spinner sp_estado = dialog.findViewById(R.id.sp_estadoprenez);
         idReproduccion = objReproduccion.getIdReproduccion();
 
-        lbltitulo.setText("Gestión de reproduccion");
+        lbltitulo.setText("Gestión de reproducción");
         /*llenar el sinner de cerdas*/
         SpinData Cerda[] = new SpinData(getApplicationContext()).getCerdobySexo("HEMBRA");
         sp_Adapcerda = new spinAdapter(this, android.R.layout.simple_spinner_item, Cerda);
@@ -209,7 +210,7 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
         sp_estado.setSelection(objUtil.obtenerPosicionItem(sp_estado, objReproduccion.getstrEstado()));
 
         fechamonta.setText(objReproduccion.getStrFechaMonta());
-        ((TextView) dialog.findViewById(R.id.FechaMonta)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.FechaMonta).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialogDatePickerLight((TextView) view);
@@ -217,14 +218,14 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
         });
 
 
-        ((Button) dialog.findViewById(R.id.bt_close)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
             }
         });
 
-        ((Button) dialog.findViewById(R.id.bt_save)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 reproduccion objClass =new reproduccion(getApplicationContext());
@@ -255,7 +256,7 @@ public class gestantes extends AppCompatActivity implements AdapterView.OnItemSe
             }
         });
 
-        ((Button) dialog.findViewById(R.id.bt_delete)).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.bt_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 reproduccion objClass =new reproduccion(getApplicationContext());

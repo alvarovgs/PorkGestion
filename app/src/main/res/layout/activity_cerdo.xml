@@ -50,8 +50,7 @@
         android:clickable="true"
         android:focusable="false"
         android:hint="Fecha de nacimiento"
-        android:inputType="none"
-        android:onClick="fecha" />
+        android:inputType="none"/>
 
     <Button
         android:id="@+id/btnRegistro"
